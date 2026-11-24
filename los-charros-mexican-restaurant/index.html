@@ -4,155 +4,505 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Los Charros Mexican Restaurant | Website preview concept by Built By Cray</title>
-<meta name="description" content="A free website preview concept for Los Charros Mexican Restaurant, designed by Built By Cray. Not the official website of Los Charros Mexican Restaurant.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://images.unsplash.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600&display=swap">
+<title>Los Charros Mexican Restaurant | Preview concept by Built By Cray</title>
+<meta name="description" content="Los Charros Mexican Restaurant in Conyers, GA. Warm, made-to-order Mexican food close to home. Call (770) 483-5408 for current hours and directions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f7f5f0;--ink:#14201c;--muted:#5c6964;--accent:#2f6f5e;--dark:#0f1a17;--soft:#e6ece6;--on-accent:#fff;--c2:#2f6f5e;--c3:#2f6f5e;--c4:#2f6f5e;--pop:#2f6f5e;--display:'Playfair Display', Georgia, serif;--body:'Inter', system-ui, sans-serif;--r:14px}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
-img{display:block;max-width:100%}
+:root{
+  --ink:#1d1410;
+  --char:#2a1c16;
+  --cream:#fbf3e4;
+  --sand:#f1e2c6;
+  --chile:#c2391f;
+  --chile-dk:#962a15;
+  --marigold:#f2a516;
+  --agave:#2f6b4f;
+  --rosa:#d9487a;
+  --muted:#6e5a4c;
+  --radius:18px;
+  --shadow:0 20px 50px -20px rgba(29,20,16,.45);
+  --serif:"Fraunces", Georgia, serif;
+  --sans:"Manrope", system-ui, -apple-system, Segoe UI, sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
 a{color:inherit}
-.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
-h1,h2,h3{font-family:var(--display);line-height:1.08;font-weight:700;letter-spacing:-.01em}
-h1{font-size:clamp(40px,6.2vw,76px)}
-h2{font-size:clamp(30px,4vw,48px);margin-bottom:18px}
-h3{font-size:21px;margin-bottom:6px}
-.eyebrow{font-family:var(--body);text-transform:uppercase;letter-spacing:.16em;font-size:12.5px;font-weight:600;color:var(--accent);margin-bottom:14px}
-.eyebrow.light{color:#fff;opacity:.85}
-.sub{font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:560px;margin:18px 0 30px}
-.lead{font-size:18px;color:var(--muted);margin-bottom:20px}
-section{padding:clamp(64px,9vw,110px) 0}
-.split{display:grid;gap:clamp(28px,5vw,64px);align-items:center}
-@media(min-width:860px){.split{grid-template-columns:1fr 1fr}}
-.actions{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:600;font-size:16px;padding:15px 24px;border-radius:999px;border:2px solid var(--accent);transition:transform .15s ease,box-shadow .15s ease}
-.btn:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(0,0,0,.15)}
-.btn svg{width:18px;height:18px}
-.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
-.btn.ghost.dark{color:var(--ink);border-color:currentColor}
-.btn.light{background:#fff;color:var(--dark);border-color:#fff}
-.btn.block{width:100%;justify-content:center;margin-top:10px}
-.rating{display:inline-flex;align-items:center;gap:6px;font-size:15px}
-.rating svg{width:18px;height:18px;color:#f5b301}
-.hero-rating{margin-top:22px}
-.ticks{list-style:none;display:grid;gap:10px;margin:8px 0 26px}
-.ticks li{display:flex;gap:10px;align-items:center;font-weight:500}
-.ticks svg{width:20px;height:20px;color:var(--accent);flex:none}
-.ticks.small{font-size:14px;margin:16px 0 0}
-/* preview bar */
-.pv-bar{position:relative;z-index:30;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;background:#0d0d0f;color:#d6d6db;font:13px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;padding:8px 16px;text-align:center}
-.pv-bar b{color:#fff;font-weight:600}
-.pv-offer{color:#ffd166}
-.pv-bar a{background:#ffd166;color:#111;text-decoration:none;font-weight:700;padding:5px 12px;border-radius:999px;white-space:nowrap;font-size:12.5px}
-@media(max-width:700px){.pv-long{display:none}.pv-bar{font-size:12px;gap:8px;padding:7px 12px}}
-/* nav */
-.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid color-mix(in srgb,var(--ink) 8%,transparent)}
-.nav-row{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
-.brand{font-family:var(--display);font-weight:700;font-size:22px;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:60vw}
-.nav-links{display:flex;align-items:center;gap:26px;font-size:15px;font-weight:500}
-.nav-links a{text-decoration:none;opacity:.85}
-.nav-call{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--bg)!important;padding:9px 16px;border-radius:999px;opacity:1!important}
-.nav-call svg{width:16px;height:16px}
-@media(max-width:760px){.nav-links a:not(.nav-call){display:none}.nav-call span{display:none}.nav-call{padding:10px}}
-/* services */
-.svc-grid{display:grid;gap:18px;margin-top:34px}
-@media(min-width:700px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1000px){.svc-grid{grid-template-columns:repeat(${n},1fr)}}
-.svc{background:var(--soft);border-radius:var(--r);padding:28px}
-.svc .num{display:block;font-family:var(--display);color:var(--accent);font-size:15px;margin-bottom:14px;letter-spacing:.08em}
-.svc p{color:var(--muted);font-size:16px}
-/* about */
-.about-img img{width:100%;aspect-ratio:9/10;object-fit:cover;border-radius:calc(var(--r) * 1.4)}
-.quote{margin:-4px 0 18px}
-/* gallery */
-.gallery{padding-top:0}
-.g-grid{display:grid;gap:14px;grid-template-columns:1fr 1fr}
-.g{overflow:hidden;border-radius:var(--r)}
-.g img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/2}
-.g0{grid-column:1/-1}
-@media(min-width:860px){.g-grid{grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr}.g0{grid-column:auto;grid-row:1/3}.g0 img{aspect-ratio:auto}}
-.stock-note{font-size:12.5px;color:var(--muted);margin-top:12px;text-align:right}
-/* steps */
-.steps{background:var(--soft)}
-.step-grid{display:grid;gap:22px;margin-top:30px}
-@media(min-width:800px){.step-grid{grid-template-columns:repeat(3,1fr)}}
-.step{background:var(--bg);border-radius:var(--r);padding:28px}
-.step span{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--accent);color:var(--on-accent);font-weight:800;margin-bottom:16px}
-.step p{color:var(--muted)}
-/* visit */
-.facts{display:grid;gap:16px;margin:10px 0 28px}
-.facts div{display:grid;grid-template-columns:90px 1fr;gap:12px;padding-bottom:14px;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent)}
-.facts dt{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);padding-top:3px}
-.facts dd a{text-decoration:none;font-weight:600}
-.map iframe{width:100%;height:380px;border:0;border-radius:calc(var(--r) * 1.2);filter:saturate(.9)}
-/* cta */
-.cta-band{background:var(--dark);color:#fff;padding:clamp(48px,7vw,80px) 0}
-.cta-band .wrap{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
-.cta-band h2{margin:0;color:#fff}
-/* footer */
-.foot{background:var(--dark);color:color-mix(in srgb,#fff 70%,transparent);padding:44px 0 90px;font-size:14px}
-.foot .brand{color:#fff;display:block;margin-bottom:6px}
-.foot a{color:#fff}
-.disc{margin-top:18px;font-size:12.5px;opacity:.75;max-width:760px}
-.m-call{display:none}
-.g-two{grid-template-columns:1fr 1fr}.g-two .g img{aspect-ratio:3/2}
-@media(min-width:860px){.g-two{grid-template-columns:1fr 1fr;grid-template-rows:auto}}
-@media(max-width:760px){.m-call{display:flex;position:fixed;left:14px;right:14px;bottom:14px;z-index:40;align-items:center;justify-content:center;gap:10px;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:700;padding:16px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,.25);opacity:0;transform:translateY(20px);pointer-events:none;transition:.25s}.m-call.show{opacity:1;transform:none;pointer-events:auto}.m-call svg{width:18px;height:18px}}
-/* shared hero bits */
-.hero{position:relative}
-.hero-photo,.hero-card{color:#fff;overflow:hidden}
-.hero-photo .bg,.hero-card .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.7))}
-.hero-inner{position:relative;padding:clamp(90px,14vw,170px) 0 clamp(80px,12vw,140px)}
-.hero-photo .sub,.hero-card .sub{color:rgba(255,255,255,.88)}
-.hero-split .btn.ghost,.hero-arch .btn.ghost,.hero-kids .btn.ghost,.hero-bloom .btn.ghost,.hero-fresh .btn.ghost{color:var(--ink);border-color:currentColor}
-.center{text-align:center}.center .sub{margin-inline:auto}.center .actions{justify-content:center}
+:focus-visible{outline:3px solid var(--marigold);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:0;background:var(--marigold);color:var(--ink);padding:10px 14px;z-index:100;font-weight:700}
+.skip:focus{left:10px;top:10px}
 
-.l-bistro h1{font-weight:500;font-style:italic;max-width:900px;margin-inline:auto}
-.l-bistro .svc{background:transparent;border-top:1px solid color-mix(in srgb,var(--ink) 15%,transparent);border-radius:0;padding:24px 0}
-.l-bistro .svc-grid{gap:0 48px}
-@media(min-width:1000px){.l-bistro .svc-grid{grid-template-columns:repeat(2,1fr)}}
-.l-bistro .svc h3{font-size:26px;font-weight:500}
-.l-bistro .services h2,.l-bistro .services .eyebrow{text-align:center}
-.l-bistro .about{background:var(--soft)}
-.l-bistro .about-img img{border-radius:999px 999px 18px 18px}</style>
+/* Preview bar */
+.preview-bar{background:var(--ink);color:#f5e8d2;font-size:13.5px;padding:9px 0}
+.preview-bar .wrap{display:flex;gap:10px 16px;align-items:center;justify-content:center;flex-wrap:wrap;text-align:center}
+.preview-bar strong{color:var(--marigold);font-weight:700}
+.preview-bar a{background:var(--marigold);color:var(--ink);text-decoration:none;font-weight:800;padding:5px 12px;border-radius:999px;font-size:12.5px;white-space:nowrap}
+.preview-bar a:hover{background:#ffc24a}
+
+/* Header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(251,243,228,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid rgba(29,20,16,.08)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:40px;height:40px;flex:none}
+.brand-name{font-family:var(--serif);font-weight:900;font-size:22px;letter-spacing:-.01em;line-height:1}
+.brand-name small{display:block;font-family:var(--sans);font-weight:700;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--chile);margin-top:4px}
+nav.main{display:flex;gap:28px;align-items:center}
+nav.main a{text-decoration:none;font-weight:600;font-size:15px;color:var(--char)}
+nav.main a:hover{color:var(--chile)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--sans);font-weight:800;text-decoration:none;border-radius:999px;padding:14px 24px;font-size:16px;transition:transform .2s ease, background .2s ease, box-shadow .2s ease;border:2px solid transparent;cursor:pointer}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-chile{background:var(--chile);color:#fff;box-shadow:0 10px 24px -10px rgba(194,57,31,.8)}
+.btn-chile:hover{background:var(--chile-dk);transform:translateY(-2px)}
+.btn-ghost{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}
+.btn-outline{border-color:var(--ink);color:var(--ink)}
+.btn-outline:hover{background:var(--ink);color:var(--cream)}
+.btn-sm{padding:10px 18px;font-size:14.5px}
+.btn-xl{padding:18px 30px;font-size:18px}
+
+/* Hero */
+.hero{position:relative;color:#fff;overflow:hidden;background:var(--ink)}
+.hero-media{position:absolute;inset:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;transform:scale(1.04);animation:slowzoom 18s ease-out forwards}
+@keyframes slowzoom{to{transform:scale(1)}}
+.hero-media::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(100deg,rgba(29,20,16,.94) 0%,rgba(29,20,16,.78) 42%,rgba(29,20,16,.2) 100%),
+  linear-gradient(0deg,rgba(29,20,16,.6),transparent 40%)}
+.hero .wrap{position:relative;padding:110px 0 140px;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:end}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:12.5px;color:var(--marigold)}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
+.hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(44px,7.4vw,92px);line-height:.95;letter-spacing:-.025em;margin:18px 0 10px}
+.hero h1 em{font-style:italic;font-weight:500;color:var(--marigold)}
+.hero .sub{font-family:var(--serif);font-size:clamp(20px,2.4vw,28px);font-weight:500;margin:0 0 14px;color:#fde8c8}
+.hero p.lead{max-width:540px;font-size:18px;color:#eadccb;margin:0 0 32px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px}
+.hero-card{justify-self:end;background:rgba(251,243,228,.08);border:1px solid rgba(251,243,228,.2);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-radius:var(--radius);padding:24px 26px;max-width:340px;width:100%}
+.hero-card h2{font-family:var(--serif);font-size:20px;margin:0 0 14px;font-weight:700}
+.hero-card ul{list-style:none;margin:0;padding:0;display:grid;gap:12px;font-size:15px;color:#f1e3cf}
+.hero-card li{display:flex;gap:12px;align-items:flex-start}
+.hero-card svg{width:20px;height:20px;flex:none;color:var(--marigold);margin-top:2px}
+.hero-card a{color:#fff;font-weight:700}
+
+/* Papel picado */
+.picado{display:block;width:100%;height:56px;position:relative;z-index:2}
+.picado-top{margin-top:-56px}
+
+/* Sections */
+section{padding:100px 0}
+.section-head{max-width:680px;margin-bottom:52px}
+.section-head.center{margin-inline:auto;text-align:center}
+.section-head.center .eyebrow{justify-content:center}
+h2.title{font-family:var(--serif);font-weight:900;font-size:clamp(34px,4.6vw,56px);line-height:1.02;letter-spacing:-.02em;margin:14px 0 16px}
+h2.title em{font-style:italic;font-weight:500;color:var(--chile)}
+.section-head p{color:var(--muted);font-size:18px;margin:0}
+.eyebrow.dark{color:var(--chile)}
+
+/* Menu */
+.menu{background:var(--cream)}
+.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.dish{background:#fff;border-radius:var(--radius);padding:30px 28px 28px;position:relative;border:1px solid rgba(29,20,16,.07);transition:transform .25s ease, box-shadow .25s ease;overflow:hidden}
+.dish::after{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:var(--c,var(--chile))}
+.dish:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.dish .icon{width:54px;height:54px;border-radius:14px;display:grid;place-items:center;background:color-mix(in srgb,var(--c,var(--chile)) 14%,#fff);color:var(--c,var(--chile));margin-bottom:18px}
+.dish .icon svg{width:30px;height:30px}
+.dish h3{font-family:var(--serif);font-size:24px;margin:0 0 8px;font-weight:700;letter-spacing:-.01em}
+.dish p{margin:0;color:var(--muted);font-size:16px}
+.menu-note{margin-top:34px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;background:var(--sand);border-radius:var(--radius);padding:22px 28px}
+.menu-note p{margin:0;font-weight:600}
+
+/* Feature split */
+.split{background:var(--ink);color:var(--cream);position:relative;overflow:hidden}
+.split .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.split .photo-stack{position:relative;min-height:540px}
+.split .photo-stack figure{margin:0;position:absolute;border-radius:var(--radius);overflow:hidden;box-shadow:0 30px 60px -20px rgba(0,0,0,.6)}
+.split .photo-stack .p1{inset:0 18% 14% 0}
+.split .photo-stack .p2{right:0;bottom:0;width:52%;height:52%;border:6px solid var(--ink)}
+.split .photo-stack img{width:100%;height:100%;object-fit:cover}
+.split h2.title em{color:var(--marigold)}
+.split .section-head p{color:#d8c7b2}
+.reasons{display:grid;gap:22px;margin:0;padding:0;list-style:none}
+.reasons li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start}
+.reasons .num{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--chile);font-family:var(--serif);font-weight:900;font-size:20px}
+.reasons li:nth-child(2) .num{background:var(--agave)}
+.reasons li:nth-child(3) .num{background:var(--marigold);color:var(--ink)}
+.reasons li:nth-child(4) .num{background:var(--rosa)}
+.reasons h3{margin:4px 0 4px;font-size:19px;font-weight:800}
+.reasons p{margin:0;color:#d8c7b2;font-size:16px}
+.stock-tag{position:absolute;left:12px;bottom:12px;background:rgba(29,20,16,.72);color:#f5e8d2;font-size:11.5px;padding:4px 10px;border-radius:999px;letter-spacing:.03em}
+
+/* How it works */
+.steps{background:var(--sand)}
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:s}
+.step{background:var(--cream);border-radius:var(--radius);padding:34px 30px;position:relative;border:1px solid rgba(29,20,16,.06)}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:var(--serif);font-weight:900;font-size:64px;line-height:1;color:transparent;-webkit-text-stroke:1.5px var(--chile);display:block;margin-bottom:14px}
+.step h3{font-family:var(--serif);font-size:24px;margin:0 0 8px}
+.step p{margin:0;color:var(--muted)}
+.step a{color:var(--chile);font-weight:700}
+
+/* Gallery band */
+.band{padding:0;display:grid;grid-template-columns:1.3fr 1fr;height:420px}
+.band figure{margin:0;position:relative;overflow:hidden}
+.band img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.band figure:hover img{transform:scale(1.04)}
+.band .quote{background:var(--chile);color:#fff;display:flex;flex-direction:column;justify-content:center;padding:50px;position:relative;overflow:hidden}
+.band .quote p{font-family:var(--serif);font-size:clamp(26px,3vw,40px);line-height:1.1;margin:0 0 22px;font-weight:700;letter-spacing:-.01em;position:relative}
+.band .quote p em{color:var(--marigold);font-weight:500}
+.band .quote .sun{position:absolute;right:-70px;bottom:-70px;width:260px;height:260px;opacity:.16}
+
+/* Visit */
+.visit .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:50px;align-items:stretch}
+.visit-card{background:#fff;border-radius:22px;padding:42px;box-shadow:var(--shadow);border:1px solid rgba(29,20,16,.06)}
+.info{list-style:none;padding:0;margin:28px 0 32px;display:grid;gap:22px}
+.info li{display:grid;grid-template-columns:46px 1fr;gap:14px;align-items:start}
+.info .ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:var(--sand);color:var(--chile)}
+.info .ic svg{width:22px;height:22px}
+.info .label{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:var(--muted)}
+.info .val{font-size:19px;font-weight:700}
+.info a.val{text-decoration:none;color:var(--chile)}
+.info a.val:hover{text-decoration:underline}
+.visit-actions{display:flex;flex-wrap:wrap;gap:12px}
+.map-art{border-radius:22px;overflow:hidden;position:relative;min-height:420px;background:var(--agave);color:#fff;text-decoration:none;display:block}
+.map-art svg.grid{position:absolute;inset:0;width:100%;height:100%}
+.map-art .pin{position:absolute;left:50%;top:46%;transform:translate(-50%,-100%);display:flex;flex-direction:column;align-items:center;gap:10px}
+.map-art .pin svg{width:64px;height:64px;filter:drop-shadow(0 10px 14px rgba(0,0,0,.35));animation:bob 2.6s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-8px)}}
+.map-art .pin span{background:var(--cream);color:var(--ink);font-weight:800;padding:8px 14px;border-radius:999px;font-size:14px;white-space:nowrap;box-shadow:0 8px 20px -8px rgba(0,0,0,.5)}
+.map-art .cta{position:absolute;left:20px;right:20px;bottom:20px;background:rgba(29,20,16,.85);border-radius:14px;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;font-weight:700}
+.map-art:hover .cta{background:var(--ink)}
+.map-art .cta svg{width:22px;height:22px}
+
+/* Final CTA */
+.final{background:var(--ink);color:var(--cream);text-align:center;position:relative;overflow:hidden}
+.final h2.title{color:#fff}
+.final h2.title em{color:var(--marigold)}
+.final p{color:#d8c7b2;max-width:560px;margin:0 auto 32px;font-size:18px}
+.final .phone-big{display:block;font-family:var(--serif);font-weight:900;font-size:clamp(40px,7vw,84px);letter-spacing:-.02em;color:var(--marigold);text-decoration:none;margin:10px 0 30px;line-height:1}
+.final .phone-big:hover{color:#ffc24a}
+
+/* Footer */
+footer{background:#140d0a;color:#bfae9b;padding:44px 0 110px;font-size:14px}
+footer .wrap{display:grid;gap:16px}
+footer .top{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.08)}
+footer .brand-name{color:var(--cream);font-size:20px}
+footer a{color:var(--marigold)}
+footer p{margin:0;max-width:820px}
+
+/* Mobile call */
+.float-call{position:fixed;left:16px;right:16px;bottom:16px;z-index:60;display:none;justify-content:center;box-shadow:0 18px 36px -12px rgba(0,0,0,.55)}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease, transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:980px){
+  nav.main a:not(.btn){display:none}
+  .hero .wrap{grid-template-columns:1fr;padding:80px 0 120px}
+  .hero-card{justify-self:start}
+  .menu-grid{grid-template-columns:1fr 1fr}
+  .split .wrap{grid-template-columns:1fr;gap:50px}
+  .split .photo-stack{min-height:420px}
+  .steps-grid{grid-template-columns:1fr}
+  .band{grid-template-columns:1fr;height:auto}
+  .band figure{height:300px}
+  .visit .wrap{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  section{padding:72px 0}
+  header.site .wrap{height:62px}
+  .brand svg{width:34px;height:34px}
+  .brand-name{font-size:19px}
+  header.site .btn{display:none}
+  .hero .wrap{padding:64px 0 110px}
+  .hero p.lead{font-size:16.5px}
+  .hero-ctas .btn{width:100%;justify-content:center}
+  .menu-grid{grid-template-columns:1fr}
+  .split .photo-stack{min-height:340px}
+  .band .quote{padding:40px 24px}
+  .visit-card{padding:28px 22px}
+  .visit-actions .btn{width:100%;justify-content:center}
+  .map-art{min-height:340px}
+  .float-call{display:flex}
+  .preview-bar{font-size:12.5px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
 </head>
-<body class="l-bistro">
-<div class="pv-bar" role="note"><p><b>Free preview concept by Built By Cray.</b> Not the official website of Los Charros Mexican Restaurant<span class="pv-long">, and not made or endorsed by them</span>. <span class="pv-offer">$650 Black Friday price through November 30.</span></p><a href="https://calendar.app.google/K7QqcbLckjKjjZs19" target="_blank" rel="noopener">Claim this website</a></div>
-<nav class="nav"><div class="wrap nav-row"><a class="brand" href="#top">Los Charros Mexican Restaurant</a><div class="nav-links"><a href="#services">Menu</a><a href="#visit">Visit</a><a class="nav-call" href="tel:+17704835408"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>(770) 483-5408</span></a></div></div></nav>
-<main id="top">
-<header class="hero hero-photo"><img class="bg" src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=1800&h=1100&q=70" srcset="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=480&h=293&q=70 480w, https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=800&h=489&q=70 800w, https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=1200&h=733&q=70 1200w, https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=1600&h=978&q=70 1600w" sizes="(max-width: 760px) 100vw, 50vw" alt="Food photo for this preview" fetchpriority="high" decoding="async"><div class="shade"></div>
-      <div class="wrap hero-inner center"><p class="eyebrow light">Mexican kitchen · Conyers</p><h1>Come for the tacos. Stay for the salsa.</h1><p class="sub">Lunch specials, family dinners, and celebrations, all at one table.</p>
-      <div class="actions"><a class="btn" href="tel:+17704835408"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>Call for a table</span></a><a class="btn ghost" href="#services">See the menu</a></div></div></header>
-<section id="services" class="services"><div class="wrap">
-      <p class="eyebrow">On the table</p><h2>Made fresh, every day</h2>
-      <div class="svc-grid"><article class="svc"><span class="num">01</span><h3>Tacos &amp; burritos</h3><p>Carne asada, al pastor, chicken, or veggie, wrapped or served street style.</p></article><article class="svc"><span class="num">02</span><h3>Fajitas</h3><p>Brought out sizzling with peppers, onions, and warm tortillas.</p></article><article class="svc"><span class="num">03</span><h3>Lunch specials</h3><p>A full plate at a lunch price, quick enough for a work day.</p></article><article class="svc"><span class="num">04</span><h3>Celebrations</h3><p>Birthdays and big groups are always welcome. Call ahead for a table.</p></article></div>
-      </div></section>
+<body>
+<a class="skip" href="#main">Skip to content</a>
 
-<section class="about"><div class="wrap split">
-      <div class="about-img"><img class="" src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&h=1000&q=70" srcset="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=480&h=533&q=70 480w, https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&h=889&q=70 800w, https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&h=1333&q=70 1200w" sizes="(max-width: 760px) 100vw, 50vw" alt="On the table at a local business" loading="lazy" decoding="async"></div>
-      <div class="about-copy"><p class="eyebrow">About</p><h2>Proudly part of Conyers</h2>
-      <p class="lead">Good food, fair prices, and people who are glad you came in. That&#39;s the whole idea at Los Charros Mexican Restaurant, right here in Conyers.</p>
-      
-      <ul class="ticks"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z" fill="currentColor"/></svg>Locally owned</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z" fill="currentColor"/></svg>Friendly service</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z" fill="currentColor"/></svg>Right here in Conyers</li></ul>
-      </div></div></section>
-<section id="visit" class="visit"><div class="wrap split">
-      <div class="visit-copy"><p class="eyebrow">Visit us</p><h2>Find us in Conyers</h2>
-        <dl class="facts">
-          <div><dt>Phone</dt><dd><a href="tel:+17704835408">(770) 483-5408</a></dd></div>
-          <div><dt>Address</dt><dd>Conyers, GA, 30013</dd></div>
-          <div><dt>Hours</dt><dd>Call for today's hours</dd></div>
-        </dl>
-        <div class="actions"><a class="btn" href="tel:+17704835408"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>Call for a table</span></a><a class="btn ghost dark" href="https://www.google.com/maps/dir/?api=1&destination=Los%20Charros%20Mexican%20Restaurant%2C%20Conyers%2C%20GA%2C%2030013" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg><span>Directions</span></a></div>
+<div class="preview-bar" role="note">
+  <div class="wrap">
+    <span>Free preview concept by <strong>Built By Cray</strong>. Not the official website of Los Charros Mexican Restaurant. <span aria-hidden="true">·</span> $650 Black Friday price through Nov 30</span>
+    <a href="https://calendar.app.google/K7QqcbLckjKjjZs19" target="_blank" rel="noopener">Claim this website</a>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Los Charros Mexican Restaurant, back to top">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="23" fill="#c2391f"/>
+        <path d="M7 27c4-1 8-1.5 17-1.5S37 26 41 27c-2 2-8 3.2-17 3.2S9 29 7 27z" fill="#f2a516"/>
+        <path d="M16 26c0-6 3.5-11 8-11s8 5 8 11" fill="#f2a516"/>
+        <path d="M16 23.5h16" stroke="#c2391f" stroke-width="2"/>
+        <circle cx="24" cy="36" r="2" fill="#fbf3e4"/>
+      </svg>
+      <span class="brand-name">Los Charros<small>Mexican Restaurant · Conyers</small></span>
+    </a>
+    <nav class="main" aria-label="Main">
+      <a href="#menu">Menu</a>
+      <a href="#why">Why us</a>
+      <a href="#visit">Visit</a>
+      <a class="btn btn-chile btn-sm" href="tel:+17704835408">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+        (770) 483-5408
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" style="padding:0">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=1800&q=70" alt="Close-up of colorful tacos topped with fresh herbs and salsa (stock photo)">
+    </div>
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Conyers, Georgia</span>
+        <h1>Los Charros<br><em>Mexican</em> Restaurant</h1>
+        <p class="sub">Big flavor, warm welcome, right here in Conyers.</p>
+        <p class="lead">Sizzling plates, fresh tortillas and salsa you'll want to keep coming back for. Pull up a chair with family and friends, or call ahead and take it home.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-chile btn-xl" href="tel:+17704835408">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            Call (770) 483-5408
+          </a>
+          <a class="btn btn-ghost btn-xl" href="https://www.google.com/maps/search/?api=1&amp;query=Los%20Charros%20Mexican%20Restaurant%20Conyers" target="_blank" rel="noopener">Get directions</a>
+        </div>
       </div>
-      <div class="map"><iframe title="Map to Los Charros Mexican Restaurant" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Conyers%2C%20GA%2C%2030013&z=15&output=embed"></iframe></div>
-    </div></section>
+      <aside class="hero-card" aria-label="Quick info">
+        <h2>Before you head over</h2>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Conyers, GA 30013</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Call for current hours</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+17704835408">(770) 483-5408</a></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Papel picado banner -->
+  <svg class="picado picado-top" viewBox="0 0 1200 56" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <pattern id="pp" width="120" height="56" patternUnits="userSpaceOnUse">
+        <path d="M2 0h116v40l-14 10-14-10-14 10-14-10-14 10-14-10-14 10-14-10-14 10L2 40z" fill="var(--c)"/>
+      </pattern>
+    </defs>
+    <line x1="0" y1="1" x2="1200" y2="1" stroke="#1d1410" stroke-width="2"/>
+    <g>
+      <path d="M4 2h112v36l-14 10-14-10-14 10-14-10-14 10-14-10-14 10-14-10-14 10L4 38z" fill="#c2391f"/>
+      <path d="M124 2h112v36l-14 10-14-10-14 10-14-10-14 10-14-10-14 10-14-10-14 10-14-10z" fill="#f2a516"/>
+      <path d="M244 2h112v36l-14 10-14-10-14 10-14-10-14 10-14-10-14 10-14-10-14 10-14-10z" fill="#2f6b4f"/>
+      <path d="M364 2h112v36l-14 10-14-10-14 10-14-10-14 10-14-10-14 10-14-10-14 10-14-10z" fill="#d9487a"/>
+      <path d="M484 2h112v36l-14 10-14-10-14 10-14-10-14 10-14-10-14 10-14-10-14 10-14-10z" fill="#c2391f"/>
+      <path d="M604 2h112v36l-14 10-14-10-14 10-14-10-14 10-14-10-14 10-14-10-14 10-14-10z" fill="#f2a516"/>
+      <path d="M724 2h112v36l-14 10-14-10-14 10-14-10-14 10-14-10-14 10-14-10-14 10-14-10z" fill="#2f6b4f"/>
+      <path d="M844 2h112v36l-14 10-14-10-14 10-14-10-14 10-14-10-14 10-14-10-14 10-14-10z" fill="#d9487a"/>
+      <path d="M964 2h112v36l-14 10-14-10-14 10-14-10-14 10-14-10-14 10-14-10-14 10-14-10z" fill="#c2391f"/>
+      <path d="M1084 2h112v36l-14 10-14-10-14 10-14-10-14 10-14-10-14 10-14-10-14 10-14-10z" fill="#f2a516"/>
+    </g>
+    <g fill="#fbf3e4" opacity=".9">
+      <circle cx="60" cy="18" r="6"/><circle cx="180" cy="18" r="6"/><circle cx="300" cy="18" r="6"/><circle cx="420" cy="18" r="6"/><circle cx="540" cy="18" r="6"/><circle cx="660" cy="18" r="6"/><circle cx="780" cy="18" r="6"/><circle cx="900" cy="18" r="6"/><circle cx="1020" cy="18" r="6"/><circle cx="1140" cy="18" r="6"/>
+    </g>
+  </svg>
+
+  <section class="menu" id="menu">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow dark">On the table</span>
+        <h2 class="title">The Mexican favorites <em>you crave.</em></h2>
+        <p>Classic comfort dishes, made to order and served hot. Ask about today's full menu when you call or stop in.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="dish reveal" style="--c:#c2391f">
+          <div class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 22a12 12 0 0 1 24 0z"/><path d="M9 17c2-1 3 1 5 0s3 1 5 0 3 1 5 0"/></svg></div>
+          <h3>Tacos</h3>
+          <p>Warm tortillas, savory fillings and fresh toppings, the way tacos should be.</p>
+        </article>
+        <article class="dish reveal" style="--c:#2f6b4f">
+          <div class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="4" y="10" width="24" height="14" rx="3"/><path d="M8 10v14M14 10v14M20 10v14"/><path d="M10 6c0 1.5 1 1.5 1 3M16 5c0 1.5 1 1.5 1 3M22 6c0 1.5 1 1.5 1 3"/></svg></div>
+          <h3>Enchiladas</h3>
+          <p>Rolled, sauced and baked until bubbly, a true sit-down comfort plate.</p>
+        </article>
+        <article class="dish reveal" style="--c:#f2a516">
+          <div class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><ellipse cx="16" cy="20" rx="12" ry="5"/><path d="M10 15c0-3 2-3 2-6M16 14c0-3 2-3 2-6M22 15c0-3 2-3 2-6"/></svg></div>
+          <h3>Sizzling Fajitas</h3>
+          <p>You'll hear them before you see them. Grilled peppers, onions and all the fixings.</p>
+        </article>
+        <article class="dish reveal" style="--c:#d9487a">
+          <div class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="5" y="9" width="22" height="14" rx="7" transform="rotate(-20 16 16)"/><path d="M10 19l12-6"/></svg></div>
+          <h3>Burritos</h3>
+          <p>Generously stuffed and wrapped tight. A hearty meal you can count on.</p>
+        </article>
+        <article class="dish reveal" style="--c:#c2391f">
+          <div class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 26L16 6l12 20z"/><path d="M10 20h12M13 15h6"/></svg></div>
+          <h3>Quesadillas</h3>
+          <p>Golden, crisp and melty inside. Easy to share, easier to love.</p>
+        </article>
+        <article class="dish reveal" style="--c:#2f6b4f">
+          <div class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 16h24a12 8 0 0 1-24 0z"/><path d="M10 12l3-6 3 6M17 12l3-6 3 6"/></svg></div>
+          <h3>Chips &amp; Salsa</h3>
+          <p>The start of every good Mexican meal. Crunchy, fresh and made for dipping.</p>
+        </article>
+      </div>
+      <div class="menu-note reveal">
+        <p>Want to know what's on the menu today? Give us a call.</p>
+        <a class="btn btn-outline btn-sm" href="tel:+17704835408">Call (770) 483-5408</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="split" id="why">
+    <div class="wrap">
+      <div class="photo-stack reveal">
+        <figure class="p1">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1100&q=70" alt="Warm, inviting restaurant dining room with tables set for guests (stock photo)" loading="lazy">
+          <figcaption class="stock-tag">Stock photo for preview</figcaption>
+        </figure>
+        <figure class="p2">
+          <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=800&q=70" alt="Tortilla chips with salsa and guacamole on a table (stock photo)" loading="lazy">
+        </figure>
+      </div>
+      <div>
+        <div class="section-head reveal" style="margin-bottom:36px">
+          <span class="eyebrow">Why neighbors come back</span>
+          <h2 class="title">A little bit of <em>fiesta</em>, any night of the week.</h2>
+          <p>Los Charros is the kind of place you can count on when nobody feels like cooking.</p>
+        </div>
+        <ul class="reasons">
+          <li class="reveal"><span class="num" aria-hidden="true">1</span><div><h3>Made to order</h3><p>Plates come out hot and fresh from the kitchen, not sitting under a lamp.</p></div></li>
+          <li class="reveal"><span class="num" aria-hidden="true">2</span><div><h3>Room for the whole family</h3><p>Bring the kids, the grandparents and the friends from down the street.</p></div></li>
+          <li class="reveal"><span class="num" aria-hidden="true">3</span><div><h3>Easy to call ahead</h3><p>One quick phone call is all it takes to ask questions or plan your visit.</p></div></li>
+          <li class="reveal"><span class="num" aria-hidden="true">4</span><div><h3>Right here in Conyers</h3><p>Local, close to home and an easy drive from anywhere in Rockdale County.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow dark">Easy as uno, dos, tres</span>
+        <h2 class="title">Dinner, <em>sorted.</em></h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step reveal">
+          <h3>Call us</h3>
+          <p>Ring <a href="tel:+17704835408">(770) 483-5408</a> to check today's hours or ask about the menu.</p>
+        </div>
+        <div class="step reveal">
+          <h3>Come on in</h3>
+          <p>Tap "Get directions" and we'll see you in Conyers. Bring your appetite.</p>
+        </div>
+        <div class="step reveal">
+          <h3>Enjoy</h3>
+          <p>Sit back, dig in and leave happy. Then tell a friend about us.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-label="Photo and message">
+    <figure>
+      <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=1400&h=900&q=70" alt="Plate of tacos with lime and cilantro (stock photo)" loading="lazy">
+      <figcaption class="stock-tag">Stock photos for preview</figcaption>
+    </figure>
+    <div class="quote">
+      <svg class="sun" viewBox="0 0 100 100" aria-hidden="true"><g fill="#fff"><circle cx="50" cy="50" r="20"/><g id="r"><rect x="48" y="4" width="4" height="18" rx="2"/></g><use href="#r" transform="rotate(30 50 50)"/><use href="#r" transform="rotate(60 50 50)"/><use href="#r" transform="rotate(90 50 50)"/><use href="#r" transform="rotate(120 50 50)"/><use href="#r" transform="rotate(150 50 50)"/><use href="#r" transform="rotate(180 50 50)"/><use href="#r" transform="rotate(210 50 50)"/><use href="#r" transform="rotate(240 50 50)"/><use href="#r" transform="rotate(270 50 50)"/><use href="#r" transform="rotate(300 50 50)"/><use href="#r" transform="rotate(330 50 50)"/></g></svg>
+      <p>Good food. Good company. <em>¡Buen provecho,</em> Conyers.</p>
+      <div><a class="btn btn-sm" style="background:#fff;color:var(--chile)" href="tel:+17704835408">Call (770) 483-5408</a></div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap">
+      <div class="visit-card reveal">
+        <span class="eyebrow dark">Visit us</span>
+        <h2 class="title" style="margin-bottom:0">Find your seat at <em>Los Charros.</em></h2>
+        <ul class="info">
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><div class="label">Location</div><div class="val">Conyers, GA 30013</div></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><div><div class="label">Phone</div><a class="val" href="tel:+17704835408">(770) 483-5408</a></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><div class="label">Hours</div><div class="val">Call for current hours.</div></div></li>
+        </ul>
+        <div class="visit-actions">
+          <a class="btn btn-chile" href="tel:+17704835408">Call (770) 483-5408</a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=Los%20Charros%20Mexican%20Restaurant%20Conyers" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+      <a class="map-art reveal" href="https://www.google.com/maps/search/?api=1&amp;query=Los%20Charros%20Mexican%20Restaurant%20Conyers" target="_blank" rel="noopener" aria-label="Open Los Charros Mexican Restaurant in Google Maps (opens in a new tab)">
+        <svg class="grid" viewBox="0 0 600 460" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="600" height="460" fill="#2f6b4f"/>
+          <g fill="#3a7b5d"><rect x="30" y="30" width="150" height="110" rx="10"/><rect x="220" y="30" width="170" height="110" rx="10"/><rect x="430" y="30" width="150" height="110" rx="10"/><rect x="30" y="180" width="150" height="120" rx="10"/><rect x="430" y="180" width="150" height="120" rx="10"/><rect x="30" y="340" width="150" height="100" rx="10"/><rect x="220" y="340" width="170" height="100" rx="10"/><rect x="430" y="340" width="150" height="100" rx="10"/></g>
+          <rect x="220" y="180" width="170" height="120" rx="10" fill="#f2a516" opacity=".35"/>
+          <path d="M0 160h600M0 320h600M200 0v460M410 0v460" stroke="#fbf3e4" stroke-opacity=".55" stroke-width="10"/>
+          <path d="M-20 470L620 -10" stroke="#f2a516" stroke-opacity=".7" stroke-width="14"/>
+        </svg>
+        <div class="pin">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 23s8-7 8-13a8 8 0 1 0-16 0c0 6 8 13 8 13z" fill="#c2391f"/><circle cx="12" cy="10" r="3.2" fill="#fbf3e4"/></svg>
+          <span>Los Charros</span>
+        </div>
+        <div class="cta"><span>Open in Google Maps</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></div>
+      </a>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap reveal">
+      <span class="eyebrow">Hungry yet?</span>
+      <h2 class="title">Your table is <em>waiting.</em></h2>
+      <p>Call to check today's hours, ask about the menu, or let us know you're on the way.</p>
+      <a class="phone-big" href="tel:+17704835408">(770) 483-5408</a>
+      <a class="btn btn-chile btn-xl" href="tel:+17704835408">Call now</a>
+    </div>
+  </section>
 </main>
-<footer class="foot"><div class="wrap"><p class="brand">Los Charros Mexican Restaurant</p><p>Conyers, GA, 30013 · <a href="tel:+17704835408">(770) 483-5408</a></p>
-<p class="disc">Free website preview concept designed by <a href="https://builtbycray.com">Built By Cray</a>. This is not the official website of Los Charros Mexican Restaurant and was not made, approved, or endorsed by them. Name, phone, address, and rating come from public listings. Sample copy and stock photos (Unsplash) for preview only.</p></div></footer>
-<a class="m-call" href="tel:+17704835408"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>Call for a table</span></a><script>(()=>{const b=document.querySelector('.m-call');const f=()=>b.classList.toggle('show',scrollY>480);addEventListener('scroll',f,{passive:true});f()})()</script>
+
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <span class="brand-name">Los Charros Mexican Restaurant</span>
+      <span>Conyers, GA 30013 · <a href="tel:+17704835408">(770) 483-5408</a></span>
+    </div>
+    <p><a href="https://builtbycray.com" target="_blank" rel="noopener">Preview by Built By Cray</a></p>
+    <p>This is a free preview concept and is not the official website of Los Charros Mexican Restaurant. Name, phone and address come from public listings. Stock photos from Unsplash.</p>
+  </div>
+</footer>
+
+<a class="btn btn-chile float-call" href="tel:+17704835408" aria-label="Call Los Charros at (770) 483-5408">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+  Call (770) 483-5408
+</a>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(e){e.classList.add('in')});return;
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
 </body>
 </html>
