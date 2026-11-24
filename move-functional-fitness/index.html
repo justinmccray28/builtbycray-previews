@@ -4,162 +4,513 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Move Functional Fitness | Website preview concept by Built By Cray</title>
-<meta name="description" content="A free website preview concept for Move Functional Fitness, designed by Built By Cray. Not the official website of Move Functional Fitness.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://images.unsplash.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;700&display=swap">
+<title>Move Functional Fitness | Preview concept by Built By Cray</title>
+<meta name="description" content="Move Functional Fitness in Decatur, GA. Functional strength and conditioning for everyday life. Visit us at 202 Laredo Drive or call (404) 371-1355.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0b0b0b;--ink:#f5f5f5;--muted:#a3a3a3;--accent:#c6ff3d;--dark:#000000;--soft:#171717;--on-accent:#fff;--c2:#c6ff3d;--c3:#c6ff3d;--c4:#c6ff3d;--pop:#c6ff3d;--display:'Archivo Black', Impact, sans-serif;--body:'Archivo', system-ui, sans-serif;--r:14px}
-*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#111312;
+  --ink-2:#1b1e1c;
+  --ink-3:#2a2e2b;
+  --bone:#f3efe6;
+  --bone-2:#e7e1d4;
+  --signal:#ff5b23;
+  --signal-dk:#d9430f;
+  --sage:#9fb39a;
+  --muted:#a9aba5;
+  --line:rgba(243,239,230,.14);
+  --display:"Archivo", "Arial Narrow", system-ui, sans-serif;
+  --body:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, monospace;
+  --wrap:min(1200px, 100% - 2.5rem);
+  --radius:14px;
+}
+*,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
-img{display:block;max-width:100%}
+body{margin:0;background:var(--ink);color:var(--bone);font-family:var(--body);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip}
+img{max-width:100%;display:block}
 a{color:inherit}
-.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
-h1,h2,h3{font-family:var(--display);line-height:1.08;font-weight:700;letter-spacing:-.01em}
-h1{font-size:clamp(40px,6.2vw,76px)}
-h2{font-size:clamp(30px,4vw,48px);margin-bottom:18px}
-h3{font-size:21px;margin-bottom:6px}
-.eyebrow{font-family:var(--body);text-transform:uppercase;letter-spacing:.16em;font-size:12.5px;font-weight:600;color:var(--accent);margin-bottom:14px}
-.eyebrow.light{color:#fff;opacity:.85}
-.sub{font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:560px;margin:18px 0 30px}
-.lead{font-size:18px;color:var(--muted);margin-bottom:20px}
-section{padding:clamp(64px,9vw,110px) 0}
-.split{display:grid;gap:clamp(28px,5vw,64px);align-items:center}
-@media(min-width:860px){.split{grid-template-columns:1fr 1fr}}
-.actions{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:600;font-size:16px;padding:15px 24px;border-radius:999px;border:2px solid var(--accent);transition:transform .15s ease,box-shadow .15s ease}
-.btn:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(0,0,0,.15)}
-.btn svg{width:18px;height:18px}
-.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
-.btn.ghost.dark{color:var(--ink);border-color:currentColor}
-.btn.light{background:#fff;color:var(--dark);border-color:#fff}
-.btn.block{width:100%;justify-content:center;margin-top:10px}
-.rating{display:inline-flex;align-items:center;gap:6px;font-size:15px}
-.rating svg{width:18px;height:18px;color:#f5b301}
-.hero-rating{margin-top:22px}
-.ticks{list-style:none;display:grid;gap:10px;margin:8px 0 26px}
-.ticks li{display:flex;gap:10px;align-items:center;font-weight:500}
-.ticks svg{width:20px;height:20px;color:var(--accent);flex:none}
-.ticks.small{font-size:14px;margin:16px 0 0}
-/* preview bar */
-.pv-bar{position:relative;z-index:30;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;background:#0d0d0f;color:#d6d6db;font:13px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;padding:8px 16px;text-align:center}
-.pv-bar b{color:#fff;font-weight:600}
-.pv-offer{color:#ffd166}
-.pv-bar a{background:#ffd166;color:#111;text-decoration:none;font-weight:700;padding:5px 12px;border-radius:999px;white-space:nowrap;font-size:12.5px}
-@media(max-width:700px){.pv-long{display:none}.pv-bar{font-size:12px;gap:8px;padding:7px 12px}}
-/* nav */
-.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid color-mix(in srgb,var(--ink) 8%,transparent)}
-.nav-row{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
-.brand{font-family:var(--display);font-weight:700;font-size:22px;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:60vw}
-.nav-links{display:flex;align-items:center;gap:26px;font-size:15px;font-weight:500}
-.nav-links a{text-decoration:none;opacity:.85}
-.nav-call{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--bg)!important;padding:9px 16px;border-radius:999px;opacity:1!important}
-.nav-call svg{width:16px;height:16px}
-@media(max-width:760px){.nav-links a:not(.nav-call){display:none}.nav-call span{display:none}.nav-call{padding:10px}}
-/* services */
-.svc-grid{display:grid;gap:18px;margin-top:34px}
-@media(min-width:700px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1000px){.svc-grid{grid-template-columns:repeat(${n},1fr)}}
-.svc{background:var(--soft);border-radius:var(--r);padding:28px}
-.svc .num{display:block;font-family:var(--display);color:var(--accent);font-size:15px;margin-bottom:14px;letter-spacing:.08em}
-.svc p{color:var(--muted);font-size:16px}
-/* about */
-.about-img img{width:100%;aspect-ratio:9/10;object-fit:cover;border-radius:calc(var(--r) * 1.4)}
-.quote{margin:-4px 0 18px}
-/* gallery */
-.gallery{padding-top:0}
-.g-grid{display:grid;gap:14px;grid-template-columns:1fr 1fr}
-.g{overflow:hidden;border-radius:var(--r)}
-.g img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/2}
-.g0{grid-column:1/-1}
-@media(min-width:860px){.g-grid{grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr}.g0{grid-column:auto;grid-row:1/3}.g0 img{aspect-ratio:auto}}
-.stock-note{font-size:12.5px;color:var(--muted);margin-top:12px;text-align:right}
-/* steps */
-.steps{background:var(--soft)}
-.step-grid{display:grid;gap:22px;margin-top:30px}
-@media(min-width:800px){.step-grid{grid-template-columns:repeat(3,1fr)}}
-.step{background:var(--bg);border-radius:var(--r);padding:28px}
-.step span{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--accent);color:var(--on-accent);font-weight:800;margin-bottom:16px}
-.step p{color:var(--muted)}
-/* visit */
-.facts{display:grid;gap:16px;margin:10px 0 28px}
-.facts div{display:grid;grid-template-columns:90px 1fr;gap:12px;padding-bottom:14px;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent)}
-.facts dt{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);padding-top:3px}
-.facts dd a{text-decoration:none;font-weight:600}
-.map iframe{width:100%;height:380px;border:0;border-radius:calc(var(--r) * 1.2);filter:saturate(.9)}
-/* cta */
-.cta-band{background:var(--dark);color:#fff;padding:clamp(48px,7vw,80px) 0}
-.cta-band .wrap{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
-.cta-band h2{margin:0;color:#fff}
-/* footer */
-.foot{background:var(--dark);color:color-mix(in srgb,#fff 70%,transparent);padding:44px 0 90px;font-size:14px}
-.foot .brand{color:#fff;display:block;margin-bottom:6px}
-.foot a{color:#fff}
-.disc{margin-top:18px;font-size:12.5px;opacity:.75;max-width:760px}
-.m-call{display:none}
-.g-two{grid-template-columns:1fr 1fr}.g-two .g img{aspect-ratio:3/2}
-@media(min-width:860px){.g-two{grid-template-columns:1fr 1fr;grid-template-rows:auto}}
-@media(max-width:760px){.m-call{display:flex;position:fixed;left:14px;right:14px;bottom:14px;z-index:40;align-items:center;justify-content:center;gap:10px;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:700;padding:16px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,.25);opacity:0;transform:translateY(20px);pointer-events:none;transition:.25s}.m-call.show{opacity:1;transform:none;pointer-events:auto}.m-call svg{width:18px;height:18px}}
-/* shared hero bits */
-.hero{position:relative}
-.hero-photo,.hero-card{color:#fff;overflow:hidden}
-.hero-photo .bg,.hero-card .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.7))}
-.hero-inner{position:relative;padding:clamp(90px,14vw,170px) 0 clamp(80px,12vw,140px)}
-.hero-photo .sub,.hero-card .sub{color:rgba(255,255,255,.88)}
-.hero-split .btn.ghost,.hero-arch .btn.ghost,.hero-kids .btn.ghost,.hero-bloom .btn.ghost,.hero-fresh .btn.ghost{color:var(--ink);border-color:currentColor}
-.center{text-align:center}.center .sub{margin-inline:auto}.center .actions{justify-content:center}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:0;background:var(--signal);color:var(--ink);padding:.6rem 1rem;z-index:100;font-weight:600}
+.skip:focus{left:1rem;top:1rem}
+.wrap{width:var(--wrap);margin-inline:auto}
+.eyebrow{font-family:var(--mono);font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--signal);display:inline-flex;align-items:center;gap:.6rem}
+.eyebrow::before{content:"";width:22px;height:2px;background:currentColor}
+h1,h2,h3{font-family:var(--display);font-stretch:125%;font-weight:850;line-height:.95;letter-spacing:-.02em;margin:0;text-transform:uppercase}
+h2{font-size:clamp(2.2rem,5.4vw,4.4rem)}
+h3{font-size:1.35rem;font-stretch:110%;line-height:1.05;letter-spacing:-.01em}
+p{margin:0}
 
-.hero-studio{padding-top:clamp(50px,7vw,90px)}
-.l-studio h1{text-transform:uppercase;font-size:clamp(48px,9vw,128px);line-height:.92;font-weight:400}
-.l-studio h2{text-transform:uppercase;font-weight:400}
-.studio-media{margin:36px 0 0}
-.studio-media img{width:100%;height:clamp(260px,42vw,520px);object-fit:cover}
-.studio-row{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;padding:28px 0 10px}
-.studio-row .sub{margin:0}
-.l-studio .btn{color:#000;border-radius:0;text-transform:uppercase;font-weight:700;letter-spacing:.06em}
-.l-studio .svc{background:transparent;border-top:2px solid var(--accent);border-radius:0;padding:24px 0}
-.l-studio .svc h3{font-family:var(--display);text-transform:uppercase;font-weight:400;font-size:24px}
-.l-studio .about-img img{border-radius:0}
-.l-studio .cta-band{background:var(--accent);color:#000}.l-studio .cta-band h2{color:#000}
-.l-studio .btn.light{background:#000;color:#fff;border-color:#000}
-.l-studio .map iframe{filter:grayscale(1) invert(.9)}
-.l-studio .nav-call{background:var(--accent);color:#000!important}</style>
+/* Disclosure bar */
+.preview-bar{background:var(--bone);color:var(--ink);font-size:.82rem;line-height:1.4}
+.preview-bar .wrap{display:flex;align-items:center;justify-content:center;gap:.4rem 1rem;flex-wrap:wrap;padding:.55rem 0;text-align:center}
+.preview-bar strong{font-weight:600}
+.preview-bar .deal{color:var(--signal-dk);font-weight:600}
+.claim{display:inline-block;background:var(--ink);color:var(--bone);text-decoration:none;font-weight:600;padding:.3rem .8rem;border-radius:999px;font-size:.78rem;white-space:nowrap}
+.claim:hover{background:var(--signal);color:var(--ink)}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(17,19,18,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:70px}
+.logo{display:flex;align-items:center;gap:.65rem;text-decoration:none}
+.logo-mark{width:38px;height:38px;flex:none}
+.logo-text{font-family:var(--display);font-stretch:125%;font-weight:900;text-transform:uppercase;font-size:1.15rem;line-height:.9;letter-spacing:-.01em}
+.logo-text small{display:block;font-family:var(--mono);font-stretch:100%;font-weight:500;font-size:.58rem;letter-spacing:.22em;color:var(--muted);margin-top:.3rem}
+.nav{display:flex;align-items:center;gap:2rem}
+.nav a{text-decoration:none;font-size:.9rem;font-weight:500;color:var(--bone-2);position:relative}
+.nav a::after{content:"";position:absolute;left:0;bottom:-4px;width:100%;height:2px;background:var(--signal);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;font-family:var(--display);font-stretch:112%;font-weight:800;text-transform:uppercase;letter-spacing:.02em;text-decoration:none;border-radius:999px;transition:transform .2s ease, background .2s ease, color .2s ease, box-shadow .2s ease}
+.btn svg{width:1.05em;height:1.05em;flex:none}
+.btn-signal{background:var(--signal);color:var(--ink)}
+.btn-signal:hover{background:var(--bone);transform:translateY(-2px)}
+.btn-ghost{border:1.5px solid var(--line);color:var(--bone)}
+.btn-ghost:hover{border-color:var(--bone);transform:translateY(-2px)}
+.btn-sm{font-size:.85rem;padding:.65rem 1.1rem}
+.btn-lg{font-size:clamp(1rem,2.2vw,1.25rem);padding:1.15rem 1.9rem}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;isolation:isolate;padding:clamp(3.5rem,8vw,7rem) 0 clamp(3rem,6vw,5rem)}
+.hero-media{position:absolute;inset:0;z-index:-2}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 35%;filter:grayscale(.35) contrast(1.05)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:
+  linear-gradient(90deg,rgba(17,19,18,.97) 0%,rgba(17,19,18,.86) 42%,rgba(17,19,18,.35) 100%),
+  linear-gradient(0deg,rgba(17,19,18,1) 0%,rgba(17,19,18,0) 35%)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:3rem;align-items:end}
+.hero h1{font-size:clamp(3rem,9.2vw,8.2rem);margin:1.2rem 0 1.4rem}
+.hero h1 .out{color:transparent;-webkit-text-stroke:2px var(--bone)}
+.hero h1 .hot{color:var(--signal)}
+.hero-lede{font-size:clamp(1.05rem,1.6vw,1.25rem);color:var(--bone-2);max-width:34rem;margin-bottom:2rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.9rem;align-items:center}
+.hero-card{background:rgba(27,30,28,.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem}
+.hero-card dl{margin:0;display:grid;gap:1rem}
+.hero-card dt{font-family:var(--mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.hero-card dd{margin:.2rem 0 0;font-weight:500}
+.hero-card dd a{text-decoration:none;border-bottom:1px solid var(--signal)}
+.hero-card dd a:hover{color:var(--signal)}
+.stock-note{font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:2.5rem}
+
+/* Marquee */
+.ticker{background:var(--signal);color:var(--ink);overflow:hidden;border-block:1px solid var(--ink);transform:rotate(-1.2deg);margin:1rem -2vw 0;width:104vw}
+.ticker-track{display:flex;width:max-content;animation:slide 32s linear infinite}
+.ticker span{font-family:var(--display);font-stretch:125%;font-weight:900;text-transform:uppercase;font-size:clamp(1.3rem,3vw,2rem);padding:.7rem 1.4rem;display:inline-flex;align-items:center;gap:1.4rem;white-space:nowrap}
+.ticker span::after{content:"";width:.55em;height:.55em;background:var(--ink);transform:rotate(45deg)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* Sections */
+section{scroll-margin-top:80px}
+.section{padding:clamp(4.5rem,9vw,8rem) 0}
+.section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:2rem 4rem;align-items:end;margin-bottom:clamp(2.5rem,5vw,4rem)}
+.section-head h2{margin-top:1rem}
+.section-head p{color:var(--bone-2);max-width:32rem}
+
+/* Programs */
+.programs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+.program{background:var(--ink-2);border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem 1.4rem 1.8rem;display:flex;flex-direction:column;gap:1rem;transition:transform .3s ease,border-color .3s ease,background .3s ease;min-height:300px}
+.program:hover{transform:translateY(-6px);border-color:var(--signal);background:var(--ink-3)}
+.program .num{font-family:var(--mono);font-size:.75rem;color:var(--muted)}
+.program svg{width:48px;height:48px;color:var(--signal)}
+.program p{color:var(--bone-2);font-size:.97rem;margin-top:auto}
+
+/* Split / why */
+.why{background:var(--bone);color:var(--ink)}
+.why .eyebrow{color:var(--signal-dk)}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2.5rem,6vw,5.5rem);align-items:center}
+.photo-stack{position:relative;aspect-ratio:4/5}
+.photo-stack figure{margin:0;position:absolute;overflow:hidden;border-radius:var(--radius);box-shadow:0 30px 60px -25px rgba(0,0,0,.45)}
+.photo-stack figure img{width:100%;height:100%;object-fit:cover}
+.photo-stack .p1{inset:0 18% 14% 0}
+.photo-stack .p2{width:52%;aspect-ratio:1;right:0;bottom:0;border:6px solid var(--bone)}
+.stamp{position:absolute;left:-14px;bottom:8%;width:120px;height:120px;z-index:2;animation:spin 22s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.why h2{margin:1rem 0 1.4rem}
+.why .lede{font-size:1.15rem;color:#3a3d39;margin-bottom:2rem}
+.pillars{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.pillars li{display:grid;grid-template-columns:auto 1fr;gap:1.1rem;padding:1.25rem 0;border-top:1.5px solid rgba(17,19,18,.14)}
+.pillars li:last-child{border-bottom:1.5px solid rgba(17,19,18,.14)}
+.pillars .tick{width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--signal);display:grid;place-items:center;flex:none}
+.pillars .tick svg{width:16px;height:16px}
+.pillars h3{font-size:1.1rem;margin-bottom:.3rem}
+.pillars p{color:#3a3d39;font-size:.98rem}
+
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;counter-reset:step}
+.step{position:relative;padding:2rem 1.6rem;border-top:3px solid var(--signal);background:linear-gradient(180deg,var(--ink-2),transparent)}
+.step::before{counter-increment:step;content:"0" counter(step);font-family:var(--display);font-stretch:125%;font-weight:900;font-size:4.5rem;line-height:1;color:transparent;-webkit-text-stroke:1.5px rgba(243,239,230,.35);display:block;margin-bottom:1.2rem}
+.step h3{margin-bottom:.6rem}
+.step p{color:var(--bone-2)}
+
+/* Gallery band */
+.band{position:relative;min-height:clamp(340px,52vw,560px);display:grid;place-items:center;overflow:hidden;isolation:isolate;text-align:center}
+.band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:grayscale(.5)}
+.band::before{content:"";position:absolute;inset:0;background:rgba(17,19,18,.62);z-index:-1}
+.band blockquote{margin:0;font-family:var(--display);font-stretch:125%;font-weight:900;text-transform:uppercase;font-size:clamp(2rem,6.5vw,5.4rem);line-height:.95;letter-spacing:-.02em;max-width:14ch}
+.band blockquote em{font-style:normal;color:var(--signal)}
+
+/* Visit */
+.visit-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:1.25rem}
+.visit-card{background:var(--ink-2);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(1.6rem,4vw,2.8rem)}
+.visit-card h2{font-size:clamp(2rem,4.6vw,3.6rem);margin:1rem 0 2rem}
+.info{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.6rem;margin-bottom:2.2rem}
+.info h3{font-family:var(--mono);font-stretch:100%;font-weight:500;font-size:.72rem;letter-spacing:.16em;color:var(--muted);margin-bottom:.45rem}
+.info p,.info a{font-size:1.08rem;font-weight:500}
+.info a{text-decoration:none;border-bottom:1px solid var(--signal)}
+.info a:hover{color:var(--signal)}
+.visit-actions{display:flex;flex-wrap:wrap;gap:.8rem}
+.map-card{position:relative;border-radius:var(--radius);overflow:hidden;min-height:360px;background:var(--ink-3);text-decoration:none;display:block;border:1px solid var(--line)}
+.map-card svg.map{position:absolute;inset:0;width:100%;height:100%}
+.map-pin{position:absolute;left:50%;top:46%;transform:translate(-50%,-100%);width:54px;height:54px;filter:drop-shadow(0 10px 14px rgba(0,0,0,.5))}
+.pulse{position:absolute;left:50%;top:46%;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;background:var(--signal);opacity:.6;animation:pulse 2.2s ease-out infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.6}100%{transform:scale(5);opacity:0}}
+.map-label{position:absolute;left:1rem;right:1rem;bottom:1rem;background:var(--bone);color:var(--ink);border-radius:10px;padding:.9rem 1.1rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;font-weight:600;font-size:.95rem}
+.map-label span{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--signal-dk);white-space:nowrap}
+.map-card:hover .map-label{background:var(--signal)}
+.map-card:hover .map-label span{color:var(--ink)}
+
+/* CTA */
+.cta{padding:clamp(4rem,8vw,6.5rem) 0;background:var(--signal);color:var(--ink);text-align:center;position:relative;overflow:hidden}
+.cta h2{font-size:clamp(2.6rem,8vw,6.6rem);margin-bottom:1.2rem}
+.cta p{font-size:1.15rem;max-width:34rem;margin:0 auto 2.2rem;color:#2a1a12}
+.btn-ink{background:var(--ink);color:var(--bone)}
+.btn-ink:hover{background:var(--bone);color:var(--ink);transform:translateY(-2px)}
+
+/* Footer */
+footer{padding:3rem 0 6rem;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted)}
+.foot-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;margin-bottom:2rem}
+.foot-top address{font-style:normal;line-height:1.7}
+.foot-top a{color:var(--bone);text-decoration:none}
+.foot-top a:hover{color:var(--signal)}
+.disclaimer{border-top:1px solid var(--line);padding-top:1.5rem;font-size:.82rem;line-height:1.6;max-width:62rem}
+.disclaimer a{color:var(--bone);font-weight:600}
+.disclaimer a:hover{color:var(--signal)}
+
+/* Floating call (mobile) */
+.float-call{position:fixed;right:1rem;bottom:1rem;z-index:60;display:none;box-shadow:0 14px 30px -10px rgba(255,91,35,.7)}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* Responsive */
+@media (max-width:1024px){
+  .programs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero-grid{grid-template-columns:1fr;gap:2.5rem}
+  .hero-card{max-width:520px}
+}
+@media (max-width:860px){
+  .nav-links{display:none}
+  .section-head,.split,.visit-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .photo-stack{max-width:520px;width:100%;margin-inline:auto}
+  .float-call{display:inline-flex}
+}
+@media (max-width:560px){
+  .site-header .wrap{height:62px}
+  .logo-text{font-size:1rem}
+  .logo-text small{display:none}
+  .logo-mark{width:32px;height:32px}
+  .header-call .label-long{display:none}
+  .programs{grid-template-columns:1fr}
+  .program{min-height:0}
+  .info{grid-template-columns:1fr}
+  .hero h1 .out{-webkit-text-stroke:1.5px var(--bone)}
+  .btn-lg{width:100%}
+  .hero-ctas .btn-ghost{width:100%}
+  .visit-actions .btn{width:100%}
+  .map-card{min-height:300px}
+  .stamp{width:92px;height:92px;left:-6px}
+}
+@media (min-width:561px){ .header-call .label-short{display:none} }
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+/* Built By Cray QA fix: keep marquee/ribbon from causing sideways scroll */
+html,body{overflow-x:clip}
+</style>
 </head>
-<body class="l-studio">
-<div class="pv-bar" role="note"><p><b>Free preview concept by Built By Cray.</b> Not the official website of Move Functional Fitness<span class="pv-long">, and not made or endorsed by them</span>. <span class="pv-offer">$650 Black Friday price through November 30.</span></p><a href="https://calendar.app.google/K7QqcbLckjKjjZs19" target="_blank" rel="noopener">Claim this website</a></div>
-<nav class="nav"><div class="wrap nav-row"><a class="brand" href="#top">Move Functional Fitness</a><div class="nav-links"><a href="#services">Services</a><a href="#visit">Visit</a><a class="nav-call" href="tel:+14043711355"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>(404) 371-1355</span></a></div></div></nav>
-<main id="top">
-<header class="hero hero-studio"><div class="wrap"><p class="eyebrow">Training &amp; fitness · Decatur</p><h1>Train with people who push you.</h1></div>
-      <div class="studio-media"><img class="" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1800&h=900&q=70" srcset="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=480&h=240&q=70 480w, https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&h=400&q=70 800w, https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&h=600&q=70 1200w, https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&h=800&q=70 1600w" sizes="(max-width: 760px) 100vw, 50vw" alt="Training photo for this preview" fetchpriority="high" decoding="async"></div>
-      <div class="wrap studio-row"><p class="sub">Coached classes and personal training for every level, from first-timers to athletes.</p><div class="actions"><a class="btn" href="tel:+14043711355"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>Book a free intro</span></a></div></div></header>
-<section id="services" class="services"><div class="wrap">
-      <p class="eyebrow">Ways to train</p><h2>Ways to train</h2>
-      <div class="svc-grid"><article class="svc"><span class="num">01</span><h3>Group classes</h3><p>High-energy, coached workouts that scale to any level.</p></article><article class="svc"><span class="num">02</span><h3>Personal training</h3><p>One-on-one programming built around your goals.</p></article><article class="svc"><span class="num">03</span><h3>Strength &amp; mobility</h3><p>Move better, lift more, and stay pain free.</p></article><article class="svc"><span class="num">04</span><h3>Intro sessions</h3><p>New here? Start with a free intro and meet the coaches.</p></article></div>
-      </div></section>
-<section class="about"><div class="wrap split">
-      <div class="about-img"><img class="" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&h=1000&q=70" srcset="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=480&h=533&q=70 480w, https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&h=889&q=70 800w, https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&h=1333&q=70 1200w" sizes="(max-width: 760px) 100vw, 50vw" alt="Ways to train at a local business" loading="lazy" decoding="async"></div>
-      <div class="about-copy"><p class="eyebrow">About</p><h2>Built different</h2>
-      <p class="lead">Move Functional Fitness is a training community in Decatur where everyone gets coached, everyone gets cheered on, and nobody gets lost in the crowd.</p>
-      
-      <ul class="ticks"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z" fill="currentColor"/></svg>Locally owned</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z" fill="currentColor"/></svg>Friendly service</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z" fill="currentColor"/></svg>Right here in Decatur</li></ul>
-      </div></div></section>
-<section class="cta-band"><div class="wrap"><h2>We'd love to see you.</h2><a class="btn light" href="tel:+14043711355"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>Book a free intro</span></a></div></section>
-<section id="visit" class="visit"><div class="wrap split">
-      <div class="visit-copy"><p class="eyebrow">Visit us</p><h2>Find us in Decatur</h2>
-        <dl class="facts">
-          <div><dt>Phone</dt><dd><a href="tel:+14043711355">(404) 371-1355</a></dd></div>
-          <div><dt>Address</dt><dd>202 Laredo Drive, Decatur, GA, 30030</dd></div>
-          <div><dt>Hours</dt><dd>Call for today's hours</dd></div>
-        </dl>
-        <div class="actions"><a class="btn" href="tel:+14043711355"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>Book a free intro</span></a><a class="btn ghost dark" href="https://www.google.com/maps/dir/?api=1&destination=Move%20Functional%20Fitness%2C%20202%20Laredo%20Drive%2C%20Decatur%2C%20GA%2C%2030030" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg><span>Directions</span></a></div>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="preview-bar" role="note" aria-label="Preview disclosure">
+  <div class="wrap">
+    <span><strong>Free preview concept by Built By Cray.</strong> Not the official website of Move Functional Fitness. <span class="deal">$650 Black Friday price through Nov 30.</span></span>
+    <a class="claim" href="https://calendar.app.google/K7QqcbLckjKjjZs19" target="_blank" rel="noopener">Claim this website</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Move Functional Fitness, back to top">
+      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <rect width="40" height="40" rx="9" fill="#ff5b23"/>
+        <path d="M8 29V11l7 10 5-7 5 7 7-10v18" fill="none" stroke="#111312" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="logo-text">Move<small>Functional Fitness · Decatur</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <div class="nav nav-links">
+        <a href="#train">Training</a>
+        <a href="#why">Why Move</a>
+        <a href="#start">Get started</a>
+        <a href="#visit">Visit</a>
       </div>
-      <div class="map"><iframe title="Map to Move Functional Fitness" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=202%20Laredo%20Drive%2C%20Decatur%2C%20GA%2C%2030030&z=15&output=embed"></iframe></div>
-    </div></section>
+      <a class="btn btn-signal btn-sm header-call" href="tel:+14043711355">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+        <span class="label-long">(404) 371-1355</span><span class="label-short">Call</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1800&q=70" alt="Athlete training with weights in a gym (stock photo)" fetchpriority="high">
+    </div>
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow">Move Functional Fitness · Decatur, GA</span>
+          <h1 id="hero-title">Train <span class="out">for</span><br>real <span class="hot">life.</span></h1>
+          <p class="hero-lede">Strength, mobility and conditioning built around the way you actually move: lifting, carrying, bending, climbing and keeping up. Right here in Decatur.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-signal btn-lg" href="tel:+14043711355">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+              Call (404) 371-1355
+            </a>
+            <a class="btn btn-ghost btn-lg" href="#visit">Plan a visit</a>
+          </div>
+        </div>
+        <aside class="hero-card reveal" aria-label="Quick info">
+          <dl>
+            <div><dt>Find us</dt><dd>202 Laredo Drive<br>Decatur, GA 30030</dd></div>
+            <div><dt>Hours</dt><dd>Call for current hours.</dd></div>
+            <div><dt>Talk to us</dt><dd><a href="tel:+14043711355">(404) 371-1355</a></dd></div>
+          </dl>
+        </aside>
+      </div>
+      <p class="stock-note">Stock photos for preview</p>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Squat</span><span>Hinge</span><span>Push</span><span>Pull</span><span>Carry</span><span>Rotate</span><span>Lunge</span><span>Breathe</span>
+      <span>Squat</span><span>Hinge</span><span>Push</span><span>Pull</span><span>Carry</span><span>Rotate</span><span>Lunge</span><span>Breathe</span>
+    </div>
+  </div>
+
+  <section class="section" id="train" aria-labelledby="train-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">How we train</span>
+          <h2 id="train-title">Fitness that<br>carries over.</h2>
+        </div>
+        <p>Functional training is about more than how you look in the mirror. It's about feeling strong picking up your kids, hauling groceries up the stairs, and staying active for the long run. Call to ask which options fit you best.</p>
+      </div>
+
+      <div class="programs">
+        <article class="program reveal">
+          <span class="num">01</span>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 24h36M10 16v16M14 13v22M34 13v22M38 16v16"/></svg>
+          <h3>Strength training</h3>
+          <p>Foundational lifts and progressions that build real-world strength, coached with an eye on good form.</p>
+        </article>
+        <article class="program reveal">
+          <span class="num">02</span>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 26h8l5-12 8 22 6-14 3 4h10"/></svg>
+          <h3>Conditioning</h3>
+          <p>Work that builds your engine: intervals, circuits and movement that leave you breathing hard and feeling good.</p>
+        </article>
+        <article class="program reveal">
+          <span class="num">03</span>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="9" r="4"/><path d="M24 14v12M12 20c6 3 18 3 24 0M24 26l-8 15M24 26l8 15"/></svg>
+          <h3>Mobility &amp; movement</h3>
+          <p>Range of motion, balance and control, so you move with less stiffness and more confidence day to day.</p>
+        </article>
+        <article class="program reveal">
+          <span class="num">04</span>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="14" r="5"/><circle cx="33" cy="16" r="4"/><path d="M6 38c0-7 4.5-12 10-12s10 5 10 12M27 38c0-5 2.7-9 6-9s6 4 7 9"/></svg>
+          <h3>Coached sessions</h3>
+          <p>Train alongside others or ask about one-on-one options. Either way, you'll have guidance and a plan.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why" id="why" aria-labelledby="why-title">
+    <div class="wrap split">
+      <div class="photo-stack reveal">
+        <figure class="p1"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&h=1200&q=70" alt="Weights and equipment on a gym floor (stock photo)" loading="lazy"></figure>
+        <figure class="p2"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=700&h=700&q=70" alt="Person stretching during a workout (stock photo)" loading="lazy"></figure>
+        <svg class="stamp" viewBox="0 0 120 120" aria-hidden="true">
+          <circle cx="60" cy="60" r="58" fill="#111312"/>
+          <defs><path id="circ" d="M60,60 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0"/></defs>
+          <text font-family="JetBrains Mono, monospace" font-size="10.5" letter-spacing="3.2" fill="#f3efe6"><textPath href="#circ">MOVE WELL · LIVE WELL · DECATUR · </textPath></text>
+          <path d="M44 72V50l8 11 8-9 8 9 8-11v22" fill="none" stroke="#ff5b23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Why Move</span>
+        <h2 id="why-title">Strong where<br>it counts.</h2>
+        <p class="lede">A neighborhood gym in Decatur for people who want to feel capable, not just look the part.</p>
+        <ul class="pillars">
+          <li>
+            <span class="tick"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg></span>
+            <div><h3>Movement first</h3><p>Training built on natural patterns your body uses every day, not machines that isolate one muscle.</p></div>
+          </li>
+          <li>
+            <span class="tick"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg></span>
+            <div><h3>Start where you are</h3><p>Whether you're new to training or coming back after a break, workouts can be scaled to meet you.</p></div>
+          </li>
+          <li>
+            <span class="tick"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg></span>
+            <div><h3>Local and personal</h3><p>A place close to home off Laredo Drive, where showing up becomes part of your routine.</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="start" aria-labelledby="start-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Getting started</span>
+          <h2 id="start-title">Three steps<br>to your first rep.</h2>
+        </div>
+        <p>No pressure, no guesswork. Reach out, come see the space, and get moving.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <h3>Give us a call</h3>
+          <p>Ring <a href="tel:+14043711355">(404) 371-1355</a> to ask about training options, current hours and how to get started.</p>
+        </div>
+        <div class="step reveal">
+          <h3>Come see the space</h3>
+          <p>Stop by 202 Laredo Drive in Decatur, get a feel for the gym and ask any questions you have.</p>
+        </div>
+        <div class="step reveal">
+          <h3>Start moving</h3>
+          <p>Jump into your first session with a plan that fits your goals, your schedule and your starting point.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-label="Our philosophy">
+    <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1800&q=70" alt="Gym interior with training equipment (stock photo)" loading="lazy">
+    <blockquote class="reveal">Built for <em>everyday</em> strength.</blockquote>
+  </section>
+
+  <section class="section" id="visit" aria-labelledby="visit-title">
+    <div class="wrap visit-grid">
+      <div class="visit-card reveal">
+        <span class="eyebrow">Visit</span>
+        <h2 id="visit-title">Come move<br>with us.</h2>
+        <div class="info">
+          <div>
+            <h3>Address</h3>
+            <p>202 Laredo Drive<br>Decatur, GA 30030</p>
+          </div>
+          <div>
+            <h3>Phone</h3>
+            <p><a href="tel:+14043711355">(404) 371-1355</a></p>
+          </div>
+          <div>
+            <h3>Hours</h3>
+            <p>Call for current hours.</p>
+          </div>
+          <div>
+            <h3>Area</h3>
+            <p>Decatur &amp; metro Atlanta</p>
+          </div>
+        </div>
+        <div class="visit-actions">
+          <a class="btn btn-signal btn-lg" href="tel:+14043711355">Call (404) 371-1355</a>
+          <a class="btn btn-ghost btn-lg" href="https://www.google.com/maps/search/?api=1&amp;query=Move%20Functional%20Fitness%20Decatur" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+      <a class="map-card reveal" href="https://www.google.com/maps/search/?api=1&amp;query=Move%20Functional%20Fitness%20Decatur" target="_blank" rel="noopener" aria-label="Open directions to Move Functional Fitness in Google Maps">
+        <svg class="map" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="400" height="400" fill="#1d201e"/>
+          <g stroke="#2c302d" stroke-width="1">
+            <path d="M0 40h400M0 90h400M0 140h400M0 240h400M0 290h400M0 350h400M50 0v400M120 0v400M260 0v400M330 0v400"/>
+          </g>
+          <path d="M-10 300 C 80 260, 140 280, 210 190 S 330 90, 420 110" fill="none" stroke="#3a3f3b" stroke-width="16"/>
+          <path d="M-10 300 C 80 260, 140 280, 210 190 S 330 90, 420 110" fill="none" stroke="#4a504b" stroke-width="2" stroke-dasharray="8 8"/>
+          <path d="M200 -10 V 410" stroke="#353a36" stroke-width="10"/>
+          <path d="M-10 180 H 410" stroke="#353a36" stroke-width="8"/>
+          <rect x="285" y="250" width="80" height="70" rx="8" fill="#26352a"/>
+          <rect x="60" y="60" width="50" height="60" rx="6" fill="#26352a"/>
+        </svg>
+        <span class="pulse" aria-hidden="true"></span>
+        <svg class="map-pin" viewBox="0 0 54 54" aria-hidden="true"><path d="M27 52s-17-17-17-30a17 17 0 0 1 34 0c0 13-17 30-17 30z" fill="#ff5b23"/><circle cx="27" cy="22" r="6.5" fill="#111312"/></svg>
+        <span class="map-label">202 Laredo Dr, Decatur <span>Get directions →</span></span>
+      </a>
+    </div>
+  </section>
+
+  <section class="cta" aria-labelledby="cta-title">
+    <div class="wrap">
+      <h2 id="cta-title">Ready to move?</h2>
+      <p>Your first step is a quick phone call. We'll help you figure out where to begin.</p>
+      <a class="btn btn-ink btn-lg" href="tel:+14043711355">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+        Call (404) 371-1355
+      </a>
+    </div>
+  </section>
 </main>
-<footer class="foot"><div class="wrap"><p class="brand">Move Functional Fitness</p><p>202 Laredo Drive, Decatur, GA, 30030 · <a href="tel:+14043711355">(404) 371-1355</a></p>
-<p class="disc">Free website preview concept designed by <a href="https://builtbycray.com">Built By Cray</a>. This is not the official website of Move Functional Fitness and was not made, approved, or endorsed by them. Name, phone, address, and rating come from public listings. Sample copy and stock photos (Unsplash) for preview only.</p></div></footer>
-<a class="m-call" href="tel:+14043711355"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>Book a free intro</span></a><script>(()=>{const b=document.querySelector('.m-call');const f=()=>b.classList.toggle('show',scrollY>480);addEventListener('scroll',f,{passive:true});f()})()</script>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <a class="logo" href="#top" aria-label="Move Functional Fitness, back to top">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <rect width="40" height="40" rx="9" fill="#ff5b23"/>
+          <path d="M8 29V11l7 10 5-7 5 7 7-10v18" fill="none" stroke="#111312" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="logo-text">Move<small>Functional Fitness · Decatur</small></span>
+      </a>
+      <address>
+        202 Laredo Drive, Decatur, GA 30030<br>
+        <a href="tel:+14043711355">(404) 371-1355</a> · Call for current hours.
+      </address>
+    </div>
+    <p class="disclaimer">
+      <a href="https://builtbycray.com" target="_blank" rel="noopener">Preview by Built By Cray</a> ·
+      This is a free preview concept and is not the official website of Move Functional Fitness. Name, phone and address come from public listings. Stock photos from Unsplash.
+    </p>
+  </div>
+</footer>
+
+<a class="btn btn-signal btn-sm float-call" href="tel:+14043711355" aria-label="Call Move Functional Fitness at (404) 371-1355">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+  Call now
+</a>
+
+<script>
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || !('IntersectionObserver' in window)) {
+    els.forEach(function(el){ el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(function(el){ io.observe(el); });
+})();
+</script>
 </body>
 </html>

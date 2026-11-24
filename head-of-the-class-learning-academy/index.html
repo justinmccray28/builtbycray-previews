@@ -4,165 +4,571 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Head of the Class Learning Academy | Website preview concept by Built By Cray</title>
-<meta name="description" content="A free website preview concept for Head of the Class Learning Academy, designed by Built By Cray. Not the official website of Head of the Class Learning Academy.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://images.unsplash.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap">
+<title>Head of the Class Learning Academy | Preview concept by Built By Cray</title>
+<meta name="description" content="Head of the Class Learning Academy: warm, nurturing childcare on Wellborn Rd in Lithonia, Georgia. Call (770) 987-1311 to ask about enrollment and schedule a visit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,500..900,100&family=Nunito:wght@400;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f7fbff;--ink:#233047;--muted:#5b6880;--accent:#4f7cff;--dark:#233047;--soft:#e6efff;--on-accent:#fff;--c2:#ff8fab;--c3:#ffd166;--c4:#06d6a0;--pop:#4f7cff;--display:'Fredoka', system-ui, sans-serif;--body:'Nunito', system-ui, sans-serif;--r:14px}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
-img{display:block;max-width:100%}
+:root{
+  --paper:#FBF5EA;
+  --paper-2:#F4EAD7;
+  --ink:#1E2A3A;
+  --ink-soft:#4A5566;
+  --board:#1F4D3F;
+  --board-2:#173C31;
+  --tomato:#E2553D;
+  --tomato-d:#C2412B;
+  --sun:#F5B731;
+  --sky:#7FB6D9;
+  --plum:#8E5A9B;
+  --chalk:#F7F3EA;
+  --radius:22px;
+  --shadow:0 18px 40px -18px rgba(30,42,58,.35);
+  --display:"Fraunces", Georgia, "Times New Roman", serif;
+  --body:"Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --hand:"Caveat", "Comic Sans MS", cursive;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);color:var(--ink);background:var(--paper);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
 a{color:inherit}
-.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
-h1,h2,h3{font-family:var(--display);line-height:1.08;font-weight:700;letter-spacing:-.01em}
-h1{font-size:clamp(40px,6.2vw,76px)}
-h2{font-size:clamp(30px,4vw,48px);margin-bottom:18px}
-h3{font-size:21px;margin-bottom:6px}
-.eyebrow{font-family:var(--body);text-transform:uppercase;letter-spacing:.16em;font-size:12.5px;font-weight:600;color:var(--accent);margin-bottom:14px}
-.eyebrow.light{color:#fff;opacity:.85}
-.sub{font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:560px;margin:18px 0 30px}
-.lead{font-size:18px;color:var(--muted);margin-bottom:20px}
-section{padding:clamp(64px,9vw,110px) 0}
-.split{display:grid;gap:clamp(28px,5vw,64px);align-items:center}
-@media(min-width:860px){.split{grid-template-columns:1fr 1fr}}
-.actions{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:600;font-size:16px;padding:15px 24px;border-radius:999px;border:2px solid var(--accent);transition:transform .15s ease,box-shadow .15s ease}
-.btn:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(0,0,0,.15)}
-.btn svg{width:18px;height:18px}
-.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
-.btn.ghost.dark{color:var(--ink);border-color:currentColor}
-.btn.light{background:#fff;color:var(--dark);border-color:#fff}
-.btn.block{width:100%;justify-content:center;margin-top:10px}
-.rating{display:inline-flex;align-items:center;gap:6px;font-size:15px}
-.rating svg{width:18px;height:18px;color:#f5b301}
-.hero-rating{margin-top:22px}
-.ticks{list-style:none;display:grid;gap:10px;margin:8px 0 26px}
-.ticks li{display:flex;gap:10px;align-items:center;font-weight:500}
-.ticks svg{width:20px;height:20px;color:var(--accent);flex:none}
-.ticks.small{font-size:14px;margin:16px 0 0}
-/* preview bar */
-.pv-bar{position:relative;z-index:30;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;background:#0d0d0f;color:#d6d6db;font:13px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;padding:8px 16px;text-align:center}
-.pv-bar b{color:#fff;font-weight:600}
-.pv-offer{color:#ffd166}
-.pv-bar a{background:#ffd166;color:#111;text-decoration:none;font-weight:700;padding:5px 12px;border-radius:999px;white-space:nowrap;font-size:12.5px}
-@media(max-width:700px){.pv-long{display:none}.pv-bar{font-size:12px;gap:8px;padding:7px 12px}}
-/* nav */
-.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid color-mix(in srgb,var(--ink) 8%,transparent)}
-.nav-row{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
-.brand{font-family:var(--display);font-weight:700;font-size:22px;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:60vw}
-.nav-links{display:flex;align-items:center;gap:26px;font-size:15px;font-weight:500}
-.nav-links a{text-decoration:none;opacity:.85}
-.nav-call{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--bg)!important;padding:9px 16px;border-radius:999px;opacity:1!important}
-.nav-call svg{width:16px;height:16px}
-@media(max-width:760px){.nav-links a:not(.nav-call){display:none}.nav-call span{display:none}.nav-call{padding:10px}}
-/* services */
-.svc-grid{display:grid;gap:18px;margin-top:34px}
-@media(min-width:700px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1000px){.svc-grid{grid-template-columns:repeat(${n},1fr)}}
-.svc{background:var(--soft);border-radius:var(--r);padding:28px}
-.svc .num{display:block;font-family:var(--display);color:var(--accent);font-size:15px;margin-bottom:14px;letter-spacing:.08em}
-.svc p{color:var(--muted);font-size:16px}
-/* about */
-.about-img img{width:100%;aspect-ratio:9/10;object-fit:cover;border-radius:calc(var(--r) * 1.4)}
-.quote{margin:-4px 0 18px}
-/* gallery */
-.gallery{padding-top:0}
-.g-grid{display:grid;gap:14px;grid-template-columns:1fr 1fr}
-.g{overflow:hidden;border-radius:var(--r)}
-.g img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/2}
-.g0{grid-column:1/-1}
-@media(min-width:860px){.g-grid{grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr}.g0{grid-column:auto;grid-row:1/3}.g0 img{aspect-ratio:auto}}
-.stock-note{font-size:12.5px;color:var(--muted);margin-top:12px;text-align:right}
-/* steps */
-.steps{background:var(--soft)}
-.step-grid{display:grid;gap:22px;margin-top:30px}
-@media(min-width:800px){.step-grid{grid-template-columns:repeat(3,1fr)}}
-.step{background:var(--bg);border-radius:var(--r);padding:28px}
-.step span{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--accent);color:var(--on-accent);font-weight:800;margin-bottom:16px}
-.step p{color:var(--muted)}
-/* visit */
-.facts{display:grid;gap:16px;margin:10px 0 28px}
-.facts div{display:grid;grid-template-columns:90px 1fr;gap:12px;padding-bottom:14px;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent)}
-.facts dt{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);padding-top:3px}
-.facts dd a{text-decoration:none;font-weight:600}
-.map iframe{width:100%;height:380px;border:0;border-radius:calc(var(--r) * 1.2);filter:saturate(.9)}
-/* cta */
-.cta-band{background:var(--dark);color:#fff;padding:clamp(48px,7vw,80px) 0}
-.cta-band .wrap{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
-.cta-band h2{margin:0;color:#fff}
-/* footer */
-.foot{background:var(--dark);color:color-mix(in srgb,#fff 70%,transparent);padding:44px 0 90px;font-size:14px}
-.foot .brand{color:#fff;display:block;margin-bottom:6px}
-.foot a{color:#fff}
-.disc{margin-top:18px;font-size:12.5px;opacity:.75;max-width:760px}
-.m-call{display:none}
-.g-two{grid-template-columns:1fr 1fr}.g-two .g img{aspect-ratio:3/2}
-@media(min-width:860px){.g-two{grid-template-columns:1fr 1fr;grid-template-rows:auto}}
-@media(max-width:760px){.m-call{display:flex;position:fixed;left:14px;right:14px;bottom:14px;z-index:40;align-items:center;justify-content:center;gap:10px;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:700;padding:16px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,.25);opacity:0;transform:translateY(20px);pointer-events:none;transition:.25s}.m-call.show{opacity:1;transform:none;pointer-events:auto}.m-call svg{width:18px;height:18px}}
-/* shared hero bits */
-.hero{position:relative}
-.hero-photo,.hero-card{color:#fff;overflow:hidden}
-.hero-photo .bg,.hero-card .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.7))}
-.hero-inner{position:relative;padding:clamp(90px,14vw,170px) 0 clamp(80px,12vw,140px)}
-.hero-photo .sub,.hero-card .sub{color:rgba(255,255,255,.88)}
-.hero-split .btn.ghost,.hero-arch .btn.ghost,.hero-kids .btn.ghost,.hero-bloom .btn.ghost,.hero-fresh .btn.ghost{color:var(--ink);border-color:currentColor}
-.center{text-align:center}.center .sub{margin-inline:auto}.center .actions{justify-content:center}
+h1,h2,h3{font-family:var(--display);font-variation-settings:"SOFT" 100;line-height:1.05;margin:0;letter-spacing:-.01em}
+p{margin:0}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:8px}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:.7rem 1rem;z-index:100;border-radius:0 0 10px 0}
+.skip:focus{left:0}
+.wrap{width:min(1180px,100% - 2.5rem);margin-inline:auto}
+.eyebrow{font-family:var(--hand);font-size:1.6rem;color:var(--tomato);line-height:1;display:inline-block;transform:rotate(-2deg)}
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-weight:800;text-decoration:none;border-radius:999px;padding:.95rem 1.5rem;transition:transform .2s ease, box-shadow .2s ease, background .2s ease;border:2px solid transparent;font-size:1rem;line-height:1.2}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-call{background:var(--tomato);color:#fff;box-shadow:0 6px 0 var(--tomato-d)}
+.btn-call:hover{transform:translateY(-2px);box-shadow:0 8px 0 var(--tomato-d)}
+.btn-call:active{transform:translateY(3px);box-shadow:0 2px 0 var(--tomato-d)}
+.btn-ghost{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-ghost:hover{background:var(--ink);color:var(--paper)}
+.btn-lg{font-size:1.15rem;padding:1.15rem 1.8rem}
 
-.hero-kids{padding:clamp(40px,6vw,80px) 0;overflow:hidden}
-.l-kids h1{font-weight:600;font-size:clamp(40px,5.6vw,68px)}
-.blob{position:relative;padding:20px}
-.blob img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:46% 54% 42% 58% / 52% 44% 56% 48%}
-.dot{position:absolute;border-radius:50%}
-.d1{width:70px;height:70px;background:var(--c3);top:0;right:16%}
-.d2{width:46px;height:46px;background:var(--c2);bottom:10%;left:0}
-.d3{width:28px;height:28px;background:var(--c4);bottom:0;right:10%}
-.l-kids .btn{font-family:var(--display);font-weight:600;font-size:17px}
-.l-kids .svc{border-radius:24px;background:#fff;border:3px solid var(--soft)}
-.l-kids .svc:nth-child(1){border-color:var(--accent)}.l-kids .svc:nth-child(2){border-color:var(--c2)}.l-kids .svc:nth-child(3){border-color:var(--c3)}.l-kids .svc:nth-child(4){border-color:var(--c4)}
-.l-kids .svc .num{font-family:var(--display);font-size:28px}
-.l-kids .about{background:var(--soft)}
-.l-kids .about-img img{border-radius:40px}
-.l-kids .cta-band{background:var(--accent)}</style>
+/* Preview bar */
+.preview-bar{background:var(--ink);color:#E9E4D8;font-size:.85rem;line-height:1.4}
+.preview-bar .wrap{display:flex;align-items:center;justify-content:center;gap:.4rem 1rem;flex-wrap:wrap;padding:.55rem 0;text-align:center}
+.preview-bar strong{color:#fff}
+.preview-bar .deal{color:var(--sun);font-weight:700}
+.preview-bar a{background:var(--sun);color:var(--ink);font-weight:800;text-decoration:none;padding:.3rem .85rem;border-radius:999px;font-size:.8rem;white-space:nowrap}
+.preview-bar a:hover{background:#fff}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(251,245,234,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid rgba(30,42,58,.08)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;min-width:0}
+.brand-mark{width:46px;height:46px;flex:none}
+.brand-name{font-family:var(--display);font-weight:800;font-size:1.12rem;line-height:1.05;font-variation-settings:"SOFT" 100}
+.brand-name small{display:block;font-family:var(--body);font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+.nav{display:flex;align-items:center;gap:1.8rem}
+.nav a{text-decoration:none;font-weight:700;font-size:.97rem;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:3px;border-radius:3px;background:var(--sun);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+.nav a:hover::after{transform:scaleX(1)}
+.header-call{padding:.7rem 1.15rem;font-size:.95rem}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;padding:4.5rem 0 5.5rem}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:3.5rem;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6vw,5rem);font-weight:800;margin:.6rem 0 1.2rem}
+.hero h1 .underline{position:relative;white-space:nowrap;color:var(--board)}
+.hero h1 .underline svg{position:absolute;left:-2%;bottom:-.18em;width:104%;height:.4em}
+.hero .biz{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:.82rem;color:var(--ink-soft);display:flex;align-items:center;gap:.6rem}
+.hero .biz::before{content:"";width:28px;height:3px;background:var(--tomato);border-radius:3px}
+.hero .lede{font-size:1.2rem;color:var(--ink-soft);max-width:34ch}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2rem;align-items:center}
+.hero-meta{display:flex;flex-wrap:wrap;gap:1.4rem;margin-top:2.2rem;font-weight:700;font-size:.95rem}
+.hero-meta span{display:inline-flex;align-items:center;gap:.45rem}
+.hero-meta svg{width:20px;height:20px;color:var(--board)}
+.stars{color:var(--sun);letter-spacing:1px}
+
+.collage{position:relative;aspect-ratio:1/1.02}
+.collage .ph{position:absolute;overflow:hidden;box-shadow:var(--shadow);background:var(--paper-2)}
+.collage .ph img{width:100%;height:100%;object-fit:cover}
+.collage .p1{inset:0 16% 22% 0;border-radius:46% 54% 42% 58% / 52% 44% 56% 48%}
+.collage .p2{width:48%;aspect-ratio:1;right:0;bottom:0;border-radius:var(--radius);border:8px solid var(--paper);transform:rotate(4deg)}
+.collage .badge{position:absolute;left:-4%;bottom:6%;background:var(--board);color:var(--chalk);padding:1rem 1.2rem;border-radius:18px;box-shadow:var(--shadow);transform:rotate(-4deg);max-width:220px}
+.collage .badge b{font-family:var(--display);font-size:2.1rem;line-height:1;display:block}
+.collage .badge span{font-size:.85rem;opacity:.9}
+.collage .badge .stars{font-size:1rem}
+.doodle{position:absolute;pointer-events:none}
+.d-sun{width:110px;top:-30px;right:6%;color:var(--sun)}
+.d-abc{right:-10px;top:38%;font-family:var(--hand);font-size:2.4rem;color:var(--plum);transform:rotate(12deg)}
+.hero-bg-blob{position:absolute;right:-12%;top:-20%;width:60vw;max-width:820px;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 40% 40%,#FCE6B8 0%,rgba(252,230,184,0) 68%);z-index:-1}
+
+/* Ribbon */
+.ribbon{background:var(--sun);color:var(--ink);overflow:hidden;border-block:3px solid var(--ink)}
+.ribbon-track{display:flex;gap:2.5rem;padding:.9rem 0;white-space:nowrap;width:max-content;animation:scroll 38s linear infinite}
+.ribbon-track span{font-family:var(--display);font-weight:800;font-size:1.25rem;display:inline-flex;align-items:center;gap:2.5rem}
+.ribbon-track span::after{content:"✦";color:var(--tomato)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* Sections */
+section{scroll-margin-top:90px}
+.section{padding:6rem 0}
+.section-head{max-width:640px;margin-bottom:3.2rem}
+.section-head h2{font-size:clamp(2.1rem,4.2vw,3.3rem);font-weight:800;margin-top:.5rem}
+.section-head p{margin-top:1rem;color:var(--ink-soft);font-size:1.12rem}
+.center{text-align:center;margin-inline:auto}
+
+/* Programs */
+.programs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+.card{background:#fff;border-radius:var(--radius);padding:1.8rem 1.5rem 1.6rem;position:relative;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--ink);transition:transform .25s ease, box-shadow .25s ease}
+.card:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--ink)}
+.card .ico{width:58px;height:58px;border-radius:16px;display:grid;place-items:center;margin-bottom:1.2rem}
+.card .ico svg{width:30px;height:30px}
+.card h3{font-size:1.45rem;font-weight:700;margin-bottom:.55rem}
+.card p{color:var(--ink-soft);font-size:.98rem}
+.c1 .ico{background:#FDE3DD;color:var(--tomato-d)}
+.c2 .ico{background:#FDEDC6;color:#9A6B00}
+.c3 .ico{background:#DCEBF5;color:#2A6690}
+.c4 .ico{background:#E9DDF0;color:var(--plum)}
+.note{margin-top:2rem;font-size:.95rem;color:var(--ink-soft);display:flex;gap:.6rem;align-items:flex-start}
+.note svg{width:20px;height:20px;flex:none;margin-top:.2rem;color:var(--board)}
+
+/* Chalkboard: why */
+.board{background:var(--board);color:var(--chalk);position:relative;overflow:hidden;border-radius:36px;margin-inline:1.25rem;padding:5.5rem 0}
+.board::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(ellipse at 20% 10%,rgba(255,255,255,.06),transparent 50%),
+  radial-gradient(ellipse at 80% 90%,rgba(255,255,255,.05),transparent 55%);pointer-events:none}
+.board .eyebrow{color:var(--sun)}
+.board .section-head p{color:rgba(247,243,234,.8)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;position:relative}
+.why-list{list-style:none;margin:0;padding:0;display:grid;gap:1.6rem}
+.why-list li{display:grid;grid-template-columns:52px 1fr;gap:1.1rem;align-items:start}
+.why-list .num{font-family:var(--hand);font-size:2.4rem;line-height:1;color:var(--sun);border:2px dashed rgba(247,243,234,.4);border-radius:50%;width:52px;height:52px;display:grid;place-items:center}
+.why-list h3{font-size:1.35rem;font-weight:700;margin-bottom:.3rem}
+.why-list p{color:rgba(247,243,234,.82);font-size:1rem}
+.why-photo{position:relative}
+.why-photo .frame{border-radius:28px;overflow:hidden;border:10px solid #B98A55;box-shadow:0 0 0 3px #8C6236,0 30px 50px -20px rgba(0,0,0,.5);aspect-ratio:4/5}
+.why-photo .frame img{width:100%;height:100%;object-fit:cover}
+.why-photo .chalk-note{position:absolute;right:-10px;top:-26px;font-family:var(--hand);font-size:1.9rem;color:var(--chalk);transform:rotate(6deg);background:var(--board-2);padding:.3rem 1rem;border-radius:12px}
+
+/* Day */
+.day-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;position:relative}
+.day-grid::before{content:"";position:absolute;left:6%;right:6%;top:38px;border-top:3px dashed rgba(30,42,58,.25);z-index:0}
+.day-step{text-align:center;position:relative;z-index:1}
+.day-step .dot{width:76px;height:76px;margin:0 auto 1rem;border-radius:50%;display:grid;place-items:center;background:var(--paper);border:3px solid var(--ink)}
+.day-step .dot svg{width:34px;height:34px}
+.day-step h3{font-size:1.2rem;font-weight:700;margin-bottom:.3rem}
+.day-step p{font-size:.93rem;color:var(--ink-soft)}
+.day-step:nth-child(1) .dot{background:#FDEDC6}
+.day-step:nth-child(2) .dot{background:#FDE3DD}
+.day-step:nth-child(3) .dot{background:#DCF0E6}
+.day-step:nth-child(4) .dot{background:#DCEBF5}
+.day-step:nth-child(5) .dot{background:#E9DDF0}
+
+/* Photo strip */
+.strip{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:1.25rem;margin-top:4.5rem}
+.strip figure{margin:0;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3;box-shadow:var(--shadow)}
+.strip figure:first-child{aspect-ratio:auto}
+.strip img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.strip figure:hover img{transform:scale(1.04)}
+.stock-cap{font-size:.8rem;color:var(--ink-soft);margin-top:.8rem;text-align:right}
+
+/* Enroll steps */
+.enroll{background:var(--paper-2)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;counter-reset:s}
+.step{background:var(--paper);border-radius:var(--radius);padding:2.2rem 1.8rem;position:relative;border:2px solid rgba(30,42,58,.1)}
+.step::before{counter-increment:s;content:counter(s);font-family:var(--display);font-weight:900;font-size:4.5rem;line-height:1;color:var(--tomato);opacity:.9;display:block;margin-bottom:.8rem}
+.step:nth-child(2)::before{color:var(--board)}
+.step:nth-child(3)::before{color:var(--plum)}
+.step h3{font-size:1.45rem;font-weight:700;margin-bottom:.5rem}
+.step p{color:var(--ink-soft)}
+.step a{font-weight:800;color:var(--tomato-d)}
+
+/* Rating */
+.rating{padding:5rem 0}
+.rating-card{display:grid;grid-template-columns:auto 1fr auto;gap:2.5rem;align-items:center;background:#fff;border:2px solid var(--ink);border-radius:28px;padding:2.5rem 3rem;box-shadow:8px 8px 0 var(--sun)}
+.big-score{font-family:var(--display);font-weight:900;font-size:5rem;line-height:.9;color:var(--board)}
+.big-score small{font-size:1.6rem;color:var(--ink-soft);font-weight:600}
+.rating-card .stars{font-size:1.5rem}
+.rating-card h2{font-size:1.9rem;font-weight:700;margin-bottom:.4rem}
+.rating-card p{color:var(--ink-soft)}
+
+/* Visit */
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:stretch}
+.visit-info{background:var(--ink);color:var(--paper);border-radius:28px;padding:3rem}
+.visit-info h2{font-size:clamp(2rem,3.6vw,2.9rem);font-weight:800;margin:.4rem 0 1.6rem}
+.visit-info .eyebrow{color:var(--sun)}
+.info-list{list-style:none;padding:0;margin:0 0 2rem;display:grid;gap:1.3rem}
+.info-list li{display:grid;grid-template-columns:44px 1fr;gap:1rem;align-items:start}
+.info-list .i{width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.08);display:grid;place-items:center;color:var(--sun)}
+.info-list .i svg{width:22px;height:22px}
+.info-list b{display:block;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(251,245,234,.65);font-weight:700}
+.info-list a,.info-list span{font-size:1.15rem;font-weight:700;text-decoration:none}
+.info-list a:hover{text-decoration:underline;text-decoration-color:var(--sun);text-underline-offset:4px}
+.visit-btns{display:flex;flex-wrap:wrap;gap:.9rem}
+.btn-light{border-color:var(--paper);color:var(--paper)}
+.btn-light:hover{background:var(--paper);color:var(--ink)}
+.map-card{position:relative;border-radius:28px;overflow:hidden;min-height:420px;background:#E8DFC9;display:flex;align-items:flex-end;text-decoration:none;border:2px solid var(--ink)}
+.map-card svg.map{position:absolute;inset:0;width:100%;height:100%}
+.map-card .pin{position:absolute;left:50%;top:44%;transform:translate(-50%,-100%);width:64px;animation:bob 2.6s ease-in-out infinite}
+@keyframes bob{50%{transform:translate(-50%,-112%)}}
+.map-label{position:relative;margin:1.25rem;background:var(--paper);border-radius:18px;padding:1rem 1.25rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;width:100%;box-shadow:var(--shadow)}
+.map-label b{font-family:var(--display);font-size:1.15rem;display:block}
+.map-label span{font-size:.9rem;color:var(--ink-soft)}
+.map-label .go{background:var(--board);color:#fff;border-radius:999px;padding:.55rem 1rem;font-weight:800;font-size:.9rem;white-space:nowrap}
+.map-card:hover .go{background:var(--tomato)}
+
+/* CTA band */
+.cta-band{padding:5rem 0;text-align:center;position:relative}
+.cta-band h2{font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;max-width:16ch;margin:.5rem auto 1rem}
+.cta-band p{color:var(--ink-soft);font-size:1.15rem;margin-bottom:2rem}
+
+/* Footer */
+.site-footer{background:var(--board-2);color:rgba(247,243,234,.85);padding:3.5rem 0 2.5rem;font-size:.95rem}
+.foot-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:2rem;padding-bottom:2rem;border-bottom:1px solid rgba(247,243,234,.15)}
+.foot-top .brand-name{color:var(--chalk)}
+.foot-top .brand-name small{color:rgba(247,243,234,.6)}
+.foot-contact{display:grid;gap:.35rem;text-align:right}
+.foot-contact a{text-decoration:none;font-weight:700;color:var(--chalk)}
+.foot-contact a:hover{color:var(--sun)}
+.foot-legal{padding-top:1.6rem;display:grid;gap:.6rem;font-size:.85rem;color:rgba(247,243,234,.7)}
+.foot-legal a{color:var(--sun);font-weight:700}
+
+/* Mobile floating call */
+.fab{display:none}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:1024px){
+  .programs-grid{grid-template-columns:repeat(2,1fr)}
+  .day-grid{grid-template-columns:repeat(3,1fr);row-gap:2.2rem}
+  .day-grid::before{display:none}
+}
+@media (max-width:860px){
+  .nav{display:none}
+  .hero{padding:2.5rem 0 4rem}
+  .hero-grid,.why-grid,.visit-grid{grid-template-columns:1fr;gap:2.8rem}
+  .collage{max-width:520px;width:100%;margin-inline:auto}
+  .why-photo{max-width:440px;margin-inline:auto;width:100%}
+  .steps{grid-template-columns:1fr}
+  .rating-card{grid-template-columns:1fr;text-align:center;gap:1.2rem;padding:2.2rem 1.6rem}
+  .strip{grid-template-columns:1fr 1fr}
+  .strip figure:first-child{grid-column:1/-1;aspect-ratio:16/9}
+  .section{padding:4.5rem 0}
+  .board{margin-inline:.6rem;border-radius:28px;padding:4rem 0}
+}
+@media (max-width:560px){
+  body{font-size:1rem}
+  .wrap{width:min(1180px,100% - 2rem)}
+  .brand-mark{width:40px;height:40px}
+  .brand-name{font-size:.98rem}
+  .brand-name small{font-size:.62rem;letter-spacing:.1em}
+  .header-call .label{display:none}
+  .header-call{padding:.7rem;width:46px;height:46px;justify-content:center}
+  .preview-bar{font-size:.78rem}
+  .hero .lede{font-size:1.08rem}
+  .hero-ctas .btn{width:100%;justify-content:center}
+  .collage .badge{left:0;padding:.8rem 1rem}
+  .collage .badge b{font-size:1.7rem}
+  .d-sun{width:80px;top:-20px}
+  .d-abc{display:none}
+  .programs-grid{grid-template-columns:1fr}
+  .day-grid{grid-template-columns:1fr 1fr}
+  .day-step:last-child{grid-column:1/-1}
+  .visit-info{padding:2.2rem 1.5rem}
+  .map-card{min-height:340px}
+  .map-label{flex-direction:column;align-items:flex-start}
+  .foot-contact{text-align:left}
+  .fab{display:inline-flex;position:fixed;right:1rem;bottom:1rem;z-index:60;box-shadow:0 6px 0 var(--tomato-d),0 14px 30px -8px rgba(0,0,0,.4)}
+  .site-footer{padding-bottom:6rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
 </head>
-<body class="l-kids">
-<div class="pv-bar" role="note"><p><b>Free preview concept by Built By Cray.</b> Not the official website of Head of the Class Learning Academy<span class="pv-long">, and not made or endorsed by them</span>. <span class="pv-offer">$650 Black Friday price through November 30.</span></p><a href="https://calendar.app.google/K7QqcbLckjKjjZs19" target="_blank" rel="noopener">Claim this website</a></div>
-<nav class="nav"><div class="wrap nav-row"><a class="brand" href="#top">Head of the Class Learning Academy</a><div class="nav-links"><a href="#services">Services</a><a href="#visit">Visit</a><a class="nav-call" href="tel:+17709871311"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>(770) 987-1311</span></a></div></div></nav>
-<main id="top">
-<header class="hero hero-kids"><div class="wrap split"><div class="hero-copy"><p class="eyebrow">Childcare &amp; early learning · Lithonia</p><h1>Where little ones love to learn.</h1><p class="sub">Infant through Pre-K programs that help kids build confidence and friendships.</p>
-      <div class="actions"><a class="btn" href="tel:+17709871311"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>Schedule a tour</span></a><a class="btn ghost" href="#services">Our services</a></div><p class="hero-rating"><span class="rating"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.3l6.2 3.7-1.6-7 5.4-4.7-7.1-.6L12 2 9.1 8.7 2 9.3l5.4 4.7-1.6 7z" fill="currentColor"/></svg><b>4.0</b> from 108 Google reviews</span></p></div>
-      <div class="blob"><img class="" src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=900&h=900&q=70" srcset="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=480&h=480&q=70 480w, https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=800&h=800&q=70 800w, https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1200&h=1200&q=70 1200w" sizes="(max-width: 760px) 100vw, 50vw" alt="Children learning, photo for this preview" fetchpriority="high" decoding="async"><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span></div></div></header>
-<section id="services" class="services"><div class="wrap">
-      <p class="eyebrow">Our programs</p><h2>Programs for every age</h2>
-      <div class="svc-grid"><article class="svc"><span class="num">01</span><h3>Infants</h3><p>Gentle, attentive care with routines that match your baby&#39;s.</p></article><article class="svc"><span class="num">02</span><h3>Toddlers</h3><p>Hands-on play that builds words, movement, and independence.</p></article><article class="svc"><span class="num">03</span><h3>Pre-K</h3><p>Letters, numbers, and social skills to get ready for kindergarten.</p></article><article class="svc"><span class="num">04</span><h3>After school</h3><p>Homework help, snacks, and active play until pickup.</p></article></div>
-      </div></section>
-<section class="about"><div class="wrap split">
-      <div class="about-img"><img class="" src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?auto=format&fit=crop&w=900&h=1000&q=70" srcset="https://images.unsplash.com/photo-1544776193-352d25ca82cd?auto=format&fit=crop&w=480&h=533&q=70 480w, https://images.unsplash.com/photo-1544776193-352d25ca82cd?auto=format&fit=crop&w=800&h=889&q=70 800w, https://images.unsplash.com/photo-1544776193-352d25ca82cd?auto=format&fit=crop&w=1200&h=1333&q=70 1200w" sizes="(max-width: 760px) 100vw, 50vw" alt="Our programs at a local business" loading="lazy" decoding="async"></div>
-      <div class="about-copy"><p class="eyebrow">About</p><h2>A second home for your little one</h2>
-      <p class="lead">Head of the Class Learning Academy is a warm, structured place where kids in Lithonia learn through play and leave with a smile.</p>
-      
-      <ul class="ticks"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z" fill="currentColor"/></svg>Daily updates for parents</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z" fill="currentColor"/></svg>Caring, attentive teachers</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z" fill="currentColor"/></svg>Safe, clean classrooms</li></ul>
-      </div></div></section>
-<section class="gallery" aria-label="Photos"><div class="wrap"><div class="g-grid g-two">
-      <figure class="g g1"><img class="" src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=900&h=600&q=70" srcset="https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=480&h=320&q=70 480w, https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=800&h=533&q=70 800w, https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=1200&h=800&q=70 1200w" sizes="(max-width: 760px) 100vw, 50vw" alt="Stock photo for this preview" loading="lazy" decoding="async"></figure><figure class="g g2"><img class="" src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=900&h=600&q=70" srcset="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=480&h=320&q=70 480w, https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=800&h=533&q=70 800w, https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=1200&h=800&q=70 1200w" sizes="(max-width: 760px) 100vw, 50vw" alt="Stock photo for this preview" loading="lazy" decoding="async"></figure>
-      </div><p class="stock-note">Stock photos for preview. The finished site would use Head of the Class Learning Academy's own photos.</p></div></section>
-<section class="cta-band"><div class="wrap"><h2>Come see us in person.</h2><a class="btn light" href="tel:+17709871311"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>Schedule a tour</span></a></div></section>
-<section id="visit" class="visit"><div class="wrap split">
-      <div class="visit-copy"><p class="eyebrow">Visit us</p><h2>Find us in Lithonia</h2>
-        <dl class="facts">
-          <div><dt>Phone</dt><dd><a href="tel:+17709871311">(770) 987-1311</a></dd></div>
-          <div><dt>Address</dt><dd>2294 Wellborn Rd, Lithonia, GA 30058</dd></div>
-          <div><dt>Hours</dt><dd>Call for today's hours</dd></div>
-        </dl>
-        <div class="actions"><a class="btn" href="tel:+17709871311"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>Schedule a tour</span></a><a class="btn ghost dark" href="https://www.google.com/maps/dir/?api=1&destination=Head%20of%20the%20Class%20Learning%20Academy%2C%202294%20Wellborn%20Rd%2C%20Lithonia%2C%20GA%2030058" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg><span>Directions</span></a></div>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="preview-bar" role="note">
+  <div class="wrap">
+    <span><strong>Free preview concept by Built By Cray.</strong> Not the official website of Head of the Class Learning Academy. <span class="deal">$650 Black Friday price through Nov 30.</span></span>
+    <a href="https://calendar.app.google/K7QqcbLckjKjjZs19" target="_blank" rel="noopener">Claim this website</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Head of the Class Learning Academy, back to top">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="23" fill="#1F4D3F"/>
+        <path d="M24 12 8 19l16 7 16-7z" fill="#F7F3EA"/>
+        <path d="M14 22v7c0 2.8 4.5 5 10 5s10-2.2 10-5v-7l-10 4.4z" fill="#F7F3EA" opacity=".85"/>
+        <path d="M38 19.5v8" stroke="#F5B731" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="38" cy="29" r="2.4" fill="#F5B731"/>
+      </svg>
+      <span class="brand-name">Head of the Class<small>Learning Academy · Lithonia</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#programs">Programs</a>
+      <a href="#why">Why families choose us</a>
+      <a href="#day">A day here</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn btn-call header-call" href="tel:+17709871311" aria-label="Call (770) 987-1311">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+      <span class="label">(770) 987-1311</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="hero-bg-blob" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div>
+        <p class="biz">Head of the Class Learning Academy</p>
+        <h1>Little minds, <span class="underline">big starts<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 14C60 4 140 3 297 10" fill="none" stroke="#F5B731" stroke-width="7" stroke-linecap="round"/></svg></span> right here in Lithonia.</h1>
+        <p class="lede">Warm, caring childcare on Wellborn Rd, where play and learning go hand in hand and every child is known by name.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-call btn-lg" href="tel:+17709871311">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+            Call (770) 987-1311
+          </a>
+          <a class="btn btn-ghost" href="#visit">Plan a visit</a>
+        </div>
+        <div class="hero-meta">
+          <span><span class="stars" aria-hidden="true">★★★★☆</span> 4.0 from 108 Google reviews</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> 2294 Wellborn Rd</span>
+        </div>
       </div>
-      <div class="map"><iframe title="Map to Head of the Class Learning Academy" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=2294%20Wellborn%20Rd%2C%20Lithonia%2C%20GA%2030058&z=15&output=embed"></iframe></div>
-    </div></section>
+
+      <div class="collage">
+        <svg class="doodle d-sun" viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"><circle cx="50" cy="50" r="18" fill="currentColor"/><path d="M50 8v12M50 80v12M8 50h12M80 50h12M20 20l8 8M72 72l8 8M20 80l8-8M72 28l8-8"/></g></svg>
+        <div class="ph p1"><img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1000&h=1000&q=70" alt="Young child smiling while playing (stock photo)" width="1000" height="1000"></div>
+        <div class="ph p2"><img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=600&h=600&q=70" alt="Colorful building blocks and toys (stock photo)" width="600" height="600" loading="lazy"></div>
+        <div class="badge">
+          <span class="stars" aria-hidden="true">★★★★☆</span>
+          <b>4.0</b>
+          <span>from 108 Google reviews</span>
+        </div>
+        <span class="doodle d-abc" aria-hidden="true">a b c!</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="ribbon" aria-hidden="true">
+    <div class="ribbon-track">
+      <span>Play-based learning</span><span>Caring teachers</span><span>Safe, happy days</span><span>Lithonia, GA</span><span>Growing together</span><span>Ready for school</span>
+      <span>Play-based learning</span><span>Caring teachers</span><span>Safe, happy days</span><span>Lithonia, GA</span><span>Growing together</span><span>Ready for school</span>
+    </div>
+  </div>
+
+  <section class="section" id="programs" aria-labelledby="programs-h">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">What we do</span>
+        <h2 id="programs-h">Care that grows with your child</h2>
+        <p>From first steps to first letters, each stage gets the attention, routine and encouragement it needs.</p>
+      </div>
+      <div class="programs-grid">
+        <article class="card c1 reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 21c-4.4 0-8-3.1-8-7 0-3 2-5.5 5-6.5"/><path d="M12 21c4.4 0 8-3.1 8-7 0-3-2-5.5-5-6.5"/><circle cx="12" cy="6" r="3"/><path d="M9.5 15c.7.6 1.5 1 2.5 1s1.8-.4 2.5-1"/></svg></div>
+          <h3>Infants &amp; toddlers</h3>
+          <p>Gentle routines, cuddles, and lots of talking, singing and exploring for our youngest learners.</p>
+        </article>
+        <article class="card c2 reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/><rect x="8" y="3" width="8" height="8" rx="1.5"/></svg></div>
+          <h3>Preschool</h3>
+          <p>Hands-on play with colors, shapes, stories and sharing, building confidence one day at a time.</p>
+        </article>
+        <article class="card c3 reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2z"/><path d="M8 7h6M8 11h4"/></svg></div>
+          <h3>Pre-K readiness</h3>
+          <p>Early letters, numbers and listening skills so kids walk into kindergarten feeling ready.</p>
+        </article>
+        <article class="card c4 reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4l-5.2 2.7 1-5.8L3.5 9.2l5.9-.9z"/></svg></div>
+          <h3>School-age care</h3>
+          <p>A friendly, supervised place to unwind, play and get homework going while you finish the workday.</p>
+        </article>
+      </div>
+      <p class="note reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v5h1"/></svg> Age groups, openings and schedules change. Call (770) 987-1311 to confirm what's available for your family.</p>
+    </div>
+  </section>
+
+  <section class="board" id="why" aria-labelledby="why-h">
+    <div class="wrap why-grid">
+      <div>
+        <div class="section-head reveal">
+          <span class="eyebrow">Why families choose us</span>
+          <h2 id="why-h">A second home for the hours you're away</h2>
+          <p>Childcare is a big decision. Here's what we focus on every single day.</p>
+        </div>
+        <ol class="why-list">
+          <li class="reveal"><span class="num" aria-hidden="true">1</span><div><h3>Kids who feel known</h3><p>Smiles at drop-off, names remembered, and attention to how each child is feeling today.</p></div></li>
+          <li class="reveal"><span class="num" aria-hidden="true">2</span><div><h3>Learning through play</h3><p>Stories, art, music and movement that build real skills without feeling like work.</p></div></li>
+          <li class="reveal"><span class="num" aria-hidden="true">3</span><div><h3>Parents in the loop</h3><p>Questions welcome, any time. A quick call is all it takes to check in.</p></div></li>
+          <li class="reveal"><span class="num" aria-hidden="true">4</span><div><h3>Close to home</h3><p>Right on Wellborn Rd in Lithonia, an easy stop on the way to work or school.</p></div></li>
+        </ol>
+      </div>
+      <div class="why-photo reveal">
+        <span class="chalk-note" aria-hidden="true">gold stars all around ★</span>
+        <div class="frame"><img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=900&h=1125&q=70" alt="Children engaged in a classroom activity (stock photo)" width="900" height="1125" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="day" aria-labelledby="day-h">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">A day at Head of the Class</span>
+        <h2 id="day-h">Busy hands, happy hearts</h2>
+        <p>A typical rhythm in childcare: predictable enough to feel safe, fun enough to look forward to.</p>
+      </div>
+      <div class="day-grid">
+        <div class="day-step reveal"><div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#1E2A3A" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></div><h3>Warm welcome</h3><p>Hellos, hugs and settling in.</p></div>
+        <div class="day-step reveal"><div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#1E2A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/></svg></div><h3>Circle &amp; stories</h3><p>Songs, books and big ideas.</p></div>
+        <div class="day-step reveal"><div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#1E2A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V12M12 12C12 7 8 4 4 4c0 4 3 8 8 8zM12 12c0-4 3-7 8-7 0 4-3 7-8 7z"/></svg></div><h3>Play &amp; explore</h3><p>Outdoor time and hands-on fun.</p></div>
+        <div class="day-step reveal"><div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#1E2A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></div><h3>Meals &amp; rest</h3><p>Refuel and recharge.</p></div>
+        <div class="day-step reveal"><div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#1E2A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/></svg></div><h3>Happy pickup</h3><p>Stories to share on the ride home.</p></div>
+      </div>
+
+      <div class="strip">
+        <figure class="reveal"><img src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?auto=format&fit=crop&w=1000&h=750&q=70" alt="Child learning and playing (stock photo)" width="1000" height="750" loading="lazy"></figure>
+        <figure class="reveal"><img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=700&h=525&q=70" alt="Bright wooden toys on a table (stock photo)" width="700" height="525" loading="lazy"></figure>
+        <figure class="reveal"><img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=700&h=525&q=70" alt="Happy young child (stock photo)" width="700" height="525" loading="lazy"></figure>
+      </div>
+      <p class="stock-cap">Stock photos for preview</p>
+    </div>
+  </section>
+
+  <section class="section enroll" id="enroll" aria-labelledby="enroll-h">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Getting started</span>
+        <h2 id="enroll-h">Enrolling is as easy as 1, 2, 3</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><h3>Give us a call</h3><p>Ring <a href="tel:+17709871311">(770) 987-1311</a> to ask about openings, ages and current hours.</p></div>
+        <div class="step reveal"><h3>Come see us</h3><p>Stop by 2294 Wellborn Rd to look around, meet the team and ask every question on your list.</p></div>
+        <div class="step reveal"><h3>Start the adventure</h3><p>We'll walk you through next steps so your child's first day feels exciting, not scary.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rating" aria-labelledby="rating-h">
+    <div class="wrap">
+      <div class="rating-card reveal">
+        <div class="big-score">4.0<small>/5</small></div>
+        <div>
+          <div class="stars" aria-label="4 out of 5 stars">★★★★☆</div>
+          <h2 id="rating-h">Rated 4.0 from 108 Google reviews</h2>
+          <p>Lithonia families have been sharing their experiences on Google. Read what they say before you visit.</p>
+        </div>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/place/?q=place_id:ChIJX-FWcUms9YgRKiseorDzuCM" target="_blank" rel="noopener">See on Google</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="visit" aria-labelledby="visit-h">
+    <div class="wrap visit-grid">
+      <div class="visit-info reveal">
+        <span class="eyebrow">Come say hi</span>
+        <h2 id="visit-h">Visit us in Lithonia</h2>
+        <ul class="info-list">
+          <li><span class="i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><b>Address</b><a href="https://www.google.com/maps/place/?q=place_id:ChIJX-FWcUms9YgRKiseorDzuCM" target="_blank" rel="noopener">2294 Wellborn Rd<br>Lithonia, GA 30058</a></div></li>
+          <li><span class="i"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></span><div><b>Phone</b><a href="tel:+17709871311">(770) 987-1311</a></div></li>
+          <li><span class="i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>Hours</b><span>Call for current hours.</span></div></li>
+        </ul>
+        <div class="visit-btns">
+          <a class="btn btn-call" href="tel:+17709871311">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+            Call (770) 987-1311
+          </a>
+          <a class="btn btn-light" href="https://www.google.com/maps/place/?q=place_id:ChIJX-FWcUms9YgRKiseorDzuCM" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+
+      <a class="map-card reveal" href="https://www.google.com/maps/place/?q=place_id:ChIJX-FWcUms9YgRKiseorDzuCM" target="_blank" rel="noopener" aria-label="Get directions to 2294 Wellborn Rd, Lithonia, GA 30058 on Google Maps">
+        <svg class="map" viewBox="0 0 400 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="400" height="420" fill="#ECE3CE"/>
+          <path d="M-20 300 C80 260 140 330 230 280 S360 200 430 230" fill="none" stroke="#BFD9C9" stroke-width="46"/>
+          <circle cx="70" cy="90" r="46" fill="#CFE2C3"/>
+          <circle cx="330" cy="360" r="60" fill="#CFE2C3"/>
+          <g stroke="#fff" stroke-linecap="round" fill="none">
+            <path d="M-10 170 L420 140" stroke-width="22"/>
+            <path d="M200 -10 L215 430" stroke-width="16"/>
+            <path d="M-10 60 L420 90" stroke-width="9"/>
+            <path d="M80 -10 L60 430" stroke-width="9"/>
+            <path d="M320 -10 L340 430" stroke-width="9"/>
+            <path d="M-10 380 L420 350" stroke-width="9"/>
+          </g>
+          <path d="M-10 170 L420 140" stroke="#F5B731" stroke-width="3" stroke-dasharray="10 10" fill="none"/>
+          <text x="250" y="138" font-family="Nunito, sans-serif" font-size="12" font-weight="800" fill="#4A5566" transform="rotate(-4 250 138)">WELLBORN RD</text>
+        </svg>
+        <svg class="pin" viewBox="0 0 64 80" aria-hidden="true"><path d="M32 78S6 50 6 30a26 26 0 0 1 52 0c0 20-26 48-26 48z" fill="#E2553D" stroke="#1E2A3A" stroke-width="3"/><circle cx="32" cy="30" r="10" fill="#FBF5EA"/></svg>
+        <span class="map-label"><span><b>Head of the Class</b><span>2294 Wellborn Rd, Lithonia</span></span><span class="go">Get directions →</span></span>
+      </a>
+    </div>
+  </section>
+
+  <section class="cta-band" aria-labelledby="cta-h">
+    <div class="wrap">
+      <span class="eyebrow">Openings go fast</span>
+      <h2 id="cta-h">Let's find the right fit for your little one.</h2>
+      <p>One quick call answers it all: ages, availability and when to come by.</p>
+      <a class="btn btn-call btn-lg" href="tel:+17709871311">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+        Call (770) 987-1311
+      </a>
+    </div>
+  </section>
 </main>
-<footer class="foot"><div class="wrap"><p class="brand">Head of the Class Learning Academy</p><p>2294 Wellborn Rd, Lithonia, GA 30058 · <a href="tel:+17709871311">(770) 987-1311</a></p>
-<p class="disc">Free website preview concept designed by <a href="https://builtbycray.com">Built By Cray</a>. This is not the official website of Head of the Class Learning Academy and was not made, approved, or endorsed by them. Name, phone, address, and rating come from public listings. Sample copy and stock photos (Unsplash) for preview only.</p></div></footer>
-<a class="m-call" href="tel:+17709871311"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>Schedule a tour</span></a><script>(()=>{const b=document.querySelector('.m-call');const f=()=>b.classList.toggle('show',scrollY>480);addEventListener('scroll',f,{passive:true});f()})()</script>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="brand">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="23" fill="#F7F3EA"/>
+          <path d="M24 12 8 19l16 7 16-7z" fill="#1F4D3F"/>
+          <path d="M14 22v7c0 2.8 4.5 5 10 5s10-2.2 10-5v-7l-10 4.4z" fill="#1F4D3F" opacity=".85"/>
+          <path d="M38 19.5v8" stroke="#E2553D" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="38" cy="29" r="2.4" fill="#E2553D"/>
+        </svg>
+        <span class="brand-name">Head of the Class<small>Learning Academy · Lithonia, GA</small></span>
+      </div>
+      <div class="foot-contact">
+        <a href="tel:+17709871311">(770) 987-1311</a>
+        <a href="https://www.google.com/maps/place/?q=place_id:ChIJX-FWcUms9YgRKiseorDzuCM" target="_blank" rel="noopener">2294 Wellborn Rd, Lithonia, GA 30058</a>
+        <span>Call for current hours.</span>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <p><a href="https://builtbycray.com" target="_blank" rel="noopener">Preview by Built By Cray</a></p>
+      <p>This is a free preview concept and is not the official website of Head of the Class Learning Academy. Name, phone and address come from public listings. Stock photos from Unsplash.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="btn btn-call fab" href="tel:+17709871311" aria-label="Call Head of the Class at (770) 987-1311">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+  Call now
+</a>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(e){e.classList.add('in')});return;
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
 </body>
 </html>

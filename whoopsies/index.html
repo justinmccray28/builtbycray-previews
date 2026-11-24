@@ -4,157 +4,474 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Whoopsie&#39;s | Website preview concept by Built By Cray</title>
-<meta name="description" content="A free website preview concept for Whoopsie&#39;s, designed by Built By Cray. Not the official website of Whoopsie&#39;s.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://images.unsplash.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600&display=swap">
+<title>Whoopsie's | Preview concept by Built By Cray</title>
+<meta name="description" content="Whoopsie's, a restaurant at 1 Moreland Avenue SE in Atlanta, GA. Pull up a chair, grab a bite and get directions. Free preview concept by Built By Cray.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..900,100,1;1,9..144,400..900,100,1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fbf7f2;--ink:#221316;--muted:#6e5a5d;--accent:#9e2b3a;--dark:#1a0e10;--soft:#f3e5e2;--on-accent:#fff;--c2:#9e2b3a;--c3:#9e2b3a;--c4:#9e2b3a;--pop:#9e2b3a;--display:'Playfair Display', Georgia, serif;--body:'Inter', system-ui, sans-serif;--r:14px}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+:root{
+  --ink:#1d1a16;
+  --ink-2:#2b2620;
+  --cream:#f6eedf;
+  --paper:#fbf6ec;
+  --tomato:#e04a2c;
+  --tomato-dk:#b8361c;
+  --mustard:#f2b33d;
+  --sage:#7f8f6a;
+  --muted:#6b6257;
+  --line:rgba(29,26,22,.14);
+  --radius:22px;
+  --display:"Fraunces",Georgia,serif;
+  --body:"DM Sans",system-ui,-apple-system,Segoe UI,sans-serif;
+  --wrap:min(1180px,100% - 2.5rem);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);color:var(--ink);background:var(--paper);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}
 a{color:inherit}
-.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
-h1,h2,h3{font-family:var(--display);line-height:1.08;font-weight:700;letter-spacing:-.01em}
-h1{font-size:clamp(40px,6.2vw,76px)}
-h2{font-size:clamp(30px,4vw,48px);margin-bottom:18px}
-h3{font-size:21px;margin-bottom:6px}
-.eyebrow{font-family:var(--body);text-transform:uppercase;letter-spacing:.16em;font-size:12.5px;font-weight:600;color:var(--accent);margin-bottom:14px}
-.eyebrow.light{color:#fff;opacity:.85}
-.sub{font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:560px;margin:18px 0 30px}
-.lead{font-size:18px;color:var(--muted);margin-bottom:20px}
-section{padding:clamp(64px,9vw,110px) 0}
-.split{display:grid;gap:clamp(28px,5vw,64px);align-items:center}
-@media(min-width:860px){.split{grid-template-columns:1fr 1fr}}
-.actions{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:600;font-size:16px;padding:15px 24px;border-radius:999px;border:2px solid var(--accent);transition:transform .15s ease,box-shadow .15s ease}
-.btn:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(0,0,0,.15)}
-.btn svg{width:18px;height:18px}
-.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
-.btn.ghost.dark{color:var(--ink);border-color:currentColor}
-.btn.light{background:#fff;color:var(--dark);border-color:#fff}
-.btn.block{width:100%;justify-content:center;margin-top:10px}
-.rating{display:inline-flex;align-items:center;gap:6px;font-size:15px}
-.rating svg{width:18px;height:18px;color:#f5b301}
-.hero-rating{margin-top:22px}
-.ticks{list-style:none;display:grid;gap:10px;margin:8px 0 26px}
-.ticks li{display:flex;gap:10px;align-items:center;font-weight:500}
-.ticks svg{width:20px;height:20px;color:var(--accent);flex:none}
-.ticks.small{font-size:14px;margin:16px 0 0}
-/* preview bar */
-.pv-bar{position:relative;z-index:30;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;background:#0d0d0f;color:#d6d6db;font:13px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;padding:8px 16px;text-align:center}
-.pv-bar b{color:#fff;font-weight:600}
-.pv-offer{color:#ffd166}
-.pv-bar a{background:#ffd166;color:#111;text-decoration:none;font-weight:700;padding:5px 12px;border-radius:999px;white-space:nowrap;font-size:12.5px}
-@media(max-width:700px){.pv-long{display:none}.pv-bar{font-size:12px;gap:8px;padding:7px 12px}}
-/* nav */
-.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid color-mix(in srgb,var(--ink) 8%,transparent)}
-.nav-row{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
-.brand{font-family:var(--display);font-weight:700;font-size:22px;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:60vw}
-.nav-links{display:flex;align-items:center;gap:26px;font-size:15px;font-weight:500}
-.nav-links a{text-decoration:none;opacity:.85}
-.nav-call{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--bg)!important;padding:9px 16px;border-radius:999px;opacity:1!important}
-.nav-call svg{width:16px;height:16px}
-@media(max-width:760px){.nav-links a:not(.nav-call){display:none}.nav-call span{display:none}.nav-call{padding:10px}}
-/* services */
-.svc-grid{display:grid;gap:18px;margin-top:34px}
-@media(min-width:700px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1000px){.svc-grid{grid-template-columns:repeat(${n},1fr)}}
-.svc{background:var(--soft);border-radius:var(--r);padding:28px}
-.svc .num{display:block;font-family:var(--display);color:var(--accent);font-size:15px;margin-bottom:14px;letter-spacing:.08em}
-.svc p{color:var(--muted);font-size:16px}
-/* about */
-.about-img img{width:100%;aspect-ratio:9/10;object-fit:cover;border-radius:calc(var(--r) * 1.4)}
-.quote{margin:-4px 0 18px}
-/* gallery */
-.gallery{padding-top:0}
-.g-grid{display:grid;gap:14px;grid-template-columns:1fr 1fr}
-.g{overflow:hidden;border-radius:var(--r)}
-.g img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/2}
-.g0{grid-column:1/-1}
-@media(min-width:860px){.g-grid{grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr}.g0{grid-column:auto;grid-row:1/3}.g0 img{aspect-ratio:auto}}
-.stock-note{font-size:12.5px;color:var(--muted);margin-top:12px;text-align:right}
-/* steps */
-.steps{background:var(--soft)}
-.step-grid{display:grid;gap:22px;margin-top:30px}
-@media(min-width:800px){.step-grid{grid-template-columns:repeat(3,1fr)}}
-.step{background:var(--bg);border-radius:var(--r);padding:28px}
-.step span{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--accent);color:var(--on-accent);font-weight:800;margin-bottom:16px}
-.step p{color:var(--muted)}
-/* visit */
-.facts{display:grid;gap:16px;margin:10px 0 28px}
-.facts div{display:grid;grid-template-columns:90px 1fr;gap:12px;padding-bottom:14px;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent)}
-.facts dt{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);padding-top:3px}
-.facts dd a{text-decoration:none;font-weight:600}
-.map iframe{width:100%;height:380px;border:0;border-radius:calc(var(--r) * 1.2);filter:saturate(.9)}
-/* cta */
-.cta-band{background:var(--dark);color:#fff;padding:clamp(48px,7vw,80px) 0}
-.cta-band .wrap{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
-.cta-band h2{margin:0;color:#fff}
-/* footer */
-.foot{background:var(--dark);color:color-mix(in srgb,#fff 70%,transparent);padding:44px 0 90px;font-size:14px}
-.foot .brand{color:#fff;display:block;margin-bottom:6px}
-.foot a{color:#fff}
-.disc{margin-top:18px;font-size:12.5px;opacity:.75;max-width:760px}
-.m-call{display:none}
-.g-two{grid-template-columns:1fr 1fr}.g-two .g img{aspect-ratio:3/2}
-@media(min-width:860px){.g-two{grid-template-columns:1fr 1fr;grid-template-rows:auto}}
-@media(max-width:760px){.m-call{display:flex;position:fixed;left:14px;right:14px;bottom:14px;z-index:40;align-items:center;justify-content:center;gap:10px;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:700;padding:16px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,.25);opacity:0;transform:translateY(20px);pointer-events:none;transition:.25s}.m-call.show{opacity:1;transform:none;pointer-events:auto}.m-call svg{width:18px;height:18px}}
-/* shared hero bits */
-.hero{position:relative}
-.hero-photo,.hero-card{color:#fff;overflow:hidden}
-.hero-photo .bg,.hero-card .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.7))}
-.hero-inner{position:relative;padding:clamp(90px,14vw,170px) 0 clamp(80px,12vw,140px)}
-.hero-photo .sub,.hero-card .sub{color:rgba(255,255,255,.88)}
-.hero-split .btn.ghost,.hero-arch .btn.ghost,.hero-kids .btn.ghost,.hero-bloom .btn.ghost,.hero-fresh .btn.ghost{color:var(--ink);border-color:currentColor}
-.center{text-align:center}.center .sub{margin-inline:auto}.center .actions{justify-content:center}
+:focus-visible{outline:3px solid var(--mustard);outline-offset:3px;border-radius:6px}
+.wrap{width:var(--wrap);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:0;background:var(--mustard);color:var(--ink);padding:.6rem 1rem;z-index:100;font-weight:700}
+.skip:focus{left:1rem;top:1rem}
 
-.l-bistro h1{font-weight:500;font-style:italic;max-width:900px;margin-inline:auto}
-.l-bistro .svc{background:transparent;border-top:1px solid color-mix(in srgb,var(--ink) 15%,transparent);border-radius:0;padding:24px 0}
-.l-bistro .svc-grid{gap:0 48px}
-@media(min-width:1000px){.l-bistro .svc-grid{grid-template-columns:repeat(2,1fr)}}
-.l-bistro .svc h3{font-size:26px;font-weight:500}
-.l-bistro .services h2,.l-bistro .services .eyebrow{text-align:center}
-.l-bistro .about{background:var(--soft)}
-.l-bistro .about-img img{border-radius:999px 999px 18px 18px}</style>
+/* Preview bar */
+.preview-bar{background:var(--ink);color:var(--cream);font-size:.84rem}
+.preview-bar .wrap{display:flex;align-items:center;justify-content:center;gap:.4rem 1rem;flex-wrap:wrap;padding:.55rem 0;text-align:center}
+.preview-bar strong{color:var(--mustard);font-weight:700}
+.preview-bar .claim{background:var(--mustard);color:var(--ink);text-decoration:none;font-weight:700;padding:.3rem .85rem;border-radius:999px;font-size:.8rem;white-space:nowrap}
+.preview-bar .claim:hover{background:#ffc75a}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(251,246,236,.9);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:72px}
+.logo{display:flex;align-items:center;gap:.6rem;text-decoration:none}
+.logo-mark{width:40px;height:40px;flex:none}
+.logo-word{font-family:var(--display);font-weight:800;font-size:1.6rem;letter-spacing:-.02em;font-variation-settings:"SOFT" 100,"WONK" 1;line-height:1}
+.logo-word em{color:var(--tomato);font-style:italic}
+.nav{display:flex;gap:2rem;list-style:none;margin:0;padding:0}
+.nav a{text-decoration:none;font-weight:500;font-size:.95rem;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;background:var(--tomato);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+.nav a:hover::after{transform:scaleX(1)}
+
+.btn{display:inline-flex;align-items:center;gap:.55rem;font-family:var(--body);font-weight:700;text-decoration:none;border-radius:999px;padding:.85rem 1.45rem;transition:transform .2s ease,background .2s ease,box-shadow .2s ease;line-height:1.1}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-primary{background:var(--tomato);color:#fff;box-shadow:0 6px 0 var(--tomato-dk)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 0 var(--tomato-dk)}
+.btn-primary:active{transform:translateY(3px);box-shadow:0 3px 0 var(--tomato-dk)}
+.btn-ghost{border:2px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--cream)}
+.btn-sm{padding:.6rem 1.05rem;font-size:.92rem;box-shadow:0 4px 0 var(--tomato-dk)}
+.btn-lg{padding:1.1rem 1.9rem;font-size:1.1rem}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;padding:clamp(2.5rem,6vw,5.5rem) 0 clamp(3.5rem,7vw,6.5rem)}
+.hero::before{content:"";position:absolute;inset:auto -10% -40% auto;width:60vw;height:60vw;max-width:780px;max-height:780px;background:radial-gradient(circle,rgba(242,179,61,.35),transparent 65%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4.5rem);align-items:center;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.8rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--tomato-dk)}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(3rem,8.4vw,6.6rem);line-height:.92;letter-spacing:-.035em;margin:.9rem 0 1.2rem;font-variation-settings:"SOFT" 100,"WONK" 1}
+.hero h1 .accent{color:var(--tomato);font-style:italic;font-weight:700}
+.hero h1 .squiggle{position:relative;display:inline-block}
+.hero h1 .squiggle svg{position:absolute;left:0;right:0;bottom:-.12em;width:100%;height:.28em}
+.hero .lede{font-size:clamp(1.1rem,1.6vw,1.3rem);max-width:33ch;color:var(--ink-2);margin:0 0 2rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:1rem 1.2rem;align-items:center}
+.hero-note{margin-top:1.6rem;font-size:.92rem;color:var(--muted);display:flex;align-items:center;gap:.5rem}
+.hero-note svg{width:18px;height:18px;color:var(--tomato)}
+
+.hero-art{position:relative;aspect-ratio:4/5;max-width:520px;justify-self:end;width:100%}
+.hero-art .frame{position:absolute;inset:0;border-radius:200px 200px var(--radius) var(--radius);overflow:hidden;box-shadow:0 30px 60px -25px rgba(29,26,22,.45)}
+.hero-art .frame img{width:100%;height:100%;object-fit:cover}
+.hero-art .inset{position:absolute;width:44%;aspect-ratio:1;left:-12%;bottom:-6%;border-radius:50%;overflow:hidden;border:8px solid var(--paper);box-shadow:0 18px 40px -18px rgba(29,26,22,.5)}
+.hero-art .inset img{width:100%;height:100%;object-fit:cover}
+.sticker{position:absolute;top:6%;right:-5%;width:132px;height:132px;color:var(--ink)}
+.sticker .spin{animation:spin 22s linear infinite;transform-origin:50% 50%}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* Marquee */
+.marquee{background:var(--tomato);color:var(--cream);overflow:hidden;border-block:2px solid var(--ink);transform:rotate(-1.2deg);margin:0 -2%}
+.marquee-track{display:flex;width:max-content;animation:slide 32s linear infinite}
+.marquee span{font-family:var(--display);font-style:italic;font-weight:700;font-size:clamp(1.3rem,2.6vw,2rem);padding:.7rem 1.4rem;white-space:nowrap;display:flex;align-items:center;gap:2.6rem}
+.marquee span::after{content:"✺";color:var(--mustard);font-style:normal}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* Sections */
+section{scroll-margin-top:90px}
+.section{padding:clamp(4.5rem,9vw,8rem) 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:clamp(2.2rem,4vw,3.5rem)}
+.section-head h2,.h2{font-family:var(--display);font-weight:750;font-size:clamp(2.2rem,5vw,3.8rem);line-height:1;letter-spacing:-.03em;margin:.7rem 0 0;font-variation-settings:"SOFT" 100,"WONK" 1;max-width:16ch}
+.h2 em,.section-head h2 em{color:var(--tomato);font-weight:700}
+.section-head p{max-width:38ch;color:var(--muted);margin:0}
+
+/* Menu cards */
+.menu-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+.dish{background:var(--cream);border:1.5px solid var(--ink);border-radius:var(--radius);padding:1.6rem 1.5rem 1.8rem;position:relative;transition:transform .25s ease,box-shadow .25s ease}
+.dish:hover{transform:translateY(-6px) rotate(-.6deg);box-shadow:8px 10px 0 var(--ink)}
+.dish:nth-child(2){background:#fde3d4}
+.dish:nth-child(3){background:#f9e6b4}
+.dish:nth-child(4){background:#e2e6d3}
+.dish .num{font-family:var(--display);font-style:italic;font-size:.95rem;color:var(--muted)}
+.dish svg{width:56px;height:56px;margin:1.2rem 0 1rem;color:var(--ink)}
+.dish h3{font-family:var(--display);font-weight:700;font-size:1.55rem;line-height:1.1;margin:0 0 .55rem;letter-spacing:-.01em}
+.dish p{margin:0;color:var(--ink-2);font-size:.98rem}
+
+/* Feature split */
+.split{background:var(--ink);color:var(--cream);border-radius:clamp(0px,3vw,40px);margin-inline:clamp(0rem,2vw,1.5rem);overflow:hidden}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;min-height:620px}
+.split-img{position:relative}
+.split-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.split-body{padding:clamp(2.5rem,6vw,5.5rem)}
+.split .eyebrow{color:var(--mustard)}
+.split .h2 em{color:var(--mustard)}
+.reasons{list-style:none;padding:0;margin:2.2rem 0 0;display:grid;gap:1.6rem}
+.reasons li{display:grid;grid-template-columns:52px 1fr;gap:1.1rem;align-items:start;padding-top:1.6rem;border-top:1px solid rgba(246,238,223,.16)}
+.reasons li:first-child{border-top:0;padding-top:0}
+.reasons .ico{width:52px;height:52px;border-radius:50%;background:var(--tomato);display:grid;place-items:center}
+.reasons .ico svg{width:24px;height:24px;color:#fff}
+.reasons h3{font-family:var(--display);font-weight:650;font-size:1.35rem;margin:0 0 .25rem;letter-spacing:-.01em}
+.reasons p{margin:0;color:rgba(246,238,223,.78);font-size:.98rem}
+
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.2rem,3vw,2.5rem);counter-reset:step}
+.step{position:relative;padding-top:1rem}
+.step .big{font-family:var(--display);font-weight:900;font-style:italic;font-size:clamp(4.5rem,9vw,7rem);line-height:.8;color:transparent;-webkit-text-stroke:2px var(--tomato);display:block;margin-bottom:1rem}
+.step h3{font-family:var(--display);font-weight:700;font-size:1.6rem;margin:0 0 .4rem;letter-spacing:-.01em}
+.step p{margin:0;color:var(--muted);max-width:32ch}
+.step a{color:var(--tomato-dk);font-weight:700}
+
+/* Gallery */
+.gallery-section{padding-top:0}
+.gallery{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:260px 260px;gap:1rem}
+.gallery figure{margin:0;border-radius:var(--radius);overflow:hidden;position:relative}
+.gallery figure:first-child{grid-row:span 2}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
+.gallery figure:hover img{transform:scale(1.05)}
+.stock-note{font-size:.8rem;color:var(--muted);margin-top:.9rem;text-align:right}
+
+/* Visit */
+.visit{background:var(--mustard);position:relative;overflow:hidden}
+.visit-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.visit .eyebrow{color:var(--ink)}
+.visit .h2 em{color:var(--tomato-dk)}
+.visit-card{background:var(--paper);border:2px solid var(--ink);border-radius:var(--radius);padding:clamp(1.6rem,4vw,2.6rem);box-shadow:10px 12px 0 var(--ink)}
+.visit-card dl{margin:0;display:grid;gap:1.3rem}
+.visit-card dt{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--tomato-dk);margin-bottom:.2rem}
+.visit-card dd{margin:0;font-family:var(--display);font-size:1.35rem;line-height:1.3;font-weight:600}
+.visit-card dd small{display:block;font-family:var(--body);font-size:.92rem;font-weight:400;color:var(--muted);margin-top:.2rem}
+.visit-card .btn{margin-top:1.8rem;width:100%;justify-content:center}
+.visit-lede{font-size:1.15rem;max-width:36ch;margin:1.2rem 0 2rem}
+.visit-ctas{display:flex;gap:1rem;flex-wrap:wrap}
+.map-art{margin-top:2.2rem;max-width:420px}
+
+/* Footer */
+.site-footer{background:var(--ink);color:rgba(246,238,223,.75);padding:3.5rem 0 2.5rem;font-size:.92rem}
+.footer-top{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap;padding-bottom:2rem;border-bottom:1px solid rgba(246,238,223,.14);margin-bottom:1.8rem}
+.site-footer .logo-word{color:var(--cream);font-size:2rem}
+.site-footer .logo-word em{color:var(--mustard)}
+.site-footer a{color:var(--mustard)}
+.footer-addr{color:var(--cream)}
+.disclaimer{max-width:72ch;margin:.6rem 0 0}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* Responsive */
+@media (max-width:1024px){
+  .menu-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:860px){
+  .nav{display:none}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-art{justify-self:center;max-width:420px;margin-top:1rem}
+  .split-grid{grid-template-columns:1fr;min-height:0}
+  .split-img{aspect-ratio:4/3}
+  .steps{grid-template-columns:1fr}
+  .visit-grid{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .gallery figure{aspect-ratio:1}
+  .gallery figure:first-child{grid-column:span 2;grid-row:auto;aspect-ratio:16/10}
+}
+@media (max-width:560px){
+  body{font-size:1rem}
+  .preview-bar{font-size:.78rem}
+  .site-header .wrap{height:64px}
+  .logo-word{font-size:1.35rem}
+  .logo-mark{width:34px;height:34px}
+  .menu-grid{grid-template-columns:1fr}
+  .hero-ctas .btn{width:100%;justify-content:center}
+  .hero-art .inset{left:-4%;width:40%}
+  .sticker{width:104px;height:104px;right:-2%}
+  .gallery figure:first-child{aspect-ratio:4/3}
+  .visit-ctas .btn{width:100%;justify-content:center}
+  .visit-card{box-shadow:6px 8px 0 var(--ink)}
+  .stock-note{text-align:left}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+/* Built By Cray QA fix: keep marquee/ribbon from causing sideways scroll */
+html,body{overflow-x:clip}
+</style>
 </head>
-<body class="l-bistro">
-<div class="pv-bar" role="note"><p><b>Free preview concept by Built By Cray.</b> Not the official website of Whoopsie&#39;s<span class="pv-long">, and not made or endorsed by them</span>. <span class="pv-offer">$650 Black Friday price through November 30.</span></p><a href="https://calendar.app.google/K7QqcbLckjKjjZs19" target="_blank" rel="noopener">Claim this website</a></div>
-<nav class="nav"><div class="wrap nav-row"><a class="brand" href="#top">Whoopsie&#39;s</a><div class="nav-links"><a href="#services">Menu</a><a href="#visit">Visit</a></div></div></nav>
-<main id="top">
-<header class="hero hero-photo"><img class="bg" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&h=1100&q=70" srcset="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=480&h=293&q=70 480w, https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&h=489&q=70 800w, https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&h=733&q=70 1200w, https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&h=978&q=70 1600w" sizes="(max-width: 760px) 100vw, 50vw" alt="Food photo for this preview" fetchpriority="high" decoding="async"><div class="shade"></div>
-      <div class="wrap hero-inner center"><p class="eyebrow light">Restaurant · Atlanta</p><h1>Good food and a warm welcome.</h1><p class="sub">Come in for a meal or call ahead for pickup.</p>
-      <div class="actions"><a class="btn" href="#visit">Call to order</a><a class="btn ghost" href="#services">See the menu</a></div></div></header>
-<section id="services" class="services"><div class="wrap">
-      <p class="eyebrow">Why people come back</p><h2>Made fresh, every day</h2>
-      <div class="svc-grid"><article class="svc"><span class="num">01</span><h3>Dine in</h3><p>A comfortable room and friendly service, whether it&#39;s lunch or a night out.</p></article><article class="svc"><span class="num">02</span><h3>Takeout</h3><p>Call ahead and your order will be hot and ready.</p></article><article class="svc"><span class="num">03</span><h3>Daily specials</h3><p>Ask what the kitchen is making today.</p></article><article class="svc"><span class="num">04</span><h3>Catering</h3><p>Trays and platters for parties and office lunches.</p></article></div>
-      </div></section>
-<section class="gallery" aria-label="Photos"><div class="wrap"><div class="g-grid g-two">
-      <figure class="g g1"><img class="" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&h=600&q=70" srcset="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=480&h=320&q=70 480w, https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&h=533&q=70 800w, https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&h=800&q=70 1200w" sizes="(max-width: 760px) 100vw, 50vw" alt="Stock photo for this preview" loading="lazy" decoding="async"></figure><figure class="g g2"><img class="" src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&h=600&q=70" srcset="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=480&h=320&q=70 480w, https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&h=533&q=70 800w, https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&h=800&q=70 1200w" sizes="(max-width: 760px) 100vw, 50vw" alt="Stock photo for this preview" loading="lazy" decoding="async"></figure>
-      </div><p class="stock-note">Stock photos for preview. The finished site would use Whoopsie&#39;s's own photos.</p></div></section>
-<section class="about"><div class="wrap split">
-      <div class="about-img"><img class="" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&h=1000&q=70" srcset="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=480&h=533&q=70 480w, https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&h=889&q=70 800w, https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&h=1333&q=70 1200w" sizes="(max-width: 760px) 100vw, 50vw" alt="Why people come back at a local business" loading="lazy" decoding="async"></div>
-      <div class="about-copy"><p class="eyebrow">About</p><h2>Proudly part of Atlanta</h2>
-      <p class="lead">Good food, fair prices, and people who are glad you came in. That&#39;s the whole idea at Whoopsie&#39;s, right here in Atlanta.</p>
-      
-      <ul class="ticks"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z" fill="currentColor"/></svg>Locally owned</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z" fill="currentColor"/></svg>Friendly service</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z" fill="currentColor"/></svg>Right here in Atlanta</li></ul>
-      </div></div></section>
-<section id="visit" class="visit"><div class="wrap split">
-      <div class="visit-copy"><p class="eyebrow">Visit us</p><h2>Find us in Atlanta</h2>
-        <dl class="facts">
-          
-          <div><dt>Address</dt><dd>1 Moreland Avenue Southeast, Atlanta, GA, 30316</dd></div>
-          <div><dt>Hours</dt><dd>Call for today's hours</dd></div>
-        </dl>
-        <div class="actions"><a class="btn" href="#visit">Call to order</a><a class="btn ghost dark" href="https://www.google.com/maps/dir/?api=1&destination=Whoopsie's%2C%201%20Moreland%20Avenue%20Southeast%2C%20Atlanta%2C%20GA%2C%2030316" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg><span>Directions</span></a></div>
-      </div>
-      <div class="map"><iframe title="Map to Whoopsie&#39;s" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=1%20Moreland%20Avenue%20Southeast%2C%20Atlanta%2C%20GA%2C%2030316&z=15&output=embed"></iframe></div>
-    </div></section>
-</main>
-<footer class="foot"><div class="wrap"><p class="brand">Whoopsie&#39;s</p><p>1 Moreland Avenue Southeast, Atlanta, GA, 30316</p>
-<p class="disc">Free website preview concept designed by <a href="https://builtbycray.com">Built By Cray</a>. This is not the official website of Whoopsie&#39;s and was not made, approved, or endorsed by them. Name, phone, address, and rating come from public listings. Sample copy and stock photos (Unsplash) for preview only.</p></div></footer>
+<body>
+<a class="skip" href="#main">Skip to content</a>
 
+<div class="preview-bar" role="note" aria-label="Preview disclosure">
+  <div class="wrap">
+    <span>Free preview concept by Built By Cray. Not the official website of Whoopsie's. <strong>$650 Black Friday price through Nov 30.</strong></span>
+    <a class="claim" href="https://calendar.app.google/K7QqcbLckjKjjZs19" target="_blank" rel="noopener">Claim this website</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Whoopsie's home">
+      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" fill="#e04a2c"/>
+        <path d="M11 23c2.5 5 15.5 5 18 0" stroke="#fbf6ec" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <circle cx="14.5" cy="15.5" r="2.3" fill="#fbf6ec"/>
+        <path d="M23.5 14.5l4 2.5" stroke="#fbf6ec" stroke-width="2.6" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-word">Whoopsie<em>'s</em></span>
+    </a>
+    <nav aria-label="Main">
+      <ul class="nav">
+        <li><a href="#menu">On the table</a></li>
+        <li><a href="#why">Why stop in</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="https://www.google.com/maps/search/?api=1&amp;query=Whoopsie's%20Atlanta" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>
+      Directions
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <span class="eyebrow">Moreland Ave · Atlanta, GA</span>
+        <h1>Whoopsie<span class="accent">'s</span><br>
+          <span class="squiggle">good eats,
+            <svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M2 14C40 2 60 18 100 9s60 9 100 0 60 8 98-2" stroke="#f2b33d" stroke-width="6" fill="none" stroke-linecap="round"/></svg>
+          </span><br><span class="accent">no fuss.</span></h1>
+        <p class="lede">A laid-back neighborhood restaurant on Moreland Avenue, made for slow meals, good company and the kind of plate you'll be thinking about tomorrow.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary btn-lg" href="https://www.google.com/maps/search/?api=1&amp;query=Whoopsie's%20Atlanta" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>
+            Get directions
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#visit">Visit us</a>
+        </div>
+        <p class="hero-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          Check Google Maps for current hours.
+        </p>
+      </div>
+
+      <div class="hero-art reveal">
+        <div class="frame">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=1000&amp;h=1250&amp;q=70" alt="Warm, softly lit restaurant dining room with wooden tables (stock photo)" width="1000" height="1250" fetchpriority="high">
+        </div>
+        <div class="inset">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=500&amp;h=500&amp;q=70" alt="Close-up of a plated dish (stock photo)" width="500" height="500" loading="lazy">
+        </div>
+        <svg class="sticker" viewBox="0 0 140 140" aria-hidden="true">
+          <circle cx="70" cy="70" r="66" fill="#f2b33d" stroke="#1d1a16" stroke-width="2"/>
+          <g class="spin">
+            <defs><path id="circ" d="M70,70 m-48,0 a48,48 0 1,1 96,0 a48,48 0 1,1 -96,0"/></defs>
+            <text font-family="DM Sans, sans-serif" font-size="12.5" font-weight="700" letter-spacing="3" fill="#1d1a16"><textPath href="#circ">PULL UP A CHAIR · STAY A WHILE · </textPath></text>
+          </g>
+          <path d="M58 64c4 10 20 10 24 0" stroke="#1d1a16" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <circle cx="60" cy="56" r="3" fill="#1d1a16"/><circle cx="80" cy="56" r="3" fill="#1d1a16"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Come hungry</span><span>Leave happy</span><span>Bring the crew</span><span>Atlanta, GA</span><span>1 Moreland Ave SE</span>
+      <span>Come hungry</span><span>Leave happy</span><span>Bring the crew</span><span>Atlanta, GA</span><span>1 Moreland Ave SE</span>
+    </div>
+  </div>
+
+  <section class="section" id="menu">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">On the table</span>
+          <h2>Something for <em>every</em> kind of hungry.</h2>
+        </div>
+        <p>Whether you're grabbing a quick bite or settling in for the evening, here's the kind of spread you can expect.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="dish reveal">
+          <span class="num">01</span>
+          <svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="28" cy="34" rx="22" ry="9"/><path d="M10 32c2-10 10-16 18-16s16 6 18 16"/><path d="M22 14c0-3 2-4 2-7M30 13c0-3 2-4 2-7"/></svg>
+          <h3>Hearty mains</h3>
+          <p>Generous, satisfying plates built for a real appetite.</p>
+        </article>
+        <article class="dish reveal">
+          <span class="num">02</span>
+          <svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="30" r="10"/><circle cx="38" cy="30" r="10"/><path d="M28 30h0M14 30h8M34 30h8"/></svg>
+          <h3>Plates to share</h3>
+          <p>Small bites and sides for passing around the table.</p>
+        </article>
+        <article class="dish reveal">
+          <span class="num">03</span>
+          <svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 26h24l-3 22H19z"/><path d="M14 26c0-8 6-14 14-14s14 6 14 14"/><circle cx="28" cy="9" r="3"/></svg>
+          <h3>Sweet finishes</h3>
+          <p>Because the best meals end with a little something extra.</p>
+        </article>
+        <article class="dish reveal">
+          <span class="num">04</span>
+          <svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 10h22l-3 38H20z"/><path d="M18.5 22h19"/><path d="M33 4l-4 18"/></svg>
+          <h3>Something to sip</h3>
+          <p>Cold drinks to round out the meal and keep the conversation going.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="split" id="why">
+    <div class="split-grid">
+      <div class="split-img">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1200&amp;q=70" alt="Elegantly plated dishes on a restaurant table (stock photo)" loading="lazy" width="1200" height="800">
+      </div>
+      <div class="split-body reveal">
+        <span class="eyebrow">Why stop in</span>
+        <h2 class="h2">Your new <em>favorite</em> table on Moreland.</h2>
+        <ul class="reasons">
+          <li>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+            <div><h3>Easy to find</h3><p>Right at 1 Moreland Avenue SE, an easy stop on the east side of town.</p></div>
+          </li>
+          <li>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><circle cx="17" cy="9" r="2.6"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6M15 14.5c3 0 6 2 6 5.5"/></svg></span>
+            <div><h3>Made for sharing</h3><p>Date night, family dinner or the whole crew, there's room at the table.</p></div>
+          </li>
+          <li>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg></span>
+            <div><h3>Come as you are</h3><p>No dress code energy. Just good food and an easygoing, friendly vibe.</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="how">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">How it works</span>
+          <h2>Dinner plans in <em>three</em> easy steps.</h2>
+        </div>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <span class="big" aria-hidden="true">1</span>
+          <h3>Check the hours</h3>
+          <p>Hours can change, so take a quick look on <a href="https://www.google.com/maps/search/?api=1&amp;query=Whoopsie's%20Atlanta" target="_blank" rel="noopener">Google Maps</a> before you head out.</p>
+        </div>
+        <div class="step reveal">
+          <span class="big" aria-hidden="true">2</span>
+          <h3>Head to Moreland</h3>
+          <p>Tap "Get directions" and we'll see you at 1 Moreland Avenue SE.</p>
+        </div>
+        <div class="step reveal">
+          <span class="big" aria-hidden="true">3</span>
+          <h3>Pull up a chair</h3>
+          <p>Grab a seat, order up, and let the evening take its time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gallery-section" aria-label="Photo gallery">
+    <div class="wrap">
+      <div class="gallery">
+        <figure class="reveal"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&amp;fit=crop&amp;w=1100&amp;q=70" alt="Cozy restaurant interior with tables and warm lighting (stock photo)" loading="lazy"></figure>
+        <figure class="reveal"><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&amp;fit=crop&amp;w=700&amp;q=70" alt="Restaurant seating area (stock photo)" loading="lazy"></figure>
+        <figure class="reveal"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&amp;fit=crop&amp;w=700&amp;q=70" alt="Dining room ready for guests (stock photo)" loading="lazy"></figure>
+        <figure class="reveal"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=700&amp;q=70" alt="Colorful plate of food (stock photo)" loading="lazy"></figure>
+        <figure class="reveal"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=700&amp;q=70" alt="Restaurant dishes served at the table (stock photo)" loading="lazy"></figure>
+      </div>
+      <p class="stock-note">Stock photos for preview (Unsplash).</p>
+    </div>
+  </section>
+
+  <section class="section visit" id="visit">
+    <div class="wrap visit-grid">
+      <div class="reveal">
+        <span class="eyebrow">Visit us</span>
+        <h2 class="h2">Come hungry. <em>We'll handle the rest.</em></h2>
+        <p class="visit-lede">Find Whoopsie's on Moreland Avenue in southeast Atlanta. Tap below for turn-by-turn directions.</p>
+        <div class="visit-ctas">
+          <a class="btn btn-primary btn-lg" href="https://www.google.com/maps/search/?api=1&amp;query=Whoopsie's%20Atlanta" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>
+            Get directions
+          </a>
+        </div>
+        <svg class="map-art" viewBox="0 0 420 120" fill="none" aria-hidden="true">
+          <path d="M0 90 C80 90 90 30 170 30 S 280 95 340 60" stroke="#1d1a16" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round"/>
+          <circle cx="0" cy="90" r="7" fill="#1d1a16"/>
+          <g transform="translate(340 18)">
+            <path d="M18 62s-18-16-18-31a18 18 0 0 1 36 0c0 15-18 31-18 31z" fill="#e04a2c" stroke="#1d1a16" stroke-width="2.5"/>
+            <circle cx="18" cy="31" r="6.5" fill="#fbf6ec"/>
+          </g>
+        </svg>
+      </div>
+      <div class="visit-card reveal">
+        <dl>
+          <div>
+            <dt>Address</dt>
+            <dd>1 Moreland Avenue Southeast<br>Atlanta, GA 30316</dd>
+          </div>
+          <div>
+            <dt>Hours</dt>
+            <dd>Check Google Maps for current hours.<small>Hours can change, so it's always worth a quick look before you go.</small></dd>
+          </div>
+          <div>
+            <dt>Area</dt>
+            <dd>Metro Atlanta, Georgia</dd>
+          </div>
+        </dl>
+        <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Whoopsie's%20Atlanta" target="_blank" rel="noopener">Open in Google Maps</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <span class="logo-word">Whoopsie<em>'s</em></span>
+      <span class="footer-addr">1 Moreland Avenue SE, Atlanta, GA 30316 · <a href="https://www.google.com/maps/search/?api=1&amp;query=Whoopsie's%20Atlanta" target="_blank" rel="noopener">Get directions</a></span>
+    </div>
+    <p><a href="https://builtbycray.com" target="_blank" rel="noopener">Preview by Built By Cray</a></p>
+    <p class="disclaimer">This is a free preview concept and is not the official website of Whoopsie's. Name, phone and address come from public listings. Stock photos from Unsplash.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(e){e.classList.add('in')});return;
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
 </body>
 </html>

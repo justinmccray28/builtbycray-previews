@@ -4,165 +4,563 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Bundles of Joy | Website preview concept by Built By Cray</title>
-<meta name="description" content="A free website preview concept for Bundles of Joy, designed by Built By Cray. Not the official website of Bundles of Joy.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://images.unsplash.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap">
+<title>Bundles of Joy | Preview concept by Built By Cray</title>
+<meta name="description" content="Bundles of Joy is a warm, caring childcare center at 1105 Princeton Park Dr in Lithonia, GA. Rated 4.9 stars on Google. Call (404) 457-3206 to schedule a visit.">
+<meta name="theme-color" content="#FFF8EF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,500..800,100&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fffaf1;--ink:#26334d;--muted:#5e6a84;--accent:#ff7a59;--dark:#26334d;--soft:#fff1dc;--on-accent:#fff;--c2:#3bb3c3;--c3:#ffcb47;--c4:#8e7dff;--pop:#ff7a59;--display:'Fredoka', system-ui, sans-serif;--body:'Nunito', system-ui, sans-serif;--r:14px}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
-img{display:block;max-width:100%}
-a{color:inherit}
-.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
-h1,h2,h3{font-family:var(--display);line-height:1.08;font-weight:700;letter-spacing:-.01em}
-h1{font-size:clamp(40px,6.2vw,76px)}
-h2{font-size:clamp(30px,4vw,48px);margin-bottom:18px}
-h3{font-size:21px;margin-bottom:6px}
-.eyebrow{font-family:var(--body);text-transform:uppercase;letter-spacing:.16em;font-size:12.5px;font-weight:600;color:var(--accent);margin-bottom:14px}
-.eyebrow.light{color:#fff;opacity:.85}
-.sub{font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:560px;margin:18px 0 30px}
-.lead{font-size:18px;color:var(--muted);margin-bottom:20px}
-section{padding:clamp(64px,9vw,110px) 0}
-.split{display:grid;gap:clamp(28px,5vw,64px);align-items:center}
-@media(min-width:860px){.split{grid-template-columns:1fr 1fr}}
-.actions{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:600;font-size:16px;padding:15px 24px;border-radius:999px;border:2px solid var(--accent);transition:transform .15s ease,box-shadow .15s ease}
-.btn:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(0,0,0,.15)}
-.btn svg{width:18px;height:18px}
-.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
-.btn.ghost.dark{color:var(--ink);border-color:currentColor}
-.btn.light{background:#fff;color:var(--dark);border-color:#fff}
-.btn.block{width:100%;justify-content:center;margin-top:10px}
-.rating{display:inline-flex;align-items:center;gap:6px;font-size:15px}
-.rating svg{width:18px;height:18px;color:#f5b301}
-.hero-rating{margin-top:22px}
-.ticks{list-style:none;display:grid;gap:10px;margin:8px 0 26px}
-.ticks li{display:flex;gap:10px;align-items:center;font-weight:500}
-.ticks svg{width:20px;height:20px;color:var(--accent);flex:none}
-.ticks.small{font-size:14px;margin:16px 0 0}
-/* preview bar */
-.pv-bar{position:relative;z-index:30;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;background:#0d0d0f;color:#d6d6db;font:13px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;padding:8px 16px;text-align:center}
-.pv-bar b{color:#fff;font-weight:600}
-.pv-offer{color:#ffd166}
-.pv-bar a{background:#ffd166;color:#111;text-decoration:none;font-weight:700;padding:5px 12px;border-radius:999px;white-space:nowrap;font-size:12.5px}
-@media(max-width:700px){.pv-long{display:none}.pv-bar{font-size:12px;gap:8px;padding:7px 12px}}
-/* nav */
-.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid color-mix(in srgb,var(--ink) 8%,transparent)}
-.nav-row{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
-.brand{font-family:var(--display);font-weight:700;font-size:22px;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:60vw}
-.nav-links{display:flex;align-items:center;gap:26px;font-size:15px;font-weight:500}
-.nav-links a{text-decoration:none;opacity:.85}
-.nav-call{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--bg)!important;padding:9px 16px;border-radius:999px;opacity:1!important}
-.nav-call svg{width:16px;height:16px}
-@media(max-width:760px){.nav-links a:not(.nav-call){display:none}.nav-call span{display:none}.nav-call{padding:10px}}
-/* services */
-.svc-grid{display:grid;gap:18px;margin-top:34px}
-@media(min-width:700px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1000px){.svc-grid{grid-template-columns:repeat(${n},1fr)}}
-.svc{background:var(--soft);border-radius:var(--r);padding:28px}
-.svc .num{display:block;font-family:var(--display);color:var(--accent);font-size:15px;margin-bottom:14px;letter-spacing:.08em}
-.svc p{color:var(--muted);font-size:16px}
-/* about */
-.about-img img{width:100%;aspect-ratio:9/10;object-fit:cover;border-radius:calc(var(--r) * 1.4)}
-.quote{margin:-4px 0 18px}
-/* gallery */
-.gallery{padding-top:0}
-.g-grid{display:grid;gap:14px;grid-template-columns:1fr 1fr}
-.g{overflow:hidden;border-radius:var(--r)}
-.g img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/2}
-.g0{grid-column:1/-1}
-@media(min-width:860px){.g-grid{grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr}.g0{grid-column:auto;grid-row:1/3}.g0 img{aspect-ratio:auto}}
-.stock-note{font-size:12.5px;color:var(--muted);margin-top:12px;text-align:right}
-/* steps */
-.steps{background:var(--soft)}
-.step-grid{display:grid;gap:22px;margin-top:30px}
-@media(min-width:800px){.step-grid{grid-template-columns:repeat(3,1fr)}}
-.step{background:var(--bg);border-radius:var(--r);padding:28px}
-.step span{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--accent);color:var(--on-accent);font-weight:800;margin-bottom:16px}
-.step p{color:var(--muted)}
-/* visit */
-.facts{display:grid;gap:16px;margin:10px 0 28px}
-.facts div{display:grid;grid-template-columns:90px 1fr;gap:12px;padding-bottom:14px;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent)}
-.facts dt{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);padding-top:3px}
-.facts dd a{text-decoration:none;font-weight:600}
-.map iframe{width:100%;height:380px;border:0;border-radius:calc(var(--r) * 1.2);filter:saturate(.9)}
-/* cta */
-.cta-band{background:var(--dark);color:#fff;padding:clamp(48px,7vw,80px) 0}
-.cta-band .wrap{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
-.cta-band h2{margin:0;color:#fff}
-/* footer */
-.foot{background:var(--dark);color:color-mix(in srgb,#fff 70%,transparent);padding:44px 0 90px;font-size:14px}
-.foot .brand{color:#fff;display:block;margin-bottom:6px}
-.foot a{color:#fff}
-.disc{margin-top:18px;font-size:12.5px;opacity:.75;max-width:760px}
-.m-call{display:none}
-.g-two{grid-template-columns:1fr 1fr}.g-two .g img{aspect-ratio:3/2}
-@media(min-width:860px){.g-two{grid-template-columns:1fr 1fr;grid-template-rows:auto}}
-@media(max-width:760px){.m-call{display:flex;position:fixed;left:14px;right:14px;bottom:14px;z-index:40;align-items:center;justify-content:center;gap:10px;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:700;padding:16px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,.25);opacity:0;transform:translateY(20px);pointer-events:none;transition:.25s}.m-call.show{opacity:1;transform:none;pointer-events:auto}.m-call svg{width:18px;height:18px}}
-/* shared hero bits */
-.hero{position:relative}
-.hero-photo,.hero-card{color:#fff;overflow:hidden}
-.hero-photo .bg,.hero-card .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.7))}
-.hero-inner{position:relative;padding:clamp(90px,14vw,170px) 0 clamp(80px,12vw,140px)}
-.hero-photo .sub,.hero-card .sub{color:rgba(255,255,255,.88)}
-.hero-split .btn.ghost,.hero-arch .btn.ghost,.hero-kids .btn.ghost,.hero-bloom .btn.ghost,.hero-fresh .btn.ghost{color:var(--ink);border-color:currentColor}
-.center{text-align:center}.center .sub{margin-inline:auto}.center .actions{justify-content:center}
+  :root{
+    --cream:#FFF8EF;
+    --paper:#FFFDF9;
+    --ink:#2B2340;
+    --ink-soft:#5A5170;
+    --coral:#F2775B;
+    --coral-deep:#D9573A;
+    --sun:#FFC84A;
+    --sage:#8DB89A;
+    --sage-deep:#3F6B50;
+    --sky:#A9D3EC;
+    --blush:#FCE3D8;
+    --plum:#2B2340;
+    --radius:28px;
+    --shadow:0 18px 40px -18px rgba(43,35,64,.35);
+    --display:"Fraunces", Georgia, serif;
+    --body:"Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.65;overflow-x:hidden}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  h1,h2,h3{font-family:var(--display);font-variation-settings:"SOFT" 100;line-height:1.08;margin:0;letter-spacing:-.01em}
+  p{margin:0}
+  .wrap{width:min(1180px, 100% - 2.5rem);margin-inline:auto}
+  :focus-visible{outline:3px solid var(--coral-deep);outline-offset:3px;border-radius:8px}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  .skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:.6rem 1rem;z-index:100;border-radius:0 0 10px 0}
+  .skip:focus{left:0}
 
-.hero-kids{padding:clamp(40px,6vw,80px) 0;overflow:hidden}
-.l-kids h1{font-weight:600;font-size:clamp(40px,5.6vw,68px)}
-.blob{position:relative;padding:20px}
-.blob img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:46% 54% 42% 58% / 52% 44% 56% 48%}
-.dot{position:absolute;border-radius:50%}
-.d1{width:70px;height:70px;background:var(--c3);top:0;right:16%}
-.d2{width:46px;height:46px;background:var(--c2);bottom:10%;left:0}
-.d3{width:28px;height:28px;background:var(--c4);bottom:0;right:10%}
-.l-kids .btn{font-family:var(--display);font-weight:600;font-size:17px}
-.l-kids .svc{border-radius:24px;background:#fff;border:3px solid var(--soft)}
-.l-kids .svc:nth-child(1){border-color:var(--accent)}.l-kids .svc:nth-child(2){border-color:var(--c2)}.l-kids .svc:nth-child(3){border-color:var(--c3)}.l-kids .svc:nth-child(4){border-color:var(--c4)}
-.l-kids .svc .num{font-family:var(--display);font-size:28px}
-.l-kids .about{background:var(--soft)}
-.l-kids .about-img img{border-radius:40px}
-.l-kids .cta-band{background:var(--accent)}</style>
+  /* ---------- Preview bar ---------- */
+  .preview-bar{background:var(--plum);color:#F4EEFF;font-size:.85rem;line-height:1.4}
+  .preview-bar .wrap{display:flex;align-items:center;justify-content:center;gap:.5rem 1rem;flex-wrap:wrap;padding:.55rem 0;text-align:center}
+  .preview-bar strong{color:var(--sun);font-weight:800}
+  .preview-bar .deal{opacity:.85}
+  .claim{display:inline-block;background:var(--sun);color:var(--ink);font-weight:800;text-decoration:none;padding:.3rem .8rem;border-radius:999px;font-size:.8rem;white-space:nowrap;transition:transform .2s}
+  .claim:hover{transform:translateY(-1px)}
+
+  /* ---------- Header ---------- */
+  .site-header{position:sticky;top:0;z-index:50;background:rgba(255,248,239,.88);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid rgba(43,35,64,.07)}
+  .site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0}
+  .brand{display:flex;align-items:center;gap:.65rem;text-decoration:none}
+  .brand svg{width:44px;height:44px;flex:none}
+  .brand-name{font-family:var(--display);font-weight:700;font-size:1.35rem;line-height:1;font-variation-settings:"SOFT" 100}
+  .brand-name small{display:block;font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-top:.25rem}
+  .nav{display:flex;gap:1.75rem;align-items:center}
+  .nav a{text-decoration:none;font-weight:700;font-size:.95rem;color:var(--ink-soft);position:relative;padding:.25rem 0}
+  .nav a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:3px;border-radius:3px;background:var(--sun);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+  .nav a:hover{color:var(--ink)}
+  .nav a:hover::after{transform:scaleX(1)}
+  .header-call{flex:none}
+
+  /* ---------- Buttons ---------- */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;font-family:var(--body);font-weight:800;text-decoration:none;border-radius:999px;padding:.85rem 1.4rem;font-size:1rem;line-height:1.1;transition:transform .2s, box-shadow .2s, background .2s;border:0;cursor:pointer}
+  .btn svg{width:1.15em;height:1.15em;flex:none}
+  .btn-call{background:var(--coral);color:#fff;box-shadow:0 10px 22px -10px rgba(217,87,58,.8)}
+  .btn-call:hover{background:var(--coral-deep);transform:translateY(-2px)}
+  .btn-lg{padding:1.15rem 1.9rem;font-size:1.15rem}
+  .btn-ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+  .btn-ghost:hover{background:var(--ink);color:var(--cream)}
+  .header-call .btn{padding:.7rem 1.15rem;font-size:.95rem}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;padding:4.5rem 0 5.5rem;overflow:hidden}
+  .hero::before{content:"";position:absolute;width:620px;height:620px;right:-180px;top:-160px;border-radius:50%;background:radial-gradient(circle at 40% 40%, #FFE3A3 0%, rgba(255,200,74,.0) 65%);z-index:-1}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:3.5rem;align-items:center}
+  .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-weight:800;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sage-deep);background:#E6F1E8;padding:.45rem .9rem;border-radius:999px}
+  .eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--sage-deep)}
+  .hero h1{font-size:clamp(2.6rem, 6vw, 4.6rem);font-weight:700;margin:1.2rem 0 1.2rem}
+  .hero h1 em{font-style:italic;color:var(--coral-deep);position:relative;white-space:nowrap}
+  .hero h1 em svg{position:absolute;left:0;bottom:-.18em;width:100%;height:.35em;overflow:visible}
+  .hero .lede{font-size:1.2rem;color:var(--ink-soft);max-width:34rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
+  .rating{display:flex;align-items:center;gap:.85rem;margin-top:2.2rem}
+  .stars{display:flex;gap:2px;color:var(--sun)}
+  .stars svg{width:20px;height:20px}
+  .rating p{font-size:.95rem;color:var(--ink-soft);line-height:1.35}
+  .rating strong{color:var(--ink);font-size:1.05rem}
+
+  .hero-art{position:relative;aspect-ratio:1/1.02;max-width:560px;margin-left:auto;width:100%}
+  .blob-photo{position:absolute;inset:0 0 8% 8%;border-radius:46% 54% 42% 58% / 52% 44% 56% 48%;overflow:hidden;box-shadow:var(--shadow);background:var(--blush)}
+  .blob-photo img{width:100%;height:100%;object-fit:cover}
+  .mini-photo{position:absolute;left:0;bottom:0;width:42%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:8px solid var(--cream);box-shadow:var(--shadow);background:var(--sky)}
+  .mini-photo img{width:100%;height:100%;object-fit:cover}
+  .sticker{position:absolute;right:-4px;top:6%;background:var(--paper);border-radius:22px;padding:.85rem 1.05rem;box-shadow:var(--shadow);display:flex;align-items:center;gap:.7rem;font-weight:800;font-size:.95rem;line-height:1.2;transform:rotate(3deg)}
+  .sticker .ic{width:42px;height:42px;border-radius:14px;background:var(--sun);display:grid;place-items:center}
+  .sticker .ic svg{width:24px;height:24px}
+  .sticker small{display:block;font-weight:600;color:var(--ink-soft);font-size:.8rem}
+  .deco{position:absolute;pointer-events:none}
+  .deco-star{right:12%;bottom:2%;width:58px;color:var(--coral)}
+  .deco-squiggle{left:-6%;top:12%;width:90px;color:var(--sage)}
+
+  /* ---------- Ribbon ---------- */
+  .ribbon{background:var(--ink);color:var(--cream);overflow:hidden;padding:1rem 0;transform:rotate(-1.2deg);margin:0 -2rem}
+  .ribbon-track{display:flex;gap:2.5rem;white-space:nowrap;width:max-content;animation:scroll 38s linear infinite;font-family:var(--display);font-size:1.35rem;font-style:italic;font-weight:600}
+  .ribbon-track span{display:inline-flex;align-items:center;gap:2.5rem}
+  .ribbon-track i{color:var(--sun);font-style:normal}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+
+  /* ---------- Sections ---------- */
+  section{scroll-margin-top:90px}
+  .section{padding:6rem 0}
+  .section-head{max-width:40rem;margin-bottom:3rem}
+  .kicker{font-weight:800;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--coral-deep)}
+  .section-head h2{font-size:clamp(2rem, 4.2vw, 3.1rem);font-weight:700;margin:.7rem 0 1rem}
+  .section-head p{color:var(--ink-soft);font-size:1.1rem}
+
+  /* Programs */
+  .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+  .card{background:var(--paper);border-radius:var(--radius);padding:2rem 1.6rem 1.8rem;position:relative;box-shadow:0 1px 0 rgba(43,35,64,.06);border:1px solid rgba(43,35,64,.06);transition:transform .3s, box-shadow .3s}
+  .card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+  .card .icon{width:64px;height:64px;border-radius:22px;display:grid;place-items:center;margin-bottom:1.3rem}
+  .card .icon svg{width:34px;height:34px}
+  .card:nth-child(1) .icon{background:var(--blush)}
+  .card:nth-child(2) .icon{background:#FFF0C7}
+  .card:nth-child(3) .icon{background:#E2F0E5}
+  .card:nth-child(4) .icon{background:#E1F0F9}
+  .card h3{font-size:1.35rem;font-weight:700;margin-bottom:.55rem}
+  .card p{color:var(--ink-soft);font-size:.98rem}
+  .note{margin-top:1.6rem;color:var(--ink-soft);font-size:.95rem;display:flex;gap:.5rem;align-items:center}
+  .note a{font-weight:800;color:var(--coral-deep)}
+
+  /* Why */
+  .why{background:var(--paper);border-radius:48px;margin:0 1rem;position:relative;overflow:hidden}
+  .why-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:4rem;align-items:center}
+  .why-photos{position:relative;aspect-ratio:4/5}
+  .why-photos .p1{position:absolute;inset:0 18% 14% 0;border-radius:200px 200px 32px 32px;overflow:hidden;box-shadow:var(--shadow);background:var(--sky)}
+  .why-photos .p2{position:absolute;right:0;bottom:0;width:52%;aspect-ratio:1;border-radius:32px;overflow:hidden;border:8px solid var(--paper);box-shadow:var(--shadow);background:var(--blush);transform:rotate(4deg)}
+  .why-photos img{width:100%;height:100%;object-fit:cover}
+  .why-photos .badge{position:absolute;left:-14px;bottom:22%;background:var(--sun);color:var(--ink);font-family:var(--display);font-weight:700;font-size:1.05rem;padding:.7rem 1.1rem;border-radius:16px;transform:rotate(-5deg);box-shadow:var(--shadow)}
+  .reasons{display:grid;gap:1.4rem;margin-top:2rem}
+  .reason{display:grid;grid-template-columns:52px 1fr;gap:1.1rem;align-items:start}
+  .reason .num{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:1.25rem;background:var(--cream);border:2px dashed var(--coral)}
+  .reason h3{font-size:1.25rem;margin-bottom:.25rem;font-weight:700}
+  .reason p{color:var(--ink-soft)}
+
+  /* Steps */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;counter-reset:step;position:relative}
+  .step{position:relative;padding:2.2rem 1.8rem;border-radius:var(--radius);color:var(--ink)}
+  .step:nth-child(1){background:#FFE7DF}
+  .step:nth-child(2){background:#FFF1CC}
+  .step:nth-child(3){background:#E2F0E5}
+  .step .n{font-family:var(--display);font-size:4.2rem;font-weight:800;line-height:1;opacity:.18;position:absolute;right:1.4rem;top:1rem}
+  .step h3{font-size:1.5rem;margin:0 0 .6rem;font-weight:700}
+  .step p{color:var(--ink-soft)}
+  .step .tag{display:inline-block;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;margin-bottom:1rem;color:var(--ink)}
+
+  /* Photo band */
+  .band{position:relative;border-radius:40px;overflow:hidden;min-height:420px;display:flex;align-items:flex-end;box-shadow:var(--shadow)}
+  .band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(43,35,64,0) 30%, rgba(43,35,64,.82) 100%)}
+  .band-copy{position:relative;z-index:1;padding:3rem;color:#fff;max-width:44rem}
+  .band-copy h2{font-size:clamp(1.9rem, 4vw, 3rem);font-weight:700;margin-bottom:1.3rem}
+  .band-copy .btn-call{background:var(--sun);color:var(--ink);box-shadow:none}
+  .band-copy .btn-call:hover{background:#fff}
+
+  /* Visit */
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+  .info-card{background:var(--paper);border-radius:var(--radius);padding:2.4rem;border:1px solid rgba(43,35,64,.07)}
+  .info-list{list-style:none;margin:1.6rem 0 2rem;padding:0;display:grid;gap:1.3rem}
+  .info-list li{display:grid;grid-template-columns:48px 1fr;gap:1rem;align-items:center}
+  .info-list .ic{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;background:var(--cream)}
+  .info-list .ic svg{width:24px;height:24px;color:var(--coral-deep)}
+  .info-list .label{display:block;font-size:.75rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+  .info-list .val{font-weight:700;font-size:1.1rem}
+  .info-list a.val{text-decoration:none}
+  .info-list a.val:hover{color:var(--coral-deep);text-decoration:underline}
+  .info-actions{display:flex;flex-wrap:wrap;gap:.8rem}
+  .map-card{position:relative;border-radius:var(--radius);overflow:hidden;background:#E9F3EC;min-height:380px;display:flex;align-items:center;justify-content:center;text-decoration:none;color:var(--ink)}
+  .map-card svg.map{position:absolute;inset:0;width:100%;height:100%}
+  .map-pin{position:relative;z-index:1;text-align:center;background:var(--paper);padding:1.3rem 1.6rem;border-radius:22px;box-shadow:var(--shadow);transition:transform .25s}
+  .map-card:hover .map-pin{transform:translateY(-4px)}
+  .map-pin strong{display:block;font-family:var(--display);font-size:1.3rem}
+  .map-pin span{color:var(--ink-soft);font-size:.95rem}
+  .map-pin .go{display:inline-flex;margin-top:.7rem;color:var(--coral-deep);font-weight:800;gap:.35rem;align-items:center}
+
+  /* Footer */
+  .site-footer{background:var(--ink);color:#DCD5EC;margin-top:6rem;padding:4rem 0 2.5rem;border-radius:48px 48px 0 0}
+  .foot-top{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;align-items:flex-start;padding-bottom:2.2rem;border-bottom:1px solid rgba(255,255,255,.12)}
+  .site-footer .brand-name{color:#fff}
+  .site-footer .brand-name small{color:#B9B0CF}
+  .foot-contact{display:grid;gap:.35rem;font-size:.98rem}
+  .foot-contact a{color:#fff;font-weight:700;text-decoration:none}
+  .foot-contact a:hover{text-decoration:underline}
+  .foot-bottom{padding-top:1.8rem;font-size:.85rem;line-height:1.6;display:grid;gap:.6rem;color:#B9B0CF}
+  .foot-bottom a{color:var(--sun);font-weight:800}
+
+  /* Mobile floating call */
+  .fab{display:none}
+
+  /* Reveal animation */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease, transform .8s ease}
+  .reveal.in{opacity:1;transform:none}
+  .float{animation:float 6s ease-in-out infinite}
+  @keyframes float{50%{transform:translateY(-10px) rotate(8deg)}}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 1024px){
+    .cards{grid-template-columns:repeat(2,1fr)}
+    .why-grid{gap:2.5rem}
+  }
+  @media (max-width: 860px){
+    .nav{display:none}
+    .hero{padding:2.5rem 0 4rem}
+    .hero-grid,.why-grid,.visit-grid{grid-template-columns:1fr}
+    .hero-art{margin:1rem auto 0;max-width:460px}
+    .why-photos{max-width:440px;margin:0 auto}
+    .steps{grid-template-columns:1fr}
+    .section{padding:4.5rem 0}
+    .why{margin:0 .5rem;border-radius:36px}
+  }
+  @media (max-width: 560px){
+    body{font-size:1rem}
+    .wrap{width:min(1180px, 100% - 2rem)}
+    .brand svg{width:38px;height:38px}
+    .brand-name{font-size:1.15rem}
+    .brand-name small{display:none}
+    .header-call .btn{padding:.6rem .95rem;font-size:.88rem}
+    .header-call .btn .txt-long{display:none}
+    .hero h1{font-size:2.55rem}
+    .hero .lede{font-size:1.08rem}
+    .hero-actions .btn{width:100%}
+    .cards{grid-template-columns:1fr}
+    .sticker{right:0;padding:.7rem .85rem;font-size:.85rem}
+    .sticker .ic{width:36px;height:36px}
+    .band{min-height:380px;border-radius:28px}
+    .band-copy{padding:1.8rem}
+    .info-card{padding:1.7rem}
+    .info-actions .btn{width:100%}
+    .map-card{min-height:300px}
+    .deco-squiggle{display:none}
+    .fab{display:inline-flex;position:fixed;right:1rem;bottom:1rem;z-index:60;width:60px;height:60px;border-radius:50%;background:var(--coral);color:#fff;align-items:center;justify-content:center;box-shadow:0 14px 30px -10px rgba(217,87,58,.9)}
+    .fab svg{width:26px;height:26px}
+    .site-footer{padding-bottom:6rem}
+  }
+  @media (min-width: 561px){
+    .header-call .btn .txt-short{display:none}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+    .reveal{opacity:1;transform:none}
+  }
+/* Built By Cray QA fix: keep marquee/ribbon from causing sideways scroll */
+html,body{overflow-x:clip}
+</style>
 </head>
-<body class="l-kids">
-<div class="pv-bar" role="note"><p><b>Free preview concept by Built By Cray.</b> Not the official website of Bundles of Joy<span class="pv-long">, and not made or endorsed by them</span>. <span class="pv-offer">$650 Black Friday price through November 30.</span></p><a href="https://calendar.app.google/K7QqcbLckjKjjZs19" target="_blank" rel="noopener">Claim this website</a></div>
-<nav class="nav"><div class="wrap nav-row"><a class="brand" href="#top">Bundles of Joy</a><div class="nav-links"><a href="#services">Services</a><a href="#visit">Visit</a><a class="nav-call" href="tel:+14044573206"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>(404) 457-3206</span></a></div></div></nav>
-<main id="top">
-<header class="hero hero-kids"><div class="wrap split"><div class="hero-copy"><p class="eyebrow">Childcare &amp; early learning · Lithonia</p><h1>Where little ones love to learn.</h1><p class="sub">Caring teachers, a play-based curriculum, and daily updates so you never miss a moment.</p>
-      <div class="actions"><a class="btn" href="tel:+14044573206"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>Schedule a tour</span></a><a class="btn ghost" href="#services">Our services</a></div><p class="hero-rating"><span class="rating"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.3l6.2 3.7-1.6-7 5.4-4.7-7.1-.6L12 2 9.1 8.7 2 9.3l5.4 4.7-1.6 7z" fill="currentColor"/></svg><b>4.9</b> from 10 Google reviews</span></p></div>
-      <div class="blob"><img class="" src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?auto=format&fit=crop&w=900&h=900&q=70" srcset="https://images.unsplash.com/photo-1544776193-352d25ca82cd?auto=format&fit=crop&w=480&h=480&q=70 480w, https://images.unsplash.com/photo-1544776193-352d25ca82cd?auto=format&fit=crop&w=800&h=800&q=70 800w, https://images.unsplash.com/photo-1544776193-352d25ca82cd?auto=format&fit=crop&w=1200&h=1200&q=70 1200w" sizes="(max-width: 760px) 100vw, 50vw" alt="Children learning, photo for this preview" fetchpriority="high" decoding="async"><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span></div></div></header>
-<section id="services" class="services"><div class="wrap">
-      <p class="eyebrow">Our programs</p><h2>Programs for every age</h2>
-      <div class="svc-grid"><article class="svc"><span class="num">01</span><h3>Infants</h3><p>Gentle, attentive care with routines that match your baby&#39;s.</p></article><article class="svc"><span class="num">02</span><h3>Toddlers</h3><p>Hands-on play that builds words, movement, and independence.</p></article><article class="svc"><span class="num">03</span><h3>Pre-K</h3><p>Letters, numbers, and social skills to get ready for kindergarten.</p></article><article class="svc"><span class="num">04</span><h3>After school</h3><p>Homework help, snacks, and active play until pickup.</p></article></div>
-      </div></section>
-<section class="about"><div class="wrap split">
-      <div class="about-img"><img class="" src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=900&h=1000&q=70" srcset="https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=480&h=533&q=70 480w, https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=800&h=889&q=70 800w, https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=1200&h=1333&q=70 1200w" sizes="(max-width: 760px) 100vw, 50vw" alt="Our programs at a local business" loading="lazy" decoding="async"></div>
-      <div class="about-copy"><p class="eyebrow">About</p><h2>A second home for your little one</h2>
-      <p class="lead">At Bundles of Joy, we know you&#39;re trusting us with the most important people in your life. We take that seriously, every day.</p>
-      
-      <ul class="ticks"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z" fill="currentColor"/></svg>Daily updates for parents</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z" fill="currentColor"/></svg>Caring, attentive teachers</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z" fill="currentColor"/></svg>Safe, clean classrooms</li></ul>
-      </div></div></section>
-<section class="gallery" aria-label="Photos"><div class="wrap"><div class="g-grid g-two">
-      <figure class="g g1"><img class="" src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=900&h=600&q=70" srcset="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=480&h=320&q=70 480w, https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=800&h=533&q=70 800w, https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1200&h=800&q=70 1200w" sizes="(max-width: 760px) 100vw, 50vw" alt="Stock photo for this preview" loading="lazy" decoding="async"></figure><figure class="g g2"><img class="" src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=900&h=600&q=70" srcset="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=480&h=320&q=70 480w, https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=800&h=533&q=70 800w, https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=1200&h=800&q=70 1200w" sizes="(max-width: 760px) 100vw, 50vw" alt="Stock photo for this preview" loading="lazy" decoding="async"></figure>
-      </div><p class="stock-note">Stock photos for preview. The finished site would use Bundles of Joy's own photos.</p></div></section>
-<section class="cta-band"><div class="wrap"><h2>Come see us in person.</h2><a class="btn light" href="tel:+14044573206"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>Schedule a tour</span></a></div></section>
-<section id="visit" class="visit"><div class="wrap split">
-      <div class="visit-copy"><p class="eyebrow">Visit us</p><h2>Find us in Lithonia</h2>
-        <dl class="facts">
-          <div><dt>Phone</dt><dd><a href="tel:+14044573206">(404) 457-3206</a></dd></div>
-          <div><dt>Address</dt><dd>1105 Princeton Park Dr, Lithonia, GA 30058</dd></div>
-          <div><dt>Hours</dt><dd>Call for today's hours</dd></div>
-        </dl>
-        <div class="actions"><a class="btn" href="tel:+14044573206"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>Schedule a tour</span></a><a class="btn ghost dark" href="https://www.google.com/maps/dir/?api=1&destination=Bundles%20of%20Joy%2C%201105%20Princeton%20Park%20Dr%2C%20Lithonia%2C%20GA%2030058" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg><span>Directions</span></a></div>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Built By Cray preview disclosure -->
+<div class="preview-bar" role="note" aria-label="Preview notice">
+  <div class="wrap">
+    <span><strong>Free preview concept by Built By Cray.</strong> Not the official website of Bundles of Joy.</span>
+    <span class="deal">$650 Black Friday price through Nov 30</span>
+    <a class="claim" href="https://calendar.app.google/K7QqcbLckjKjjZs19" target="_blank" rel="noopener">Claim this website</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Bundles of Joy home">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="23" fill="#FFC84A"/>
+        <path d="M24 37c-7-4.6-12-9-12-14.4A6.3 6.3 0 0 1 24 19a6.3 6.3 0 0 1 12 3.6C36 28 31 32.4 24 37z" fill="#F2775B"/>
+        <circle cx="17" cy="12.5" r="2.2" fill="#2B2340"/><circle cx="31" cy="12.5" r="2.2" fill="#2B2340"/>
+      </svg>
+      <span class="brand-name">Bundles of Joy<small>Childcare · Lithonia, GA</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#programs">Programs</a>
+      <a href="#why">Why families choose us</a>
+      <a href="#steps">Enrolling</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="header-call">
+      <a class="btn btn-call" href="tel:+14044573206" aria-label="Call Bundles of Joy at (404) 457-3206">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+        <span class="txt-long">(404) 457-3206</span><span class="txt-short">Call</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy reveal">
+        <span class="eyebrow"><span class="dot"></span>Childcare in Lithonia, GA</span>
+        <h1>Where little ones feel <em>at home<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 14 C 50 4, 120 4, 197 12" stroke="#FFC84A" stroke-width="7" fill="none" stroke-linecap="round"/></svg></em> every day.</h1>
+        <p class="lede">Bundles of Joy is a warm, caring place for your child to play, learn and grow, right here off Princeton Park Dr. Give us a call and come see it for yourself.</p>
+        <div class="hero-actions">
+          <a class="btn btn-call btn-lg" href="tel:+14044573206">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+            Call (404) 457-3206
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#visit">Plan a visit</a>
+        </div>
+        <div class="rating">
+          <div class="stars" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>
+          </div>
+          <p><strong>4.9 stars</strong> from 10 Google reviews</p>
+        </div>
       </div>
-      <div class="map"><iframe title="Map to Bundles of Joy" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=1105%20Princeton%20Park%20Dr%2C%20Lithonia%2C%20GA%2030058&z=15&output=embed"></iframe></div>
-    </div></section>
+
+      <div class="hero-art reveal" aria-label="Photos of children playing and learning (stock)">
+        <svg class="deco deco-squiggle" viewBox="0 0 90 40" aria-hidden="true"><path d="M3 20c10-16 20 16 30 0s20 16 30 0 20 16 24 4" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg>
+        <div class="blob-photo">
+          <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1100&h=1100&q=70" alt="A happy young child smiling" width="1100" height="1100" fetchpriority="high">
+        </div>
+        <div class="mini-photo">
+          <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=500&h=500&q=70" alt="Colorful toy building blocks" width="500" height="500" loading="lazy">
+        </div>
+        <div class="sticker">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="#2B2340" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span>
+          <span>4.9 on Google<small>Loved by local families</small></span>
+        </div>
+        <svg class="deco deco-star float" viewBox="0 0 60 60" aria-hidden="true"><path d="M30 4l5 19 19 7-19 7-5 19-5-19-19-7 19-7z" fill="currentColor"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="ribbon" aria-hidden="true">
+    <div class="ribbon-track">
+      <span>Play <i>✦</i> Learn <i>✦</i> Grow <i>✦</i> Laugh <i>✦</i> Make friends <i>✦</i> Lithonia, GA <i>✦</i></span>
+      <span>Play <i>✦</i> Learn <i>✦</i> Grow <i>✦</i> Laugh <i>✦</i> Make friends <i>✦</i> Lithonia, GA <i>✦</i></span>
+    </div>
+  </div>
+
+  <!-- PROGRAMS -->
+  <section class="section" id="programs">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">What a day can look like</span>
+        <h2>Care that grows with your child</h2>
+        <p>Every day is a mix of play, learning and plenty of good old-fashioned attention. Here's a taste of what childcare at Bundles of Joy is all about.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="icon"><svg viewBox="0 0 40 40" fill="none" stroke="#D9573A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="20" cy="15" r="7"/><path d="M8 34c1.5-7 6.5-10 12-10s10.5 3 12 10"/><path d="M17 14h.01M23 14h.01M17.5 18c1.5 1 3.5 1 5 0"/></svg></div>
+          <h3>Daily childcare</h3>
+          <p>A safe, nurturing space with caring grown-ups, so you can head to work knowing your little one is in good hands.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon"><svg viewBox="0 0 40 40" fill="none" stroke="#B5850F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 10c5-2 10-2 14 1 4-3 9-3 14-1v21c-5-2-10-2-14 1-4-3-9-3-14-1z"/><path d="M20 11v21"/></svg></div>
+          <h3>Early learning</h3>
+          <p>Letters, numbers, colors and shapes, woven into stories, songs and hands-on activities that make learning fun.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon"><svg viewBox="0 0 40 40" fill="none" stroke="#3F6B50" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 32l8-18 8 18"/><path d="M11 25h10"/><circle cx="29" cy="13" r="5"/><path d="M29 18v14"/></svg></div>
+          <h3>Creative play</h3>
+          <p>Art, music, building and pretend play that spark imagination and help kids build confidence and new skills.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon"><svg viewBox="0 0 40 40" fill="none" stroke="#2F6F96" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13" cy="14" r="5"/><circle cx="27" cy="14" r="5"/><path d="M4 32c1-6 4.5-9 9-9 3 0 5.3 1.3 7 3.6 1.7-2.3 4-3.6 7-3.6 4.5 0 8 3 9 9"/></svg></div>
+          <h3>Friends &amp; social skills</h3>
+          <p>Sharing, taking turns, using kind words. Kids learn how to get along and make friends along the way.</p>
+        </article>
+      </div>
+      <p class="note reveal">Programs and age groups can vary. <a href="tel:+14044573206">Call to ask what's available for your child.</a></p>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="section why" id="why">
+    <div class="wrap why-grid">
+      <div class="why-photos reveal">
+        <div class="p1"><img src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?auto=format&fit=crop&w=900&h=1100&q=70" alt="Children engaged in a classroom activity" width="900" height="1100" loading="lazy"></div>
+        <div class="p2"><img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=600&h=600&q=70" alt="A child playing with colorful toys" width="600" height="600" loading="lazy"></div>
+        <span class="badge">Right here in Lithonia</span>
+      </div>
+      <div class="reveal">
+        <div class="section-head">
+          <span class="kicker">Why families choose us</span>
+          <h2>A neighborhood spot that feels like family</h2>
+          <p>Parents in Lithonia have given Bundles of Joy a 4.9-star rating on Google. Here's what we focus on every day.</p>
+        </div>
+        <div class="reasons">
+          <div class="reason">
+            <span class="num">1</span>
+            <div><h3>Warm, attentive care</h3><p>Kids are greeted by name, comforted when they need it and celebrated for the little wins.</p></div>
+          </div>
+          <div class="reason">
+            <span class="num">2</span>
+            <div><h3>Learning through play</h3><p>A day full of hands-on activities that help curious minds grow at their own pace.</p></div>
+          </div>
+          <div class="reason">
+            <span class="num">3</span>
+            <div><h3>Close to home</h3><p>Conveniently located on Princeton Park Dr, so drop-off and pick-up fit right into your routine.</p></div>
+          </div>
+          <div class="reason">
+            <span class="num">4</span>
+            <div><h3>Easy to reach</h3><p>Questions? Just call. You'll talk to a real person who's happy to help.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section class="section" id="steps">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Getting started</span>
+        <h2>Three easy steps to your first day</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <span class="n" aria-hidden="true">01</span>
+          <span class="tag">Step one</span>
+          <h3>Give us a call</h3>
+          <p>Ring <a href="tel:+14044573206">(404) 457-3206</a> to ask about openings, hours and what your child needs.</p>
+        </div>
+        <div class="step reveal">
+          <span class="n" aria-hidden="true">02</span>
+          <span class="tag">Step two</span>
+          <h3>Come visit</h3>
+          <p>Stop by to see the space, meet the team and get a feel for a day at Bundles of Joy.</p>
+        </div>
+        <div class="step reveal">
+          <span class="n" aria-hidden="true">03</span>
+          <span class="tag">Step three</span>
+          <h3>Start the fun</h3>
+          <p>Get enrollment sorted, pack the favorite blanket, and get ready for a happy first day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BAND -->
+  <div class="wrap reveal">
+    <div class="band">
+      <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=1600&h=800&q=70" alt="Bright, colorful toys ready for play" width="1600" height="800" loading="lazy">
+      <div class="band-copy">
+        <h2>Looking for childcare in Lithonia? Let's talk.</h2>
+        <a class="btn btn-call btn-lg" href="tel:+14044573206">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+          Call (404) 457-3206
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- VISIT -->
+  <section class="section" id="visit">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Visit us</span>
+        <h2>Come say hello</h2>
+        <p>We'd love to show you around. Call ahead and we'll find a good time.</p>
+      </div>
+      <div class="visit-grid">
+        <div class="info-card reveal">
+          <h3 class="sr-only">Contact details</h3>
+          <ul class="info-list">
+            <li>
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+              <div><span class="label">Address</span><span class="val">1105 Princeton Park Dr<br>Lithonia, GA 30058</span></div>
+            </li>
+            <li>
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></span>
+              <div><span class="label">Phone</span><a class="val" href="tel:+14044573206">(404) 457-3206</a></div>
+            </li>
+            <li>
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+              <div><span class="label">Hours</span><span class="val">Call for current hours.</span></div>
+            </li>
+          </ul>
+          <div class="info-actions">
+            <a class="btn btn-call" href="tel:+14044573206">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+              Call now
+            </a>
+            <a class="btn btn-ghost" href="https://www.google.com/maps/place/?q=place_id:ChIJU_oVYAmv9YgRAPnjAS-45iA" target="_blank" rel="noopener">Get directions</a>
+          </div>
+        </div>
+
+        <a class="map-card reveal" href="https://www.google.com/maps/place/?q=place_id:ChIJU_oVYAmv9YgRAPnjAS-45iA" target="_blank" rel="noopener" aria-label="Get directions to Bundles of Joy on Google Maps (opens in a new tab)">
+          <svg class="map" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="600" height="400" fill="#E9F3EC"/>
+            <path d="M0 120 C150 90 260 160 600 110" stroke="#fff" stroke-width="22" fill="none"/>
+            <path d="M180 0 C200 140 160 260 220 400" stroke="#fff" stroke-width="18" fill="none"/>
+            <path d="M0 300 C200 280 380 330 600 290" stroke="#fff" stroke-width="14" fill="none"/>
+            <path d="M420 0 C400 120 450 260 430 400" stroke="#fff" stroke-width="12" fill="none"/>
+            <circle cx="90" cy="220" r="46" fill="#CFE5D5"/>
+            <circle cx="520" cy="200" r="60" fill="#CFE5D5"/>
+            <rect x="260" y="160" width="120" height="70" rx="14" fill="#FCE3D8"/>
+            <path d="M0 120 C150 90 260 160 600 110" stroke="#FFC84A" stroke-width="4" stroke-dasharray="10 10" fill="none"/>
+          </svg>
+          <span class="map-pin">
+            <strong>Bundles of Joy</strong>
+            <span>1105 Princeton Park Dr, Lithonia</span><br>
+            <span class="go">Get directions →</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
 </main>
-<footer class="foot"><div class="wrap"><p class="brand">Bundles of Joy</p><p>1105 Princeton Park Dr, Lithonia, GA 30058 · <a href="tel:+14044573206">(404) 457-3206</a></p>
-<p class="disc">Free website preview concept designed by <a href="https://builtbycray.com">Built By Cray</a>. This is not the official website of Bundles of Joy and was not made, approved, or endorsed by them. Name, phone, address, and rating come from public listings. Sample copy and stock photos (Unsplash) for preview only.</p></div></footer>
-<a class="m-call" href="tel:+14044573206"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>Schedule a tour</span></a><script>(()=>{const b=document.querySelector('.m-call');const f=()=>b.classList.toggle('show',scrollY>480);addEventListener('scroll',f,{passive:true});f()})()</script>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="brand">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="23" fill="#FFC84A"/>
+          <path d="M24 37c-7-4.6-12-9-12-14.4A6.3 6.3 0 0 1 24 19a6.3 6.3 0 0 1 12 3.6C36 28 31 32.4 24 37z" fill="#F2775B"/>
+          <circle cx="17" cy="12.5" r="2.2" fill="#2B2340"/><circle cx="31" cy="12.5" r="2.2" fill="#2B2340"/>
+        </svg>
+        <span class="brand-name">Bundles of Joy<small>Childcare · Lithonia, GA</small></span>
+      </div>
+      <div class="foot-contact">
+        <span>1105 Princeton Park Dr, Lithonia, GA 30058</span>
+        <a href="tel:+14044573206">(404) 457-3206</a>
+        <span>Call for current hours.</span>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p><a href="https://builtbycray.com" target="_blank" rel="noopener">Preview by Built By Cray</a></p>
+      <p>This is a free preview concept and is not the official website of Bundles of Joy. Name, phone and address come from public listings. Stock photos from Unsplash.</p>
+      <p>Stock photos for preview.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="tel:+14044573206" aria-label="Call Bundles of Joy at (404) 457-3206">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+</a>
+
+<script>
+  (function(){
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      els.forEach(function(el){ el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {threshold: 0.12, rootMargin: '0px 0px -40px 0px'});
+    els.forEach(function(el){ io.observe(el); });
+  })();
+</script>
 </body>
 </html>
