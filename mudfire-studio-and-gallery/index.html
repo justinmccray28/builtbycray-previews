@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Mudfire Studio and Gallery | Preview concept by Built By Cray</title>
+<meta name="description" content="Mudfire Studio and Gallery is a pottery studio, gallery and maker space at 175 Laredo Drive in Decatur, GA. Call (404) 377-8033.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --clay:#b5532c;
+  --clay-deep:#8a3a1c;
+  --ember:#e07a3f;
+  --bone:#f4ede1;
+  --slip:#ebe1d0;
+  --ash:#231c18;
+  --ash-2:#3a2f29;
+  --celadon:#8fa38a;
+  --celadon-deep:#4f6450;
+  --ink:#2a211c;
+  --muted:#6b5c52;
+  --radius:22px;
+  --shadow:0 24px 60px -28px rgba(35,28,24,.45);
+  --serif:"Fraunces", Georgia, "Times New Roman", serif;
+  --sans:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--bone);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ember);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:0;background:var(--ash);color:var(--bone);padding:10px 16px;z-index:100}
+.skip:focus{left:12px;top:12px}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+
+/* grain overlay */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:200;opacity:.07;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* preview bar */
+.preview-bar{background:var(--ash);color:#e9dccb;font-size:13.5px;line-height:1.4}
+.preview-bar .wrap{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;padding:9px 0;text-align:center}
+.preview-bar strong{color:#fff;font-weight:600}
+.preview-bar .deal{color:var(--ember);font-weight:600}
+.claim{display:inline-block;background:var(--ember);color:var(--ash);text-decoration:none;font-weight:700;padding:5px 13px;border-radius:999px;font-size:12.5px;white-space:nowrap}
+.claim:hover{background:#f0965f}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(244,237,225,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(42,33,28,.08)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{flex:none}
+.brand-name{font-family:var(--serif);font-weight:600;font-size:22px;letter-spacing:-.01em;line-height:1}
+.brand-name small{display:block;font-family:var(--sans);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-top:5px}
+.nav{display:flex;gap:30px;list-style:none}
+.nav a{text-decoration:none;font-weight:500;font-size:15px;color:var(--ash-2);position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;background:var(--clay);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--sans);font-weight:700;text-decoration:none;border-radius:999px;transition:transform .2s,background .2s,box-shadow .2s;white-space:nowrap}
+.btn svg{flex:none}
+.btn-call{background:var(--clay);color:#fff;padding:11px 20px;font-size:15px}
+.btn-call:hover{background:var(--clay-deep);transform:translateY(-1px)}
+
+/* hero */
+.hero{position:relative;padding:80px 0 110px;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-12%;top:-20%;width:62%;aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle at 40% 40%,rgba(224,122,63,.28),rgba(181,83,44,.08) 55%,transparent 70%);z-index:0}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--clay)}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(44px,6.6vw,88px);line-height:.98;letter-spacing:-.025em;margin:22px 0 24px;font-variation-settings:"opsz" 144}
+.hero h1 em{font-style:italic;color:var(--clay);font-weight:300}
+.hero .lede{font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:33ch;margin-bottom:36px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.btn-big{background:var(--ash);color:var(--bone);padding:19px 30px;font-size:18px;box-shadow:var(--shadow)}
+.btn-big:hover{background:var(--clay);transform:translateY(-2px)}
+.btn-ghost{padding:18px 26px;font-size:16px;border:1.5px solid rgba(42,33,28,.25);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink);background:rgba(42,33,28,.04)}
+.hero-meta{margin-top:34px;display:flex;gap:26px;flex-wrap:wrap;font-size:14.5px;color:var(--muted)}
+.hero-meta span{display:flex;align-items:center;gap:8px}
+.hero-meta svg{color:var(--clay)}
+
+.hero-art{position:relative;aspect-ratio:4/5;max-width:470px;justify-self:end;width:100%}
+.arch{position:absolute;inset:0;border-radius:240px 240px 26px 26px;overflow:hidden;background:var(--ash);box-shadow:var(--shadow)}
+.arch svg{width:100%;height:100%}
+.badge{position:absolute;left:-34px;bottom:46px;width:132px;height:132px;border-radius:50%;background:var(--bone);display:grid;place-items:center;box-shadow:0 14px 30px -14px rgba(35,28,24,.5)}
+.badge svg{width:118px;height:118px;animation:spin 28s linear infinite}
+.badge .core{position:absolute;width:38px;height:38px;border-radius:50%;background:var(--clay)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.wheel{transform-origin:200px 404px;animation:wobble 6s ease-in-out infinite}
+@keyframes wobble{50%{transform:scaleX(1.015)}}
+.flame{animation:flick 2.4s ease-in-out infinite;transform-origin:center bottom}
+@keyframes flick{50%{opacity:.75;transform:scaleY(.94)}}
+
+/* marquee strip */
+.strip{background:var(--clay);color:var(--bone);overflow:hidden;border-block:1px solid var(--clay-deep)}
+.strip-track{display:flex;gap:48px;padding:18px 0;width:max-content;animation:marquee 38s linear infinite;font-family:var(--serif);font-style:italic;font-size:24px;font-weight:300}
+.strip-track span{display:flex;align-items:center;gap:48px;white-space:nowrap}
+.strip-track span::after{content:"✺";font-style:normal;font-size:16px;opacity:.7}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* sections */
+section{scroll-margin-top:80px}
+.section{padding:110px 0}
+.section-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:60px}
+.section-head h2,.h2{font-family:var(--serif);font-weight:400;font-size:clamp(34px,4.4vw,58px);line-height:1.04;letter-spacing:-.02em;margin-top:16px}
+.section-head h2 em,.h2 em{font-style:italic;color:var(--clay);font-weight:300}
+.section-head p{color:var(--muted);font-size:18px;max-width:46ch}
+
+/* offerings */
+.offer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.offer{background:#fbf7f0;border:1px solid rgba(42,33,28,.08);border-radius:var(--radius);padding:32px 26px 30px;display:flex;flex-direction:column;transition:transform .35s,box-shadow .35s}
+.offer:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.offer .ico{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;margin-bottom:26px;background:var(--slip)}
+.offer:nth-child(2) .ico{background:#dfe6da}
+.offer:nth-child(3) .ico{background:#f3d9c6}
+.offer:nth-child(4) .ico{background:#e6dccd}
+.offer .num{font-family:var(--serif);font-style:italic;color:var(--clay);font-size:15px;margin-bottom:6px}
+.offer h3{font-family:var(--serif);font-weight:500;font-size:25px;line-height:1.15;margin-bottom:12px;letter-spacing:-.01em}
+.offer p{color:var(--muted);font-size:15.5px}
+
+/* about / dark */
+.dark{background:var(--ash);color:#efe4d4;position:relative;overflow:hidden}
+.dark .eyebrow{color:var(--ember)}
+.dark .h2 em{color:var(--ember)}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.about p{color:#cbbcab;font-size:18px;margin-top:22px;max-width:50ch}
+.why-list{list-style:none;display:grid;gap:4px;margin-top:34px}
+.why-list li{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:20px 0;border-top:1px solid rgba(239,228,212,.14)}
+.why-list li:last-child{border-bottom:1px solid rgba(239,228,212,.14)}
+.why-list .dot{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--ember);display:grid;place-items:center;color:var(--ember)}
+.why-list h3{font-family:var(--serif);font-weight:500;font-size:21px;color:#fff;line-height:1.3}
+.why-list p{margin:4px 0 0;font-size:15.5px;color:#b6a695}
+
+.collage{position:relative;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:16px}
+.ph{position:relative;border-radius:18px;overflow:hidden;background:var(--ash-2)}
+.ph img{width:100%;height:100%;object-fit:cover;filter:sepia(.45) saturate(.85) contrast(1.02) brightness(.92)}
+.ph::after{content:"";position:absolute;inset:0;background:linear-gradient(160deg,rgba(181,83,44,.25),rgba(35,28,24,.25));mix-blend-mode:multiply}
+.ph-a{grid-column:1/3;aspect-ratio:16/10;border-radius:200px 200px 18px 18px}
+.ph-b{aspect-ratio:1}
+.ph-c{aspect-ratio:1}
+.stock-note{grid-column:1/3;font-size:12px;letter-spacing:.06em;color:#9c8b7a;text-align:right}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;counter-reset:s;border-top:1.5px solid var(--ink)}
+.step{padding:34px 34px 10px 0;position:relative}
+.step + .step{padding-left:34px;border-left:1px solid rgba(42,33,28,.15)}
+.step .n{font-family:var(--serif);font-size:72px;line-height:1;font-weight:300;color:var(--clay);font-variation-settings:"opsz" 144}
+.step h3{font-family:var(--serif);font-weight:500;font-size:26px;margin:18px 0 10px}
+.step p{color:var(--muted);font-size:16px;max-width:34ch}
+
+/* glaze band */
+.glaze{background:var(--celadon-deep);color:#f2efe6;padding:90px 0;position:relative;overflow:hidden}
+.glaze .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:50px;align-items:center;position:relative;z-index:1}
+.glaze .h2 em{color:#f1c9a5}
+.glaze p{color:#d9e0d4;font-size:18px;margin-top:18px;max-width:46ch}
+.glaze .drip{position:absolute;top:0;left:0;width:100%;height:60px;color:var(--bone)}
+.glaze-cta{justify-self:end;text-align:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:var(--radius);padding:36px 34px;width:100%;max-width:400px}
+.glaze-cta .k{font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:#f1c9a5}
+.glaze-cta .phone{display:block;font-family:var(--serif);font-size:clamp(30px,3.4vw,40px);text-decoration:none;color:#fff;margin:10px 0 22px;letter-spacing:-.01em}
+.btn-light{background:var(--bone);color:var(--ash);padding:16px 26px;font-size:16px;justify-content:center;width:100%}
+.btn-light:hover{background:#fff;transform:translateY(-2px)}
+
+/* visit */
+.visit-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;align-items:stretch}
+.card{background:#fbf7f0;border:1px solid rgba(42,33,28,.08);border-radius:var(--radius);padding:44px}
+.info-row{display:grid;grid-template-columns:46px 1fr;gap:16px;padding:22px 0;border-bottom:1px solid rgba(42,33,28,.1)}
+.info-row:first-of-type{padding-top:6px}
+.info-row:last-of-type{border-bottom:0}
+.info-row .i{width:46px;height:46px;border-radius:14px;background:var(--slip);display:grid;place-items:center;color:var(--clay)}
+.info-row .lbl{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.info-row .val{font-family:var(--serif);font-size:22px;line-height:1.35;margin-top:2px}
+.info-row .val a{text-decoration:none;border-bottom:1.5px solid rgba(181,83,44,.4)}
+.info-row .val a:hover{border-color:var(--clay);color:var(--clay)}
+.card-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn-dark{background:var(--ash);color:var(--bone);padding:15px 24px;font-size:16px}
+.btn-dark:hover{background:var(--clay)}
+.btn-outline{border:1.5px solid var(--ink);color:var(--ink);padding:14px 22px;font-size:16px}
+.btn-outline:hover{background:var(--ink);color:var(--bone)}
+.map-art{position:relative;border-radius:var(--radius);overflow:hidden;background:#e7dccb;min-height:420px;text-decoration:none;display:block}
+.map-art svg{position:absolute;inset:0;width:100%;height:100%}
+.map-label{position:absolute;left:24px;bottom:24px;right:24px;background:var(--bone);border-radius:16px;padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:14px;box-shadow:0 14px 30px -18px rgba(35,28,24,.5)}
+.map-label b{font-family:var(--serif);font-weight:500;font-size:19px;display:block}
+.map-label span{font-size:14px;color:var(--muted)}
+.map-label .go{width:44px;height:44px;border-radius:50%;background:var(--clay);color:#fff;display:grid;place-items:center;flex:none;transition:transform .25s}
+.map-art:hover .go{transform:rotate(-45deg)}
+
+/* footer */
+footer{background:var(--ash);color:#bfae9c;padding:70px 0 40px;font-size:15px}
+.foot-top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:40px;border-bottom:1px solid rgba(239,228,212,.12)}
+.foot-top .brand-name{color:#fff;font-size:30px}
+.foot-top .brand-name small{color:#9c8b7a}
+.foot-links{display:flex;gap:50px;flex-wrap:wrap}
+.foot-links h4{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ember);margin-bottom:12px}
+.foot-links a{display:block;text-decoration:none;color:#e9dccb;margin-bottom:6px}
+.foot-links a:hover{color:#fff;text-decoration:underline}
+.disclaimer{padding-top:28px;font-size:13.5px;line-height:1.65;color:#9c8b7a;display:flex;flex-direction:column;gap:8px}
+.disclaimer a{color:var(--ember);font-weight:600}
+
+/* floating call (mobile) */
+.fab{display:none}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* responsive */
+@media (max-width:1020px){
+  .offer-grid{grid-template-columns:repeat(2,1fr)}
+  .hero .wrap{grid-template-columns:1fr;gap:56px}
+  .hero-art{justify-self:center;max-width:400px}
+  .about .wrap,.glaze .wrap,.visit-grid,.section-head{grid-template-columns:1fr}
+  .about .wrap{gap:50px}
+  .glaze-cta{justify-self:start}
+}
+@media (max-width:760px){
+  body{font-size:16px}
+  .nav{display:none}
+  .site-header .wrap{padding:10px 0}
+  .brand-name{font-size:19px}
+  .brand-name small{display:none}
+  .brand svg{width:34px;height:34px}
+  .btn-call{padding:10px 16px;font-size:14px}
+  .btn-call .full{display:none}
+  .hero{padding:48px 0 80px}
+  .hero-ctas .btn{width:100%;justify-content:center}
+  .badge{left:-8px;width:104px;height:104px;bottom:30px}
+  .badge svg{width:94px;height:94px}
+  .badge .core{width:30px;height:30px}
+  .section{padding:76px 0}
+  .section-head{margin-bottom:40px;gap:16px}
+  .offer-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr;border-top:0}
+  .step,.step + .step{padding:28px 0;border-left:0;border-top:1px solid rgba(42,33,28,.18)}
+  .step .n{font-size:56px}
+  .card{padding:28px 22px}
+  .info-row .val{font-size:19px;word-break:break-word}
+  .map-art{min-height:320px}
+  .strip-track{font-size:19px;padding:14px 0}
+  .fab{display:flex;position:fixed;right:16px;bottom:16px;z-index:60;width:60px;height:60px;border-radius:50%;background:var(--clay);color:#fff;align-items:center;justify-content:center;box-shadow:0 14px 30px -10px rgba(138,58,28,.7)}
+  .preview-bar{font-size:12.5px}
+  .preview-bar .wrap{gap:8px;padding:8px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="preview-bar" role="note">
+  <div class="wrap">
+    <span><strong>Free preview concept by Built By Cray.</strong> Not the official website of Mudfire Studio and Gallery. <span class="deal">$650 Black Friday price through Nov 30.</span></span>
+    <a class="claim" href="https://calendar.app.google/K7QqcbLckjKjjZs19" target="_blank" rel="noopener">Claim this website</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Mudfire Studio and Gallery, home">
+      <svg width="42" height="42" viewBox="0 0 42 42" aria-hidden="true">
+        <circle cx="21" cy="21" r="21" fill="#231c18"/>
+        <path d="M14 13h14c-.6 2.4-2.6 3.4-2.6 6.2 0 4.6 3.6 6 3.6 10.3 0 1.6-1.2 2.5-3 2.5H16c-1.8 0-3-.9-3-2.5 0-4.3 3.6-5.7 3.6-10.3 0-2.8-2-3.8-2.6-6.2z" fill="#b5532c"/>
+        <path d="M21 26.5c-1.6-1.4-1.8-3 0-5 1.8 2 1.6 3.6 0 5z" fill="#f4ede1"/>
+      </svg>
+      <span class="brand-name">Mudfire<small>Studio &amp; Gallery · Decatur</small></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="#offer">The studio</a></li>
+        <li><a href="#about">Why Mudfire</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-call" href="tel:+14043778033" aria-label="Call Mudfire at (404) 377-8033">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+      <span>Call<span class="full"> (404) 377-8033</span></span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Pottery studio · Gallery · Maker space</span>
+        <h1>Get your hands <em>in the clay</em>, right here in Decatur.</h1>
+        <p class="lede">A working pottery studio and gallery where makers throw, glaze and fire, and where neighbors come to find something handmade.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-big" href="tel:+14043778033">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+            Call (404) 377-8033
+          </a>
+          <a class="btn btn-ghost" href="#visit">Plan a visit</a>
+        </div>
+        <div class="hero-meta">
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>175 Laredo Drive, Decatur</span>
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Call for current hours</span>
+        </div>
+      </div>
+
+      <div class="hero-art reveal" aria-hidden="true">
+        <div class="arch">
+          <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <radialGradient id="glow" cx="50%" cy="38%" r="65%">
+                <stop offset="0" stop-color="#e07a3f" stop-opacity=".55"/>
+                <stop offset=".6" stop-color="#8a3a1c" stop-opacity=".15"/>
+                <stop offset="1" stop-color="#231c18" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="pot" x1="0" x2="1">
+                <stop offset="0" stop-color="#7d3317"/>
+                <stop offset=".45" stop-color="#c4633a"/>
+                <stop offset="1" stop-color="#6e2c13"/>
+              </linearGradient>
+              <linearGradient id="glazeG" x1="0" x2="1">
+                <stop offset="0" stop-color="#4f6450"/>
+                <stop offset=".5" stop-color="#9db398"/>
+                <stop offset="1" stop-color="#46594a"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="500" fill="#231c18"/>
+            <rect width="400" height="500" fill="url(#glow)"/>
+            <!-- shelf lines -->
+            <g stroke="#3a2f29" stroke-width="1">
+              <path d="M0 120h400M0 122h400"/>
+            </g>
+            <!-- small pots on shelf -->
+            <g opacity=".85">
+              <path d="M40 120c-4-12 2-22 6-26h18c4 4 10 14 6 26z" fill="#8fa38a"/>
+              <path d="M96 120c-8-6-8-24 2-30h4v-8h12v8h4c10 6 10 24 2 30z" fill="#e9dccb"/>
+              <path d="M300 120c-2-10 0-18 4-20h30c4 2 6 10 4 20z" fill="#b5532c"/>
+              <path d="M350 120c-6-10-4-30 8-34h4c12 4 14 24 8 34z" fill="#4f6450"/>
+            </g>
+            <!-- main vessel -->
+            <g class="wheel">
+              <path d="M150 170h100c-4 10-16 16-16 34 0 30 46 54 46 112 0 52-36 82-80 82s-80-30-80-82c0-58 46-82 46-112 0-18-12-24-16-34z" fill="url(#pot)"/>
+              <path d="M150 170h100c-4 10-16 16-16 34 0 14 10 26 21 40-20 6-40 18-55 18s-35-12-55-18c11-14 21-26 21-40 0-18-12-24-16-34z" fill="url(#glazeG)"/>
+              <path d="M134 246c6 0 6 14 12 14s6-10 12-10 6 18 12 18 6-8 12-8M196 262c6 0 6 10 12 10s6-14 12-14 6 16 12 16 6-12 12-12" stroke="url(#glazeG)" stroke-width="10" stroke-linecap="round" fill="none"/>
+              <ellipse cx="200" cy="170" rx="50" ry="7" fill="#2b1a12"/>
+              <g stroke="#f4ede1" stroke-opacity=".14" stroke-width="1.4" fill="none">
+                <path d="M128 300q72 10 144 0"/><path d="M124 330q76 10 152 0"/><path d="M130 360q70 10 140 0"/>
+              </g>
+              <path d="M168 210c-8 40-30 70-30 110" stroke="#fff" stroke-opacity=".18" stroke-width="6" stroke-linecap="round" fill="none"/>
+            </g>
+            <!-- wheel head -->
+            <ellipse cx="200" cy="404" rx="118" ry="16" fill="#3a2f29"/>
+            <ellipse cx="200" cy="400" rx="118" ry="14" fill="#5a4a40"/>
+            <rect x="150" y="414" width="100" height="90" fill="#2e2520"/>
+            <!-- ember sparks -->
+            <g fill="#e07a3f" class="flame">
+              <circle cx="80" cy="220" r="2.5"/><circle cx="330" cy="190" r="2"/><circle cx="312" cy="260" r="3"/><circle cx="66" cy="300" r="2"/><circle cx="350" cy="330" r="1.8"/>
+            </g>
+          </svg>
+        </div>
+        <div class="badge">
+          <svg viewBox="0 0 120 120">
+            <defs><path id="circ" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs>
+            <text font-family="Manrope, sans-serif" font-size="10.5" font-weight="700" letter-spacing="3.1" fill="#231c18"><textPath href="#circ">THROW · GLAZE · FIRE · DECATUR · </textPath></text>
+          </svg>
+          <span class="core"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip" aria-hidden="true">
+    <div class="strip-track">
+      <span>Wheel throwing</span><span>Handbuilding</span><span>Glazing</span><span>Kiln firing</span><span>Handmade gallery</span><span>Maker space</span>
+      <span>Wheel throwing</span><span>Handbuilding</span><span>Glazing</span><span>Kiln firing</span><span>Handmade gallery</span><span>Maker space</span>
+    </div>
+  </div>
+
+  <section class="section" id="offer">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">What happens here</span>
+          <h2>One building, <em>four ways</em> to get muddy.</h2>
+        </div>
+        <p>Whether you've never touched a wheel or you're looking for kiln space for your own practice, there's a place for you at Mudfire. Call and we'll point you to the right fit.</p>
+      </div>
+      <div class="offer-grid">
+        <article class="offer reveal">
+          <div class="ico"><svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="#8a3a1c" stroke-width="2" stroke-linecap="round" aria-hidden="true"><ellipse cx="16" cy="24" rx="12" ry="3"/><path d="M11 21c-1-4 1-8 2-10h6c1 2 3 6 2 10"/><path d="M12 11h8"/></svg></div>
+          <div class="num">01</div>
+          <h3>Classes &amp; workshops</h3>
+          <p>Hands-on time at the wheel and the table, for first-timers and returning potters alike. Ask about what's on the calendar.</p>
+        </article>
+        <article class="offer reveal">
+          <div class="ico"><svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="#4f6450" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 28h24M7 28V14l9-8 9 8v14"/><path d="M13 28v-7h6v7"/></svg></div>
+          <div class="num">02</div>
+          <h3>Maker space</h3>
+          <p>A shared studio for people who want room to work, the right tools on hand, and a community of makers around them.</p>
+        </article>
+        <article class="offer reveal">
+          <div class="ico"><svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="#b5532c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4c4 5 7 8 7 13a7 7 0 0 1-14 0c0-3 1.5-5 3-6.5 0 2.5 1.5 4 2.5 4C14 11 14 8 16 4z"/></svg></div>
+          <div class="num">03</div>
+          <h3>Glaze &amp; kiln firing</h3>
+          <p>Where raw clay turns into finished work. Glazing and firing are part of the process, so your pieces come out ready to use.</p>
+        </article>
+        <article class="offer reveal">
+          <div class="ico"><svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="#6b5c52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="24" height="22" rx="2"/><path d="M4 21l7-6 5 4 4-3 8 6"/><circle cx="21" cy="11" r="2"/></svg></div>
+          <div class="num">04</div>
+          <h3>The gallery</h3>
+          <p>Handmade ceramics you can hold before you take them home. A good stop for a one-of-a-kind gift, or something for your own table.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark about" id="about">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Why Mudfire</span>
+        <h2 class="h2">Not a showroom. <em>A working studio</em> you can walk into.</h2>
+        <p>Mudfire brings the whole life of a pot under one roof: the wheel, the glaze, the kiln and the gallery shelf. It's a local place to learn, make and buy, right off Laredo Drive.</p>
+        <ul class="why-list">
+          <li>
+            <span class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></span>
+            <div><h3>Studio, gallery and maker space together</h3><p>Learn it, make it and see finished work, all in the same building.</p></div>
+          </li>
+          <li>
+            <span class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></span>
+            <div><h3>Room for every skill level</h3><p>Curious beginners and longtime makers share the same space.</p></div>
+          </li>
+          <li>
+            <span class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <div><h3>Rooted in Decatur</h3><p>An easy trip from anywhere in metro Atlanta, and a real neighborhood studio.</p></div>
+          </li>
+        </ul>
+      </div>
+      <figure class="collage reveal">
+        <div class="ph ph-a"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&h=750&q=70" alt="Bright, open interior with large windows and long work tables" loading="lazy" width="1200" height="750"></div>
+        <div class="ph ph-b"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=700&h=700&q=70" alt="A small group of people gathered around a shared table working together" loading="lazy" width="700" height="700"></div>
+        <div class="ph ph-c"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=700&h=700&q=70" alt="Hands sketching plans and ideas at a work table" loading="lazy" width="700" height="700"></div>
+        <figcaption class="stock-note">Stock photos for preview</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="how">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">How it works</span>
+          <h2>From a lump of clay <em>to your shelf.</em></h2>
+        </div>
+        <p>Getting started is simple. No experience needed, just a willingness to get a little messy.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="n">01</div>
+          <h3>Give us a call</h3>
+          <p>Ring the studio to ask about classes, maker space or the gallery, and to check current hours.</p>
+        </div>
+        <div class="step reveal">
+          <div class="n">02</div>
+          <h3>Come make something</h3>
+          <p>Wear clothes you don't mind getting muddy. Center, pull, shape, trim, then let it dry.</p>
+        </div>
+        <div class="step reveal">
+          <div class="n">03</div>
+          <h3>Glaze, fire, take it home</h3>
+          <p>Your piece gets glazed and goes through the kiln, then comes back finished and ready to use.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="glaze" aria-labelledby="cta-h">
+    <svg class="drip" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1200v14c-40 0-50 30-80 30s-30-24-70-24-40 36-90 36-40-28-80-28-50 16-90 16-40-20-90-20-30 30-70 30-40-26-80-26-60 22-100 22-40-30-80-30-50 26-90 26-40-18-80-18-40 30-80 30-50-24-90-24-40 12-80 12V0z" fill="currentColor"/></svg>
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow" style="color:#f1c9a5">Ready when you are</span>
+        <h2 class="h2" id="cta-h">The wheel's <em>waiting.</em></h2>
+        <p>Questions about classes, studio space or something you spotted in the gallery? A quick call is the fastest way to get an answer.</p>
+      </div>
+      <div class="glaze-cta reveal">
+        <div class="k">Call the studio</div>
+        <a class="phone" href="tel:+14043778033">(404) 377-8033</a>
+        <a class="btn btn-light" href="tel:+14043778033">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          Tap to call
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="visit">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Visit the studio</span>
+          <h2>Come see us <em>in Decatur.</em></h2>
+        </div>
+        <p>Stop by the gallery or come in to make something. Hours can change, so please call ahead before you visit.</p>
+      </div>
+      <div class="visit-grid">
+        <div class="card reveal">
+          <div class="info-row">
+            <span class="i"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <div><div class="lbl">Address</div><div class="val">175 Laredo Drive<br>Decatur, GA 30030</div></div>
+          </div>
+          <div class="info-row">
+            <span class="i"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+            <div><div class="lbl">Phone</div><div class="val"><a href="tel:+14043778033">(404) 377-8033</a></div></div>
+          </div>
+          <div class="info-row">
+            <span class="i"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></span>
+            <div><div class="lbl">Email</div><div class="val"><a href="mailto:info@mudfire.com">info@mudfire.com</a></div></div>
+          </div>
+          <div class="info-row">
+            <span class="i"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div><div class="lbl">Hours</div><div class="val">Call for current hours.</div></div>
+          </div>
+          <div class="card-ctas">
+            <a class="btn btn-dark" href="tel:+14043778033">Call (404) 377-8033</a>
+            <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=Mudfire%20Studio%20and%20Gallery%2C%20175%20Laredo%20Drive%2C%20Decatur%2C%20GA%2C%2030030" target="_blank" rel="noopener">Get directions</a>
+          </div>
+        </div>
+
+        <a class="map-art reveal" href="https://www.google.com/maps/search/?api=1&amp;query=Mudfire%20Studio%20and%20Gallery%2C%20175%20Laredo%20Drive%2C%20Decatur%2C%20GA%2C%2030030" target="_blank" rel="noopener" aria-label="Get directions to 175 Laredo Drive, Decatur, on Google Maps (opens in a new tab)">
+          <svg viewBox="0 0 600 460" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="600" height="460" fill="#e7dccb"/>
+            <g fill="#dccfba">
+              <rect x="30" y="30" width="150" height="110" rx="8"/><rect x="220" y="30" width="120" height="70" rx="8"/><rect x="380" y="20" width="190" height="120" rx="8"/>
+              <rect x="30" y="190" width="110" height="140" rx="8"/><rect x="390" y="190" width="180" height="90" rx="8"/><rect x="40" y="370" width="200" height="80" rx="8"/><rect x="420" y="330" width="150" height="110" rx="8"/>
+            </g>
+            <rect x="200" y="140" width="160" height="120" rx="12" fill="#c9d3c2"/>
+            <g stroke="#f7f1e6" stroke-linecap="round" fill="none">
+              <path d="M-10 165 C 150 160, 300 175, 610 160" stroke-width="22"/>
+              <path d="M190 -10 C 185 120, 200 300, 180 470" stroke-width="16"/>
+              <path d="M370 -10 C 375 150, 360 300, 380 470" stroke-width="14"/>
+              <path d="M-10 350 C 150 340, 420 320, 610 310" stroke-width="14"/>
+            </g>
+            <g stroke="#e9c9ad" stroke-width="3" stroke-dasharray="10 10" fill="none">
+              <path d="M-10 165 C 150 160, 300 175, 610 160"/>
+            </g>
+            <circle cx="290" cy="230" r="46" fill="#b5532c" opacity=".14"/>
+            <circle cx="290" cy="230" r="26" fill="#b5532c" opacity=".22"/>
+            <path d="M290 238c-14-16-22-26-22-38a22 22 0 1 1 44 0c0 12-8 22-22 38z" fill="#b5532c" stroke="#fff" stroke-width="3"/>
+            <circle cx="290" cy="200" r="7" fill="#fff"/>
+          </svg>
+          <div class="map-label">
+            <div><b>Get directions</b><span>175 Laredo Drive, Decatur, GA</span></div>
+            <span class="go"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="brand-name">Mudfire<small>Studio &amp; Gallery · Decatur, GA</small></div>
+        <p style="margin-top:16px;max-width:36ch">Pottery studio, gallery and maker space at 175 Laredo Drive, Decatur, GA 30030.</p>
+      </div>
+      <div class="foot-links">
+        <div>
+          <h4>Contact</h4>
+          <a href="tel:+14043778033">(404) 377-8033</a>
+          <a href="mailto:info@mudfire.com">info@mudfire.com</a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Mudfire%20Studio%20and%20Gallery%2C%20175%20Laredo%20Drive%2C%20Decatur%2C%20GA%2C%2030030" target="_blank" rel="noopener">Get directions</a>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="#offer">The studio</a>
+          <a href="#about">Why Mudfire</a>
+          <a href="#how">How it works</a>
+          <a href="#visit">Visit</a>
+        </div>
+      </div>
+    </div>
+    <div class="disclaimer">
+      <p><a href="https://builtbycray.com" target="_blank" rel="noopener">Preview by Built By Cray</a></p>
+      <p>This is a free preview concept and is not the official website of Mudfire Studio and Gallery. Name, phone and address come from public listings. Stock photos from Unsplash.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="tel:+14043778033" aria-label="Call Mudfire at (404) 377-8033">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+</a>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(e){e.classList.add('in')});return;
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>

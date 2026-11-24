@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>5th Nail Lounge Decatur | Preview concept by Built By Cray</title>
+<meta name="description" content="5th Nail Lounge Decatur — a relaxed nail salon on N Arcadia Ave in Decatur, GA. Manicures, pedicures, gel and nail art. Call (404) 390-3856.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --plum:#3b1f2b;
+  --plum-deep:#2a141e;
+  --rose:#c9877f;
+  --blush:#f3dcd4;
+  --blush-soft:#f9ece6;
+  --cream:#fdf8f4;
+  --gold:#b8925a;
+  --ink:#2a1d22;
+  --muted:#6f5a60;
+  --line:rgba(59,31,43,.14);
+  --serif:"Fraunces", Georgia, "Times New Roman", serif;
+  --sans:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --radius:22px;
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--cream);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{width:min(var(--wrap),100% - 40px);margin-inline:auto}
+.skip{position:absolute;left:-9999px;top:0;background:var(--plum);color:#fff;padding:10px 16px;z-index:100}
+.skip:focus{left:12px;top:12px}
+
+/* Preview bar */
+.preview-bar{background:var(--plum-deep);color:#f4e6e0;font-size:13.5px;line-height:1.4}
+.preview-bar .wrap{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;padding:9px 0;text-align:center}
+.preview-bar strong{color:#fff;font-weight:600}
+.preview-bar .deal{color:var(--blush);opacity:.9}
+.claim{display:inline-block;background:var(--blush);color:var(--plum-deep);text-decoration:none;font-weight:700;font-size:12.5px;padding:6px 13px;border-radius:999px;letter-spacing:.02em;white-space:nowrap}
+.claim:hover{background:#fff}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(253,248,244,.88);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:74px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--plum)}
+.logo-mark{width:40px;height:40px;flex:none}
+.logo-text{font-family:var(--serif);font-size:21px;line-height:1.05;letter-spacing:-.01em}
+.logo-text small{display:block;font-family:var(--sans);font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--rose);font-weight:600;margin-top:3px}
+.nav{display:flex;gap:30px;align-items:center}
+.nav a{text-decoration:none;font-size:15px;font-weight:500;color:var(--muted);position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:-5px;height:1px;background:var(--rose);transition:right .3s ease}
+.nav a:hover{color:var(--plum)}
+.nav a:hover::after{right:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:700;border-radius:999px;transition:transform .25s ease, background .25s ease, box-shadow .25s ease;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-call{background:var(--plum);color:#fff;padding:12px 20px;font-size:15px}
+.btn-call:hover{background:var(--plum-deep);transform:translateY(-1px)}
+.btn-lg{padding:19px 32px;font-size:17.5px;box-shadow:0 14px 34px -14px rgba(59,31,43,.6)}
+.btn-ghost{background:transparent;color:var(--plum);border:1.5px solid var(--plum);padding:17px 28px;font-size:16px}
+.btn-ghost:hover{background:var(--plum);color:#fff}
+
+/* Hero */
+.hero{position:relative;padding:72px 0 96px;overflow:hidden}
+.hero::before{content:"";position:absolute;width:720px;height:720px;right:-220px;top:-260px;background:radial-gradient(circle,var(--blush) 0%,rgba(243,220,212,0) 68%);z-index:-1}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--rose)}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+h1,h2,h3{font-family:var(--serif);font-weight:400;color:var(--plum);letter-spacing:-.02em;margin:0}
+.hero h1{font-size:clamp(44px,6.4vw,84px);line-height:1.0;margin:22px 0 10px}
+.hero h1 em{font-style:italic;font-weight:300;color:var(--rose)}
+.hero .biz{font-family:var(--serif);font-size:clamp(19px,2vw,23px);color:var(--plum);opacity:.85;margin:0 0 20px}
+.hero p.lead{font-size:18.5px;color:var(--muted);max-width:33em;margin:0 0 34px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.hero-meta{display:flex;gap:26px;flex-wrap:wrap;margin-top:38px;padding-top:26px;border-top:1px solid var(--line);font-size:14.5px;color:var(--muted)}
+.hero-meta span{display:flex;align-items:center;gap:8px}
+.hero-meta svg{width:17px;height:17px;color:var(--rose);flex:none}
+.hero-art{position:relative}
+.hero-photo{border-radius:240px 240px var(--radius) var(--radius);overflow:hidden;aspect-ratio:4/5;box-shadow:0 40px 80px -40px rgba(42,20,30,.55)}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.hero-badge{position:absolute;left:-34px;bottom:46px;background:var(--cream);border-radius:18px;padding:18px 22px;box-shadow:0 22px 50px -22px rgba(42,20,30,.45);max-width:230px}
+.hero-badge b{display:block;font-family:var(--serif);font-weight:400;font-size:21px;color:var(--plum);line-height:1.2}
+.hero-badge span{font-size:13px;color:var(--muted)}
+.hero-ring{position:absolute;right:-28px;top:40px;width:120px;height:120px;color:var(--gold);animation:spin 40s linear infinite}
+
+/* Marquee strip */
+.strip{background:var(--plum);color:var(--blush);overflow:hidden;padding:18px 0}
+.strip-track{display:flex;gap:46px;width:max-content;animation:slide 38s linear infinite;font-family:var(--serif);font-style:italic;font-size:22px;font-weight:300}
+.strip-track span{display:flex;align-items:center;gap:46px;white-space:nowrap}
+.strip-track span::after{content:"✦";font-style:normal;font-size:13px;color:var(--gold)}
+
+/* Sections */
+section{scroll-margin-top:90px}
+.section{padding:110px 0}
+.section-head{max-width:640px;margin-bottom:56px}
+.section-head h2{font-size:clamp(34px,4.4vw,54px);line-height:1.08;margin-top:16px}
+.section-head h2 em{font-style:italic;font-weight:300;color:var(--rose)}
+.section-head p{color:var(--muted);font-size:18px;margin:18px 0 0}
+
+/* Services */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.service{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px 32px;position:relative;transition:transform .35s ease, box-shadow .35s ease, border-color .35s ease}
+.service:hover{transform:translateY(-4px);box-shadow:0 28px 50px -30px rgba(59,31,43,.45);border-color:rgba(201,135,127,.5)}
+.service-icon{width:54px;height:54px;border-radius:50%;background:var(--blush-soft);display:grid;place-items:center;color:var(--plum);margin-bottom:22px}
+.service-icon svg{width:26px;height:26px}
+.service h3{font-size:25px;margin-bottom:8px}
+.service p{margin:0;color:var(--muted);font-size:16px}
+.service .num{position:absolute;top:28px;right:28px;font-family:var(--serif);font-style:italic;color:var(--rose);font-size:15px}
+.services-note{margin-top:30px;font-size:15px;color:var(--muted);text-align:center}
+.services-note a{color:var(--plum);font-weight:700}
+
+/* Lounge / why */
+.lounge{background:var(--blush-soft);position:relative}
+.lounge-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.lounge-photos{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:end}
+.lounge-photos figure{margin:0;border-radius:var(--radius);overflow:hidden}
+.lounge-photos img{width:100%;height:100%;object-fit:cover}
+.lounge-photos .tall{aspect-ratio:3/4.4}
+.lounge-photos .short{aspect-ratio:3/3.6;margin-bottom:46px}
+.why-list{list-style:none;padding:0;margin:36px 0 0;display:grid;gap:4px}
+.why-list li{display:grid;grid-template-columns:44px 1fr;gap:18px;padding:22px 0;border-top:1px solid var(--line)}
+.why-list li:last-child{border-bottom:1px solid var(--line)}
+.why-list .dot{width:44px;height:44px;border-radius:50%;border:1px solid var(--rose);display:grid;place-items:center;color:var(--rose)}
+.why-list .dot svg{width:20px;height:20px}
+.why-list h3{font-size:21px;margin-bottom:4px}
+.why-list p{margin:0;color:var(--muted);font-size:16px}
+
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;counter-reset:step;border-top:1px solid var(--line)}
+.step{padding:40px 36px 10px 0;position:relative}
+.step + .step{padding-left:36px;border-left:1px solid var(--line)}
+.step .n{font-family:var(--serif);font-size:72px;line-height:1;color:var(--blush);font-weight:300;-webkit-text-stroke:1px var(--rose)}
+.step h3{font-size:24px;margin:18px 0 8px}
+.step p{margin:0;color:var(--muted);font-size:16px}
+
+/* Quote band */
+.band{background:var(--plum);color:#fff;position:relative;overflow:hidden}
+.band .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center;padding:96px 0}
+.band h2{color:#fff;font-size:clamp(32px,4.2vw,52px);line-height:1.1}
+.band h2 em{color:var(--blush);font-style:italic;font-weight:300}
+.band p{color:rgba(255,255,255,.75);font-size:18px;margin:18px 0 0;max-width:30em}
+.band .btn-call{background:var(--blush);color:var(--plum-deep)}
+.band .btn-call:hover{background:#fff}
+.band-cta{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.band-cta small{color:rgba(255,255,255,.6);font-size:14px}
+.band-deco{position:absolute;right:-90px;bottom:-120px;width:380px;height:380px;color:rgba(243,220,212,.08)}
+
+/* Visit */
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
+.visit-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:44px 42px}
+.visit-card h2{font-size:clamp(32px,3.8vw,46px);line-height:1.1;margin:14px 0 28px}
+.info-row{display:grid;grid-template-columns:46px 1fr;gap:16px;padding:18px 0;border-top:1px solid var(--line)}
+.info-row:first-of-type{border-top:0}
+.info-row .ic{width:46px;height:46px;border-radius:14px;background:var(--blush-soft);display:grid;place-items:center;color:var(--plum)}
+.info-row .ic svg{width:21px;height:21px}
+.info-row .label{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--rose);font-weight:700}
+.info-row .val{font-size:17.5px;color:var(--ink);margin-top:2px}
+.info-row .val a{text-decoration:none;font-weight:600}
+.info-row .val a:hover{text-decoration:underline}
+.visit-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.visit-map{border-radius:var(--radius);overflow:hidden;position:relative;min-height:420px;background:var(--plum)}
+.visit-map img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
+.visit-map .overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:38px;color:#fff;background:linear-gradient(to top,rgba(42,20,30,.92),rgba(42,20,30,.1) 70%)}
+.visit-map .pin{width:58px;height:58px;border-radius:50%;background:var(--blush);color:var(--plum);display:grid;place-items:center;margin-bottom:18px}
+.visit-map .pin svg{width:26px;height:26px}
+.visit-map h3{color:#fff;font-size:30px;line-height:1.15}
+.visit-map p{margin:8px 0 22px;color:rgba(255,255,255,.8)}
+.visit-map .btn-call{background:#fff;color:var(--plum)}
+.visit-map .btn-call:hover{background:var(--blush)}
+.stock-note{font-size:12.5px;color:var(--muted);margin-top:14px;text-align:right}
+
+/* Footer */
+.site-footer{background:var(--plum-deep);color:rgba(255,255,255,.72);padding:64px 0 34px;font-size:15px}
+.footer-top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.12)}
+.site-footer .logo{color:#fff}
+.site-footer .logo-text small{color:var(--blush)}
+.footer-contact{display:grid;gap:6px;text-align:right}
+.footer-contact a{color:#fff;text-decoration:none;font-weight:600}
+.footer-contact a:hover{text-decoration:underline}
+.footer-bottom{padding-top:26px;font-size:13.5px;line-height:1.6;display:grid;gap:8px}
+.footer-bottom a{color:var(--blush);font-weight:600}
+
+/* Mobile floating call */
+.fab{display:none}
+.short-label{display:none}
+.section-head.flush{margin-bottom:0}
+.footer-bottom p{margin:0}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease, transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* Responsive */
+@media (max-width:1020px){
+  .hero-grid,.lounge-grid,.band .wrap,.visit-grid{grid-template-columns:1fr}
+  .hero-grid{gap:56px}
+  .hero-art{max-width:520px;margin-inline:auto;width:100%}
+  .services-grid{grid-template-columns:1fr 1fr}
+  .lounge-grid{gap:50px}
+  .band-cta{align-items:flex-start}
+}
+@media (max-width:760px){
+  .nav{display:none}
+  .site-header .wrap{height:64px}
+  .logo-text{font-size:18px}
+  .logo-text small{font-size:9.5px}
+  .logo-mark{width:34px;height:34px}
+  .site-header .btn-call{padding:10px 15px;font-size:14px}
+  .site-header .btn-call .full{display:none}
+  .site-header .btn-call .short-label{display:inline}
+  .section-head.flush{margin-bottom:0}
+  .hero{padding:44px 0 70px}
+  .hero p.lead{font-size:17px}
+  .hero-actions .btn{width:100%}
+  .hero-badge{left:12px;bottom:18px;max-width:200px;padding:14px 16px}
+  .hero-badge b{font-size:18px}
+  .hero-ring{right:-6px;top:14px;width:88px;height:88px}
+  .section{padding:76px 0}
+  .section-head{margin-bottom:38px}
+  .services-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr;border-top:0}
+  .step,.step + .step{padding:28px 0;border-left:0;border-top:1px solid var(--line)}
+  .step .n{font-size:56px}
+  .band .wrap{padding:72px 0}
+  .band-cta .btn{width:100%}
+  .visit-card{padding:32px 24px}
+  .visit-actions .btn{width:100%}
+  .visit-map{min-height:360px}
+  .visit-map .overlay{padding:28px 24px}
+  .footer-contact{text-align:left}
+  .stock-note{text-align:left}
+  .strip-track{font-size:18px}
+  .preview-bar{font-size:12.5px}
+  .preview-bar .deal{display:none}
+  body{padding-bottom:84px}
+  .fab{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:60;background:var(--plum);color:#fff;text-decoration:none;font-weight:700;justify-content:center;align-items:center;gap:10px;padding:16px;border-radius:999px;box-shadow:0 18px 40px -12px rgba(42,20,30,.65)}
+  .fab svg{width:19px;height:19px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="preview-bar" role="region" aria-label="Preview notice">
+  <div class="wrap">
+    <span><strong>Free preview concept by Built By Cray.</strong> Not the official website of 5th Nail Lounge Decatur.</span>
+    <span class="deal">$650 Black Friday price through Nov 30</span>
+    <a class="claim" href="https://calendar.app.google/K7QqcbLckjKjjZs19" target="_blank" rel="noopener">Claim this website</a>
+  </div>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M12 2.5l2.2 6.3 6.3 2.2-6.3 2.2L12 19.5l-2.2-6.3L3.5 11l6.3-2.2z"/></symbol>
+    <symbol id="i-hand" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M8 13V5.5a1.5 1.5 0 0 1 3 0V11m0-6.5V4a1.5 1.5 0 0 1 3 0v7m0-5.5a1.5 1.5 0 0 1 3 0V12m0-4.5a1.5 1.5 0 0 1 3 0V15a7 7 0 0 1-7 7h-1a7 7 0 0 1-5.6-2.8L3.6 16a1.5 1.5 0 0 1 2.3-1.9L8 16"/></symbol>
+    <symbol id="i-foot" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M7 21c-2 0-3-1.6-3-3.5 0-2.5 2-4 2-7.5C6 6.5 7.5 4 10 4s3.5 2 3.5 4.5c0 3-1.5 4.5-1.5 7.5 0 3-2 5-5 5z"/><circle cx="16" cy="4" r="1.3" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="18.6" cy="6.4" r="1.1" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="19.8" cy="9.4" r="1" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M12 2.5S5.5 10 5.5 14.5a6.5 6.5 0 0 0 13 0C18.5 10 12 2.5 12 2.5z"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M9 15a3 3 0 0 0 3 3"/></symbol>
+    <symbol id="i-brush" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M9.5 14.5L19 5a2 2 0 0 0-2.8-2.8L6.7 11.7M9.5 14.5l-2.8-2.8M9.5 14.5c0 2.5-1.6 5-5 5H3s0-1 .3-2c.5-1.8 1-3.3 3.4-5.8"/></symbol>
+    <symbol id="i-gem" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M6 3h12l4 6-10 12L2 9z M2 9h20 M9 3l3 18 3-18"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M5 19c0-9 6-15 15-15 0 9-6 15-15 15zm0 0l8-8"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M12 20s-7.5-4.6-9.2-9.3C1.6 7.3 3.8 4 7.2 4c2 0 3.4 1.1 4.8 2.8C13.4 5.1 14.8 4 16.8 4c3.4 0 5.6 3.3 4.4 6.7C19.5 15.4 12 20 12 20z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="5th Nail Lounge Decatur, back to top">
+      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="#c9877f" stroke-width="1"/>
+        <path d="M20 8c-4 0-6 3.4-6 8v9.5a6 6 0 0 0 12 0V16c0-4.6-2-8-6-8z" fill="#3b1f2b"/>
+        <path d="M17.2 12.5c.8-1.6 1.7-2.2 2.8-2.2" fill="none" stroke="#f3dcd4" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">5th Nail Lounge<small>Decatur, GA</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#lounge">The Lounge</a>
+      <a href="#how">How It Works</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn btn-call" href="tel:+14043903856" aria-label="Call 5th Nail Lounge at (404) 390-3856">
+      <svg aria-hidden="true"><use href="#i-phone"/></svg><span class="full">(404) 390-3856</span><span class="short-label">Call</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <span class="eyebrow">Nail salon · Decatur, Georgia</span>
+        <h1>Polished nails, <em>unhurried</em> moments.</h1>
+        <p class="biz">5th Nail Lounge Decatur</p>
+        <p class="lead">A calm, welcoming nail lounge just off N Arcadia Ave — for clean everyday manicures, a pedicure you've been putting off, or a little art for the weekend.</p>
+        <div class="hero-actions">
+          <a class="btn btn-call btn-lg" href="tel:+14043903856">
+            <svg aria-hidden="true"><use href="#i-phone"/></svg>Call (404) 390-3856
+          </a>
+          <a class="btn btn-ghost" href="#services">See services</a>
+        </div>
+        <div class="hero-meta">
+          <span><svg aria-hidden="true"><use href="#i-pin"/></svg>175 N Arcadia Ave, Decatur</span>
+          <span><svg aria-hidden="true"><use href="#i-clock"/></svg>Call for current hours</span>
+        </div>
+      </div>
+      <div class="hero-art reveal">
+        <svg class="hero-ring" viewBox="0 0 120 120" aria-hidden="true">
+          <defs><path id="circ" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs>
+          <text font-family="Manrope, sans-serif" font-size="10.5" letter-spacing="3.2" fill="currentColor" font-weight="700"><textPath href="#circ">DECATUR · NAIL LOUNGE · DECATUR · NAIL LOUNGE ·</textPath></text>
+          <path d="M60 50l2.6 7.4L70 60l-7.4 2.6L60 70l-2.6-7.4L50 60l7.4-2.6z" fill="currentColor"/>
+        </svg>
+        <div class="hero-photo">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&h=1250&q=70" alt="Close-up of a manicure being finished at a nail salon station" width="1000" height="1250">
+        </div>
+        <div class="hero-badge">
+          <b>Your hour off.</b>
+          <span>Sit back — we'll take it from here.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip" aria-hidden="true">
+    <div class="strip-track">
+      <span>Manicures</span><span>Pedicures</span><span>Gel polish</span><span>Nail art</span><span>Extensions</span><span>Dip powder</span>
+      <span>Manicures</span><span>Pedicures</span><span>Gel polish</span><span>Nail art</span><span>Extensions</span><span>Dip powder</span>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">The menu</span>
+        <h2>Everything your hands &amp; feet <em>have been asking for.</em></h2>
+        <p>From a quick clean-up to a full set, here's what a visit can look like. Give us a call to check what's available and book your spot.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service reveal">
+          <span class="num">01</span>
+          <div class="service-icon"><svg aria-hidden="true"><use href="#i-hand"/></svg></div>
+          <h3>Manicures</h3>
+          <p>Shaping, cuticle care and a smooth, even polish — the classic that never goes out of style.</p>
+        </article>
+        <article class="service reveal">
+          <span class="num">02</span>
+          <div class="service-icon"><svg aria-hidden="true"><use href="#i-foot"/></svg></div>
+          <h3>Pedicures</h3>
+          <p>A warm soak, gentle exfoliation and a fresh coat of color. Sandal season, any season.</p>
+        </article>
+        <article class="service reveal">
+          <span class="num">03</span>
+          <div class="service-icon"><svg aria-hidden="true"><use href="#i-drop"/></svg></div>
+          <h3>Gel polish</h3>
+          <p>High-shine color that holds up through busy weeks, school runs and long workdays.</p>
+        </article>
+        <article class="service reveal">
+          <span class="num">04</span>
+          <div class="service-icon"><svg aria-hidden="true"><use href="#i-gem"/></svg></div>
+          <h3>Nail extensions</h3>
+          <p>Added length and shape for a full set — from soft almond to bold coffin.</p>
+        </article>
+        <article class="service reveal">
+          <span class="num">05</span>
+          <div class="service-icon"><svg aria-hidden="true"><use href="#i-brush"/></svg></div>
+          <h3>Nail art</h3>
+          <p>French tips, accents, chrome or something just for you. Bring your inspo photos.</p>
+        </article>
+        <article class="service reveal">
+          <span class="num">06</span>
+          <div class="service-icon"><svg aria-hidden="true"><use href="#i-spark"/></svg></div>
+          <h3>Dip &amp; fills</h3>
+          <p>Keep your set looking fresh with dip powder and maintenance fills between visits.</p>
+        </article>
+      </div>
+      <p class="services-note">Services and availability can vary — <a href="tel:+14043903856">call (404) 390-3856</a> to ask before you come in.</p>
+    </div>
+  </section>
+
+  <!-- Lounge / Why -->
+  <section class="section lounge" id="lounge">
+    <div class="wrap lounge-grid">
+      <div class="lounge-photos reveal">
+        <figure class="tall"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&h=1170&q=70" alt="Bright, modern salon interior with styling stations" loading="lazy" width="800" height="1170"></figure>
+        <figure class="short"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&h=960&q=70" alt="Warmly lit salon space with chairs and mirrors" loading="lazy" width="800" height="960"></figure>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">The lounge</span>
+        <div class="section-head flush">
+          <h2>A little calm, <em>right in Decatur.</em></h2>
+          <p>Life around the Square moves fast. Your nail appointment shouldn't. Come in, settle into the chair and let the week fall away for a while.</p>
+        </div>
+        <ul class="why-list">
+          <li>
+            <span class="dot"><svg aria-hidden="true"><use href="#i-leaf"/></svg></span>
+            <div><h3>Clean, careful work</h3><p>Neat shaping, tidy cuticles and polish that goes on smooth — the details that make a manicure last.</p></div>
+          </li>
+          <li>
+            <span class="dot"><svg aria-hidden="true"><use href="#i-heart"/></svg></span>
+            <div><h3>Relaxed, friendly vibe</h3><p>No rush and no pressure. Ask questions, change your mind on color, take your time.</p></div>
+          </li>
+          <li>
+            <span class="dot"><svg aria-hidden="true"><use href="#i-pin"/></svg></span>
+            <div><h3>Easy to get to</h3><p>On N Arcadia Ave in Decatur — a simple stop before work, after errands or on the weekend.</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section" id="how">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">How it works</span>
+        <h2>Three steps to <em>fresh nails.</em></h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="n">01</div>
+          <h3>Give us a call</h3>
+          <p>Ring (404) 390-3856 to check today's hours and find a time that works for you.</p>
+        </div>
+        <div class="step reveal">
+          <div class="n">02</div>
+          <h3>Pick your look</h3>
+          <p>Classic, gel, a full set or art — bring a photo or decide in the chair. We'll help.</p>
+        </div>
+        <div class="step reveal">
+          <div class="n">03</div>
+          <h3>Relax &amp; enjoy</h3>
+          <p>Sit back while we take care of the rest, then head out polished and ready.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA band -->
+  <section class="band" aria-labelledby="band-title">
+    <svg class="band-deco" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 0l10 40 40 10-40 10-10 40-10-40L0 50l40-10z" fill="currentColor"/></svg>
+    <div class="wrap">
+      <div class="reveal">
+        <h2 id="band-title">Treat yourself <em>this week.</em></h2>
+        <p>Whether it's a standing appointment or a last-minute refresh before a big day, a quick call is the easiest way to get in.</p>
+      </div>
+      <div class="band-cta reveal">
+        <a class="btn btn-call btn-lg" href="tel:+14043903856"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call (404) 390-3856</a>
+        <small>Call for current hours.</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit -->
+  <section class="section" id="visit">
+    <div class="wrap">
+      <div class="visit-grid">
+        <div class="visit-card reveal">
+          <span class="eyebrow">Visit us</span>
+          <h2>Find us on N Arcadia Ave.</h2>
+          <div class="info-row">
+            <span class="ic"><svg aria-hidden="true"><use href="#i-pin"/></svg></span>
+            <div><div class="label">Address</div><div class="val">175 N Arcadia Ave<br>Decatur, GA 30030</div></div>
+          </div>
+          <div class="info-row">
+            <span class="ic"><svg aria-hidden="true"><use href="#i-phone"/></svg></span>
+            <div><div class="label">Phone</div><div class="val"><a href="tel:+14043903856">(404) 390-3856</a></div></div>
+          </div>
+          <div class="info-row">
+            <span class="ic"><svg aria-hidden="true"><use href="#i-clock"/></svg></span>
+            <div><div class="label">Hours</div><div class="val">Call for current hours.</div></div>
+          </div>
+          <div class="visit-actions">
+            <a class="btn btn-call" href="tel:+14043903856"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call now</a>
+            <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=5th%20Nail%20Lounge%20Decatur%2C%20175%20N%20Arcadia%20Ave%2C%20Decatur%2C%20GA%2030030" target="_blank" rel="noopener">Get directions <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <div class="visit-map reveal">
+          <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1200&q=70" alt="" loading="lazy">
+          <div class="overlay">
+            <span class="pin"><svg aria-hidden="true"><use href="#i-pin"/></svg></span>
+            <h3>5th Nail Lounge Decatur</h3>
+            <p>175 N Arcadia Ave, Decatur, GA 30030</p>
+            <a class="btn btn-call" href="https://www.google.com/maps/search/?api=1&amp;query=5th%20Nail%20Lounge%20Decatur%2C%20175%20N%20Arcadia%20Ave%2C%20Decatur%2C%20GA%2030030" target="_blank" rel="noopener">Open in Google Maps <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <p class="stock-note">Stock photos for preview (Unsplash).</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <a class="logo" href="#top" aria-label="5th Nail Lounge Decatur, back to top">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="19" fill="none" stroke="#c9877f" stroke-width="1"/>
+          <path d="M20 8c-4 0-6 3.4-6 8v9.5a6 6 0 0 0 12 0V16c0-4.6-2-8-6-8z" fill="#f3dcd4"/>
+        </svg>
+        <span class="logo-text">5th Nail Lounge<small>Decatur, GA</small></span>
+      </a>
+      <div class="footer-contact">
+        <a href="tel:+14043903856">(404) 390-3856</a>
+        <span>175 N Arcadia Ave, Decatur, GA 30030</span>
+        <span>Call for current hours.</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><a href="https://builtbycray.com" target="_blank" rel="noopener">Preview by Built By Cray</a></p>
+      <p>This is a free preview concept and is not the official website of 5th Nail Lounge Decatur. Name, phone and address come from public listings. Stock photos from Unsplash.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="tel:+14043903856" aria-label="Call 5th Nail Lounge at (404) 390-3856"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call (404) 390-3856</a>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(e){e.classList.add('in')});return;
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>

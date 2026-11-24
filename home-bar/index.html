@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Home Bar | Preview concept by Built By Cray</title>
+<meta name="description" content="Home Bar, Bob &amp; Harriet's neighborhood pub in Kirkwood, Atlanta. Cold drinks, pub plates and a seat that feels like yours. 1992 Hosea L Williams Dr SE. Call (404) 371-1115.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16120e;
+  --ink-2:#221b15;
+  --cream:#f4ecdc;
+  --cream-2:#e9dcc3;
+  --brass:#d29b45;
+  --brass-2:#e8b968;
+  --oxblood:#7b2b22;
+  --green:#1e3a2f;
+  --muted:#b9ab94;
+  --text-dark:#2a221b;
+  --radius:18px;
+  --max:1200px;
+  --serif:"Fraunces", Georgia, "Times New Roman", serif;
+  --sans:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:var(--sans);background:var(--ink);color:var(--cream);line-height:1.6;font-size:1.0625rem;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brass-2);outline-offset:3px;border-radius:6px}
+.wrap{width:min(var(--max),100% - 2.5rem);margin-inline:auto}
+.skip{position:absolute;left:-9999px;top:0;background:var(--brass);color:var(--ink);padding:.6rem 1rem;z-index:100;font-weight:700}
+.skip:focus{left:1rem;top:1rem}
+
+/* Disclosure bar */
+.promo{background:var(--brass);color:var(--ink);font-size:.85rem;font-weight:600}
+.promo .wrap{display:flex;align-items:center;justify-content:center;gap:.4rem 1rem;flex-wrap:wrap;padding:.55rem 0;text-align:center}
+.promo .deal{font-weight:500;opacity:.85}
+.promo a{background:var(--ink);color:var(--cream);text-decoration:none;padding:.3rem .8rem;border-radius:999px;font-size:.8rem;font-weight:700;white-space:nowrap}
+.promo a:hover{background:var(--oxblood)}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(22,18,14,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(210,155,69,.18)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:74px}
+.logo{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+.logo-mark{width:42px;height:42px;flex:none}
+.logo-text{font-family:var(--serif);font-weight:800;font-size:1.45rem;letter-spacing:-.01em;line-height:1}
+.logo-text small{display:block;font-family:var(--sans);font-weight:600;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);margin-top:.3rem}
+.nav{display:flex;gap:2rem;list-style:none}
+.nav a{text-decoration:none;font-size:.92rem;font-weight:600;color:var(--cream-2);position:relative;padding:.3rem 0}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--brass);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;gap:.6rem;text-decoration:none;font-weight:700;border-radius:999px;transition:transform .2s ease,background .2s ease,box-shadow .2s ease;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-brass{background:var(--brass);color:var(--ink);padding:.75rem 1.3rem;font-size:.95rem}
+.btn-brass:hover{background:var(--brass-2);transform:translateY(-2px);box-shadow:0 10px 30px -10px rgba(210,155,69,.7)}
+.btn-ghost{border:1.5px solid rgba(244,236,220,.45);color:var(--cream);padding:.75rem 1.3rem;font-size:.95rem}
+.btn-ghost:hover{border-color:var(--cream);background:rgba(244,236,220,.08)}
+.btn-lg{padding:1.1rem 1.8rem;font-size:1.08rem}
+
+/* Hero */
+.hero{position:relative;min-height:min(88vh,820px);display:flex;align-items:flex-end;isolation:isolate;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:-2}
+.hero-bg img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);animation:slowzoom 18s ease-out forwards}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:
+  linear-gradient(180deg,rgba(22,18,14,.35) 0%,rgba(22,18,14,.55) 45%,rgba(22,18,14,.96) 100%),
+  radial-gradient(ellipse at 20% 80%,rgba(123,43,34,.45),transparent 60%)}
+@keyframes slowzoom{to{transform:scale(1)}}
+.hero-inner{padding:8rem 0 5rem}
+.eyebrow{display:inline-flex;align-items:center;gap:.7rem;font-size:.78rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--brass-2)}
+.eyebrow::before{content:"";width:34px;height:1.5px;background:currentColor}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.8rem,7.4vw,6.4rem);line-height:.98;letter-spacing:-.025em;margin:1.2rem 0 1.4rem;max-width:13ch}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--brass-2)}
+.hero p.lead{font-size:clamp(1.08rem,1.6vw,1.3rem);max-width:36rem;color:var(--cream-2)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.2rem}
+.hero-meta{display:flex;flex-wrap:wrap;gap:.5rem 1.6rem;margin-top:2.6rem;font-size:.92rem;color:var(--muted)}
+.hero-meta span{display:inline-flex;align-items:center;gap:.5rem}
+.hero-meta svg{width:16px;height:16px;color:var(--brass)}
+
+/* Marquee strip */
+.strip{background:var(--oxblood);color:var(--cream);overflow:hidden;border-block:1px solid rgba(0,0,0,.3)}
+.strip-track{display:flex;gap:2.5rem;width:max-content;padding:1rem 0;animation:marquee 38s linear infinite;font-family:var(--serif);font-style:italic;font-size:1.25rem}
+.strip-track span{display:inline-flex;align-items:center;gap:2.5rem;white-space:nowrap}
+.strip-track span::after{content:"✦";font-style:normal;color:var(--brass-2);font-size:.9rem}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* Sections */
+section{padding:clamp(4.5rem,9vw,8rem) 0}
+.sec-head{max-width:44rem;margin-bottom:3.2rem}
+.sec-head h2{font-family:var(--serif);font-weight:600;font-size:clamp(2.1rem,4.6vw,3.6rem);line-height:1.05;letter-spacing:-.02em;margin-top:1rem}
+.sec-head h2 em{font-style:italic;font-weight:400;color:var(--brass)}
+.sec-head p{margin-top:1.1rem;color:var(--muted);font-size:1.1rem}
+
+/* Intro (light) */
+.light{background:var(--cream);color:var(--text-dark)}
+.light .eyebrow{color:var(--oxblood)}
+.light .sec-head p{color:#5d5044}
+.intro-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(2rem,6vw,5.5rem);align-items:center}
+.intro-photos{position:relative;aspect-ratio:4/5}
+.intro-photos .p1{position:absolute;inset:0 18% 14% 0;border-radius:var(--radius);overflow:hidden;box-shadow:0 30px 60px -25px rgba(22,18,14,.5)}
+.intro-photos .p2{position:absolute;right:0;bottom:0;width:52%;aspect-ratio:1;border-radius:var(--radius);overflow:hidden;border:8px solid var(--cream);box-shadow:0 30px 60px -25px rgba(22,18,14,.55)}
+.intro-photos img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;left:-14px;bottom:22%;background:var(--green);color:var(--cream);width:122px;height:122px;border-radius:50%;display:grid;place-items:center;text-align:center;font-family:var(--serif);font-style:italic;font-size:1rem;line-height:1.15;padding:1rem;box-shadow:0 14px 30px -10px rgba(0,0,0,.45);transform:rotate(-8deg)}
+.badge b{display:block;font-style:normal;font-family:var(--sans);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-2);margin-bottom:.25rem}
+.intro-copy h2{color:var(--ink)}
+.sec-head-tight{margin-bottom:0}
+.intro-copy .body p{margin-top:1.1rem;color:#4a3f35}
+.signature{margin-top:2rem;font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--oxblood)}
+
+/* Menu highlights */
+.menu-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.card{background:var(--ink-2);border:1px solid rgba(210,155,69,.16);border-radius:var(--radius);padding:2rem 1.6rem;transition:transform .3s ease,border-color .3s ease,background .3s ease;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-6px);border-color:rgba(210,155,69,.5);background:#2a211a}
+.card .num{font-family:var(--serif);font-style:italic;color:var(--brass);font-size:.95rem}
+.card svg.ico{width:46px;height:46px;color:var(--brass-2);margin:1.2rem 0 1.4rem}
+.card h3{font-family:var(--serif);font-weight:600;font-size:1.5rem;line-height:1.15;margin-bottom:.6rem}
+.card p{color:var(--muted);font-size:.98rem}
+.menu-feature{margin-top:1.2rem;display:grid;grid-template-columns:1.3fr 1fr;border-radius:var(--radius);overflow:hidden;background:var(--green)}
+.menu-feature .img{min-height:340px;position:relative}
+.menu-feature .img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.menu-feature .txt{padding:clamp(2rem,4vw,3.5rem);display:flex;flex-direction:column;justify-content:center}
+.menu-feature h3{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,3vw,2.4rem);line-height:1.1;margin:.9rem 0 1rem}
+.menu-feature p{color:#cfd8cf}
+.menu-feature .btn{margin-top:1.8rem;align-self:flex-start}
+
+/* Why */
+.why{background:linear-gradient(180deg,var(--ink) 0%,#1b1510 100%)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid rgba(210,155,69,.2)}
+.why-item{padding:2.4rem 2rem 2.4rem 0;border-bottom:1px solid rgba(210,155,69,.2)}
+.why-item + .why-item{padding-left:2rem;border-left:1px solid rgba(210,155,69,.2)}
+.why-item h3{font-family:var(--serif);font-weight:600;font-size:1.6rem;margin-bottom:.7rem;display:flex;align-items:baseline;gap:.8rem}
+.why-item h3 span{font-style:italic;font-weight:400;color:var(--brass);font-size:1.1rem}
+.why-item p{color:var(--muted)}
+
+/* Steps */
+.steps{background:var(--cream-2);color:var(--text-dark)}
+.steps .eyebrow{color:var(--oxblood)}
+.steps .sec-head h2{color:var(--ink)}
+.steps .sec-head p{color:#5d5044}
+.step-list{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;counter-reset:s}
+.step-list li{background:var(--cream);border-radius:var(--radius);padding:2.2rem 1.8rem;position:relative;counter-increment:s;box-shadow:0 18px 40px -30px rgba(22,18,14,.5)}
+.step-list li::before{content:counter(s,decimal-leading-zero);font-family:var(--serif);font-weight:800;font-size:3.6rem;line-height:1;color:var(--oxblood);opacity:.9;display:block;margin-bottom:1rem}
+.step-list h3{font-family:var(--serif);font-weight:600;font-size:1.45rem;color:var(--ink);margin-bottom:.5rem}
+.step-list p{color:#4a3f35}
+.step-list a{color:var(--oxblood);font-weight:700}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:260px 260px;gap:1rem}
+.gallery figure{position:relative;border-radius:var(--radius);overflow:hidden;background:var(--ink-2)}
+.gallery figure:first-child{grid-row:span 2}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.gallery figure:hover img{transform:scale(1.05)}
+.stock-note{margin-top:1rem;font-size:.82rem;color:var(--muted);font-style:italic}
+
+/* Visit */
+.visit{background:var(--oxblood);position:relative;overflow:hidden}
+.visit::before{content:"";position:absolute;right:-180px;top:-180px;width:520px;height:520px;border-radius:50%;border:1px solid rgba(232,185,104,.25);box-shadow:0 0 0 60px rgba(232,185,104,.04),0 0 0 120px rgba(232,185,104,.03)}
+.visit-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:start;position:relative}
+.visit .eyebrow{color:var(--brass-2)}
+.visit .sec-head{margin-bottom:2rem}
+.visit .sec-head p{color:#ecd3c8}
+.visit-actions{display:flex;flex-wrap:wrap;gap:.9rem}
+.visit-actions .btn-ghost{border-color:rgba(244,236,220,.6)}
+.info{background:var(--ink);border-radius:var(--radius);padding:clamp(1.6rem,3.5vw,2.6rem);box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+.info dl{display:grid;gap:1.5rem}
+.info .row{display:grid;grid-template-columns:44px 1fr;gap:1rem;align-items:start;padding-bottom:1.5rem;border-bottom:1px solid rgba(210,155,69,.16)}
+.info .row:last-child{border-bottom:0;padding-bottom:0}
+.info .ic{width:44px;height:44px;border-radius:12px;background:rgba(210,155,69,.12);display:grid;place-items:center;color:var(--brass-2)}
+.info .ic svg{width:20px;height:20px}
+.info dt{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);font-weight:700;margin-bottom:.25rem}
+.info dd{font-size:1.05rem}
+.info dd a{text-decoration:none;border-bottom:1px solid rgba(210,155,69,.45)}
+.info dd a:hover{color:var(--brass-2)}
+.info dd small{display:block;color:var(--muted);font-size:.88rem;margin-top:.15rem}
+
+/* Footer */
+footer{background:#0f0c09;padding:3.5rem 0 7rem;font-size:.9rem;color:var(--muted)}
+.foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2rem;align-items:center;padding-bottom:2rem;border-bottom:1px solid rgba(210,155,69,.14)}
+.foot-links{display:flex;flex-wrap:wrap;gap:1.5rem}
+.foot-links a{text-decoration:none;color:var(--cream-2)}
+.foot-links a:hover{color:var(--brass-2)}
+.foot-bottom{padding-top:1.8rem;display:grid;gap:.6rem}
+.foot-bottom a{color:var(--brass-2);font-weight:700}
+
+/* Mobile call FAB */
+.fab{display:none}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* Responsive */
+@media (max-width:1024px){
+  .menu-grid{grid-template-columns:repeat(2,1fr)}
+  .nav{gap:1.3rem}
+}
+@media (max-width:860px){
+  .nav{display:none}
+  .intro-grid,.visit-grid,.menu-feature{grid-template-columns:1fr}
+  .intro-photos{max-width:520px;width:100%;margin-inline:auto}
+  .why-grid,.step-list{grid-template-columns:1fr}
+  .why-item,.why-item + .why-item{padding:2rem 0;border-left:0}
+  .gallery{grid-template-columns:1fr 1fr;grid-template-rows:none;grid-auto-rows:200px}
+  .gallery figure:first-child{grid-column:span 2;grid-row:auto}
+  .menu-feature .img{min-height:260px}
+}
+@media (max-width:560px){
+  body{font-size:1rem}
+  .site-header .wrap{height:64px}
+  .logo-text{font-size:1.2rem}
+  .logo-text small{display:none}
+  .logo-mark{width:36px;height:36px}
+  .header-call .label-long{display:none}
+  .btn-brass.header-call{padding:.6rem 1rem;font-size:.9rem}
+  .menu-grid{grid-template-columns:1fr}
+  .hero{min-height:auto}
+  .hero-inner{padding:6rem 0 3.5rem}
+  .hero-actions .btn{width:100%;justify-content:center}
+  .visit-actions .btn{width:100%;justify-content:center}
+  .badge{width:100px;height:100px;font-size:.85rem;left:-6px}
+  .promo{font-size:.78rem}
+  .promo .deal{display:none}
+  .fab{display:inline-flex;position:fixed;right:1rem;bottom:1rem;z-index:60;background:var(--brass);color:var(--ink);width:60px;height:60px;border-radius:50%;align-items:center;justify-content:center;box-shadow:0 12px 30px -8px rgba(0,0,0,.6)}
+  .fab svg{width:26px;height:26px}
+}
+@media (min-width:561px){
+  .header-call .label-short{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+  .reveal{opacity:1;transform:none}
+  .hero-bg img{transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="promo" role="region" aria-label="Preview disclosure">
+  <div class="wrap">
+    <span>Free preview concept by Built By Cray. Not the official website of Home Bar.</span>
+    <span class="deal">$650 Black Friday price through Nov 30.</span>
+    <a href="https://calendar.app.google/K7QqcbLckjKjjZs19" target="_blank" rel="noopener">Claim this website</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Home Bar, back to top">
+      <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="23" fill="none" stroke="#d29b45" stroke-width="1.5"/>
+        <path d="M13 25 L24 15 L35 25" fill="none" stroke="#d29b45" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M17 23 V34 H31 V23" fill="none" stroke="#f4ecdc" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M21.5 27 h5 l-.6 7 h-3.8 z" fill="#d29b45"/>
+      </svg>
+      <span class="logo-text">Home Bar<small>Kirkwood · Atlanta</small></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#why">Why Home Bar</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-brass header-call" href="tel:+14043711115" aria-label="Call Home Bar at (404) 371-1115">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+      <span class="label-long">(404) 371-1115</span><span class="label-short">Call</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-label="Welcome">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1800&q=70" alt="Warm, dimly lit bar interior with glowing lights (stock photo)">
+    </div>
+    <div class="wrap hero-inner">
+      <span class="eyebrow">Bob &amp; Harriet's · Kirkwood, Atlanta</span>
+      <h1>Your seat is <em>already</em> warm.</h1>
+      <p class="lead">Home Bar is Kirkwood's neighborhood pub: cold drinks, honest pub food and the kind of room where the bartender remembers your order.</p>
+      <div class="hero-actions">
+        <a class="btn btn-brass btn-lg" href="tel:+14043711115">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          Call (404) 371-1115
+        </a>
+        <a class="btn btn-ghost btn-lg" href="https://www.google.com/maps/search/?api=1&amp;query=Home%20Bar%2C%201992%20Hosea%20L%20Williams%20Drive%20Southeast%2C%20Atlanta%2C%20GA%2030317" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <div class="hero-meta">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>1992 Hosea L Williams Dr SE</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Call for current hours</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip" aria-hidden="true">
+    <div class="strip-track">
+      <span>Cold drinks</span><span>Pub plates</span><span>Good company</span><span>Kirkwood's living room</span><span>Takeout friendly</span><span>Pull up a stool</span>
+      <span>Cold drinks</span><span>Pub plates</span><span>Good company</span><span>Kirkwood's living room</span><span>Takeout friendly</span><span>Pull up a stool</span>
+    </div>
+  </div>
+
+  <section class="light" id="about">
+    <div class="wrap intro-grid">
+      <div class="intro-photos reveal">
+        <div class="p1"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=70" alt="Cozy restaurant dining room with wooden tables (stock photo)" loading="lazy"></div>
+        <div class="p2"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&h=700&q=70" alt="Plated dish served at a table (stock photo)" loading="lazy"></div>
+        <div class="badge"><span><b>Rooted in</b>Kirkwood, ATL</span></div>
+      </div>
+      <div class="intro-copy reveal">
+        <span class="eyebrow">About the bar</span>
+        <div class="sec-head sec-head-tight">
+          <h2>A pub that feels like <em>somebody's</em> house.</h2>
+        </div>
+        <div class="body">
+          <p>Bob &amp; Harriet's Home Bar is exactly what the name promises: a neighborhood spot on Hosea L Williams Drive where Kirkwood comes to unwind, catch up and stay a little longer than planned.</p>
+          <p>No velvet rope, no pretense. Just a good drink, something tasty to go with it and a room full of neighbors. Stop in after work, meet friends on the weekend, or grab food to take home.</p>
+        </div>
+        <p class="signature">Come as you are. Stay a while.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">What's on offer</span>
+        <h2>Pour, plate, <em>repeat.</em></h2>
+        <p>The classics a neighborhood pub should get right. Ask your bartender what's good tonight, or call ahead to check what's on.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="card reveal">
+          <span class="num">01</span>
+          <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 14h20v26a2 2 0 0 1-2 2H14a2 2 0 0 1-2-2z"/><path d="M32 19h4a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-4"/><path d="M12 14c0-4 3-6 6-5 1-3 6-4 8-1 3-1 6 1 6 6"/><path d="M18 22v14M26 22v14"/></svg>
+          <h3>Cold beer</h3>
+          <p>Drafts and cans kept properly cold, from easy-drinking favorites to something a little more interesting.</p>
+        </article>
+        <article class="card reveal">
+          <span class="num">02</span>
+          <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M10 10h28L24 26z"/><path d="M24 26v14M16 40h16"/><circle cx="33" cy="9" r="4"/></svg>
+          <h3>Cocktails &amp; pours</h3>
+          <p>Well-made mixed drinks and a back bar worth exploring. Tell us what you like and we'll take it from there.</p>
+        </article>
+        <article class="card reveal">
+          <span class="num">03</span>
+          <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M8 26h32"/><path d="M10 26c0-8 6-13 14-13s14 5 14 13"/><path d="M9 31h30l-2 5H11z"/><path d="M24 9v4"/></svg>
+          <h3>Pub plates</h3>
+          <p>Comfort food made for sharing, snacking or settling in. The kind of plates that pair with a cold one.</p>
+        </article>
+        <article class="card reveal">
+          <span class="num">04</span>
+          <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M10 16h28l-3 24H13z"/><path d="M18 16v-3a6 6 0 0 1 12 0v3"/><path d="M19 27l4 4 7-8"/></svg>
+          <h3>Order to go</h3>
+          <p>Hungry at home? Online ordering is available for takeout. Call us and we'll point you the right way.</p>
+        </article>
+      </div>
+
+      <div class="menu-feature reveal">
+        <div class="img"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=70" alt="Hearty plated food on a table (stock photo)" loading="lazy"></div>
+        <div class="txt">
+          <span class="eyebrow">Tonight at Home Bar</span>
+          <h3>Not sure what's on? Just ask.</h3>
+          <p>Menus and drink lists change. The fastest way to know what's pouring and what's cooking is a quick call to the bar.</p>
+          <a class="btn btn-brass" href="tel:+14043711115">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+            Call the bar
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="why">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Why Home Bar</span>
+        <h2>The neighborhood bar <em>you'll keep coming back to.</em></h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item reveal">
+          <h3><span>i.</span>Truly local</h3>
+          <p>Rooted in Kirkwood on Hosea L Williams Drive, an easy stop for neighbors across East Atlanta, Edgewood and beyond.</p>
+        </div>
+        <div class="why-item reveal">
+          <h3><span>ii.</span>Easygoing</h3>
+          <p>Come solo, bring the crew, or meet a friend. It's a relaxed room where nobody's in a hurry to rush you out.</p>
+        </div>
+        <div class="why-item reveal">
+          <h3><span>iii.</span>Food &amp; drink</h3>
+          <p>A proper pub pairing: drinks done right and food that hits the spot, here at the bar or to go.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps" aria-labelledby="steps-h">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">How it works</span>
+        <h2 id="steps-h">Three easy steps to a good night.</h2>
+        <p>No reservations app, no fuss.</p>
+      </div>
+      <ol class="step-list">
+        <li class="reveal">
+          <h3>Give us a ring</h3>
+          <p>Check tonight's hours and what's on at <a href="tel:+14043711115">(404) 371-1115</a>.</p>
+        </li>
+        <li class="reveal">
+          <h3>Head to Kirkwood</h3>
+          <p>Find us at 1992 Hosea L Williams Dr SE, Atlanta, GA 30317.</p>
+        </li>
+        <li class="reveal">
+          <h3>Pull up a stool</h3>
+          <p>Order something cold, get something to eat and settle in. You're home.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section aria-labelledby="gal-h">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">The feel of the place</span>
+        <h2 id="gal-h">Warm light. <em>Good company.</em></h2>
+      </div>
+      <div class="gallery reveal">
+        <figure><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=70" alt="Inviting restaurant interior with warm lighting (stock photo)" loading="lazy"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=700&q=70" alt="Restaurant seating area with string lights (stock photo)" loading="lazy"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=70" alt="Dinner table set with food and drinks (stock photo)" loading="lazy"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=70" alt="Dining room with wooden tables and chairs (stock photo)" loading="lazy"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=70" alt="Plate of food from above (stock photo)" loading="lazy"></figure>
+      </div>
+      <p class="stock-note">Stock photos for preview. Real photos of Home Bar would go here.</p>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap visit-grid">
+      <div class="reveal">
+        <div class="sec-head">
+          <span class="eyebrow">Visit us</span>
+          <h2>Come on <em>home.</em></h2>
+          <p>We're on Hosea L Williams Drive in the heart of Kirkwood. Hours can change, so give us a quick call before you head over.</p>
+        </div>
+        <div class="visit-actions">
+          <a class="btn btn-brass btn-lg" href="tel:+14043711115">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+            Call (404) 371-1115
+          </a>
+          <a class="btn btn-ghost btn-lg" href="https://www.google.com/maps/search/?api=1&amp;query=Home%20Bar%2C%201992%20Hosea%20L%20Williams%20Drive%20Southeast%2C%20Atlanta%2C%20GA%2030317" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+      <div class="info reveal">
+        <dl>
+          <div class="row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div>
+            <div><dt>Address</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=Home%20Bar%2C%201992%20Hosea%20L%20Williams%20Drive%20Southeast%2C%20Atlanta%2C%20GA%2030317" target="_blank" rel="noopener">1992 Hosea L Williams Drive SE<br>Atlanta, GA 30317</a><small>Kirkwood, metro Atlanta</small></dd></div>
+          </div>
+          <div class="row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></div>
+            <div><dt>Phone</dt><dd><a href="tel:+14043711115">(404) 371-1115</a></dd></div>
+          </div>
+          <div class="row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+            <div><dt>Email</dt><dd><a href="mailto:info@homebaratl.com">info@homebaratl.com</a></dd></div>
+          </div>
+          <div class="row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <div><dt>Hours</dt><dd>Call for current hours.<small>We'll let you know when the doors are open.</small></dd></div>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <a class="logo" href="#top" aria-label="Home Bar, back to top">
+        <span class="logo-text">Home Bar<small>Bob &amp; Harriet's · Kirkwood</small></span>
+      </a>
+      <div class="foot-links">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#visit">Visit</a>
+        <a href="tel:+14043711115">(404) 371-1115</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p><a href="https://builtbycray.com" target="_blank" rel="noopener">Preview by Built By Cray</a></p>
+      <p>This is a free preview concept and is not the official website of Home Bar. Name, phone and address come from public listings. Stock photos from Unsplash.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="tel:+14043711115" aria-label="Call Home Bar at (404) 371-1115">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+</a>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(e){e.classList.add('in')});return;
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>

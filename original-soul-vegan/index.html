@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Original Soul Vegan | Preview concept by Built By Cray</title>
+<meta name="description" content="Original Soul Vegan serves plant-based soul food on North Highland Avenue in Atlanta, GA. Call (404) 875-0145 or stop by 652 North Highland Ave NE.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,500&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --collard:#1f3b2c;
+    --collard-deep:#132619;
+    --leaf:#3f6b47;
+    --cornbread:#e8b54a;
+    --yam:#d4622b;
+    --yam-deep:#b04c1c;
+    --cream:#f7efe1;
+    --paper:#fbf6ec;
+    --ink:#1d1a16;
+    --muted:#5c554b;
+    --line:rgba(29,26,22,.12);
+    --radius:22px;
+    --display:"Fraunces", Georgia, serif;
+    --body:"Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{overflow-x:clip}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:var(--body);color:var(--ink);background:var(--paper);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--cornbread);outline-offset:3px;border-radius:6px}
+  .wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+  .skip{position:absolute;left:-9999px;top:0;background:var(--cornbread);color:var(--ink);padding:10px 16px;z-index:100;font-weight:600}
+  .skip:focus{left:12px;top:12px}
+
+  /* Preview bar */
+  .preview-bar{background:var(--ink);color:#efe6d6;font-size:13.5px;line-height:1.4}
+  .preview-bar .wrap{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;padding:9px 0;text-align:center}
+  .preview-bar strong{color:var(--cornbread);font-weight:600}
+  .claim{display:inline-block;background:var(--cornbread);color:var(--ink);text-decoration:none;font-weight:600;padding:5px 13px;border-radius:999px;font-size:13px;white-space:nowrap;transition:background .2s}
+  .claim:hover{background:#f3c866}
+
+  /* Header */
+  .site-header{position:sticky;top:0;z-index:50;background:rgba(251,246,236,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:74px}
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none;min-width:0}
+  .brand-mark{width:42px;height:42px;flex:none}
+  .brand-name{font-family:var(--display);font-weight:700;font-size:21px;line-height:1.05;letter-spacing:-.01em;color:var(--collard)}
+  .brand-name span{display:block;font-family:var(--body);font-weight:500;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--yam-deep);margin-top:3px}
+  .nav{display:flex;gap:30px;align-items:center}
+  .nav a{text-decoration:none;font-weight:500;font-size:15px;color:var(--muted);transition:color .2s}
+  .nav a:hover{color:var(--collard)}
+  .btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--body);font-weight:600;text-decoration:none;border-radius:999px;transition:transform .2s, background .2s, box-shadow .2s;white-space:nowrap}
+  .btn svg{width:18px;height:18px;flex:none}
+  .btn-call{background:var(--yam);color:#fff;padding:12px 20px;font-size:15px;box-shadow:0 6px 18px -8px rgba(212,98,43,.7)}
+  .btn-call:hover{background:var(--yam-deep);transform:translateY(-1px)}
+
+  /* Hero */
+  .hero{position:relative;background:var(--collard);color:var(--cream);overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:
+      radial-gradient(900px 500px at 85% 20%, rgba(232,181,74,.18), transparent 60%),
+      radial-gradient(700px 500px at 0% 100%, rgba(212,98,43,.22), transparent 60%);pointer-events:none}
+  .hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:88px 0 96px}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--cornbread)}
+  .eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
+  .hero h1{font-family:var(--display);font-weight:900;font-size:clamp(44px,6.4vw,84px);line-height:.98;letter-spacing:-.025em;margin:20px 0 22px}
+  .hero h1 em{font-style:italic;font-weight:500;color:var(--cornbread)}
+  .hero .lede{font-size:clamp(17px,1.6vw,20px);max-width:33ch;color:rgba(247,239,225,.86);margin:0 0 34px}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  .btn-big{background:var(--cornbread);color:var(--ink);padding:18px 30px;font-size:18px;box-shadow:0 14px 30px -12px rgba(0,0,0,.5)}
+  .btn-big:hover{background:#f3c866;transform:translateY(-2px)}
+  .btn-ghost{color:var(--cream);padding:17px 24px;font-size:16px;border:1.5px solid rgba(247,239,225,.35)}
+  .btn-ghost:hover{border-color:var(--cream);background:rgba(255,255,255,.06)}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:34px;font-size:14.5px;color:rgba(247,239,225,.75)}
+  .hero-meta span{display:inline-flex;align-items:center;gap:8px}
+  .hero-meta svg{width:16px;height:16px;color:var(--cornbread)}
+  .hero-art{position:relative;aspect-ratio:4/5;max-height:600px;justify-self:end;width:100%}
+  .hero-art .photo{position:absolute;inset:0 0 0 8%;border-radius:200px 200px var(--radius) var(--radius);overflow:hidden;box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
+  .hero-art .photo img{width:100%;height:100%;object-fit:cover}
+  .hero-badge{position:absolute;left:0;bottom:9%;width:150px;height:150px;animation:spin 28s linear infinite}
+  .hero-badge-core{position:absolute;left:45px;bottom:calc(9% + 45px);width:60px;height:60px;border-radius:50%;background:var(--yam);display:grid;place-items:center;box-shadow:0 10px 24px -8px rgba(0,0,0,.5)}
+  .hero-badge-core svg{width:30px;height:30px;color:#fff}
+  @keyframes spin{to{transform:rotate(360deg)}}
+
+  /* Marquee strip */
+  .strip{background:var(--cornbread);color:var(--collard-deep);overflow:hidden;border-block:2px solid var(--collard-deep)}
+  .strip-track{display:flex;gap:0;width:max-content;animation:marquee 38s linear infinite}
+  .strip-track span{font-family:var(--display);font-weight:700;font-style:italic;font-size:22px;padding:14px 26px;white-space:nowrap;display:inline-flex;align-items:center;gap:26px}
+  .strip-track span::after{content:"✦";font-style:normal;font-size:15px;color:var(--yam-deep)}
+  @keyframes marquee{to{transform:translateX(-50%)}}
+
+  /* Sections */
+  section{scroll-margin-top:90px}
+  .section{padding:110px 0}
+  .section-head{max-width:640px;margin-bottom:56px}
+  .section-head .eyebrow{color:var(--yam-deep)}
+  h2{font-family:var(--display);font-weight:700;font-size:clamp(34px,4.4vw,56px);line-height:1.04;letter-spacing:-.02em;margin:16px 0 18px;color:var(--collard)}
+  h2 em{font-style:italic;font-weight:500;color:var(--yam-deep)}
+  .section-head p{color:var(--muted);font-size:18px;margin:0}
+
+  /* Menu */
+  .menu-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .dish{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px 32px;position:relative;transition:transform .3s, box-shadow .3s}
+  .dish:hover{transform:translateY(-4px);box-shadow:0 24px 40px -24px rgba(31,59,44,.35)}
+  .dish-icon{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;margin-bottom:22px}
+  .dish-icon svg{width:28px;height:28px}
+  .dish:nth-child(1) .dish-icon{background:#e3ecdf;color:var(--leaf)}
+  .dish:nth-child(2) .dish-icon{background:#fbe8d9;color:var(--yam-deep)}
+  .dish:nth-child(3) .dish-icon{background:#fbf0d3;color:#9a6d0e}
+  .dish:nth-child(4) .dish-icon{background:#efe2d8;color:#7a3e1e}
+  .dish h3{font-family:var(--display);font-weight:700;font-size:23px;line-height:1.15;margin:0 0 10px;color:var(--ink)}
+  .dish p{margin:0;color:var(--muted);font-size:15.5px}
+  .menu-note{margin-top:28px;font-size:15px;color:var(--muted)}
+  .menu-note a{color:var(--yam-deep);font-weight:600}
+
+  /* Feature split */
+  .feature{background:var(--cream)}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+  .split-media{position:relative}
+  .split-media .main{border-radius:var(--radius);overflow:hidden;aspect-ratio:5/6;box-shadow:0 30px 60px -30px rgba(31,59,44,.5)}
+  .split-media .main img{width:100%;height:100%;object-fit:cover}
+  .split-media .inset{position:absolute;right:-26px;bottom:-30px;width:46%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:8px solid var(--cream);box-shadow:0 20px 40px -20px rgba(0,0,0,.4)}
+  .split-media .inset img{width:100%;height:100%;object-fit:cover}
+  .reasons{list-style:none;margin:34px 0 0;padding:0;display:grid;gap:26px}
+  .reasons li{display:grid;grid-template-columns:52px 1fr;gap:18px;align-items:start}
+  .num{font-family:var(--display);font-weight:900;font-size:22px;width:52px;height:52px;border-radius:50%;background:var(--collard);color:var(--cornbread);display:grid;place-items:center}
+  .reasons h3{margin:2px 0 4px;font-size:19px;font-weight:600;color:var(--ink)}
+  .reasons p{margin:0;color:var(--muted);font-size:16px}
+
+  /* How it works */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--collard)}
+  .step{padding:34px 34px 10px 0}
+  .step + .step{padding-left:34px;border-left:1px solid var(--line)}
+  .step-k{font-family:var(--display);font-style:italic;font-size:15px;color:var(--yam-deep);font-weight:500}
+  .step h3{font-family:var(--display);font-weight:700;font-size:28px;margin:6px 0 10px;color:var(--collard)}
+  .step p{margin:0;color:var(--muted)}
+
+  /* Quote band */
+  .band{background:var(--yam);color:#fff;position:relative;overflow:hidden}
+  .band .wrap{padding:90px 0;text-align:center;position:relative}
+  .band p.big{font-family:var(--display);font-weight:500;font-style:italic;font-size:clamp(30px,4.2vw,54px);line-height:1.12;max-width:20ch;margin:0 auto 30px;letter-spacing:-.015em}
+  .band .btn-big{background:var(--collard-deep);color:var(--cream)}
+  .band .btn-big:hover{background:#0b170f}
+  .band-dots{position:absolute;inset:0;opacity:.13;background-image:radial-gradient(#fff 1.5px, transparent 1.6px);background-size:22px 22px;pointer-events:none}
+
+  /* Visit */
+  .visit-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px}
+  .visit-card{background:var(--collard);color:var(--cream);border-radius:var(--radius);padding:48px;position:relative;overflow:hidden}
+  .visit-card::after{content:"";position:absolute;right:-80px;top:-80px;width:260px;height:260px;border-radius:50%;border:40px solid rgba(232,181,74,.12)}
+  .visit-card h2{color:var(--cream);margin-top:12px}
+  .visit-card h2 em{color:var(--cornbread)}
+  .info{list-style:none;padding:0;margin:30px 0 34px;display:grid;gap:20px;position:relative}
+  .info li{display:grid;grid-template-columns:28px 1fr;gap:14px}
+  .info svg{width:22px;height:22px;color:var(--cornbread);margin-top:3px}
+  .info .label{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:rgba(247,239,225,.6);font-weight:600}
+  .info a{text-decoration:none;font-size:18px;font-weight:500;overflow-wrap:anywhere}
+  .info a:hover{color:var(--cornbread)}
+  .info .val{font-size:18px;font-weight:500}
+  .visit-actions{display:flex;flex-wrap:wrap;gap:12px;position:relative}
+  .visit-actions .btn-ghost{padding:16px 22px}
+  .map-card{border-radius:var(--radius);overflow:hidden;position:relative;min-height:380px;background:var(--cream);border:1px solid var(--line);display:flex;flex-direction:column;justify-content:flex-end;text-decoration:none}
+  .map-card svg.map{position:absolute;inset:0;width:100%;height:100%}
+  .map-label{position:relative;margin:20px;background:#fff;border-radius:16px;padding:18px 20px;box-shadow:0 14px 30px -16px rgba(0,0,0,.35);display:flex;justify-content:space-between;align-items:center;gap:14px}
+  .map-label strong{display:block;font-family:var(--display);font-size:19px;color:var(--collard)}
+  .map-label small{color:var(--muted);font-size:14px}
+  .map-label .arrow{width:44px;height:44px;border-radius:50%;background:var(--yam);color:#fff;display:grid;place-items:center;flex:none;transition:transform .2s}
+  .map-card:hover .arrow{transform:translateX(3px)}
+  .hiring{margin-top:28px;display:flex;gap:16px;align-items:center;background:#fff;border:1px dashed rgba(31,59,44,.35);border-radius:16px;padding:18px 22px;font-size:15.5px;color:var(--muted)}
+  .hiring strong{color:var(--collard)}
+  .hiring .tag{background:var(--cornbread);color:var(--ink);font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:6px 10px;border-radius:8px;flex:none}
+
+  /* Footer */
+  footer{background:var(--collard-deep);color:rgba(247,239,225,.72);padding:60px 0 110px;font-size:14.5px}
+  .foot-top{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:flex-start;padding-bottom:34px;border-bottom:1px solid rgba(247,239,225,.12);margin-bottom:26px}
+  footer .brand-name{color:var(--cream)}
+  footer .brand-name span{color:var(--cornbread)}
+  .foot-contact{display:grid;gap:6px;text-align:right}
+  .foot-contact a{text-decoration:none;color:var(--cream)}
+  .foot-contact a:hover{color:var(--cornbread)}
+  .disclaimer{max-width:760px;margin:0 0 10px}
+  .credit a{color:var(--cornbread);font-weight:600}
+  .stock{font-size:12.5px;opacity:.7}
+
+  /* Mobile floating call */
+  .fab{display:none}
+
+  /* Reveal */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease, transform .8s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (max-width:1024px){
+    .menu-grid{grid-template-columns:repeat(2,1fr)}
+    .hero .wrap{gap:36px}
+  }
+  @media (max-width:860px){
+    .nav{display:none}
+    .hero .wrap{grid-template-columns:1fr;padding:56px 0 70px}
+    .hero-art{max-width:440px;justify-self:center;aspect-ratio:1/1}
+    .split{grid-template-columns:1fr;gap:60px}
+    .split-media{max-width:520px}
+    .split-media .inset{right:-6px}
+    .steps{grid-template-columns:1fr}
+    .step,.step + .step{padding:28px 0;border-left:0;border-bottom:1px solid var(--line)}
+    .visit-grid{grid-template-columns:1fr}
+    .section{padding:80px 0}
+    .foot-contact{text-align:left}
+  }
+  @media (max-width:560px){
+    body{font-size:16px}
+    .wrap{width:min(1180px,100% - 32px)}
+    .site-header .wrap{height:64px}
+    .brand-mark{width:36px;height:36px}
+    .brand-name{font-size:18px}
+    .brand-name span{font-size:9.5px;letter-spacing:.14em}
+    .btn-call{padding:10px 15px;font-size:14px}
+    .btn-call .long{display:none}
+    .menu-grid{grid-template-columns:1fr}
+    .hero-actions .btn{width:100%;justify-content:center}
+    .hero-badge{width:110px;height:110px}
+    .hero-badge-core{left:30px;bottom:calc(9% + 30px);width:50px;height:50px}
+    .visit-card{padding:34px 24px}
+    .visit-actions .btn{width:100%;justify-content:center}
+    .hiring{flex-direction:column;align-items:flex-start}
+    .preview-bar{font-size:12.5px}
+    .fab{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:60;justify-content:center;background:var(--yam);color:#fff;padding:16px;font-size:17px;box-shadow:0 14px 30px -10px rgba(0,0,0,.5)}
+  }
+  @media (min-width:561px){ .btn-call .short{display:none} }
+  @media (max-width:560px){ .btn-call .short{display:inline} }
+
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+    .reveal{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="preview-bar" role="note">
+  <div class="wrap">
+    <span>Free preview concept by Built By Cray. Not the official website of Original Soul Vegan. <strong>$650 Black Friday price through Nov 30.</strong></span>
+    <a class="claim" href="https://calendar.app.google/K7QqcbLckjKjjZs19" target="_blank" rel="noopener">Claim this website</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Original Soul Vegan, home">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="23" fill="#1f3b2c"/>
+        <path d="M24 37c-8-4-11-11-9-19 6 0 11 4 12 10 1-7 5-12 11-13 1 9-4 18-14 22z" fill="#e8b54a"/>
+        <path d="M24 37c0-6 2-11 6-16" stroke="#1f3b2c" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-name">Original Soul Vegan<span>North Highland · Atlanta</span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#menu">The Food</a>
+      <a href="#why">Why Us</a>
+      <a href="#how">How It Works</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn btn-call" href="tel:+14048750145">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+      <span class="long">(404) 875-0145</span><span class="short">Call</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Vegan soul food · Atlanta, GA</span>
+        <h1>All the soul.<br><em>None of the meat.</em></h1>
+        <p class="lede">Hearty, plant-based plates cooked the way Sunday dinner should taste, served up right on North Highland Avenue.</p>
+        <div class="hero-actions">
+          <a class="btn btn-big" href="tel:+14048750145">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+            Call (404) 875-0145
+          </a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Original%20Soul%20Vegan%2C%20652%20North%20Highland%20Avenue%20Northeast%2C%20Atlanta%2C%20GA%2C%2030306" target="_blank" rel="noopener">Get directions →</a>
+        </div>
+        <div class="hero-meta">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>652 North Highland Ave NE</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Call for current hours</span>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="photo">
+          <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&amp;fit=crop&amp;w=1100&amp;q=70" alt="A colorful plate of home-style plant-based food (stock photo)" width="1100" height="1375" fetchpriority="high">
+        </div>
+        <svg class="hero-badge" viewBox="0 0 150 150" aria-hidden="true">
+          <defs><path id="circ" d="M75,75 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0"/></defs>
+          <circle cx="75" cy="75" r="74" fill="#f7efe1"/>
+          <text font-family="Outfit, sans-serif" font-size="12.5" font-weight="600" letter-spacing="3.2" fill="#1f3b2c"><textPath href="#circ">100% PLANT-BASED · SOUL FOOD · ATL · </textPath></text>
+        </svg>
+        <div class="hero-badge-core" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z"/><path d="M2 21c0-3 1.9-5.4 5.2-6.1"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip" aria-hidden="true">
+    <div class="strip-track">
+      <span>Soul plates</span><span>Slow-simmered greens</span><span>Golden cornbread</span><span>Comforting sides</span><span>Sweet endings</span><span>Made without meat</span>
+      <span>Soul plates</span><span>Slow-simmered greens</span><span>Golden cornbread</span><span>Comforting sides</span><span>Sweet endings</span><span>Made without meat</span>
+    </div>
+  </div>
+
+  <section class="section" id="menu">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">The food</span>
+        <h2>Comfort food, <em>rooted in plants.</em></h2>
+        <p>The flavors you grew up on, the plates you crave after a long week, made completely vegan. Here is the kind of food to expect.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="dish reveal">
+          <div class="dish-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18a9 9 0 0 1-18 0z"/><path d="M8 8c0-2 2-2 2-4M13 8c0-2 2-2 2-4"/></svg></div>
+          <h3>Soul plates</h3>
+          <p>Hearty, filling entrées built for a real appetite, with all the seasoning and none of the meat.</p>
+        </article>
+        <article class="dish reveal">
+          <div class="dish-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z"/><path d="M2 21c0-3 1.9-5.4 5.2-6.1"/></svg></div>
+          <h3>Classic sides</h3>
+          <p>Greens, beans and the down-home sides that make a soul food plate complete.</p>
+        </article>
+        <article class="dish reveal">
+          <div class="dish-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M3 11h18M9 7v12M15 7v12"/></svg></div>
+          <h3>Cornbread &amp; bakes</h3>
+          <p>Warm, golden and made to soak up every last bit of what is on your plate.</p>
+        </article>
+        <article class="dish reveal">
+          <div class="dish-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13h16l-2 7H6z"/><path d="M6 13a6 6 0 0 1 12 0"/><path d="M12 7V4"/></svg></div>
+          <h3>Sweet endings</h3>
+          <p>Something sweet to finish, because no soul food meal is done without dessert.</p>
+        </article>
+      </div>
+      <p class="menu-note reveal">Menu changes, so <a href="tel:+14048750145">call (404) 875-0145</a> to hear what is cooking today.</p>
+    </div>
+  </section>
+
+  <section class="section feature" id="why">
+    <div class="wrap split">
+      <div class="split-media reveal">
+        <div class="main"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=900&amp;h=1080&amp;q=70" alt="A beautifully plated, colorful meal on a table (stock photo)" loading="lazy" width="900" height="1080"></div>
+        <div class="inset"><img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&amp;fit=crop&amp;w=500&amp;h=500&amp;q=70" alt="A close-up of a fresh, hearty dish (stock photo)" loading="lazy" width="500" height="500"></div>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Why folks come back</span>
+        <h2>Soul food that <em>loves you back.</em></h2>
+        <p style="color:var(--muted);font-size:18px;margin:0">Also known around town as Soul Vegetarian No. 2, this is a neighborhood spot for anyone who wants the comfort of soul cooking without the meat.</p>
+        <ul class="reasons">
+          <li><span class="num">1</span><div><h3>Fully vegan kitchen</h3><p>No second-guessing the menu. Everything is plant-based, so every plate is fair game.</p></div></li>
+          <li><span class="num">2</span><div><h3>Real soul food flavor</h3><p>Seasoned, simmered and served like it came out of a family kitchen.</p></div></li>
+          <li><span class="num">3</span><div><h3>Right on North Highland</h3><p>An easy stop in the Highlands, whether you are dining in or grabbing a plate to go.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="how">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">How it works</span>
+        <h2>Hungry? <em>Here's the plan.</em></h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><span class="step-k">Step one</span><h3>Give us a call</h3><p>Ring (404) 875-0145 to check today's hours and what is on the line.</p></div>
+        <div class="step reveal"><span class="step-k">Step two</span><h3>Head to Highland</h3><p>Find us at 652 North Highland Ave NE, Atlanta, GA 30306.</p></div>
+        <div class="step reveal"><span class="step-k">Step three</span><h3>Fill your plate</h3><p>Pick your favorites, sit back and enjoy a soul food meal you can feel good about.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-label="Call to action">
+    <div class="band-dots"></div>
+    <div class="wrap">
+      <p class="big">Your next favorite plate is one phone call away.</p>
+      <a class="btn btn-big" href="tel:+14048750145">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        Call (404) 875-0145
+      </a>
+    </div>
+  </section>
+
+  <section class="section" id="visit">
+    <div class="wrap">
+      <div class="visit-grid">
+        <div class="visit-card reveal">
+          <span class="eyebrow">Visit us</span>
+          <h2>Come hungry to <em>North Highland.</em></h2>
+          <ul class="info">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><div><span class="label">Address</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Original%20Soul%20Vegan%2C%20652%20North%20Highland%20Avenue%20Northeast%2C%20Atlanta%2C%20GA%2C%2030306" target="_blank" rel="noopener">652 North Highland Avenue NE<br>Atlanta, GA 30306</a></div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><div><span class="label">Phone</span><a href="tel:+14048750145">(404) 875-0145</a></div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><span class="label">Hours</span><span class="val">Call for current hours.</span></div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><div><span class="label">Email</span><a href="mailto:soulvegsouth2@gmail.com">soulvegsouth2@gmail.com</a></div></li>
+          </ul>
+          <div class="visit-actions">
+            <a class="btn btn-big" href="tel:+14048750145">Call (404) 875-0145</a>
+            <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Original%20Soul%20Vegan%2C%20652%20North%20Highland%20Avenue%20Northeast%2C%20Atlanta%2C%20GA%2C%2030306" target="_blank" rel="noopener">Get directions</a>
+          </div>
+        </div>
+        <div class="reveal">
+          <a class="map-card" href="https://www.google.com/maps/search/?api=1&amp;query=Original%20Soul%20Vegan%2C%20652%20North%20Highland%20Avenue%20Northeast%2C%20Atlanta%2C%20GA%2C%2030306" target="_blank" rel="noopener" aria-label="Open directions to 652 North Highland Avenue NE in Google Maps">
+            <svg class="map" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect width="400" height="400" fill="#efe6d4"/>
+              <path d="M0 90 L400 60 M0 220 L400 250 M0 330 L400 310 M90 0 L120 400 M280 0 L250 400" stroke="#fff" stroke-width="12"/>
+              <path d="M0 150 L400 165 M190 0 L170 400 M340 0 L370 400" stroke="#fff" stroke-width="6"/>
+              <path d="M215 -10 C205 80 230 140 205 210 C185 270 215 330 200 410" stroke="#e8b54a" stroke-width="16" fill="none"/>
+              <rect x="20" y="250" width="60" height="50" rx="8" fill="#cfdcc5"/>
+              <rect x="290" y="90" width="80" height="60" rx="8" fill="#cfdcc5"/>
+              <text x="228" y="40" font-family="Outfit, sans-serif" font-size="12" font-weight="600" fill="#8a6a1c" transform="rotate(84 228 40)">N HIGHLAND AVE NE</text>
+              <circle cx="205" cy="190" r="34" fill="#d4622b" opacity=".18"/>
+              <path d="M205 196s16-14 16-27a16 16 0 1 0-32 0c0 13 16 27 16 27z" fill="#d4622b"/>
+              <circle cx="205" cy="169" r="6" fill="#fff"/>
+            </svg>
+            <div class="map-label">
+              <div><strong>Get directions</strong><small>652 N Highland Ave NE · 30306</small></div>
+              <span class="arrow" aria-hidden="true">→</span>
+            </div>
+          </a>
+          <div class="hiring">
+            <span class="tag">Now hiring</span>
+            <span><strong>Want to join the kitchen?</strong> Call or stop by to ask about open spots.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <span class="brand-name">Original Soul Vegan<span>Vegan soul food · Atlanta, GA</span></span>
+      </div>
+      <div class="foot-contact">
+        <a href="tel:+14048750145">(404) 875-0145</a>
+        <span>652 North Highland Avenue NE, Atlanta, GA 30306</span>
+        <span>Call for current hours.</span>
+      </div>
+    </div>
+    <p class="credit"><a href="https://builtbycray.com" target="_blank" rel="noopener">Preview by Built By Cray</a></p>
+    <p class="disclaimer">This is a free preview concept and is not the official website of Original Soul Vegan. Name, phone and address come from public listings. Stock photos from Unsplash.</p>
+    <p class="stock">Stock photos for preview only; they do not show this restaurant's actual food.</p>
+  </div>
+</footer>
+
+<a class="btn fab" href="tel:+14048750145" aria-label="Call Original Soul Vegan at (404) 875-0145">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+  Call (404) 875-0145
+</a>
+
+<script>
+  (function(){
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      els.forEach(function(e){ e.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, {threshold: 0.12, rootMargin: '0px 0px -40px 0px'});
+    els.forEach(function(e){ io.observe(e); });
+  })();
+</script>
+</body>
+</html>

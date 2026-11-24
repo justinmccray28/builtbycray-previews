@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Billy's Avondale | Preview concept by Built By Cray</title>
+<meta name="description" content="Billy's Avondale: a handcrafted sandwich shop at 121 Center Street in Avondale Estates, GA. Call (470) 377-2594 for current hours and orders.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,700&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f6eedd;
+    --paper-2:#efe3c8;
+    --rye:#2b1d14;
+    --rye-2:#4a3426;
+    --mustard:#e3a524;
+    --mustard-deep:#c98a0e;
+    --tomato:#c8442b;
+    --pickle:#4f6b2e;
+    --ink-soft:#6b5546;
+    --radius:18px;
+    --display:"Fraunces", Georgia, "Times New Roman", serif;
+    --body:"Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --wrap:1200px;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{overflow-x:clip}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--paper);color:var(--rye);
+    font-family:var(--body);font-size:17px;line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--tomato);outline-offset:3px;border-radius:6px}
+  .wrap{width:min(var(--wrap),100% - 40px);margin-inline:auto}
+  .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+  /* Preview bar */
+  .preview-bar{
+    background:var(--rye);color:#f3e6cc;font-size:13.5px;line-height:1.4;
+    padding:9px 0;
+  }
+  .preview-bar .wrap{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+  .preview-bar strong{color:var(--mustard)}
+  .preview-bar .claim{
+    display:inline-block;background:var(--mustard);color:var(--rye);text-decoration:none;
+    font-weight:700;padding:5px 12px;border-radius:999px;font-size:12.5px;white-space:nowrap;
+  }
+  .preview-bar .claim:hover{background:#f0b93d}
+
+  /* Header */
+  .site-header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(246,238,221,.92);backdrop-filter:saturate(1.4) blur(10px);
+    -webkit-backdrop-filter:saturate(1.4) blur(10px);
+    border-bottom:2px solid var(--rye);
+  }
+  .site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:72px}
+  .logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .logo-mark{width:44px;height:44px;flex:none}
+  .logo-text{font-family:var(--display);font-weight:900;font-size:24px;letter-spacing:-.02em;line-height:1}
+  .logo-text small{display:block;font-family:var(--body);font-weight:500;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);margin-top:4px}
+  .nav{display:flex;align-items:center;gap:30px}
+  .nav a{text-decoration:none;font-weight:500;font-size:15.5px;position:relative}
+  .nav a::after{content:"";position:absolute;left:0;right:100%;bottom:-4px;height:2px;background:var(--tomato);transition:right .25s ease}
+  .nav a:hover::after{right:0}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;
+    border-radius:999px;padding:12px 22px;font-size:15.5px;line-height:1;
+    border:2px solid var(--rye);transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+  }
+  .btn svg{width:18px;height:18px;flex:none}
+  .btn-call{background:var(--tomato);color:#fff8ec;box-shadow:3px 3px 0 var(--rye)}
+  .btn-call:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--rye)}
+  .btn-ghost{background:transparent;color:var(--rye)}
+  .btn-ghost:hover{background:var(--rye);color:var(--paper)}
+  .btn-big{font-size:clamp(18px,2.2vw,21px);padding:19px 30px}
+  .btn-big svg{width:22px;height:22px}
+
+  /* Hero */
+  .hero{position:relative;padding:clamp(40px,7vw,90px) 0 clamp(60px,8vw,110px);overflow:hidden}
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background-image:radial-gradient(rgba(43,29,20,.09) 1px, transparent 1.2px);
+    background-size:18px 18px;pointer-events:none;
+  }
+  .hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,70px);align-items:center}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--pickle);
+  }
+  .eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
+  .hero h1{
+    font-family:var(--display);font-weight:900;letter-spacing:-.035em;line-height:.92;
+    font-size:clamp(52px,8.4vw,112px);margin:18px 0 0;
+  }
+  .hero h1 .apos{color:var(--tomato)}
+  .hero h1 em{display:block;font-style:italic;font-weight:500;color:var(--rye-2);font-size:.42em;letter-spacing:-.01em;line-height:1.1;margin-top:18px}
+  .hero h1 em mark{background:linear-gradient(transparent 58%, rgba(227,165,36,.7) 58%);color:inherit;padding:0 .08em}
+  .hero p.lede{font-size:clamp(17px,1.6vw,19.5px);max-width:30em;color:var(--ink-soft);margin:22px 0 32px}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  .hero-meta{margin-top:28px;display:flex;flex-wrap:wrap;gap:10px 22px;font-size:14.5px;color:var(--ink-soft)}
+  .hero-meta span{display:inline-flex;align-items:center;gap:8px}
+  .hero-meta svg{width:16px;height:16px;color:var(--tomato)}
+
+  .hero-art{position:relative;aspect-ratio:4/4.6}
+  .hero-photo{
+    position:absolute;inset:0 0 0 8%;border-radius:200px 200px 22px 22px;overflow:hidden;
+    border:3px solid var(--rye);box-shadow:12px 12px 0 var(--mustard);
+    background:var(--paper-2);
+  }
+  .hero-photo img{width:100%;height:100%;object-fit:cover}
+  .stamp{
+    position:absolute;left:-2%;bottom:9%;width:clamp(120px,14vw,160px);aspect-ratio:1;
+    animation:spin 22s linear infinite;
+  }
+  .stamp-center{
+    position:absolute;left:-2%;bottom:9%;width:clamp(120px,14vw,160px);aspect-ratio:1;
+    display:grid;place-items:center;pointer-events:none;
+  }
+  .stamp-center span{width:38%;aspect-ratio:1;border-radius:50%;background:var(--tomato);border:2.5px solid var(--rye);display:grid;place-items:center}
+  .stamp-center svg{width:58%;height:58%}
+  .ticket{
+    position:absolute;right:-2%;top:6%;background:var(--paper);border:2px solid var(--rye);
+    padding:12px 16px;border-radius:10px;font-family:var(--display);font-weight:700;font-size:17px;
+    transform:rotate(4deg);box-shadow:4px 4px 0 var(--rye);line-height:1.15;
+  }
+  .ticket small{display:block;font-family:var(--body);font-weight:500;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--pickle)}
+  @keyframes spin{to{transform:rotate(360deg)}}
+
+  /* Marquee */
+  .marquee{background:var(--mustard);border-block:2px solid var(--rye);overflow:hidden;padding:14px 0}
+  .marquee-track{display:flex;width:max-content;animation:marquee 34s linear infinite}
+  .marquee-track span{
+    font-family:var(--display);font-weight:700;font-style:italic;font-size:clamp(20px,2.4vw,28px);
+    white-space:nowrap;padding-right:28px;display:inline-flex;align-items:center;gap:28px;
+  }
+  .marquee-track span::after{content:"✺";font-style:normal;color:var(--tomato)}
+  @keyframes marquee{to{transform:translateX(-50%)}}
+
+  /* Sections */
+  section{scroll-margin-top:90px}
+  .section{padding:clamp(70px,9vw,120px) 0}
+  .section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:clamp(36px,5vw,56px);flex-wrap:wrap}
+  .section-head h2{
+    font-family:var(--display);font-weight:900;letter-spacing:-.03em;line-height:1;
+    font-size:clamp(38px,5.4vw,68px);margin:14px 0 0;max-width:14ch;
+  }
+  .section-head h2 i{font-weight:500;color:var(--tomato)}
+  .section-head p{max-width:32em;color:var(--ink-soft);margin:0}
+
+  /* Menu board */
+  .menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .menu-card{
+    background:#fffaf0;border:2px solid var(--rye);border-radius:var(--radius);padding:30px 28px 32px;
+    position:relative;transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .menu-card:hover{transform:translateY(-4px);box-shadow:6px 8px 0 var(--rye)}
+  .menu-card .num{font-family:var(--display);font-style:italic;font-weight:500;color:var(--tomato);font-size:15px}
+  .menu-card h3{font-family:var(--display);font-weight:700;font-size:28px;letter-spacing:-.02em;margin:6px 0 10px;line-height:1.1}
+  .menu-card p{margin:0;color:var(--ink-soft)}
+  .menu-card .ico{width:58px;height:58px;margin-bottom:18px}
+  .menu-card.feature{background:var(--rye);color:var(--paper)}
+  .menu-card.feature p{color:#d9c8ad}
+  .menu-card.feature .num{color:var(--mustard)}
+  .menu-note{margin-top:26px;font-size:15px;color:var(--ink-soft);display:flex;align-items:center;gap:10px}
+  .menu-note svg{width:18px;height:18px;color:var(--pickle);flex:none}
+
+  /* Split photo band */
+  .band{background:var(--rye);color:var(--paper);position:relative}
+  .band .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,80px);align-items:center}
+  .band-photo{border-radius:var(--radius);overflow:hidden;border:3px solid var(--paper);aspect-ratio:5/4;box-shadow:-12px 12px 0 var(--tomato)}
+  .band-photo img{width:100%;height:100%;object-fit:cover}
+  .band .eyebrow{color:var(--mustard)}
+  .band h2{font-family:var(--display);font-weight:900;font-size:clamp(36px,4.8vw,60px);letter-spacing:-.03em;line-height:1;margin:14px 0 24px}
+  .band h2 i{font-weight:500;color:var(--mustard)}
+  .reasons{list-style:none;margin:0;padding:0;display:grid;gap:22px}
+  .reasons li{display:grid;grid-template-columns:46px 1fr;gap:16px;align-items:start}
+  .reasons .dot{width:46px;height:46px;border-radius:50%;background:var(--mustard);color:var(--rye);display:grid;place-items:center;border:2px solid var(--paper)}
+  .reasons .dot svg{width:22px;height:22px}
+  .reasons h3{margin:0 0 4px;font-size:19px;font-weight:700}
+  .reasons p{margin:0;color:#d9c8ad;font-size:16px}
+
+  /* Steps */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:2px solid var(--rye);border-radius:var(--radius);overflow:hidden;background:#fffaf0}
+  .step{padding:34px 30px 38px;position:relative}
+  .step + .step{border-left:2px dashed rgba(43,29,20,.35)}
+  .step .big{font-family:var(--display);font-weight:900;font-size:76px;line-height:.9;color:var(--mustard);-webkit-text-stroke:2px var(--rye);letter-spacing:-.04em}
+  .step h3{font-family:var(--display);font-weight:700;font-size:25px;margin:16px 0 8px;letter-spacing:-.01em}
+  .step p{margin:0;color:var(--ink-soft)}
+  .step a{font-weight:700;color:var(--tomato)}
+
+  /* Visit */
+  .visit{background:var(--paper-2);border-top:2px solid var(--rye)}
+  .visit-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:stretch}
+  .visit-card{background:#fffaf0;border:2px solid var(--rye);border-radius:var(--radius);padding:clamp(28px,4vw,46px);box-shadow:8px 8px 0 var(--rye)}
+  .visit-card h2{font-family:var(--display);font-weight:900;font-size:clamp(38px,5vw,62px);letter-spacing:-.03em;line-height:1;margin:14px 0 28px}
+  .visit-card h2 i{font-weight:500;color:var(--tomato)}
+  .info{display:grid;gap:20px;margin:0 0 32px}
+  .info div{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+  .info .ic{width:44px;height:44px;border-radius:12px;background:var(--mustard);border:2px solid var(--rye);display:grid;place-items:center}
+  .info .ic svg{width:20px;height:20px}
+  .info dt{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pickle)}
+  .info dd{margin:2px 0 0;font-size:18px;font-weight:500;word-break:break-word}
+  .info dd a{text-decoration-color:var(--mustard);text-decoration-thickness:2px;text-underline-offset:3px}
+  .visit-actions{display:flex;flex-wrap:wrap;gap:12px}
+  .visit-side{position:relative;border-radius:var(--radius);overflow:hidden;border:2px solid var(--rye);min-height:420px}
+  .visit-side img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .visit-side .overlay{
+    position:absolute;left:18px;right:18px;bottom:18px;background:var(--paper);border:2px solid var(--rye);
+    border-radius:14px;padding:18px 20px;
+  }
+  .visit-side .overlay strong{font-family:var(--display);font-size:22px;display:block;line-height:1.15}
+  .visit-side .overlay span{color:var(--ink-soft);font-size:15px}
+
+  .photo-credit{font-size:12.5px;color:var(--ink-soft);text-align:right;margin-top:14px}
+
+  /* Footer */
+  footer{background:var(--rye);color:#d9c8ad;padding:56px 0 110px;font-size:14.5px}
+  footer .top{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding-bottom:28px;border-bottom:1px solid rgba(246,238,221,.18);margin-bottom:24px}
+  footer .logo-text{color:var(--paper)}
+  footer .logo-text small{color:#bfa98c}
+  footer a{color:var(--mustard)}
+  footer p{margin:6px 0;max-width:62em}
+
+  /* Floating mobile call */
+  .float-call{
+    position:fixed;left:16px;right:16px;bottom:16px;z-index:60;display:none;
+    justify-content:center;
+  }
+  .float-call .btn{width:100%;justify-content:center;padding:17px 20px;font-size:17px}
+
+  /* Reveal */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease, transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (max-width:980px){
+    .hero .wrap{grid-template-columns:1fr}
+    .hero-art{max-width:520px;width:100%;margin-inline:auto}
+    .menu-grid{grid-template-columns:1fr 1fr}
+    .menu-card.feature{grid-column:1 / -1}
+    .band .wrap{grid-template-columns:1fr}
+    .visit-grid{grid-template-columns:1fr}
+  }
+  @media (max-width:760px){
+    .nav{display:none}
+    .site-header .wrap{height:64px}
+    .logo-text{font-size:21px}
+    .logo-text small{display:none}
+    .logo-mark{width:38px;height:38px}
+    .header-call{padding:10px 16px;font-size:14.5px}
+    .header-call .label-long{display:none}
+    .steps{grid-template-columns:1fr}
+    .step + .step{border-left:0;border-top:2px dashed rgba(43,29,20,.35)}
+    .menu-grid{grid-template-columns:1fr}
+    .float-call{display:flex}
+    .ticket{right:0;font-size:15px}
+    .hero-photo{inset:0 0 0 6%}
+    .visit-side{min-height:320px}
+    .photo-credit{text-align:left}
+  }
+  @media (min-width:761px){
+    .header-call .label-short{display:none}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *,*::before,*::after{animation:none !important;transition:none !important}
+    .reveal{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-bar" role="note">
+  <div class="wrap">
+    <span>Free preview concept by <strong>Built By Cray</strong>. Not the official website of Billy's Avondale. <span class="bf">$650 Black Friday price through Nov 30.</span></span>
+    <a class="claim" href="https://calendar.app.google/K7QqcbLckjKjjZs19" target="_blank" rel="noopener">Claim this website</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Billy's Avondale home">
+      <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="22.5" fill="#e3a524" stroke="#2b1d14" stroke-width="2.5"/>
+        <path d="M11 22c0-6 6-10 13-10s13 4 13 10z" fill="#f6eedd" stroke="#2b1d14" stroke-width="2"/>
+        <path d="M10 25.5c3 2 5-1 7 0s4 2 7 0 4-1 7 0 5 1.5 7 0" fill="none" stroke="#4f6b2e" stroke-width="3" stroke-linecap="round"/>
+        <rect x="11" y="28" width="26" height="4" rx="2" fill="#c8442b" stroke="#2b1d14" stroke-width="1.6"/>
+        <path d="M11 34h26c0 2.5-2 4-5 4H16c-3 0-5-1.5-5-4z" fill="#f6eedd" stroke="#2b1d14" stroke-width="2"/>
+      </svg>
+      <span class="logo-text">Billy's<small>Avondale Estates</small></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#menu">The Menu</a>
+      <a href="#why">Why Billy's</a>
+      <a href="#how">How It Works</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn btn-call header-call" href="tel:+14703772594" aria-label="Call Billy's Avondale at (470) 377-2594">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+      <span class="label-long">(470) 377-2594</span><span class="label-short">Call</span>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow">Handcrafted sandwiches · Center Street</span>
+        <h1 id="hero-title">Billy<span class="apos">'</span>s Avondale
+          <em>Built by hand, <mark>stacked with care</mark>, right here in Avondale Estates.</em>
+        </h1>
+        <p class="lede">A neighborhood sandwich shop on Center Street. Good bread, generous fillings, and sandwiches made when you order them. Give us a call and lunch is handled.</p>
+        <div class="hero-cta">
+          <a class="btn btn-call btn-big" href="tel:+14703772594">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+            Call (470) 377-2594
+          </a>
+          <a class="btn btn-ghost btn-big" href="#visit">Find us</a>
+        </div>
+        <div class="hero-meta">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>121 Center Street, Avondale Estates</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Call for current hours</span>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="false">
+        <div class="hero-photo">
+          <img src="https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=1100&h=1260&q=70" alt="A stacked, handmade sandwich cut in half (stock photo)" width="1100" height="1260" fetchpriority="high">
+        </div>
+        <svg class="stamp" viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="circ" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+          <circle cx="100" cy="100" r="97" fill="#f6eedd" stroke="#2b1d14" stroke-width="4"/>
+          <text font-family="Bricolage Grotesque, sans-serif" font-weight="700" font-size="19" letter-spacing="5.2" fill="#2b1d14">
+            <textPath href="#circ">MADE TO ORDER ✺ AVONDALE ESTATES ✺ </textPath>
+          </text>
+        </svg>
+        <div class="stamp-center" aria-hidden="true"><span>
+          <svg viewBox="0 0 24 24" fill="#f6eedd" aria-hidden="true"><path d="M12 2l2.4 6.9H22l-6 4.6 2.3 7.1L12 16.3 5.7 20.6 8 13.5 2 8.9h7.6z"/></svg>
+        </span></div>
+        <div class="ticket" aria-hidden="true"><small>Order up</small>Fresh off<br>the board</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Handcrafted sandwiches</span><span>Center Street, Avondale Estates</span><span>Made when you order</span><span>Call ahead, skip the wait</span>
+      <span>Handcrafted sandwiches</span><span>Center Street, Avondale Estates</span><span>Made when you order</span><span>Call ahead, skip the wait</span>
+    </div>
+  </div>
+
+  <section class="section" id="menu" aria-labelledby="menu-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">On the board</span>
+          <h2 id="menu-title">Sandwiches worth <i>the detour.</i></h2>
+        </div>
+        <p>Every sandwich is put together by hand when you order it. Here's the kind of thing you'll find. Call to hear what's on the board today.</p>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card feature reveal">
+          <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M10 30c0-9 10-16 22-16s22 7 22 16z" fill="#e3a524" stroke="#f6eedd" stroke-width="2.5"/><path d="M8 35c4 3 7-1 10 0s6 3 10 0 6-1 10 0 7 2 10 0 6-1 8 0" fill="none" stroke="#7fa24a" stroke-width="4" stroke-linecap="round"/><rect x="9" y="39" width="46" height="6" rx="3" fill="#c8442b" stroke="#f6eedd" stroke-width="2"/><path d="M9 48h46c0 4-3 6-8 6H17c-5 0-8-2-8-6z" fill="#e3a524" stroke="#f6eedd" stroke-width="2.5"/><path d="M24 8c0 3-2 3-2 6M32 6c0 3-2 3-2 6M40 8c0 3-2 3-2 6" stroke="#f6eedd" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+          <span class="num">No. 01</span>
+          <h3>Hot &amp; pressed</h3>
+          <p>Warm, toasty sandwiches with melty layers and crisp edges. The kind you need two hands and a few napkins for.</p>
+        </article>
+        <article class="menu-card reveal">
+          <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 26 32 12l26 14v6H6z" fill="#f6eedd" stroke="#2b1d14" stroke-width="2.5" stroke-linejoin="round"/><path d="M6 36c4 3 7-1 10 0s6 3 10 0 6-1 10 0 7 2 10 0 6-1 12 0" fill="none" stroke="#4f6b2e" stroke-width="4" stroke-linecap="round"/><rect x="6" y="40" width="52" height="5" rx="2.5" fill="#c8442b" stroke="#2b1d14" stroke-width="2"/><path d="M6 48h52v4H6z" fill="#e3a524" stroke="#2b1d14" stroke-width="2"/></svg>
+          <span class="num">No. 02</span>
+          <h3>Cold &amp; stacked</h3>
+          <p>Fresh bread, crisp veggies and well-built layers. Easy to grab for lunch at your desk or a bench on the square.</p>
+        </article>
+        <article class="menu-card reveal">
+          <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M16 22h32l-4 34H20z" fill="#c8442b" stroke="#2b1d14" stroke-width="2.5" stroke-linejoin="round"/><path d="M22 22 20 8M28 22l1-15M34 22l-1-14M40 22l3-13M45 22l-1-10" stroke="#e3a524" stroke-width="5" stroke-linecap="round"/><path d="M20 32h24" stroke="#f6eedd" stroke-width="2.5"/></svg>
+          <span class="num">No. 03</span>
+          <h3>Sides &amp; extras</h3>
+          <p>A little something on the side to round things out. Ask what's available when you call or stop in.</p>
+        </article>
+      </div>
+      <p class="menu-note reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>Menu categories shown for this preview. Call (470) 377-2594 for today's sandwiches.</p>
+    </div>
+  </section>
+
+  <section class="section band" id="why" aria-labelledby="why-title">
+    <div class="wrap">
+      <div class="band-photo reveal">
+        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1200&h=960&q=70" alt="Fresh sandwiches on a board with greens and toppings (stock photo)" width="1200" height="960" loading="lazy">
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Why Billy's</span>
+        <h2 id="why-title">Your neighborhood <i>sandwich counter.</i></h2>
+        <ul class="reasons">
+          <li>
+            <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 11V6a2 2 0 0 0-4 0v1M14 10V4a2 2 0 0 0-4 0v6M10 10.5V6a2 2 0 0 0-4 0v8a8 8 0 0 0 16 0v-2a2 2 0 0 0-4 0"/></svg></span>
+            <div><h3>Handcrafted, every time</h3><p>Nothing pre-wrapped and waiting. Your sandwich gets built when you order it.</p></div>
+          </li>
+          <li>
+            <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10l7-6 7 6v11M10 21v-6h4v6"/></svg></span>
+            <div><h3>Local to the core</h3><p>Right on Center Street in Avondale Estates, an easy stop for neighbors, walkers and the lunch crowd.</p></div>
+          </li>
+          <li>
+            <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+            <div><h3>One tap to reach us</h3><p>Questions, orders or today's hours: call and talk to a real person at the shop.</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">How it works</span>
+          <h2 id="how-title">Lunch in <i>three easy steps.</i></h2>
+        </div>
+        <p>No apps, no account to create. Just a phone call and a short walk or drive to Center Street.</p>
+      </div>
+      <div class="steps reveal">
+        <div class="step">
+          <div class="big" aria-hidden="true">1</div>
+          <h3>Give us a call</h3>
+          <p>Ring <a href="tel:+14703772594">(470) 377-2594</a> to check hours and hear what's on the board.</p>
+        </div>
+        <div class="step">
+          <div class="big" aria-hidden="true">2</div>
+          <h3>We build it fresh</h3>
+          <p>Your sandwich is put together by hand, the way you asked for it.</p>
+        </div>
+        <div class="step">
+          <div class="big" aria-hidden="true">3</div>
+          <h3>Grab it &amp; go</h3>
+          <p>Swing by 121 Center Street, pick it up, and enjoy it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section visit" id="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+      <div class="visit-grid">
+        <div class="visit-card reveal">
+          <span class="eyebrow">Come hungry</span>
+          <h2 id="visit-title">Visit <i>Billy's.</i></h2>
+          <dl class="info">
+            <div>
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+              <div><dt>Address</dt><dd>121 Center Street<br>Avondale Estates, GA 30002</dd></div>
+            </div>
+            <div>
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+              <div><dt>Phone</dt><dd><a href="tel:+14703772594">(470) 377-2594</a></dd></div>
+            </div>
+            <div>
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+              <div><dt>Email</dt><dd><a href="mailto:billysavondale@gmail.com">billysavondale@gmail.com</a></dd></div>
+            </div>
+            <div>
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+              <div><dt>Hours</dt><dd>Call for current hours.</dd></div>
+            </div>
+          </dl>
+          <div class="visit-actions">
+            <a class="btn btn-call" href="tel:+14703772594">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+              Call (470) 377-2594
+            </a>
+            <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Billy%27s%20Avondale%2C%20121%20Center%20Street%2C%20Avondale%20Estates%2C%20GA%2C%2030002" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 11 18-8-8 18-2-8z"/></svg>
+              Get directions
+            </a>
+          </div>
+        </div>
+        <div class="visit-side reveal">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1100&h=1200&q=70" alt="Warm, inviting restaurant interior with tables and soft lighting (stock photo)" width="1100" height="1200" loading="lazy">
+          <div class="overlay">
+            <strong>121 Center Street</strong>
+            <span>In the heart of Avondale Estates, metro Atlanta</span>
+          </div>
+        </div>
+      </div>
+      <p class="photo-credit">Stock photos for preview (Unsplash).</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <span class="logo-text">Billy's Avondale<small>Handcrafted sandwiches · Avondale Estates, GA</small></span>
+      <a class="btn btn-call" href="tel:+14703772594">Call (470) 377-2594</a>
+    </div>
+    <p><a href="https://builtbycray.com" target="_blank" rel="noopener">Preview by Built By Cray</a></p>
+    <p>This is a free preview concept and is not the official website of Billy's Avondale. Name, phone and address come from public listings. Stock photos from Unsplash.</p>
+  </div>
+</footer>
+
+<div class="float-call">
+  <a class="btn btn-call" href="tel:+14703772594">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+    Call (470) 377-2594
+  </a>
+</div>
+
+<script>
+  (function(){
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      els.forEach(function(el){ el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){ io.observe(el); });
+  })();
+</script>
+</body>
+</html>

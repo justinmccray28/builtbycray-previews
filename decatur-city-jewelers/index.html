@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Decatur City Jewelers | Preview concept by Built By Cray</title>
+<meta name="description" content="Decatur City Jewelers: an owner-operated custom jewelry shop at 117 Clairemont Avenue in downtown Decatur, GA. Custom pieces, repairs, and redesigns. Call (404) 377-7643.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#14110f;
+    --ink-2:#1d1916;
+    --ink-3:#2a241f;
+    --ivory:#f6f1e7;
+    --ivory-2:#ede5d6;
+    --gold:#c9a45c;
+    --gold-2:#e3c68a;
+    --gold-deep:#8c6a2e;
+    --oxblood:#5a1f22;
+    --muted:#a99d8c;
+    --text-dark:#2b241e;
+    --serif:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+    --sans:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --radius:2px;
+    --wrap:1180px;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{overflow-x:clip}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--ink);color:var(--ivory);font-family:var(--sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  :focus-visible{outline:2px solid var(--gold-2);outline-offset:3px}
+  .wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 24px}
+  .skip{position:absolute;left:-999px;top:0;background:var(--gold);color:var(--ink);padding:10px 16px;z-index:100}
+  .skip:focus{left:12px;top:12px}
+
+  /* Preview bar */
+  .preview-bar{background:#0b0908;color:#d8ccb8;font-size:13px;border-bottom:1px solid rgba(201,164,92,.25)}
+  .preview-bar .wrap{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px;text-align:center}
+  .preview-bar strong{color:var(--gold-2);font-weight:600}
+  .preview-bar .deal{color:var(--muted)}
+  .claim{display:inline-block;background:var(--gold);color:var(--ink);text-decoration:none;font-weight:700;font-size:12px;letter-spacing:.04em;padding:5px 12px;border-radius:999px;white-space:nowrap}
+  .claim:hover{background:var(--gold-2)}
+
+  /* Header */
+  .site-header{position:sticky;top:0;z-index:50;background:rgba(20,17,15,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(201,164,92,.18)}
+  .site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:72px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+  .brand svg{flex:none}
+  .brand-name{font-family:var(--serif);font-size:24px;font-weight:500;letter-spacing:.02em;line-height:1;white-space:nowrap}
+  .brand-name span{display:block;font-family:var(--sans);font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-top:5px}
+  .nav{display:flex;gap:30px}
+  .nav a{text-decoration:none;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#d9cfbf;position:relative;padding:4px 0}
+  .nav a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
+  .nav a:hover::after,.nav a:focus-visible::after{transform:scaleX(1)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:700;letter-spacing:.06em;border-radius:var(--radius);transition:background .25s ease,color .25s ease,transform .25s ease,box-shadow .25s ease}
+  .btn-call{background:linear-gradient(135deg,var(--gold-2),var(--gold) 55%,var(--gold-deep));color:var(--ink);padding:12px 20px;font-size:14px;box-shadow:0 6px 24px -10px rgba(201,164,92,.7)}
+  .btn-call:hover{transform:translateY(-1px);box-shadow:0 10px 30px -10px rgba(227,198,138,.8)}
+  .btn-ghost{border:1px solid rgba(227,198,138,.55);color:var(--ivory);padding:16px 26px;font-size:14px}
+  .btn-ghost:hover{background:rgba(201,164,92,.12)}
+  .btn-lg{padding:20px 32px;font-size:17px}
+  .header-call .full{display:inline}
+  .header-call .short{display:none}
+
+  /* Hero */
+  .hero{position:relative;padding:96px 0 110px;overflow:hidden;background:
+      radial-gradient(900px 520px at 78% 40%,rgba(201,164,92,.16),transparent 60%),
+      radial-gradient(700px 500px at 10% 100%,rgba(90,31,34,.45),transparent 60%),
+      var(--ink)}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+  .eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+  .eyebrow::before{content:"";width:34px;height:1px;background:var(--gold)}
+  .hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(44px,6.4vw,84px);line-height:1.02;margin:22px 0 22px;letter-spacing:-.01em}
+  .hero h1 em{font-style:italic;color:var(--gold-2)}
+  .hero .lede{font-size:18px;color:#d6ccbc;max-width:520px;margin:0 0 36px}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  .hero-meta{margin-top:40px;display:flex;flex-wrap:wrap;gap:12px 28px;font-size:14px;color:var(--muted)}
+  .hero-meta span{display:inline-flex;align-items:center;gap:8px}
+  .hero-meta svg{color:var(--gold)}
+  .hero-art{position:relative;aspect-ratio:1/1;max-width:480px;width:100%;justify-self:center}
+  .hero-art .ring-frame{position:absolute;inset:0;border:1px solid rgba(201,164,92,.3);border-radius:50%}
+  .hero-art .ring-frame.two{inset:9%;border-color:rgba(201,164,92,.16)}
+  .hero-art svg.ring{position:absolute;inset:12%;width:76%;height:76%;filter:drop-shadow(0 30px 40px rgba(0,0,0,.55))}
+  .sparkle{position:absolute;width:14px;height:14px;color:var(--gold-2)}
+  .sparkle.s1{top:10%;right:16%}
+  .sparkle.s2{bottom:16%;left:6%;width:10px;height:10px}
+  .sparkle.s3{top:44%;right:-2%;width:9px;height:9px}
+
+  /* Marquee strip */
+  .strip{border-top:1px solid rgba(201,164,92,.2);border-bottom:1px solid rgba(201,164,92,.2);background:var(--ink-2);overflow:hidden}
+  .strip-track{display:flex;gap:48px;white-space:nowrap;padding:18px 0;width:max-content;animation:slide 40s linear infinite}
+  .strip-track span{font-family:var(--serif);font-style:italic;font-size:22px;color:#cbbfa9;display:inline-flex;align-items:center;gap:48px}
+  .strip-track span::after{content:"\25C6";font-style:normal;font-size:10px;color:var(--gold)}
+  @keyframes slide{to{transform:translateX(-50%)}}
+
+  /* Sections */
+  section{scroll-margin-top:80px}
+  .section{padding:110px 0}
+  .section-head{max-width:640px;margin-bottom:56px}
+  .section-head h2{font-family:var(--serif);font-weight:400;font-size:clamp(36px,4.6vw,58px);line-height:1.06;margin:16px 0 16px}
+  .section-head h2 em{font-style:italic;color:var(--gold-2)}
+  .section-head p{color:#cfc4b2;font-size:17px;margin:0}
+
+  /* Services */
+  .services{background:var(--ink)}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(201,164,92,.22);border:1px solid rgba(201,164,92,.22)}
+  .svc{background:var(--ink);padding:40px 34px 44px;position:relative;transition:background .35s ease}
+  .svc:hover{background:var(--ink-2)}
+  .svc .num{font-family:var(--serif);font-size:15px;color:var(--gold);letter-spacing:.1em}
+  .svc svg{display:block;margin:22px 0 22px;color:var(--gold-2)}
+  .svc h3{font-family:var(--serif);font-weight:500;font-size:28px;line-height:1.15;margin:0 0 10px}
+  .svc p{margin:0;color:#c4b9a6;font-size:15px}
+
+  /* Ivory feature (custom process) */
+  .light{background:var(--ivory);color:var(--text-dark)}
+  .light .eyebrow{color:var(--gold-deep)}
+  .light .eyebrow::before{background:var(--gold-deep)}
+  .light .section-head p{color:#5a4f44}
+  .light .section-head h2 em{color:var(--oxblood)}
+  .process{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+  .photo{position:relative;margin:0}
+  .photo img{width:100%;height:100%;object-fit:cover;filter:sepia(.35) saturate(.75) contrast(1.05)}
+  .photo::after{content:"";position:absolute;inset:0;background:linear-gradient(160deg,rgba(201,164,92,.18),rgba(20,17,15,.35));pointer-events:none}
+  .photo-tall{aspect-ratio:4/5}
+  .photo-frame{position:relative}
+  .photo-frame::before{content:"";position:absolute;inset:-18px 18px 18px -18px;border:1px solid var(--gold-deep);z-index:0}
+  .photo-frame .photo{z-index:1}
+  .stock-note{position:absolute;right:10px;bottom:10px;z-index:2;background:rgba(20,17,15,.72);color:#e9dfcd;font-size:11px;letter-spacing:.06em;padding:4px 8px}
+  .steps{list-style:none;margin:0;padding:0;counter-reset:step}
+  .steps li{display:grid;grid-template-columns:64px 1fr;gap:18px;padding:26px 0;border-top:1px solid #d8ccb6}
+  .steps li:last-child{border-bottom:1px solid #d8ccb6}
+  .steps li::before{counter-increment:step;content:"0" counter(step);font-family:var(--serif);font-size:40px;line-height:1;color:var(--gold-deep)}
+  .steps h3{font-family:var(--serif);font-weight:600;font-size:25px;margin:0 0 6px;color:var(--ink)}
+  .steps p{margin:0;color:#5a4f44;font-size:15.5px}
+
+  /* Why */
+  .why{background:linear-gradient(180deg,var(--ink-2),var(--ink))}
+  .why-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:start}
+  .why-list{display:grid;grid-template-columns:1fr 1fr;gap:40px 36px}
+  .why-item h3{font-family:var(--serif);font-weight:500;font-size:25px;margin:14px 0 8px}
+  .why-item p{margin:0;color:#c4b9a6;font-size:15px}
+  .why-item .rule{display:block;width:40px;height:1px;background:var(--gold)}
+  .why-photos{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .why-photos .photo{aspect-ratio:3/4}
+  .why-photos .photo:nth-child(2){margin-top:56px}
+
+  /* Quote band */
+  .band{background:var(--oxblood);background-image:radial-gradient(600px 300px at 85% 0%,rgba(227,198,138,.18),transparent 70%);padding:96px 0;text-align:center}
+  .band p.big{font-family:var(--serif);font-style:italic;font-size:clamp(30px,4vw,50px);line-height:1.18;max-width:900px;margin:0 auto 34px;color:#f6ead6}
+  .band .small{color:#e2cdb0;font-size:14px;letter-spacing:.2em;text-transform:uppercase;margin:0 0 30px}
+
+  /* Visit */
+  .visit{background:var(--ivory);color:var(--text-dark)}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid #d8ccb6;background:#fbf8f2}
+  .visit-info{padding:56px 52px}
+  .visit-info h2{font-family:var(--serif);font-weight:400;font-size:clamp(36px,4.4vw,54px);line-height:1.05;margin:16px 0 30px;color:var(--ink)}
+  .visit-info h2 em{color:var(--oxblood)}
+  .info-row{display:grid;grid-template-columns:28px 1fr;gap:14px;padding:18px 0;border-top:1px solid #e3d9c7}
+  .info-row svg{color:var(--gold-deep);margin-top:3px}
+  .info-row .label{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#8a7b69;display:block;margin-bottom:2px}
+  .info-row a{color:var(--ink);text-decoration-color:rgba(140,106,46,.5);text-underline-offset:3px;word-break:break-word}
+  .info-row a:hover{color:var(--oxblood)}
+  .info-row .val{font-size:17px;color:var(--ink)}
+  .visit-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+  .btn-dark{background:var(--ink);color:var(--ivory);padding:16px 24px;font-size:14px}
+  .btn-dark:hover{background:var(--oxblood)}
+  .btn-outline-dark{border:1px solid var(--ink);color:var(--ink);padding:15px 24px;font-size:14px}
+  .btn-outline-dark:hover{background:var(--ink);color:var(--ivory)}
+  .visit-art{position:relative;min-height:420px;background:var(--ink);overflow:hidden}
+  .visit-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:sepia(.4) saturate(.6) brightness(.55)}
+  .visit-art .card{position:absolute;left:32px;right:32px;bottom:32px;background:rgba(20,17,15,.82);border:1px solid rgba(201,164,92,.35);padding:26px 28px;color:var(--ivory);backdrop-filter:blur(4px)}
+  .visit-art .card .eyebrow{color:var(--gold)}
+  .visit-art .card .eyebrow::before{background:var(--gold)}
+  .visit-art .card p{font-family:var(--serif);font-size:26px;line-height:1.2;margin:10px 0 0}
+  .visit-art .stock-note{top:10px;bottom:auto}
+
+  /* Footer */
+  .site-footer{background:#0b0908;color:#a99d8c;padding:64px 0 120px;font-size:14px}
+  .foot-top{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap;padding-bottom:36px;border-bottom:1px solid rgba(201,164,92,.18)}
+  .foot-top .brand-name{color:var(--ivory)}
+  .foot-contact{display:flex;flex-direction:column;gap:6px;text-align:right}
+  .foot-contact a{color:#e1d5c1;text-decoration:none}
+  .foot-contact a:hover{color:var(--gold-2)}
+  .foot-bottom{padding-top:28px;display:grid;gap:10px;max-width:820px}
+  .foot-bottom a{color:var(--gold-2)}
+  .foot-bottom p{margin:0}
+
+  /* Floating mobile call */
+  .float-call{display:none}
+
+  /* Reveal */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s ease}
+  .reveal.in{opacity:1;transform:none}
+  .shimmer{animation:shimmer 6s ease-in-out infinite}
+  @keyframes shimmer{0%,100%{opacity:.35;transform:scale(.8)}50%{opacity:1;transform:scale(1.1)}}
+
+  /* Responsive */
+  @media (max-width:1020px){
+    .hero .wrap{grid-template-columns:1fr;gap:40px}
+    .hero-art{max-width:360px;order:-1}
+    .svc-grid{grid-template-columns:1fr 1fr}
+    .process,.why-grid{grid-template-columns:1fr;gap:56px}
+    .visit-grid{grid-template-columns:1fr}
+    .visit-art{min-height:320px}
+  }
+  @media (max-width:820px){
+    .nav{display:none}
+  }
+  @media (max-width:640px){
+    .wrap{padding:0 20px}
+    .preview-bar{font-size:12px}
+    .preview-bar .wrap{gap:8px}
+    .preview-bar .deal{display:none}
+    .site-header .wrap{height:64px;gap:12px}
+    .brand-name{font-size:20px}
+    .brand-name span{font-size:9px;letter-spacing:.26em}
+    .brand svg{width:30px;height:30px}
+    .header-call{padding:10px 14px;font-size:13px}
+    .header-call .full{display:none}
+    .header-call .short{display:inline}
+    .hero{padding:48px 0 72px}
+    .hero-art{max-width:240px}
+    .hero .lede{font-size:16.5px}
+    .hero-actions .btn{width:100%}
+    .btn-lg{padding:18px 22px;font-size:16px}
+    .section{padding:76px 0}
+    .section-head{margin-bottom:40px}
+    .svc-grid{grid-template-columns:1fr}
+    .svc{padding:32px 26px 36px}
+    .why-list{grid-template-columns:1fr;gap:30px}
+    .why-photos .photo:nth-child(2){margin-top:32px}
+    .photo-frame::before{inset:-10px 10px 10px -10px}
+    .steps li{grid-template-columns:48px 1fr;gap:12px}
+    .steps li::before{font-size:32px}
+    .visit-info{padding:40px 24px}
+    .visit-actions .btn{width:100%}
+    .visit-art .card{left:16px;right:16px;bottom:16px;padding:20px}
+    .visit-art .card p{font-size:22px}
+    .foot-contact{text-align:left}
+    .float-call{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:60;padding:16px;font-size:16px;border-radius:999px;box-shadow:0 12px 30px -8px rgba(0,0,0,.7)}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *,*::before,*::after{animation:none !important;transition:none !important}
+    .reveal{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="preview-bar" role="note">
+  <div class="wrap">
+    <span><strong>Free preview concept by Built By Cray.</strong> Not the official website of Decatur City Jewelers.</span>
+    <span class="deal">$650 Black Friday price through Nov 30</span>
+    <a class="claim" href="https://calendar.app.google/K7QqcbLckjKjjZs19" target="_blank" rel="noopener">Claim this website</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Decatur City Jewelers, back to top">
+      <svg width="36" height="36" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="24" r="11" stroke="#c9a45c" stroke-width="1.6"/>
+        <path d="M14 9h12l-6 7z" fill="#e3c68a"/>
+        <path d="M14 9l6 7 6-7" stroke="#8c6a2e" stroke-width=".8"/>
+      </svg>
+      <span class="brand-name">Decatur City<span>Jewelers</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#custom">Custom</a>
+      <a href="#why">Why Us</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn btn-call header-call" href="tel:+14043777643" aria-label="Call Decatur City Jewelers at (404) 377-7643">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+      <span class="full">(404) 377-7643</span><span class="short">Call</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Downtown Decatur, Georgia</span>
+        <h1 id="hero-title">Decatur City Jewelers<br><em>made by hand, made for you.</em></h1>
+        <p class="lede">An owner-operated custom jewelry shop on Clairemont Avenue. Bring in an idea, a sketch, or a family piece, and talk it through directly with the person who will make it.</p>
+        <div class="hero-actions">
+          <a class="btn btn-call btn-lg" href="tel:+14043777643">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+            Call (404) 377-7643
+          </a>
+          <a class="btn btn-ghost" href="#visit">Plan a visit</a>
+        </div>
+        <div class="hero-meta">
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>117 Clairemont Avenue</span>
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Call for current hours</span>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="ring-frame"></div>
+        <div class="ring-frame two"></div>
+        <svg class="ring" viewBox="0 0 300 300" fill="none">
+          <defs>
+            <linearGradient id="band" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#f4dfae"/>
+              <stop offset=".35" stop-color="#c9a45c"/>
+              <stop offset=".7" stop-color="#7d5c26"/>
+              <stop offset="1" stop-color="#e3c68a"/>
+            </linearGradient>
+            <linearGradient id="gem" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#ffffff"/>
+              <stop offset=".55" stop-color="#dfe7ee"/>
+              <stop offset="1" stop-color="#9fb0bf"/>
+            </linearGradient>
+          </defs>
+          <ellipse cx="150" cy="190" rx="92" ry="88" stroke="url(#band)" stroke-width="16"/>
+          <ellipse cx="150" cy="190" rx="92" ry="88" stroke="#fff3d6" stroke-opacity=".35" stroke-width="2" transform="translate(-3 -3)"/>
+          <path d="M126 112l-8-14h64l-8 14z" fill="url(#band)"/>
+          <path d="M106 64h88l18 22-62 46-62-46z" fill="url(#gem)"/>
+          <path d="M106 64l20 22h48l20-22M88 86h124M126 86l24 46 24-46M150 64v22" stroke="#7f91a3" stroke-width="1.2" stroke-opacity=".8"/>
+          <path d="M120 70l10 12" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+        </svg>
+        <svg class="sparkle s1 shimmer" viewBox="0 0 20 20" fill="currentColor"><path d="M10 0l2 8 8 2-8 2-2 8-2-8-8-2 8-2z"/></svg>
+        <svg class="sparkle s2 shimmer" viewBox="0 0 20 20" fill="currentColor" style="animation-delay:-2s"><path d="M10 0l2 8 8 2-8 2-2 8-2-8-8-2 8-2z"/></svg>
+        <svg class="sparkle s3 shimmer" viewBox="0 0 20 20" fill="currentColor" style="animation-delay:-4s"><path d="M10 0l2 8 8 2-8 2-2 8-2-8-8-2 8-2z"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip" aria-hidden="true">
+    <div class="strip-track">
+      <span>Custom design</span><span>Engagement &amp; bridal</span><span>Repairs</span><span>Ring sizing</span><span>Heirloom redesign</span><span>Cleaning &amp; check-ups</span>
+      <span>Custom design</span><span>Engagement &amp; bridal</span><span>Repairs</span><span>Ring sizing</span><span>Heirloom redesign</span><span>Cleaning &amp; check-ups</span>
+    </div>
+  </div>
+
+  <section class="section services" id="services" aria-labelledby="svc-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">What we do</span>
+        <h2 id="svc-title">Everything your jewelry needs, <em>under one small roof.</em></h2>
+        <p>From a brand-new piece to a favorite ring that needs some love, every job gets the same careful attention.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc reveal">
+          <span class="num">01</span>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M8 32l18-18 4 4-18 18H8z"/><path d="M24 16l4 4M28 8l4 4-3 3-4-4z"/></svg>
+          <h3>Custom design</h3>
+          <p>Start with an idea, a photo, or a rough sketch. We shape it into a one-of-a-kind piece that is unmistakably yours.</p>
+        </article>
+        <article class="svc reveal">
+          <span class="num">02</span>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="20" cy="25" r="10"/><path d="M14 8h12l-6 7z"/></svg>
+          <h3>Engagement &amp; bridal</h3>
+          <p>Engagement rings, wedding bands, and matching sets, designed around your story and the way you live.</p>
+        </article>
+        <article class="svc reveal">
+          <span class="num">03</span>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M10 30c6-2 8-8 10-10s8-4 10-10"/><circle cx="10" cy="30" r="3"/><circle cx="30" cy="10" r="3"/><path d="M18 22l-4-4"/></svg>
+          <h3>Jewelry repair</h3>
+          <p>Broken chains, loose stones, worn prongs, and bent shanks, carefully repaired so your pieces are ready to wear again.</p>
+        </article>
+        <article class="svc reveal">
+          <span class="num">04</span>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="20" cy="20" r="11"/><circle cx="20" cy="20" r="6"/><path d="M4 20h4M32 20h4"/></svg>
+          <h3>Ring sizing</h3>
+          <p>Sized up or down for a comfortable, secure fit, with care taken to keep the look of the original.</p>
+        </article>
+        <article class="svc reveal">
+          <span class="num">05</span>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M8 20a12 12 0 0 1 21-8M32 20a12 12 0 0 1-21 8"/><path d="M29 6v6h-6M11 34v-6h6"/></svg>
+          <h3>Heirloom redesign</h3>
+          <p>Give a family piece a second life. Reset stones or rework old gold into something you will actually wear every day.</p>
+        </article>
+        <article class="svc reveal">
+          <span class="num">06</span>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M20 6l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg>
+          <h3>Cleaning &amp; check-ups</h3>
+          <p>A professional clean and a close look at settings and clasps, so small issues get caught before stones go missing.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section light" id="custom" aria-labelledby="custom-title">
+    <div class="wrap process">
+      <div class="photo-frame reveal">
+        <figure class="photo photo-tall">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&h=1250&q=70" alt="Drafting plans and sketches on a work table, representing the design stage" loading="lazy" width="1000" height="1250">
+        </figure>
+        <span class="stock-note">Stock photo for preview</span>
+      </div>
+      <div class="reveal">
+        <div class="section-head">
+          <span class="eyebrow">How custom works</span>
+          <h2 id="custom-title">From first sketch <em>to finished piece.</em></h2>
+          <p>Because the shop is owner-operated, you work with the same person from the first conversation to the final polish.</p>
+        </div>
+        <ol class="steps">
+          <li><div><h3>Call or stop in</h3><p>Tell us what you have in mind. Bring inspiration photos, a stone, or a piece you want to rework.</p></div></li>
+          <li><div><h3>Design together</h3><p>We talk through metals, stones, style, and budget, and sketch out a direction you feel great about.</p></div></li>
+          <li><div><h3>Crafted with care</h3><p>Your piece is made with attention to every detail, and we keep you in the loop along the way.</p></div></li>
+          <li><div><h3>Pick up and wear it</h3><p>Come back to Clairemont Avenue, try it on, and take home something made just for you.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why" id="why" aria-labelledby="why-title">
+    <div class="wrap why-grid">
+      <div>
+        <div class="section-head reveal">
+          <span class="eyebrow">Why Decatur City Jewelers</span>
+          <h2 id="why-title">A neighborhood jeweler, <em>not a chain counter.</em></h2>
+        </div>
+        <div class="why-list">
+          <div class="why-item reveal"><span class="rule"></span><h3>Owner-operated</h3><p>You talk directly with the owner, the person who actually cares how your piece turns out.</p></div>
+          <div class="why-item reveal"><span class="rule"></span><h3>Truly custom</h3><p>No catalog to pick from. Pieces are designed around you, your taste, and your story.</p></div>
+          <div class="why-item reveal"><span class="rule"></span><h3>Right in downtown</h3><p>An easy stop on Clairemont Avenue, close to the square and everything else you love about Decatur.</p></div>
+          <div class="why-item reveal"><span class="rule"></span><h3>Straight answers</h3><p>Honest advice on what a piece needs, whether that is a full redesign or a simple repair.</p></div>
+        </div>
+      </div>
+      <div class="why-photos reveal">
+        <figure class="photo">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=700&h=930&q=70" alt="People gathered around a table in conversation, representing a one-on-one consultation" loading="lazy" width="700" height="930">
+        </figure>
+        <figure class="photo">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=700&h=930&q=70" alt="A bright, calm interior space with natural light" loading="lazy" width="700" height="930">
+          <span class="stock-note">Stock photos for preview</span>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-label="Call to action">
+    <div class="wrap reveal">
+      <p class="small">Have something in mind?</p>
+      <p class="big">The best pieces start with a conversation. Give us a call and tell us what you are dreaming up.</p>
+      <a class="btn btn-call btn-lg" href="tel:+14043777643">Call (404) 377-7643</a>
+    </div>
+  </section>
+
+  <section class="section visit" id="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+      <div class="visit-grid reveal">
+        <div class="visit-info">
+          <span class="eyebrow">Visit the shop</span>
+          <h2 id="visit-title">Find us on <em>Clairemont Avenue.</em></h2>
+          <div class="info-row">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            <div><span class="label">Address</span><span class="val">117 Clairemont Avenue<br>Decatur, GA 30030</span></div>
+          </div>
+          <div class="info-row">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+            <div><span class="label">Phone</span><a class="val" href="tel:+14043777643">(404) 377-7643</a></div>
+          </div>
+          <div class="info-row">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 7l9 6 9-6"/></svg>
+            <div><span class="label">Email</span><a class="val" href="mailto:brettdotweiler@gmail.com">brettdotweiler@gmail.com</a></div>
+          </div>
+          <div class="info-row">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <div><span class="label">Hours</span><span class="val">Call for current hours.</span></div>
+          </div>
+          <div class="visit-actions">
+            <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&amp;query=Decatur%20City%20Jewelers%2C%20117%20Clairemont%20Avenue%2C%20Decatur%2C%20GA%2030030" target="_blank" rel="noopener">Get directions</a>
+            <a class="btn btn-outline-dark" href="tel:+14043777643">Call (404) 377-7643</a>
+          </div>
+        </div>
+        <div class="visit-art">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&h=900&q=70" alt="Softly lit interior with large windows" loading="lazy" width="1000" height="900">
+          <span class="stock-note">Stock photo for preview</span>
+          <div class="card">
+            <span class="eyebrow">Downtown Decatur</span>
+            <p>Stop by with your idea, your heirloom, or the ring that needs a little attention.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="brand" aria-hidden="false">
+        <svg width="36" height="36" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <circle cx="20" cy="24" r="11" stroke="#c9a45c" stroke-width="1.6"/>
+          <path d="M14 9h12l-6 7z" fill="#e3c68a"/>
+        </svg>
+        <span class="brand-name">Decatur City<span>Jewelers</span></span>
+      </div>
+      <div class="foot-contact">
+        <a href="tel:+14043777643">(404) 377-7643</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Decatur%20City%20Jewelers%2C%20117%20Clairemont%20Avenue%2C%20Decatur%2C%20GA%2030030" target="_blank" rel="noopener">117 Clairemont Avenue, Decatur, GA 30030</a>
+        <span>Call for current hours.</span>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p><a href="https://builtbycray.com" target="_blank" rel="noopener">Preview by Built By Cray</a></p>
+      <p>This is a free preview concept and is not the official website of Decatur City Jewelers. Name, phone and address come from public listings. Stock photos from Unsplash.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="btn btn-call float-call" href="tel:+14043777643" aria-label="Call Decatur City Jewelers at (404) 377-7643">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+  Call (404) 377-7643
+</a>
+
+<script>
+  (function(){
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      els.forEach(function(el){ el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(function(el){ io.observe(el); });
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Decatur Glass Blowing | Preview concept by Built By Cray</title>
+<meta name="description" content="Decatur Glass Blowing is a glassblowing studio on Freeman Street in Decatur, GA offering hands-on glassblowing classes and handmade glass. Call (404) 849-0301.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,300;1,9..144,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0f0c0b;
+    --ink-2:#181312;
+    --ink-3:#231b18;
+    --ash:#a89a90;
+    --cream:#f6ede2;
+    --sand:#eadccb;
+    --ember:#ff6a1a;
+    --molten:#ffa53a;
+    --gold:#ffd27a;
+    --cobalt:#2f6df6;
+    --teal:#38c2b4;
+    --line:rgba(246,237,226,.12);
+    --radius:22px;
+    --display:"Fraunces", Georgia, serif;
+    --sans:"Outfit", system-ui, -apple-system, Segoe UI, sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{overflow-x:clip}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--ink);color:var(--cream);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+  .wrap{width:min(1180px, 100% - 40px);margin-inline:auto}
+  .skip{position:absolute;left:-9999px;top:8px;background:var(--gold);color:var(--ink);padding:10px 16px;border-radius:8px;z-index:100;font-weight:600}
+  .skip:focus{left:12px}
+
+  /* ---------- preview bar ---------- */
+  .preview-bar{background:#f6ede2;color:#2a1d16;font-size:13.5px;line-height:1.4}
+  .preview-bar .wrap{display:flex;align-items:center;justify-content:center;gap:10px 16px;flex-wrap:wrap;padding:9px 0;text-align:center}
+  .preview-bar strong{font-weight:600}
+  .preview-bar .deal{color:#a83c06;font-weight:500}
+  .claim{display:inline-block;background:#2a1d16;color:#f6ede2;text-decoration:none;padding:5px 12px;border-radius:999px;font-weight:500;font-size:12.5px;white-space:nowrap}
+  .claim:hover{background:#a83c06}
+
+  /* ---------- header ---------- */
+  .site-header{position:sticky;top:0;z-index:50;background:rgba(15,12,11,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+  .site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:72px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .brand-mark{width:36px;height:36px;flex:none}
+  .brand-name{font-family:var(--display);font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.05}
+  .brand-name small{display:block;font-family:var(--sans);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--ash);font-weight:500;margin-top:3px}
+  .nav{display:flex;gap:30px;font-size:15px}
+  .nav a{text-decoration:none;color:var(--sand);opacity:.85;position:relative}
+  .nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:linear-gradient(90deg,var(--ember),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .3s}
+  .nav a:hover{opacity:1}
+  .nav a:hover::after{transform:scaleX(1)}
+  .btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;border-radius:999px;transition:transform .2s, box-shadow .2s, background .2s}
+  .btn svg{width:18px;height:18px;flex:none}
+  .btn-hot{background:linear-gradient(135deg,var(--gold),var(--molten) 45%,var(--ember));color:#1d0c03;box-shadow:0 10px 30px -10px rgba(255,106,26,.7)}
+  .btn-hot:hover{transform:translateY(-2px);box-shadow:0 16px 40px -12px rgba(255,106,26,.85)}
+  .btn-ghost{border:1px solid rgba(246,237,226,.3);color:var(--cream)}
+  .btn-ghost:hover{background:rgba(246,237,226,.08);border-color:var(--cream)}
+  .header-call{padding:11px 20px;font-size:15px}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;overflow:hidden;padding:90px 0 110px;isolation:isolate}
+  .hero::before{content:"";position:absolute;inset:-20% -10% auto auto;width:900px;height:900px;background:radial-gradient(circle at center, rgba(255,120,30,.35), rgba(255,80,20,.08) 45%, transparent 70%);z-index:-1}
+  .hero::after{content:"";position:absolute;left:-200px;bottom:-300px;width:700px;height:700px;background:radial-gradient(circle, rgba(47,109,246,.18), transparent 65%);z-index:-1}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--molten);font-weight:500}
+  .eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+  .hero h1{font-family:var(--display);font-weight:300;font-size:clamp(44px,7vw,92px);line-height:.98;letter-spacing:-.03em;margin:22px 0 24px}
+  .hero h1 em{font-style:italic;font-weight:500;background:linear-gradient(100deg,var(--gold) 0%,var(--molten) 40%,var(--ember) 75%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero .biz{font-family:var(--display);font-size:clamp(20px,2.2vw,26px);font-weight:500;color:var(--sand);margin:0}
+  .hero p.lede{font-size:19px;color:#d6c8ba;max-width:540px;margin:14px 0 36px}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:14px}
+  .hero-ctas .btn-hot{padding:19px 30px;font-size:18px}
+  .hero-ctas .btn-ghost{padding:18px 26px;font-size:16px}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:40px;font-size:14.5px;color:var(--ash)}
+  .hero-meta span{display:inline-flex;align-items:center;gap:8px}
+  .hero-meta svg{width:16px;height:16px;color:var(--molten)}
+
+  .furnace{position:relative;aspect-ratio:4/5;border-radius:220px 220px 28px 28px;background:radial-gradient(120% 80% at 50% 100%, #3a1608 0%, #1a0d08 55%, #120c0a 100%);border:1px solid rgba(255,165,58,.22);overflow:hidden;box-shadow:inset 0 0 80px rgba(0,0,0,.6), 0 40px 100px -40px rgba(255,106,26,.45)}
+  .furnace svg{position:absolute;inset:0;width:100%;height:100%}
+  .glow{animation:breathe 5s ease-in-out infinite;transform-origin:50% 62%}
+  @keyframes breathe{0%,100%{opacity:.85;transform:scale(1)}50%{opacity:1;transform:scale(1.04)}}
+  .spin{animation:turn 14s linear infinite;transform-origin:200px 300px}
+  @keyframes turn{to{transform:rotate(360deg)}}
+  .furnace-tag{position:absolute;left:22px;right:22px;bottom:22px;display:flex;justify-content:space-between;align-items:center;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:rgba(246,237,226,.65)}
+  .furnace-tag b{color:var(--gold);font-weight:500}
+
+  /* ---------- marquee ---------- */
+  .ribbon{border-block:1px solid var(--line);background:var(--ink-2);overflow:hidden}
+  .ribbon-track{display:flex;gap:48px;white-space:nowrap;padding:20px 0;width:max-content;animation:slide 40s linear infinite;font-family:var(--display);font-style:italic;font-size:24px;color:var(--sand)}
+  .ribbon-track span{display:inline-flex;align-items:center;gap:48px}
+  .ribbon-track span::after{content:"";width:10px;height:10px;border-radius:50%;background:radial-gradient(circle at 35% 35%,var(--gold),var(--ember))}
+  @keyframes slide{to{transform:translateX(-50%)}}
+
+  /* ---------- sections ---------- */
+  section{scroll-margin-top:80px}
+  .section{padding:120px 0}
+  .section-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:60px}
+  .section-head h2{font-family:var(--display);font-weight:300;font-size:clamp(36px,4.6vw,60px);line-height:1.02;letter-spacing:-.025em;margin:16px 0 0}
+  .section-head h2 em{font-style:italic;color:var(--molten)}
+  .section-head p{color:#cbbcae;margin:0;max-width:460px;justify-self:end}
+
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .card{position:relative;background:linear-gradient(180deg,var(--ink-3),var(--ink-2));border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px 32px;overflow:hidden;transition:transform .35s, border-color .35s}
+  .card::before{content:"";position:absolute;width:260px;height:260px;right:-110px;top:-110px;border-radius:50%;background:radial-gradient(circle,var(--c,rgba(255,106,26,.28)),transparent 70%);transition:transform .5s}
+  .card:hover{transform:translateY(-6px);border-color:rgba(255,165,58,.4)}
+  .card:hover::before{transform:scale(1.25)}
+  .card .num{font-family:var(--display);font-style:italic;color:var(--ash);font-size:15px}
+  .card h3{font-family:var(--display);font-weight:500;font-size:28px;line-height:1.1;margin:70px 0 12px;letter-spacing:-.01em}
+  .card p{color:#cbbcae;margin:0;font-size:16px}
+  .card .icon{position:absolute;top:28px;right:28px;width:52px;height:52px}
+  .card:nth-child(2){--c:rgba(47,109,246,.3)}
+  .card:nth-child(3){--c:rgba(56,194,180,.26)}
+
+  /* ---------- light section ---------- */
+  .light{background:var(--cream);color:#24170f}
+  .light .eyebrow{color:#b44a0c}
+  .light .section-head p{color:#5d4a3c}
+  .light .section-head h2 em{color:#c4500d}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid rgba(36,23,15,.18)}
+  .step{padding:40px 34px 10px 0}
+  .step + .step{padding-left:34px;border-left:1px solid rgba(36,23,15,.18)}
+  .step .n{font-family:var(--display);font-size:88px;font-weight:300;line-height:1;background:linear-gradient(160deg,#ffb347,#e2520c 70%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .step h3{font-family:var(--display);font-weight:500;font-size:26px;margin:14px 0 8px}
+  .step p{margin:0;color:#5d4a3c}
+  .step a{color:#b44a0c;font-weight:600}
+
+  /* ---------- photo story ---------- */
+  .story{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+  .photo-stack{position:relative;min-height:560px}
+  .duo{margin:0;position:absolute;overflow:hidden;border-radius:var(--radius);background:#2a1208;box-shadow:0 30px 80px -30px rgba(0,0,0,.8)}
+  .duo img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.15) brightness(.9);mix-blend-mode:luminosity;opacity:.9}
+  .duo::after{content:"";position:absolute;inset:0;background:linear-gradient(160deg,rgba(255,140,40,.55),rgba(120,30,5,.35) 50%,rgba(15,12,11,.55));mix-blend-mode:color}
+  .duo.a{left:0;top:0;width:68%;height:72%}
+  .duo.b{right:0;bottom:0;width:56%;height:58%;border:6px solid var(--ink)}
+  .duo.b::after{background:linear-gradient(160deg,rgba(47,109,246,.5),rgba(15,12,11,.5))}
+  .stock-note{position:absolute;left:0;bottom:0;font-size:12px;color:var(--ash);letter-spacing:.04em}
+  .story h2{font-family:var(--display);font-weight:300;font-size:clamp(34px,4.2vw,54px);line-height:1.04;letter-spacing:-.02em;margin:16px 0 22px}
+  .story h2 em{font-style:italic;color:var(--molten)}
+  .story p{color:#cbbcae}
+  .ticks{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:14px}
+  .ticks li{display:flex;gap:14px;align-items:flex-start}
+  .ticks svg{width:22px;height:22px;flex:none;margin-top:3px;color:var(--molten)}
+
+  /* ---------- quote band ---------- */
+  .band{position:relative;padding:110px 0;text-align:center;overflow:hidden;background:radial-gradient(60% 120% at 50% 110%, rgba(255,106,26,.35), transparent 60%), var(--ink-2);border-block:1px solid var(--line)}
+  .band blockquote{margin:0 auto;max-width:900px;font-family:var(--display);font-weight:300;font-size:clamp(30px,4.4vw,56px);line-height:1.12;letter-spacing:-.02em}
+  .band blockquote em{font-style:italic;color:var(--gold)}
+  .band .btn{margin-top:40px;padding:19px 30px;font-size:18px}
+
+  /* ---------- visit ---------- */
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .panel{background:var(--ink-2);border:1px solid var(--line);border-radius:var(--radius);padding:40px}
+  .panel h3{font-family:var(--display);font-weight:500;font-size:30px;margin:0 0 26px;letter-spacing:-.01em}
+  .info{display:grid;gap:22px;margin:0}
+  .info div{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+  .info dt{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(255,165,58,.12);color:var(--molten)}
+  .info dt svg{width:20px;height:20px}
+  .info dd{margin:0}
+  .info dd small{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ash);margin-bottom:2px}
+  .info dd a{text-decoration:none;border-bottom:1px solid rgba(255,165,58,.4)}
+  .info dd a:hover{color:var(--gold)}
+  .panel .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+  .panel .actions .btn{padding:15px 24px}
+  .map-art{position:relative;padding:0;overflow:hidden;min-height:420px;display:flex;flex-direction:column;justify-content:flex-end}
+  .map-art svg.map{position:absolute;inset:0;width:100%;height:100%}
+  .map-card{position:relative;margin:24px;padding:22px 24px;background:rgba(15,12,11,.86);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:16px}
+  .map-card b{font-family:var(--display);font-size:22px;font-weight:500;display:block}
+  .map-card span{color:var(--ash);font-size:15px}
+  .map-card a{display:inline-block;margin-top:10px;color:var(--gold);font-weight:600;text-decoration:none}
+  .map-card a:hover{text-decoration:underline}
+
+  /* ---------- footer ---------- */
+  footer{border-top:1px solid var(--line);padding:60px 0 110px;color:var(--ash);font-size:14.5px}
+  .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:30px;align-items:flex-start}
+  .foot .brand-name{color:var(--cream)}
+  .foot-links{display:flex;flex-wrap:wrap;gap:10px 24px}
+  .foot-links a{text-decoration:none;color:var(--sand)}
+  .foot-links a:hover{color:var(--gold)}
+  .disclaimer{margin-top:40px;padding-top:24px;border-top:1px solid var(--line);font-size:13px;line-height:1.6;max-width:820px}
+  .disclaimer a{color:var(--gold)}
+
+  /* ---------- floating call (mobile) ---------- */
+  .float-call{display:none}
+
+  /* ---------- reveal ---------- */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease, transform .8s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- responsive ---------- */
+  @media (max-width:980px){
+    .hero-grid{grid-template-columns:1fr}
+    .furnace{max-width:440px;width:100%;margin-inline:auto;aspect-ratio:1/1;border-radius:220px 220px 28px 28px}
+    .section-head{grid-template-columns:1fr}
+    .section-head p{justify-self:start}
+    .cards{grid-template-columns:1fr}
+    .card h3{margin-top:56px}
+    .steps{grid-template-columns:1fr}
+    .step,.step + .step{padding:34px 0;border-left:0;border-bottom:1px solid rgba(36,23,15,.18)}
+    .story{grid-template-columns:1fr}
+    .photo-stack{min-height:440px}
+    .visit-grid{grid-template-columns:1fr}
+  }
+  @media (max-width:760px){
+    .nav{display:none}
+    .site-header .wrap{height:64px}
+    .brand-name{font-size:17px}
+    .brand-name small{font-size:9.5px;letter-spacing:.18em}
+    .header-call{padding:10px 16px;font-size:14px}
+    .header-call .long{display:none}
+    .hero{padding:56px 0 80px}
+    .hero p.lede{font-size:17.5px}
+    .hero-ctas .btn{width:100%;justify-content:center}
+    .section{padding:84px 0}
+    .band{padding:84px 0}
+    .panel{padding:28px 24px}
+    .photo-stack{min-height:380px}
+    .ribbon-track{font-size:20px}
+    .float-call{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:60;justify-content:center;padding:16px 20px;font-size:17px}
+  }
+  @media (max-width:380px){
+    .brand-name small{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+    .reveal{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="preview-bar" role="note">
+  <div class="wrap">
+    <span><strong>Free preview concept by Built By Cray.</strong> Not the official website of Decatur Glass Blowing. <span class="deal">$650 Black Friday price through Nov 30.</span></span>
+    <a class="claim" href="https://calendar.app.google/K7QqcbLckjKjjZs19" target="_blank" rel="noopener">Claim this website</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Decatur Glass Blowing, back to top">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <defs>
+          <radialGradient id="bm" cx="40%" cy="35%" r="70%">
+            <stop offset="0" stop-color="#ffe3a3"/><stop offset=".45" stop-color="#ffa53a"/><stop offset="1" stop-color="#d9440a"/>
+          </radialGradient>
+        </defs>
+        <rect x="18.5" y="0" width="3" height="16" rx="1.5" fill="#a89a90"/>
+        <path d="M20 14c8 0 13 6 13 13s-5.8 12-13 12S7 34 7 27s5-13 13-13z" fill="url(#bm)"/>
+        <ellipse cx="15" cy="23" rx="3" ry="5" fill="#fff" opacity=".35" transform="rotate(25 15 23)"/>
+      </svg>
+      <span class="brand-name">Decatur Glass Blowing<small>Glassblowing studio · Decatur, GA</small></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#offer">Classes &amp; glass</a>
+      <a href="#how">How it works</a>
+      <a href="#studio">The studio</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn btn-hot header-call" href="tel:+14048490301" aria-label="Call Decatur Glass Blowing at (404) 849-0301">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+      <span>Call<span class="long"> (404) 849-0301</span></span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="biz">Decatur Glass Blowing</p>
+        <span class="eyebrow">Glassblowing studio · 250 Freeman St</span>
+        <h1>Turn fire into <em>something you made.</em></h1>
+        <p class="lede">A working glassblowing studio in Decatur where you can step up to the furnace, gather molten glass, and shape a piece with your own hands. Classes, hands-on experiences and handmade glass, right here in metro Atlanta.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-hot" href="tel:+14048490301">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+            Call (404) 849-0301
+          </a>
+          <a class="btn btn-ghost" href="#offer">See what you can make</a>
+        </div>
+        <div class="hero-meta">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Decatur, Georgia</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Call for current hours</span>
+        </div>
+      </div>
+
+      <div class="furnace reveal" role="img" aria-label="Illustration of a glowing gather of molten glass on the end of a blowpipe">
+        <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <radialGradient id="hot" cx="45%" cy="40%" r="60%">
+              <stop offset="0" stop-color="#fff6d8"/>
+              <stop offset=".25" stop-color="#ffd27a"/>
+              <stop offset=".6" stop-color="#ff7a1f"/>
+              <stop offset="1" stop-color="#b52d05"/>
+            </radialGradient>
+            <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+              <stop offset="0" stop-color="#ff8a2a" stop-opacity=".75"/>
+              <stop offset=".5" stop-color="#ff5a12" stop-opacity=".22"/>
+              <stop offset="1" stop-color="#ff5a12" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="pipe" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0" stop-color="#5b504a"/><stop offset=".5" stop-color="#b9aca2"/><stop offset="1" stop-color="#3a322e"/>
+            </linearGradient>
+            <linearGradient id="pipeglow" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0" stop-color="#ffa53a"/><stop offset="1" stop-color="#5b504a"/>
+            </linearGradient>
+          </defs>
+          <!-- furnace mouth -->
+          <ellipse cx="200" cy="520" rx="260" ry="120" fill="url(#halo)"/>
+          <!-- sparks orbit -->
+          <g class="spin" opacity=".7">
+            <circle cx="200" cy="140" r="2.2" fill="#ffd27a"/>
+            <circle cx="330" cy="300" r="1.6" fill="#ffa53a"/>
+            <circle cx="90" cy="360" r="1.8" fill="#ffd27a"/>
+            <circle cx="300" cy="190" r="1.2" fill="#fff"/>
+            <circle cx="110" cy="220" r="1.4" fill="#ff7a1f"/>
+          </g>
+          <!-- blowpipe -->
+          <rect x="194" y="-10" width="12" height="230" fill="url(#pipe)"/>
+          <rect x="194" y="160" width="12" height="70" fill="url(#pipeglow)" opacity=".8"/>
+          <!-- glow halo -->
+          <g class="glow">
+            <circle cx="200" cy="310" r="150" fill="url(#halo)"/>
+            <!-- gather -->
+            <path d="M200 215c46 0 78 40 78 92 0 52-35 92-78 92s-78-40-78-92c0-52 32-92 78-92z" fill="url(#hot)"/>
+            <ellipse cx="172" cy="275" rx="14" ry="30" fill="#fff" opacity=".35" transform="rotate(22 172 275)"/>
+            <ellipse cx="236" cy="350" rx="6" ry="14" fill="#fff" opacity=".2" transform="rotate(-20 236 350)"/>
+          </g>
+          <!-- drip -->
+          <path d="M200 398c6 12 6 24 0 30-6-6-6-18 0-30z" fill="#ff7a1f" opacity=".9"/>
+        </svg>
+        <div class="furnace-tag"><span>Molten glass</span><b>Decatur, GA</b></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ribbon" aria-hidden="true">
+    <div class="ribbon-track">
+      <span>Gather</span><span>Shape</span><span>Blow</span><span>Cool</span><span>Take it home</span><span>Made in Decatur</span>
+      <span>Gather</span><span>Shape</span><span>Blow</span><span>Cool</span><span>Take it home</span><span>Made in Decatur</span>
+    </div>
+  </div>
+
+  <section class="section" id="offer">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">What we do</span>
+          <h2>Hot glass, <em>hands-on.</em></h2>
+        </div>
+        <p>Whether you've never touched a blowpipe or you've been curious about glass for years, there's a way into the studio for you. Call to ask what's coming up.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <svg class="icon" viewBox="0 0 52 52" fill="none" aria-hidden="true"><circle cx="26" cy="26" r="25" stroke="#ffa53a" stroke-opacity=".4"/><path d="M26 10v14" stroke="#eadccb" stroke-width="2" stroke-linecap="round"/><circle cx="26" cy="32" r="9" fill="#ff7a1f"/><circle cx="23" cy="29" r="2.5" fill="#fff" opacity=".5"/></svg>
+          <span class="num">01</span>
+          <h3>Glassblowing classes</h3>
+          <p>Learn the basics at the bench: gathering, turning, shaping and blowing glass, with guidance from the studio every step of the way.</p>
+        </article>
+        <article class="card reveal">
+          <svg class="icon" viewBox="0 0 52 52" fill="none" aria-hidden="true"><circle cx="26" cy="26" r="25" stroke="#2f6df6" stroke-opacity=".5"/><circle cx="20" cy="28" r="7" fill="#2f6df6" opacity=".8"/><circle cx="32" cy="28" r="7" fill="#38c2b4" opacity=".8"/><circle cx="26" cy="19" r="7" fill="#ffa53a" opacity=".85"/></svg>
+          <span class="num">02</span>
+          <h3>Make-your-own experiences</h3>
+          <p>A memorable outing for friends, couples, family or a small group. Ask about hands-on sessions where everyone leaves with a piece they made.</p>
+        </article>
+        <article class="card reveal">
+          <svg class="icon" viewBox="0 0 52 52" fill="none" aria-hidden="true"><circle cx="26" cy="26" r="25" stroke="#38c2b4" stroke-opacity=".5"/><path d="M20 14h12l-2 6c5 2 7 7 7 12 0 6-5 8-11 8s-11-2-11-8c0-5 2-10 7-12z" fill="#38c2b4" opacity=".75"/><path d="M21 26c0 4 1 7 3 9" stroke="#fff" stroke-opacity=".6" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="num">03</span>
+          <h3>Handmade glass</h3>
+          <p>Pieces shaped by hand in a Decatur studio. Every one is a little different. Call to ask what's available or to talk through an idea.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section light" id="how">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">How it works</span>
+          <h2>From phone call to <em>first gather.</em></h2>
+        </div>
+        <p>No experience needed, no complicated booking. Three simple steps and you're at the furnace.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="n">1</div>
+          <h3>Give us a call</h3>
+          <p>Ring <a href="tel:+14048490301">(404) 849-0301</a> to ask about classes, sessions and current hours.</p>
+        </div>
+        <div class="step reveal">
+          <div class="n">2</div>
+          <h3>Pick your time</h3>
+          <p>Choose what fits: a class to learn the craft, or a hands-on visit with people you like.</p>
+        </div>
+        <div class="step reveal">
+          <div class="n">3</div>
+          <h3>Make something real</h3>
+          <p>Come to 250 Freeman Street, feel the heat of the furnace, and shape molten glass yourself.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="studio">
+    <div class="wrap story">
+      <div class="photo-stack reveal">
+        <figure class="duo a">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&h=900&q=70" alt="Stock photo with a warm studio-glow color treatment" loading="lazy">
+        </figure>
+        <figure class="duo b">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&h=800&q=70" alt="Stock photo of people gathered together, tinted cool blue" loading="lazy">
+        </figure>
+        <span class="stock-note">Stock photos for preview</span>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Why Decatur Glass Blowing</span>
+        <h2>A real studio, <em>right in your neighborhood.</em></h2>
+        <p>Glassblowing is one of those things most people only see in videos. Here, it's a short drive away. Decatur Glass Blowing is a hands-on glass studio in the heart of Decatur, where the craft happens in front of you and with you.</p>
+        <ul class="ticks">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m7.5 12.5 3 3 6-6.5"/></svg><span><strong>Hands on, not hands off.</strong> You don't just watch. You work the glass.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m7.5 12.5 3 3 6-6.5"/></svg><span><strong>Beginner friendly.</strong> Curiosity is the only thing you need to bring.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m7.5 12.5 3 3 6-6.5"/></svg><span><strong>Truly local.</strong> On Freeman Street in Decatur, easy to reach from across metro Atlanta.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m7.5 12.5 3 3 6-6.5"/></svg><span><strong>One of a kind.</strong> Handmade glass means no two pieces come out the same.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap reveal">
+      <blockquote>Looking for a gift, a date, or a day out that <em>nobody else will think of?</em></blockquote>
+      <a class="btn btn-hot" href="tel:+14048490301">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+        Call (404) 849-0301
+      </a>
+    </div>
+  </section>
+
+  <section class="section" id="visit">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Visit the studio</span>
+          <h2>Come see the <em>furnace glow.</em></h2>
+        </div>
+        <p>Hours can change with classes and studio work, so please call ahead before you stop by.</p>
+      </div>
+      <div class="visit-grid">
+        <div class="panel reveal">
+          <h3>Decatur Glass Blowing</h3>
+          <dl class="info">
+            <div>
+              <dt><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></dt>
+              <dd><small>Address</small><a href="https://www.google.com/maps/search/?api=1&amp;query=Decatur%20Glass%20Blowing%2C%20250%20Freeman%20Street%2C%20Decatur%2C%20GA%2C%2030030" target="_blank" rel="noopener">250 Freeman Street<br>Decatur, GA 30030</a></dd>
+            </div>
+            <div>
+              <dt><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></dt>
+              <dd><small>Phone</small><a href="tel:+14048490301">(404) 849-0301</a></dd>
+            </div>
+            <div>
+              <dt><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></dt>
+              <dd><small>Email</small><a href="mailto:natenardi@yahoo.com">natenardi@yahoo.com</a></dd>
+            </div>
+            <div>
+              <dt><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></dt>
+              <dd><small>Hours</small>Call for current hours.</dd>
+            </div>
+          </dl>
+          <div class="actions">
+            <a class="btn btn-hot" href="tel:+14048490301">Call now</a>
+            <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Decatur%20Glass%20Blowing%2C%20250%20Freeman%20Street%2C%20Decatur%2C%20GA%2C%2030030" target="_blank" rel="noopener">Get directions</a>
+          </div>
+        </div>
+
+        <div class="panel map-art reveal">
+          <svg class="map" viewBox="0 0 600 460" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="600" height="460" fill="#16110f"/>
+            <g stroke="#2c2320" stroke-width="14" fill="none" stroke-linecap="round">
+              <path d="M-20 120 L640 90"/>
+              <path d="M-20 300 L640 330"/>
+              <path d="M140 -20 L180 480"/>
+              <path d="M420 -20 L380 480"/>
+            </g>
+            <g stroke="#221b18" stroke-width="6" fill="none">
+              <path d="M-20 210 L640 215"/>
+              <path d="M280 -20 L290 480"/>
+              <path d="M520 -20 L560 480"/>
+              <path d="M40 -20 L60 480"/>
+            </g>
+            <circle cx="290" cy="212" r="90" fill="url(#mapglow)"/>
+            <defs>
+              <radialGradient id="mapglow"><stop offset="0" stop-color="#ff7a1f" stop-opacity=".5"/><stop offset="1" stop-color="#ff7a1f" stop-opacity="0"/></radialGradient>
+            </defs>
+            <circle cx="290" cy="212" r="16" fill="#ffa53a"/>
+            <circle cx="290" cy="212" r="7" fill="#fff6d8"/>
+          </svg>
+          <div class="map-card">
+            <b>250 Freeman Street</b>
+            <span>Decatur, GA 30030 · metro Atlanta</span><br>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Decatur%20Glass%20Blowing%2C%20250%20Freeman%20Street%2C%20Decatur%2C%20GA%2C%2030030" target="_blank" rel="noopener">Get directions →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <span class="brand-name">Decatur Glass Blowing<small>Glassblowing studio · Decatur, GA</small></span>
+        <p style="margin:14px 0 0">250 Freeman Street, Decatur, GA 30030<br><a href="tel:+14048490301">(404) 849-0301</a> · Call for current hours.</p>
+      </div>
+      <nav class="foot-links" aria-label="Footer">
+        <a href="#offer">Classes &amp; glass</a>
+        <a href="#how">How it works</a>
+        <a href="#studio">The studio</a>
+        <a href="#visit">Visit</a>
+      </nav>
+    </div>
+    <p class="disclaimer">
+      <a href="https://builtbycray.com" target="_blank" rel="noopener">Preview by Built By Cray</a>.
+      This is a free preview concept and is not the official website of Decatur Glass Blowing. Name, phone and address come from public listings. Stock photos from Unsplash.
+    </p>
+  </div>
+</footer>
+
+<a class="btn btn-hot float-call" href="tel:+14048490301" aria-label="Call Decatur Glass Blowing at (404) 849-0301">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+  Call (404) 849-0301
+</a>
+
+<script>
+  (function(){
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      els.forEach(function(el){ el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(function(el){ io.observe(el); });
+  })();
+</script>
+</body>
+</html>

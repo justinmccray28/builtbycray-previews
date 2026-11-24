@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Feather Nail Bar | Preview concept by Built By Cray</title>
+<meta name="description" content="Feather Nail Bar is a nail salon at 120 North Avondale Road in Avondale Estates, GA. Manicures, pedicures, gel and nail art. Call (404) 297-7000.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#fbf6f1;
+    --shell:#f4e8e1;
+    --blush:#e9cfc6;
+    --rose:#c98b80;
+    --rose-deep:#a4645b;
+    --plum:#3b2530;
+    --plum-soft:#5a3f4a;
+    --gold:#b8955f;
+    --ink:#2a1c22;
+    --muted:#6f5b62;
+    --radius:22px;
+    --serif:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+    --sans:"Jost", "Helvetica Neue", Arial, sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{overflow-x:clip}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--sans);font-weight:400;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  :focus-visible{outline:2px solid var(--rose-deep);outline-offset:3px;border-radius:6px}
+  .wrap{width:min(1180px, 100% - 48px);margin-inline:auto}
+  .skip{position:absolute;left:-9999px;top:0;background:var(--plum);color:#fff;padding:10px 16px;z-index:100}
+  .skip:focus{left:12px;top:12px}
+
+  /* Preview bar */
+  .preview-bar{background:var(--plum);color:#f3e6e2;font-size:13.5px;letter-spacing:.01em}
+  .preview-bar .wrap{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;padding:9px 0;text-align:center}
+  .preview-bar .deal{color:#e8c99a}
+  .preview-bar a{background:var(--blush);color:var(--plum);text-decoration:none;font-weight:500;padding:5px 14px;border-radius:999px;font-size:12.5px;white-space:nowrap;transition:background .2s}
+  .preview-bar a:hover{background:#fff}
+
+  /* Header */
+  header.site{position:sticky;top:0;z-index:50;background:rgba(251,246,241,.88);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid rgba(59,37,48,.08)}
+  header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
+  .logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--plum)}
+  .logo svg{width:30px;height:30px;flex:none}
+  .logo span{font-family:var(--serif);font-size:26px;font-weight:500;letter-spacing:.01em;line-height:1}
+  .logo em{font-style:italic;color:var(--rose-deep)}
+  nav.main{display:flex;gap:30px}
+  nav.main a{text-decoration:none;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--plum-soft);position:relative;padding:4px 0}
+  nav.main a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:var(--rose);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+  nav.main a:hover::after{transform:scaleX(1)}
+  .btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--sans);font-weight:500;text-decoration:none;border-radius:999px;transition:transform .2s, background .2s, box-shadow .2s;cursor:pointer}
+  .btn svg{width:18px;height:18px;flex:none}
+  .btn-call{background:var(--plum);color:#fff;padding:11px 20px;font-size:15px}
+  .btn-call:hover{background:var(--rose-deep)}
+  .header-call .short-label{display:none}
+  .header-call{white-space:nowrap;flex:none}
+  .btn-lg{padding:18px 32px;font-size:18px;box-shadow:0 14px 30px -12px rgba(59,37,48,.55)}
+  .btn-lg:hover{transform:translateY(-2px)}
+  .btn-ghost{color:var(--plum);padding:16px 8px;font-size:16px;border-bottom:1px solid var(--rose);border-radius:0}
+  .btn-ghost:hover{color:var(--rose-deep)}
+
+  /* Hero */
+  .hero{position:relative;padding:72px 0 96px;overflow:hidden}
+  .hero::before{content:"";position:absolute;width:720px;height:720px;right:-220px;top:-260px;background:radial-gradient(circle, var(--blush) 0%, rgba(233,207,198,0) 65%);z-index:0}
+  .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+  .eyebrow{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--rose-deep);font-weight:500;display:flex;align-items:center;gap:12px;margin:0 0 22px}
+  .eyebrow::before{content:"";width:34px;height:1px;background:var(--rose)}
+  h1,h2,h3{font-family:var(--serif);font-weight:500;color:var(--plum);margin:0}
+  .hero h1{font-size:clamp(46px, 6.4vw, 88px);line-height:.98;letter-spacing:-.01em}
+  .hero h1 em{color:var(--rose-deep);font-weight:400}
+  .hero .name{font-family:var(--serif);font-style:italic;font-size:24px;color:var(--plum-soft);margin:0 0 10px}
+  .hero p.lead{font-size:19px;color:var(--muted);max-width:30em;margin:26px 0 36px;font-weight:300}
+  .hero .ctas{display:flex;align-items:center;gap:26px;flex-wrap:wrap}
+  .hero .meta{margin-top:40px;display:flex;gap:28px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+  .hero .meta span{display:flex;align-items:center;gap:8px}
+  .hero .meta svg{width:16px;height:16px;color:var(--rose-deep)}
+  .hero-art{position:relative;aspect-ratio:4/5;max-width:500px;justify-self:end;width:100%}
+  .hero-art .arch{position:absolute;inset:0;border-radius:260px 260px 26px 26px;overflow:hidden;box-shadow:0 40px 70px -30px rgba(59,37,48,.45)}
+  .hero-art .arch img{width:100%;height:100%;object-fit:cover}
+  .hero-art .frame{position:absolute;inset:-16px 16px 16px -16px;border:1px solid var(--gold);border-radius:260px 260px 26px 26px;z-index:-1}
+  .hero-art .badge{position:absolute;left:-36px;bottom:48px;background:var(--ivory);padding:18px 22px;border-radius:18px;box-shadow:0 18px 40px -18px rgba(59,37,48,.4);display:flex;gap:14px;align-items:center;max-width:250px}
+  .hero-art .badge svg{width:36px;height:36px;flex:none}
+  .hero-art .badge strong{display:block;font-family:var(--serif);font-size:20px;color:var(--plum);font-weight:600;line-height:1.1}
+  .hero-art .badge small{font-size:13px;color:var(--muted)}
+  .float-feather{position:absolute;right:-26px;top:30px;width:90px;color:var(--gold);opacity:.8;animation:drift 7s ease-in-out infinite}
+  @keyframes drift{0%,100%{transform:translateY(0) rotate(-12deg)}50%{transform:translateY(-14px) rotate(-4deg)}}
+
+  /* Marquee strip */
+  .strip{background:var(--plum);color:#f1e2dc;padding:20px 0;overflow:hidden}
+  .strip .track{display:flex;gap:48px;white-space:nowrap;width:max-content;animation:slide 38s linear infinite;font-family:var(--serif);font-style:italic;font-size:26px}
+  .strip .track span{display:flex;align-items:center;gap:48px}
+  .strip .track span::after{content:"\2726";font-style:normal;font-size:14px;color:var(--gold)}
+  @keyframes slide{to{transform:translateX(-50%)}}
+
+  section{padding:110px 0}
+  .section-head{max-width:640px;margin-bottom:56px}
+  .section-head h2{font-size:clamp(38px, 4.6vw, 58px);line-height:1.04}
+  .section-head h2 em{color:var(--rose-deep);font-weight:400}
+  .section-head p{color:var(--muted);font-size:18px;font-weight:300;margin:18px 0 0}
+
+  /* Services */
+  .services{background:var(--ivory)}
+  .menu{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .card{background:#fff;border-radius:var(--radius);padding:34px 30px 32px;border:1px solid rgba(59,37,48,.07);position:relative;transition:transform .35s, box-shadow .35s}
+  .card:hover{transform:translateY(-4px);box-shadow:0 26px 50px -30px rgba(59,37,48,.4)}
+  .card .icon{width:54px;height:54px;border-radius:50%;background:var(--shell);display:grid;place-items:center;margin-bottom:22px;color:var(--rose-deep)}
+  .card .icon svg{width:26px;height:26px}
+  .card h3{font-size:28px;line-height:1.1;margin-bottom:10px}
+  .card p{margin:0;color:var(--muted);font-size:16px}
+  .card .num{position:absolute;top:26px;right:28px;font-family:var(--serif);font-style:italic;color:var(--blush);font-size:30px}
+  .menu-note{margin-top:30px;font-size:15px;color:var(--muted);text-align:center}
+  .menu-note a{color:var(--rose-deep);font-weight:500}
+
+  /* Feature split */
+  .split{background:var(--shell)}
+  .split .wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+  .photo-stack{position:relative;min-height:560px}
+  .photo-stack figure{margin:0;position:absolute;border-radius:var(--radius);overflow:hidden;box-shadow:0 30px 60px -30px rgba(59,37,48,.5)}
+  .photo-stack figure img{width:100%;height:100%;object-fit:cover}
+  .photo-stack .p1{left:0;top:0;width:72%;height:78%}
+  .photo-stack .p2{right:0;bottom:0;width:52%;height:52%;border:8px solid var(--shell)}
+  .reasons{list-style:none;padding:0;margin:34px 0 0;display:grid;gap:26px}
+  .reasons li{display:grid;grid-template-columns:44px 1fr;gap:18px;align-items:start}
+  .reasons .dot{width:44px;height:44px;border-radius:50%;border:1px solid var(--rose);display:grid;place-items:center;color:var(--rose-deep)}
+  .reasons .dot svg{width:20px;height:20px}
+  .reasons h3{font-size:24px;margin-bottom:4px}
+  .reasons p{margin:0;color:var(--muted);font-size:16px}
+
+  /* Steps */
+  .steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid rgba(59,37,48,.12)}
+  .step{padding:40px 36px 10px 0}
+  .step + .step{padding-left:36px;border-left:1px solid rgba(59,37,48,.12)}
+  .step .n{font-family:var(--serif);font-size:64px;line-height:1;color:var(--rose);font-style:italic}
+  .step h3{font-size:28px;margin:14px 0 8px}
+  .step p{margin:0;color:var(--muted)}
+
+  /* Visit */
+  .visit{background:var(--plum);color:#f3e6e2;position:relative;overflow:hidden}
+  .visit::after{content:"";position:absolute;width:600px;height:600px;left:-200px;bottom:-300px;background:radial-gradient(circle, rgba(201,139,128,.35), transparent 65%)}
+  .visit .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+  .visit h2{color:#fff}
+  .visit h2 em{color:var(--blush)}
+  .visit .section-head p{color:#d9c4c3}
+  .visit .eyebrow{color:var(--blush)}
+  .visit .eyebrow::before{background:var(--blush)}
+  .info{display:grid;gap:22px;margin:0}
+  .info div{display:grid;grid-template-columns:120px 1fr;gap:16px;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.12)}
+  .info dt{font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);padding-top:4px}
+  .info dd{margin:0;font-size:18px}
+  .info a{color:#fff;text-decoration-color:rgba(255,255,255,.35);text-underline-offset:4px}
+  .info a:hover{text-decoration-color:var(--blush)}
+  .visit .ctas{display:flex;gap:16px;flex-wrap:wrap;margin-top:34px}
+  .btn-light{background:var(--blush);color:var(--plum);padding:16px 28px;font-size:17px}
+  .btn-light:hover{background:#fff}
+  .btn-outline{border:1px solid rgba(255,255,255,.4);color:#fff;padding:15px 26px;font-size:17px}
+  .btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.06)}
+  .visit-card{background:var(--ivory);border-radius:30px;padding:16px;color:var(--ink);transform:rotate(1.5deg)}
+  .visit-card img{border-radius:20px;width:100%;aspect-ratio:4/3;object-fit:cover}
+  .visit-card .cap{padding:18px 10px 8px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+  .visit-card .cap strong{font-family:var(--serif);font-size:24px;color:var(--plum);font-weight:500}
+  .visit-card .cap small{color:var(--muted);font-size:14px}
+
+  /* Footer */
+  footer{background:#2a1a21;color:#cbb7b6;padding:54px 0 110px;font-size:14px}
+  footer .top{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.08)}
+  footer .logo{color:#fff}
+  footer .logo em{color:var(--blush)}
+  footer .bottom{padding-top:24px;display:grid;gap:8px}
+  footer a{color:var(--blush)}
+  .stock{font-size:12.5px;color:#9e8a8c}
+
+  /* Mobile call */
+  .mobile-call{display:none}
+
+  /* Reveal */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease, transform .9s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (max-width: 980px){
+    .hero .wrap, .split .wrap, .visit .wrap{grid-template-columns:1fr;gap:56px}
+    .hero-art{justify-self:center;max-width:440px}
+    .menu{grid-template-columns:1fr 1fr}
+    .photo-stack{min-height:460px}
+  }
+  @media (max-width: 760px){
+    nav.main{display:none}
+    body{font-size:16px}
+    section{padding:76px 0}
+    .wrap{width:calc(100% - 40px)}
+    header.site .wrap{height:64px}
+    .logo span{font-size:22px}
+    .logo svg{width:26px;height:26px}
+    .header-call .label-long{display:none}
+    .header-call .short-label{display:inline}
+    header.site .logo span{white-space:nowrap}
+    .btn-call{padding:10px 16px;font-size:14px}
+    .hero{padding:44px 0 70px}
+    .hero p.lead{font-size:17px}
+    .btn-lg{width:100%;justify-content:center;padding:17px 22px}
+    .hero .ctas{gap:10px}
+    .hero-art{max-width:340px;margin-right:12px}
+    .hero-art .badge{left:-8px;bottom:22px;padding:14px 16px}
+    .float-feather{right:-14px;width:64px}
+    .menu{grid-template-columns:1fr}
+    .steps-grid{grid-template-columns:1fr}
+    .step{padding:30px 0 26px}
+    .step + .step{padding-left:0;border-left:0;border-top:1px solid rgba(59,37,48,.12)}
+    .photo-stack{min-height:380px}
+    .info div{grid-template-columns:1fr;gap:4px}
+    .visit-card{transform:none}
+    .strip .track{font-size:21px}
+    .mobile-call{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:60;justify-content:center;background:var(--plum);color:#fff;padding:16px;border-radius:999px;box-shadow:0 18px 40px -12px rgba(42,28,34,.6);font-size:17px}
+  }
+  @media (max-width: 400px){
+    .preview-bar{font-size:12.5px}
+  }
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+    .reveal{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="preview-bar" role="note">
+  <div class="wrap">
+    <span>Free preview concept by Built By Cray. Not the official website of Feather Nail Bar. <span class="deal">$650 Black Friday price through Nov 30.</span></span>
+    <a href="https://calendar.app.google/K7QqcbLckjKjjZs19" target="_blank" rel="noopener">Claim this website</a>
+  </div>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="feather" viewBox="0 0 64 64">
+      <path d="M52 6C36 8 20 20 16 40l-6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M52 6c-2 16-12 30-34 36 2-18 14-32 34-36z" fill="currentColor" opacity=".18"/>
+      <path d="M52 6c-2 16-12 30-34 36M30 22l-6-2M36 18l-4-6M26 30l-8 0M40 22l2 6M34 30l4 6M28 36l2 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="phone" viewBox="0 0 24 24">
+      <path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/>
+    </symbol>
+    <symbol id="pin" viewBox="0 0 24 24">
+      <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Feather Nail Bar, back to top">
+      <svg aria-hidden="true" style="color:#a4645b"><use href="#feather"/></svg>
+      <span>Feather <em>Nail Bar</em></span>
+    </a>
+    <nav class="main" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#why">Why Feather</a>
+      <a href="#how">How it works</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn btn-call header-call" href="tel:+14042977000">
+      <svg aria-hidden="true"><use href="#phone"/></svg>
+      <span class="label-long">Call (404) 297-7000</span>
+      <span class="short-label">Call</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="eyebrow">Nail salon &middot; Avondale Estates, GA</p>
+        <p class="name">Feather Nail Bar</p>
+        <h1 id="hero-title">Light as a feather. <em>Polished</em> to the tips.</h1>
+        <p class="lead">A calm little nail bar on North Avondale Road for clean manicures, soothing pedicures and color that lasts. Slow down, sit back and leave feeling put together.</p>
+        <div class="ctas">
+          <a class="btn btn-call btn-lg" href="tel:+14042977000">
+            <svg aria-hidden="true"><use href="#phone"/></svg>
+            Call (404) 297-7000
+          </a>
+          <a class="btn btn-ghost" href="#services">See services &rarr;</a>
+        </div>
+        <div class="meta">
+          <span><svg aria-hidden="true"><use href="#pin"/></svg>120 North Avondale Road</span>
+          <span><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Call for current hours</span>
+        </div>
+      </div>
+      <div class="hero-art reveal">
+        <div class="frame" aria-hidden="true"></div>
+        <div class="arch">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&h=1250&q=70" alt="Bright, modern salon interior with styling chairs (stock photo)" width="1000" height="1250" fetchpriority="high">
+        </div>
+        <svg class="float-feather" aria-hidden="true"><use href="#feather"/></svg>
+        <div class="badge">
+          <svg aria-hidden="true" style="color:#a4645b"><use href="#feather"/></svg>
+          <div><strong>Your hour off</strong><small>Neat nails, zero rush</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip" aria-hidden="true">
+    <div class="track">
+      <span>Manicures</span><span>Pedicures</span><span>Gel color</span><span>Nail art</span><span>Extensions</span><span>Avondale Estates</span>
+      <span>Manicures</span><span>Pedicures</span><span>Gel color</span><span>Nail art</span><span>Extensions</span><span>Avondale Estates</span>
+    </div>
+  </div>
+
+  <section class="services" id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">The menu</p>
+        <h2 id="services-title">Everything your hands <em>&amp; feet</em> have been asking for.</h2>
+        <p>From a quick tidy-up to a full set with details, here is a look at the kinds of services a nail bar like ours is made for.</p>
+      </div>
+      <div class="menu">
+        <article class="card reveal">
+          <span class="num" aria-hidden="true">01</span>
+          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21V10a3 3 0 0 1 6 0v11" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9.5 9.5c0-2 1-4.5 2.5-6.5 1.5 2 2.5 4.5 2.5 6.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></div>
+          <h3>Manicures</h3>
+          <p>Shaping, cuticle care and a smooth, even coat of polish. Classic, clean and always in style.</p>
+        </article>
+        <article class="card reveal">
+          <span class="num" aria-hidden="true">02</span>
+          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14c3 0 5-2 8-2s5 2 8 2M4 18c3 0 5-2 8-2s5 2 8 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M12 3c2 2.5 3 4.2 3 5.5a3 3 0 0 1-6 0C9 7.2 10 5.5 12 3z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></div>
+          <h3>Pedicures</h3>
+          <p>A warm soak, gentle exfoliation and a careful finish. Sandal-ready feet, any season.</p>
+        </article>
+        <article class="card reveal">
+          <span class="num" aria-hidden="true">03</span>
+          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <h3>Gel color</h3>
+          <p>Glossy, chip-resistant color cured to a high shine, for when you want polish that keeps up with you.</p>
+        </article>
+        <article class="card reveal">
+          <span class="num" aria-hidden="true">04</span>
+          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21V9c0-3 1.8-6 4-6s4 3 4 6v12z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 13h8" stroke="currentColor" stroke-width="1.6"/></svg></div>
+          <h3>Extensions</h3>
+          <p>Added length and shape, from soft and natural to bold and sculpted. Ask what works best for you.</p>
+        </article>
+        <article class="card reveal">
+          <span class="num" aria-hidden="true">05</span>
+          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.2 5.6L20 9l-4.5 3.8L17 19l-5-3.2L7 19l1.5-6.2L4 9l5.8-.4z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+          <h3>Nail art</h3>
+          <p>French tips, minimal lines, chrome, little accents. Bring an idea or a photo and make it yours.</p>
+        </article>
+        <article class="card reveal">
+          <span class="num" aria-hidden="true">06</span>
+          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+          <h3>Treat yourself</h3>
+          <p>Pair a mani with a pedi, bring a friend, or make it part of a celebration. Call to talk it through.</p>
+        </article>
+      </div>
+      <p class="menu-note">Service availability and pricing vary. <a href="tel:+14042977000">Call (404) 297-7000</a> for the current menu.</p>
+    </div>
+  </section>
+
+  <section class="split" id="why" aria-labelledby="why-title">
+    <div class="wrap">
+      <div class="photo-stack reveal">
+        <figure class="p1"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&h=1000&q=70" alt="Warmly lit salon workspace (stock photo)" loading="lazy" width="900" height="1000"></figure>
+        <figure class="p2"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&h=700&q=70" alt="Beauty professional caring for a client (stock photo)" loading="lazy" width="700" height="700"></figure>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">Why Feather</p>
+        <h2 id="why-title" style="font-size:clamp(38px,4.6vw,58px);line-height:1.04">A lighter way to <em style="color:#a4645b;font-weight:400">look after yourself.</em></h2>
+        <ul class="reasons">
+          <li>
+            <span class="dot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4 4 10-10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div><h3>Care in the details</h3><p>Neat cuticles, even shapes and clean lines. The small things are the whole point.</p></div>
+          </li>
+          <li>
+            <span class="dot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+            <div><h3>An easy, calm visit</h3><p>A relaxed space where you can unplug for a bit and actually enjoy the appointment.</p></div>
+          </li>
+          <li>
+            <span class="dot"><svg aria-hidden="true"><use href="#pin"/></svg></span>
+            <div><h3>Right in the neighborhood</h3><p>On North Avondale Road in Avondale Estates, close to Decatur and the rest of east metro Atlanta.</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">How it works</p>
+        <h2 id="how-title">Three steps to <em>fresh nails.</em></h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step reveal">
+          <div class="n">i.</div>
+          <h3>Give us a call</h3>
+          <p>Ring <a href="tel:+14042977000">(404) 297-7000</a> to check availability and current hours.</p>
+        </div>
+        <div class="step reveal">
+          <div class="n">ii.</div>
+          <h3>Pick your look</h3>
+          <p>Tell us what you have in mind, from a natural tidy-up to something with a little sparkle.</p>
+        </div>
+        <div class="step reveal">
+          <div class="n">iii.</div>
+          <h3>Sit back &amp; relax</h3>
+          <p>Settle in, let us take care of the rest, and head out feeling polished.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+      <div class="reveal">
+        <div class="section-head" style="margin-bottom:38px">
+          <p class="eyebrow">Visit us</p>
+          <h2 id="visit-title">Come see us in <em>Avondale Estates.</em></h2>
+          <p>Easy to find on North Avondale Road. Call ahead and we will get you on the books.</p>
+        </div>
+        <dl class="info">
+          <div><dt>Address</dt><dd>120 North Avondale Road<br>Avondale Estates, GA 30002</dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+14042977000">(404) 297-7000</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:feathernailbar@gmail.com">feathernailbar@gmail.com</a></dd></div>
+          <div><dt>Hours</dt><dd>Call for current hours.</dd></div>
+        </dl>
+        <div class="ctas">
+          <a class="btn btn-light" href="tel:+14042977000"><svg aria-hidden="true"><use href="#phone"/></svg>Call (404) 297-7000</a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=Feather%20Nail%20Bar%2C%20120%20North%20Avondale%20Road%2C%20Avondale%20Estates%2C%20GA%2C%2030002" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#pin"/></svg>Get directions</a>
+        </div>
+      </div>
+      <div class="visit-card reveal">
+        <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&h=675&q=70" alt="Inviting salon interior (stock photo)" loading="lazy" width="900" height="675">
+        <div class="cap">
+          <strong>Feather Nail Bar</strong>
+          <small>Avondale Estates, GA</small>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <a class="logo" href="#top"><svg aria-hidden="true" style="color:#e9cfc6"><use href="#feather"/></svg><span>Feather <em>Nail Bar</em></span></a>
+      <div>120 North Avondale Road, Avondale Estates, GA 30002 &middot; <a href="tel:+14042977000">(404) 297-7000</a></div>
+    </div>
+    <div class="bottom">
+      <div><a href="https://builtbycray.com" target="_blank" rel="noopener">Preview by Built By Cray</a></div>
+      <div>This is a free preview concept and is not the official website of Feather Nail Bar. Name, phone and address come from public listings. Stock photos from Unsplash.</div>
+      <div class="stock">Stock photos for preview. Images do not show the actual salon.</div>
+    </div>
+  </div>
+</footer>
+
+<a class="btn mobile-call" href="tel:+14042977000"><svg aria-hidden="true"><use href="#phone"/></svg>Call (404) 297-7000</a>
+
+<script>
+  (function(){
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      els.forEach(function(e){ e.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(e){ io.observe(e); });
+  })();
+</script>
+</body>
+</html>

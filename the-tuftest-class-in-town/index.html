@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>The Tuftest Class in Town | Preview concept by Built By Cray</title>
+<meta name="description" content="The Tuftest Class in Town is a hands-on rug tufting studio and DIY workshop on North Highland Avenue in Atlanta, GA. Call (404) 549-7010.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#fbf3e6;
+    --paper:#f4e6cf;
+    --ink:#2a1a2e;
+    --plum:#4a2545;
+    --terracotta:#d2552f;
+    --terracotta-dark:#a83d1e;
+    --mustard:#e9a92c;
+    --sage:#7d9a78;
+    --pink:#f2a6a0;
+    --muted:#6b5463;
+    --radius:22px;
+    --shadow:0 20px 50px -20px rgba(42,26,46,.35);
+    --display:"Fraunces", Georgia, serif;
+    --body:"Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{overflow-x:clip}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0;font-weight:800;letter-spacing:-.02em}
+  p{margin:0}
+  .wrap{width:min(1180px,100% - 2.5rem);margin-inline:auto}
+  :focus-visible{outline:3px solid var(--mustard);outline-offset:3px;border-radius:6px}
+  .skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:.6rem 1rem;z-index:100}
+  .skip:focus{left:1rem;top:1rem}
+
+  /* Preview bar */
+  .preview-bar{background:var(--ink);color:#f6e9d6;font-size:.85rem;line-height:1.4}
+  .preview-bar .wrap{display:flex;align-items:center;justify-content:center;gap:.5rem 1rem;flex-wrap:wrap;padding:.55rem 0;text-align:center}
+  .preview-bar strong{color:var(--mustard);font-weight:600}
+  .preview-bar a{display:inline-block;background:var(--mustard);color:var(--ink);text-decoration:none;font-weight:700;padding:.3rem .8rem;border-radius:999px;font-size:.8rem;white-space:nowrap}
+  .preview-bar a:hover{background:#fff}
+
+  /* Header */
+  .site-header{position:sticky;top:0;z-index:50;background:rgba(251,243,230,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(74,37,69,.12)}
+  .site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 0}
+  .logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;min-width:0}
+  .logo svg{flex:none}
+  .logo span{font-family:var(--display);font-weight:800;font-size:1.2rem;line-height:1.05;letter-spacing:-.01em}
+  .logo em{font-style:italic;font-weight:600;color:var(--terracotta)}
+  .nav{display:flex;align-items:center;gap:1.8rem}
+  .nav a{text-decoration:none;font-weight:500;font-size:.95rem;position:relative}
+  .nav a::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;background:var(--terracotta);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+  .nav a:hover::after{transform:scaleX(1)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:var(--body);font-weight:700;text-decoration:none;border-radius:999px;padding:.95rem 1.6rem;transition:transform .2s, background .2s, box-shadow .2s;white-space:nowrap}
+  .btn svg{flex:none}
+  .btn-call{background:var(--terracotta);color:#fff;box-shadow:0 10px 24px -10px rgba(210,85,47,.8)}
+  .btn-call:hover{background:var(--terracotta-dark);transform:translateY(-2px)}
+  .btn-ghost{border:2px solid var(--ink);color:var(--ink)}
+  .btn-ghost:hover{background:var(--ink);color:var(--cream)}
+  .btn-sm{padding:.6rem 1.1rem;font-size:.92rem}
+
+  /* Hero */
+  .hero{position:relative;padding:4.5rem 0 5.5rem;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:3.5rem;align-items:center}
+  .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--plum);background:var(--paper);border:1px dashed rgba(74,37,69,.35);padding:.45rem .9rem;border-radius:999px}
+  .eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--terracotta);display:inline-block}
+  .hero h1{font-size:clamp(2.7rem,6.4vw,5.4rem);margin:1.3rem 0 1.2rem;color:var(--plum)}
+  .hero h1 em{font-style:italic;font-weight:600;color:var(--terracotta);position:relative;white-space:nowrap}
+  .hero h1 em svg{position:absolute;left:0;bottom:-.18em;width:100%;height:.35em}
+  .hero .lede{font-size:1.2rem;color:var(--muted);max-width:33rem}
+  .hero .biz{font-family:var(--display);font-style:italic;font-size:1.15rem;color:var(--plum);margin-bottom:.2rem}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
+  .hero-ctas .btn-call{font-size:1.15rem;padding:1.1rem 1.9rem}
+  .hero-meta{margin-top:1.8rem;display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;font-size:.95rem;color:var(--muted)}
+  .hero-meta span{display:inline-flex;align-items:center;gap:.4rem}
+
+  .hero-art{position:relative;aspect-ratio:4/5;max-width:470px;justify-self:end;width:100%}
+  .rug{position:absolute;inset:0;border-radius:46% 54% 48% 52% / 52% 44% 56% 48%;overflow:hidden;box-shadow:var(--shadow);background:var(--paper)}
+  .rug img{width:100%;height:100%;object-fit:cover;filter:saturate(.85) sepia(.15)}
+  .rug::after{content:"";position:absolute;inset:0;background:linear-gradient(160deg,rgba(233,169,44,.15),rgba(74,37,69,.35));mix-blend-mode:multiply}
+  .rug-ring{position:absolute;inset:-14px;border-radius:46% 54% 48% 52% / 52% 44% 56% 48%;border:3px dashed var(--terracotta);opacity:.55;animation:spin 60s linear infinite}
+  .yarn-ball{position:absolute;left:-40px;bottom:30px;width:130px;height:130px;filter:drop-shadow(0 14px 18px rgba(42,26,46,.3));animation:bob 6s ease-in-out infinite}
+  .sticker{position:absolute;right:-12px;top:22px;width:128px;height:128px;animation:spin 30s linear infinite}
+  .hero-squiggle{position:absolute;right:-60px;bottom:-30px;width:340px;opacity:.5;z-index:-1}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @keyframes bob{50%{transform:translateY(-10px) rotate(-4deg)}}
+
+  /* Stitch divider */
+  .stitch{height:28px;background:
+    repeating-linear-gradient(90deg,var(--terracotta) 0 14px,transparent 14px 22px) center/100% 3px no-repeat;
+  }
+  .yarn-strip{background:var(--plum);color:var(--cream);padding:1.1rem 0;overflow:hidden;white-space:nowrap}
+  .marquee{display:inline-flex;gap:2.5rem;animation:marq 38s linear infinite;font-family:var(--display);font-size:1.35rem;font-style:italic}
+  .marquee span{display:inline-flex;align-items:center;gap:2.5rem}
+  .marquee b{color:var(--mustard);font-style:normal}
+  @keyframes marq{to{transform:translateX(-50%)}}
+
+  /* Sections */
+  section{scroll-margin-top:90px}
+  .section{padding:6rem 0}
+  .section-head{max-width:640px;margin-bottom:3rem}
+  .kicker{font-size:.8rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--terracotta);margin-bottom:.9rem;display:block}
+  .section-head h2{font-size:clamp(2.1rem,4.4vw,3.4rem);color:var(--plum)}
+  .section-head.flush{margin-bottom:0}
+  .section-head p{margin-top:1rem;color:var(--muted);font-size:1.12rem}
+
+  /* Offerings */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+  .card{position:relative;background:#fff;border-radius:var(--radius);padding:2rem 1.8rem 2.2rem;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--ink);transition:transform .25s, box-shadow .25s}
+  .card:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--ink)}
+  .card .ico{width:64px;height:64px;border-radius:18px;display:grid;place-items:center;margin-bottom:1.3rem}
+  .card:nth-child(1) .ico{background:var(--pink)}
+  .card:nth-child(2) .ico{background:var(--mustard)}
+  .card:nth-child(3) .ico{background:#b8cdb3}
+  .card h3{font-size:1.55rem;color:var(--plum);margin-bottom:.6rem}
+  .card p{color:var(--muted)}
+  .card .tag{display:inline-block;margin-top:1.2rem;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--terracotta)}
+
+  /* How it works */
+  .how{background:var(--plum);color:var(--cream);position:relative;overflow:hidden}
+  .how .section-head h2{color:var(--cream)}
+  .how .section-head p{color:#dcc8d6}
+  .how .kicker{color:var(--mustard)}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;counter-reset:step;position:relative}
+  .step{position:relative;padding:1.8rem 1.5rem;border-radius:var(--radius);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14)}
+  .step::before{counter-increment:step;content:counter(step,decimal-leading-zero);font-family:var(--display);font-style:italic;font-weight:600;font-size:3rem;line-height:1;color:var(--mustard);display:block;margin-bottom:1rem}
+  .step h3{font-size:1.35rem;margin-bottom:.5rem}
+  .step p{color:#e3d3df;font-size:.98rem}
+  .how-blob{position:absolute;right:-120px;top:-120px;width:420px;opacity:.18}
+
+  /* Feature split */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+  .photo-stack{position:relative;min-height:520px}
+  .photo{position:absolute;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:8px solid #fff}
+  .photo img{width:100%;height:100%;object-fit:cover;filter:saturate(.85) sepia(.12)}
+  .photo-a{left:0;top:0;width:72%;height:68%;transform:rotate(-3deg)}
+  .photo-b{right:0;bottom:0;width:62%;height:56%;transform:rotate(4deg)}
+  .photo-swatch{position:absolute;left:8%;bottom:4%;width:120px;height:120px}
+  .why-list{list-style:none;padding:0;margin:2rem 0 0;display:grid;gap:1.3rem}
+  .why-list li{display:grid;grid-template-columns:48px 1fr;gap:1rem;align-items:start}
+  .why-list .dot{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--paper);border:2px dashed var(--terracotta)}
+  .why-list h3{font-family:var(--body);font-size:1.1rem;font-weight:700;letter-spacing:0;color:var(--ink);margin-bottom:.15rem}
+  .why-list p{color:var(--muted)}
+  .caption{font-size:.78rem;color:var(--muted);margin-top:.8rem;font-style:italic}
+
+  /* Groups band */
+  .band{background:var(--mustard);position:relative;overflow:hidden}
+  .band .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:2.5rem;align-items:center;padding:4.5rem 0}
+  .band h2{font-size:clamp(2rem,4vw,3.1rem);color:var(--ink)}
+  .band p{margin-top:1rem;font-size:1.12rem;color:#3d2a2f;max-width:36rem}
+  .band ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.6rem}
+  .band li{background:var(--cream);border:2px solid var(--ink);border-radius:999px;padding:.5rem 1rem;font-weight:600;font-size:.95rem}
+
+  /* Visit */
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem}
+  .visit-card{background:#fff;border-radius:var(--radius);padding:2.4rem;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--ink)}
+  .visit-card h3{font-size:1.9rem;color:var(--plum);margin-bottom:1.4rem}
+  .info{list-style:none;padding:0;margin:0 0 1.8rem;display:grid;gap:1.1rem}
+  .info li{display:grid;grid-template-columns:28px 1fr;gap:.8rem}
+  .info small{display:block;font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--terracotta)}
+  .info a{font-weight:600;text-decoration-color:rgba(210,85,47,.4);text-underline-offset:3px}
+  .info a:hover{color:var(--terracotta)}
+  .visit-actions{display:flex;flex-wrap:wrap;gap:.8rem}
+  .map-art{position:relative;border-radius:var(--radius);overflow:hidden;border:2px solid var(--ink);min-height:380px;background:var(--paper);display:block;text-decoration:none}
+  .map-art svg{position:absolute;inset:0;width:100%;height:100%}
+  .map-label{position:absolute;left:1.2rem;bottom:1.2rem;right:1.2rem;background:var(--cream);border:2px solid var(--ink);border-radius:16px;padding:1rem 1.2rem;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+  .map-label strong{font-family:var(--display);font-size:1.15rem;color:var(--plum)}
+  .map-label span{font-size:.9rem;color:var(--muted)}
+  .map-label b{color:var(--terracotta);font-weight:700;white-space:nowrap}
+  .map-art:hover .map-label{background:#fff}
+
+  /* CTA */
+  .final{padding:6rem 0;text-align:center;position:relative;overflow:hidden}
+  .final h2{font-size:clamp(2.4rem,5.5vw,4.4rem);color:var(--plum);max-width:15ch;margin:0 auto}
+  .final h2 em{color:var(--terracotta);font-weight:600}
+  .final p{margin:1.2rem auto 2rem;color:var(--muted);font-size:1.15rem;max-width:34rem}
+  .final .btn-call{font-size:1.2rem;padding:1.15rem 2rem}
+
+  /* Footer */
+  footer{background:var(--ink);color:#d9c8d2;padding:3.5rem 0 6rem;font-size:.92rem}
+  .foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.12)}
+  .foot-top .logo span{color:var(--cream)}
+  .foot-top address{font-style:normal;line-height:1.8}
+  .foot-top a{color:var(--cream)}
+  .disclaimer{padding-top:1.6rem;display:grid;gap:.6rem;color:#b6a2b0;font-size:.85rem}
+  .disclaimer a{color:var(--mustard);font-weight:600}
+
+  /* Floating mobile call */
+  .float-call{display:none;position:fixed;left:1rem;right:1rem;bottom:1rem;z-index:60;font-size:1.1rem;padding:1rem}
+
+  /* Reveal */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (max-width:980px){
+    .hero-grid,.split,.band .wrap,.visit-grid{grid-template-columns:1fr}
+    .hero-art{justify-self:center;max-width:400px;margin-top:1rem}
+    .cards{grid-template-columns:1fr 1fr}
+    .steps{grid-template-columns:1fr 1fr}
+    .photo-stack{min-height:440px}
+  }
+  @media (max-width:720px){
+    .nav{display:none}
+    .logo span{font-size:1.02rem}
+    .logo svg{width:34px;height:34px}
+    .preview-bar{font-size:.78rem}
+    .hero{padding:3rem 0 4rem}
+    .hero .lede{font-size:1.08rem}
+    .hero-ctas .btn{width:100%}
+    .yarn-ball{width:96px;height:96px;left:-10px;bottom:10px}
+    .sticker{width:100px;height:100px;right:-4px}
+    .section{padding:4.5rem 0}
+    .cards,.steps{grid-template-columns:1fr}
+    .photo-stack{min-height:360px}
+    .visit-card{padding:1.8rem 1.4rem}
+    .map-art{min-height:300px}
+    .map-label{flex-direction:column;align-items:flex-start;gap:.3rem}
+    .float-call{display:flex}
+    .header-call-text{display:none}
+  }
+  @media (max-width:380px){
+    .logo span{font-size:.92rem}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+    .reveal{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="preview-bar" role="note">
+  <div class="wrap">
+    <span>Free preview concept by Built By Cray. Not the official website of The Tuftest Class in Town. <strong>$650 Black Friday price through Nov 30.</strong></span>
+    <a href="https://calendar.app.google/K7QqcbLckjKjjZs19" target="_blank" rel="noopener">Claim this website</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="The Tuftest Class in Town, home">
+      <svg width="42" height="42" viewBox="0 0 42 42" aria-hidden="true">
+        <circle cx="21" cy="21" r="19" fill="#d2552f"/>
+        <path d="M7 15c6 3 22 -3 28 2M5 22c8 4 24 -4 32 1M7 29c7 3 21 -3 28 1" stroke="#fbf3e6" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        <path d="M30 6c4 1 7 4 8 8" stroke="#e9a92c" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span>The <em>Tuftest</em><br>Class in Town</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#make">Workshops</a>
+      <a href="#how">How it works</a>
+      <a href="#why">Why tuft here</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn btn-call btn-sm" href="tel:+14045497010" aria-label="Call (404) 549-7010">
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z"/></svg>
+      <span>Call<span class="header-call-text"> (404) 549-7010</span></span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <svg class="hero-squiggle" viewBox="0 0 340 200" aria-hidden="true"><path d="M10 150c40-90 90 40 130-30s70-90 110-20 60 40 80-10" stroke="#e9a92c" stroke-width="10" fill="none" stroke-linecap="round"/></svg>
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow"><i></i> Rug tufting studio &middot; North Highland, Atlanta</span>
+        <h1>Make a rug you'll actually <em>brag about.<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 14c30-10 60 6 95-2s70-8 99 1" stroke="#e9a92c" stroke-width="5" fill="none" stroke-linecap="round"/></svg></em></h1>
+        <p class="biz">The Tuftest Class in Town</p>
+        <p class="lede">A hands-on DIY tufting workshop in Atlanta. Pick your design, grab the tufting gun, and walk out with a one-of-a-kind piece you made yourself.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-call" href="tel:+14045497010">
+            <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z"/></svg>
+            Call (404) 549-7010
+          </a>
+          <a class="btn btn-ghost" href="#how">See how it works</a>
+        </div>
+        <div class="hero-meta">
+          <span><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#d2552f" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>634 N Highland Ave NE</span>
+          <span><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#d2552f" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10.4V6h-2v7.6l5 3 1-1.7z"/></svg>Call for current hours</span>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="rug-ring" aria-hidden="true"></div>
+        <div class="rug">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&h=1125&q=70" alt="Stock photo: a group of people gathered around a table working together" width="900" height="1125">
+        </div>
+        <svg class="yarn-ball" viewBox="0 0 120 120" aria-hidden="true">
+          <circle cx="60" cy="60" r="50" fill="#f2a6a0"/>
+          <g stroke="#d2552f" stroke-width="3.5" fill="none" stroke-linecap="round">
+            <path d="M18 45c25 10 60 10 85-5"/><path d="M14 62c30 12 64 10 92-6"/><path d="M22 80c25 10 55 8 78-8"/>
+            <path d="M40 14c-12 30-10 65 8 96"/><path d="M62 10c-8 32-4 68 14 98"/>
+          </g>
+          <path d="M100 85c12 8 14 20 6 30" stroke="#d2552f" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        </svg>
+        <svg class="sticker" viewBox="0 0 140 140" aria-hidden="true">
+          <defs><path id="circ" d="M70 70m-52 0a52 52 0 1 1 104 0a52 52 0 1 1-104 0"/></defs>
+          <circle cx="70" cy="70" r="66" fill="#e9a92c"/>
+          <text font-family="Outfit, sans-serif" font-size="13" font-weight="700" letter-spacing="3.2" fill="#2a1a2e"><textPath href="#circ">NO EXPERIENCE NEEDED &bull; TUFT IT YOURSELF &bull;</textPath></text>
+          <path d="M70 52c8 0 14 6 14 14s-14 22-14 22-14-14-14-22 6-14 14-14z" fill="#d2552f"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="yarn-strip" aria-hidden="true">
+    <div class="marquee">
+      <span>Tufting gun <b>&#10022;</b> Yarn &amp; color <b>&#10022;</b> Date night <b>&#10022;</b> Friends' night out <b>&#10022;</b> Wall hangings <b>&#10022;</b> Mini rugs <b>&#10022;</b> Made in Atlanta <b>&#10022;</b></span>
+      <span>Tufting gun <b>&#10022;</b> Yarn &amp; color <b>&#10022;</b> Date night <b>&#10022;</b> Friends' night out <b>&#10022;</b> Wall hangings <b>&#10022;</b> Mini rugs <b>&#10022;</b> Made in Atlanta <b>&#10022;</b></span>
+    </div>
+  </div>
+
+  <!-- WORKSHOPS -->
+  <section class="section" id="make">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">What you can make</span>
+        <h2>Loud colors, soft textures, zero pressure.</h2>
+        <p>Tufting is part art class, part power tool, and a lot of fun. Come solo, bring a friend, or bring the whole crew.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="ico"><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z" fill="none" stroke="#2a1a2e" stroke-width="2"/><path d="M7 10c2 2 4-2 6 0s4-2 4 0M7 14c2 2 4-2 6 0s4-2 4 0" stroke="#2a1a2e" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg></div>
+          <h3>Tufting workshops</h3>
+          <p>Learn to use a tufting gun start to finish and create your own rug or wall piece in a guided, hands-on session.</p>
+          <span class="tag">Great for first-timers</span>
+        </article>
+        <article class="card reveal">
+          <div class="ico"><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="9" r="3" fill="none" stroke="#2a1a2e" stroke-width="2"/><circle cx="16" cy="9" r="3" fill="none" stroke="#2a1a2e" stroke-width="2"/><path d="M3 19c0-3 2.5-5 5-5s5 2 5 5M11 19c0-3 2.5-5 5-5s5 2 5 5" fill="none" stroke="#2a1a2e" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <h3>Groups &amp; private events</h3>
+          <p>Birthdays, team outings, girls' nights, date nights. A creative plan that beats another dinner reservation.</p>
+          <span class="tag">Call to plan yours</span>
+        </article>
+        <article class="card reveal">
+          <div class="ico"><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z" fill="none" stroke="#2a1a2e" stroke-width="2" stroke-linejoin="round"/></svg></div>
+          <h3>Your design, your colors</h3>
+          <p>Bring an idea, a doodle, or a logo. Turn it into a fuzzy, textured piece for your wall, floor, or a friend's gift.</p>
+          <span class="tag">One of a kind, every time</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section how" id="how">
+    <svg class="how-blob" viewBox="0 0 200 200" aria-hidden="true"><path fill="#e9a92c" d="M44 -60C58 -48 70 -34 74 -17C78 0 74 21 62 36C50 51 30 60 9 66C-12 72 -34 74 -50 63C-66 52 -76 28 -77 4C-78 -20 -70 -44 -54 -57C-38 -70 -19 -72 -1 -71C17 -70 30 -72 44 -60Z" transform="translate(100 100)"/></svg>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">How it works</span>
+        <h2>From blank cloth to bragging rights.</h2>
+        <p>No art background required. Just show up curious and ready to get a little fuzzy.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><h3>Pick a design</h3><p>Choose something simple and bold, or bring your own idea to sketch onto the cloth.</p></div>
+        <div class="step reveal"><h3>Choose your yarn</h3><p>Build a color palette that matches your room, your vibe, or your mood that day.</p></div>
+        <div class="step reveal"><h3>Tuft it</h3><p>Get comfortable with the tufting gun and fill in your design loop by loop.</p></div>
+        <div class="step reveal"><h3>Finish &amp; show off</h3><p>Trim, shape, and finish your piece, then go find the perfect spot to show it off.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="section" id="why">
+    <div class="wrap split">
+      <div class="reveal">
+        <div class="photo-stack">
+          <div class="photo photo-a"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&h=700&q=70" alt="Stock photo: a bright open studio space with large windows" loading="lazy" width="900" height="700"></div>
+          <div class="photo photo-b"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&h=700&q=70" alt="Stock photo: hands working on a creative project" loading="lazy" width="800" height="700"></div>
+          <svg class="photo-swatch" viewBox="0 0 120 120" aria-hidden="true">
+            <rect x="8" y="8" width="104" height="104" rx="22" fill="#7d9a78" transform="rotate(-8 60 60)"/>
+            <g stroke="#fbf3e6" stroke-width="5" stroke-linecap="round" fill="none" transform="rotate(-8 60 60)">
+              <path d="M24 36c8 -8 16 8 24 0s16 8 24 0 16 8 24 0"/><path d="M24 60c8 -8 16 8 24 0s16 8 24 0 16 8 24 0"/><path d="M24 84c8 -8 16 8 24 0s16 8 24 0 16 8 24 0"/>
+            </g>
+          </svg>
+        </div>
+        <p class="caption">Stock photos for preview. Real studio photos would go here.</p>
+      </div>
+      <div class="reveal">
+        <span class="kicker">Why tuft here</span>
+        <div class="section-head flush">
+          <h2>A creative night out, right on North Highland.</h2>
+        </div>
+        <ul class="why-list">
+          <li><span class="dot"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="#d2552f" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>Beginner friendly</h3><p>Never held a tufting gun? That's the whole point. You'll learn by doing.</p></div></li>
+          <li><span class="dot"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="#d2552f" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>You leave with something real</h3><p>Not just photos. An actual handmade piece with your name on it (figuratively, or literally).</p></div></li>
+          <li><span class="dot"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="#d2552f" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>Easy to find in Atlanta</h3><p>On North Highland Avenue NE, close to the neighborhoods you already love hanging out in.</p></div></li>
+          <li><span class="dot"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="#d2552f" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>Made for groups</h3><p>Celebrations, team bonding, or just a group chat that needs a new plan.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- GROUP BAND -->
+  <section class="band" aria-labelledby="band-title">
+    <div class="wrap">
+      <div class="reveal">
+        <h2 id="band-title">Got a crew? Let's make it a tufting party.</h2>
+        <p>Call the studio to ask about group sessions and private bookings. We'll help you figure out what works for your group.</p>
+      </div>
+      <ul class="reveal" aria-label="Great for">
+        <li>Birthdays</li><li>Bachelorettes</li><li>Date nights</li><li>Team outings</li><li>Friend reunions</li><li>Just because</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="section" id="visit">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Visit the studio</span>
+        <h2>Come get fuzzy with us.</h2>
+        <p>Give us a call to check availability and book your spot.</p>
+      </div>
+      <div class="visit-grid">
+        <div class="visit-card reveal">
+          <h3>The Tuftest Class in Town</h3>
+          <ul class="info">
+            <li><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="#d2552f" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><div><small>Address</small>634 North Highland Avenue Northeast<br>Atlanta, GA 30306</div></li>
+            <li><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="#d2552f" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z"/></svg><div><small>Phone</small><a href="tel:+14045497010">(404) 549-7010</a></div></li>
+            <li><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="#d2552f" d="M3 5h18v14H3zm2 2v.5l7 4.5 7-4.5V7zm14 2.9-7 4.5-7-4.5V17h14z"/></svg><div><small>Email</small><a href="mailto:hey@thetuftestclassintown.com">hey@thetuftestclassintown.com</a></div></li>
+            <li><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="#d2552f" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10.4V6h-2v7.6l5 3 1-1.7z"/></svg><div><small>Hours</small>Call for current hours.</div></li>
+          </ul>
+          <div class="visit-actions">
+            <a class="btn btn-call" href="tel:+14045497010">Call (404) 549-7010</a>
+            <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Tuftest%20Class%20in%20Town%2C%20634%20North%20Highland%20Avenue%20Northeast%2C%20Atlanta%2C%20GA%2C%2030306" target="_blank" rel="noopener">Get directions</a>
+          </div>
+        </div>
+
+        <a class="map-art reveal" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Tuftest%20Class%20in%20Town%2C%20634%20North%20Highland%20Avenue%20Northeast%2C%20Atlanta%2C%20GA%2C%2030306" target="_blank" rel="noopener" aria-label="Open The Tuftest Class in Town on Google Maps">
+          <svg viewBox="0 0 500 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="500" height="400" fill="#f4e6cf"/>
+            <g fill="#ead6b6"><rect x="20" y="30" width="140" height="90" rx="12"/><rect x="300" y="20" width="170" height="110" rx="12"/><rect x="30" y="250" width="120" height="120" rx="12"/><rect x="320" y="240" width="150" height="130" rx="12"/></g>
+            <circle cx="410" cy="190" r="40" fill="#b8cdb3"/>
+            <g stroke="#fbf3e6" stroke-width="22" fill="none" stroke-linecap="round">
+              <path d="M-20 190 C120 170 200 210 520 180"/>
+              <path d="M240 -20 C220 120 270 260 230 420"/>
+            </g>
+            <g stroke="#d2552f" stroke-width="3" stroke-dasharray="10 8" fill="none"><path d="M240 -20 C220 120 270 260 230 420"/></g>
+            <text x="262" y="70" font-family="Outfit, sans-serif" font-size="14" font-weight="700" fill="#4a2545" transform="rotate(-82 262 70)">N HIGHLAND AVE NE</text>
+            <g transform="translate(242 168)">
+              <circle r="30" fill="#d2552f" opacity=".2"/>
+              <path d="M0 -34c-12 0-20 9-20 20 0 15 20 34 20 34s20-19 20-34c0-11-8-20-20-20z" fill="#4a2545"/>
+              <circle cy="-14" r="7" fill="#e9a92c"/>
+            </g>
+          </svg>
+          <span class="map-label"><span><strong>634 N Highland Ave NE</strong><br><span>Atlanta, GA 30306</span></span><b>Get directions &rarr;</b></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final">
+    <div class="stitch" aria-hidden="true"></div>
+    <div class="wrap reveal">
+      <span class="kicker">Ready when you are</span>
+      <h2>Your first rug is one <em>phone call</em> away.</h2>
+      <p>Call the studio to ask about upcoming workshops, group bookings, and current hours.</p>
+      <a class="btn btn-call" href="tel:+14045497010">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z"/></svg>
+        Call (404) 549-7010
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <a class="logo" href="#top" aria-label="Back to top">
+        <svg width="42" height="42" viewBox="0 0 42 42" aria-hidden="true">
+          <circle cx="21" cy="21" r="19" fill="#d2552f"/>
+          <path d="M7 15c6 3 22 -3 28 2M5 22c8 4 24 -4 32 1M7 29c7 3 21 -3 28 1" stroke="#fbf3e6" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        </svg>
+        <span>The <em>Tuftest</em><br>Class in Town</span>
+      </a>
+      <address>
+        634 North Highland Avenue Northeast, Atlanta, GA 30306<br>
+        <a href="tel:+14045497010">(404) 549-7010</a> &middot; <a href="mailto:hey@thetuftestclassintown.com">hey@thetuftestclassintown.com</a><br>
+        Call for current hours.
+      </address>
+    </div>
+    <div class="disclaimer">
+      <p><a href="https://builtbycray.com" target="_blank" rel="noopener">Preview by Built By Cray</a></p>
+      <p>This is a free preview concept and is not the official website of The Tuftest Class in Town. Name, phone and address come from public listings. Stock photos from Unsplash.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="btn btn-call float-call" href="tel:+14045497010" aria-label="Call The Tuftest Class in Town at (404) 549-7010">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z"/></svg>
+  Tap to call (404) 549-7010
+</a>
+
+<script>
+  (function(){
+    var els=document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      els.forEach(function(e){e.classList.add('in')});return;
+    }
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+    },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(e){io.observe(e)});
+  })();
+</script>
+</body>
+</html>

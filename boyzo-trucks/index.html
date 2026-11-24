@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Boyzo Trucks | Preview concept by Built By Cray</title>
+<meta name="description" content="Boyzo Trucks, a used truck and vehicle dealership at 3300 Buckeye Road in Atlanta, GA (Chamblee / Embry Hills). Call (678) 622-2759 to ask what's on the lot.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --asphalt:#141619;
+  --asphalt-2:#1d2024;
+  --steel:#2b3036;
+  --line:#3a4048;
+  --sand:#f2ece2;
+  --sand-2:#e6dccb;
+  --ink:#1a1c1f;
+  --muted:#5d6168;
+  --orange:#ef6a1f;
+  --orange-d:#c9520f;
+  --yellow:#f5b52e;
+  --white:#fff;
+  --radius:14px;
+  --display:"Big Shoulders Display",Impact,"Arial Narrow",sans-serif;
+  --cond:"Barlow Condensed","Arial Narrow",sans-serif;
+  --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;font-family:var(--body);font-size:1.0625rem;line-height:1.6;color:var(--ink);background:var(--sand);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1200px,100% - 2.5rem);margin-inline:auto}
+.skip{position:absolute;left:-9999px;top:0;background:var(--yellow);color:var(--ink);padding:.6rem 1rem;z-index:100;font-weight:700}
+.skip:focus{left:1rem;top:1rem}
+
+/* ---------- preview bar ---------- */
+.preview-bar{background:#0b0c0e;color:#d8d3ca;font-size:.85rem;line-height:1.35}
+.preview-bar .wrap{display:flex;align-items:center;justify-content:center;gap:.5rem 1rem;flex-wrap:wrap;padding:.55rem 0;text-align:center}
+.preview-bar strong{color:#fff;font-weight:600}
+.preview-bar .deal{color:var(--yellow);font-weight:600}
+.claim{display:inline-block;background:var(--yellow);color:var(--ink);text-decoration:none;font-weight:700;font-size:.8rem;padding:.3rem .75rem;border-radius:999px;white-space:nowrap}
+.claim:hover{background:#ffc94f}
+
+/* ---------- header ---------- */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(20,22,25,.94);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid rgba(255,255,255,.07);color:#fff}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:72px}
+.logo{display:flex;align-items:center;gap:.65rem;text-decoration:none}
+.logo-mark{width:42px;height:42px;flex:none}
+.logo-text{font-family:var(--display);font-weight:900;font-size:1.65rem;letter-spacing:.02em;text-transform:uppercase;line-height:1}
+.logo-text span{color:var(--orange)}
+.nav{display:flex;align-items:center;gap:1.9rem}
+.nav a{font-family:var(--cond);text-transform:uppercase;letter-spacing:.1em;font-weight:600;font-size:.95rem;text-decoration:none;color:#cfd2d6;transition:color .2s}
+.nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;font-family:var(--cond);text-transform:uppercase;letter-spacing:.08em;font-weight:700;text-decoration:none;border-radius:10px;transition:transform .2s ease,background .2s ease,box-shadow .2s ease;line-height:1}
+.btn svg{width:1.15em;height:1.15em;flex:none}
+.btn-orange{background:var(--orange);color:#fff;box-shadow:0 10px 30px -10px rgba(239,106,31,.7)}
+.btn-orange:hover{background:var(--orange-d);transform:translateY(-2px)}
+.btn-ghost{border:2px solid rgba(255,255,255,.28);color:#fff}
+.btn-ghost:hover{border-color:#fff;transform:translateY(-2px)}
+.btn-dark{background:var(--asphalt);color:#fff}
+.btn-dark:hover{background:#000;transform:translateY(-2px)}
+.header-call{padding:.8rem 1.1rem;font-size:1rem}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--asphalt);color:#fff;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(900px 500px at 85% 20%,rgba(239,106,31,.22),transparent 60%),
+  radial-gradient(700px 400px at 0% 100%,rgba(245,181,46,.08),transparent 60%);z-index:-1}
+.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:56px 56px;mask-image:linear-gradient(180deg,#000 0%,transparent 85%);-webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 85%);z-index:-1}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:3rem;padding:5.5rem 0 0}
+.eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--cond);text-transform:uppercase;letter-spacing:.18em;font-weight:600;font-size:.9rem;color:var(--yellow)}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
+.hero h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(3rem,7.6vw,6.4rem);line-height:.88;letter-spacing:.005em;margin:1rem 0 1.4rem}
+.hero h1 .o{color:var(--orange)}
+.hero h1 .outline{color:transparent;-webkit-text-stroke:2px rgba(255,255,255,.85)}
+.hero-lede{font-size:1.2rem;color:#c9ccd1;max-width:33rem;margin:0 0 2rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:2.2rem}
+.btn-xl{padding:1.2rem 1.6rem;font-size:1.3rem;border-radius:12px}
+.btn-md{padding:1.05rem 1.35rem;font-size:1.05rem}
+.hero-meta{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;font-size:.95rem;color:#aeb2b8;padding-bottom:4.5rem}
+.hero-meta span{display:inline-flex;align-items:center;gap:.45rem}
+.hero-meta svg{width:18px;height:18px;color:var(--orange)}
+.hero-art{position:relative;align-self:end}
+.hero-art svg{width:100%;height:auto;display:block}
+.plate{position:absolute;top:8%;right:4%;background:var(--sand);color:var(--ink);font-family:var(--display);font-weight:800;font-size:1.05rem;letter-spacing:.12em;padding:.45rem .9rem;border-radius:6px;border:3px solid var(--ink);box-shadow:0 0 0 2px var(--sand);transform:rotate(4deg)}
+.plate small{display:block;font-family:var(--cond);font-size:.6rem;letter-spacing:.25em;color:var(--orange-d);text-align:center;line-height:1.2}
+.road{height:18px;background:repeating-linear-gradient(90deg,var(--yellow) 0 60px,transparent 60px 110px);opacity:.9;background-color:#0e0f11;background-size:110px 6px;background-repeat:repeat-x;background-position:0 50%}
+
+/* ---------- ticker ---------- */
+.ticker{background:var(--orange);color:#fff;overflow:hidden;border-block:3px solid var(--ink)}
+.ticker-track{display:flex;width:max-content;animation:tick 34s linear infinite}
+.ticker ul{display:flex;list-style:none;margin:0;padding:.85rem 0;gap:0}
+.ticker li{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.5rem;letter-spacing:.04em;white-space:nowrap;display:flex;align-items:center}
+.ticker li::after{content:"";width:10px;height:10px;background:var(--ink);transform:rotate(45deg);margin:0 1.6rem}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* ---------- sections ---------- */
+section{position:relative}
+.sec{padding:clamp(4.5rem,9vw,7.5rem) 0}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:2rem 4rem;align-items:end;margin-bottom:3.2rem}
+.kicker{font-family:var(--cond);text-transform:uppercase;letter-spacing:.2em;font-weight:700;font-size:.88rem;color:var(--orange-d);display:flex;align-items:center;gap:.7rem;margin:0 0 .9rem}
+.kicker b{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--sand);font-size:.8rem;letter-spacing:0}
+h2{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(2.4rem,5.2vw,4.2rem);line-height:.92;margin:0;letter-spacing:.005em}
+.sec-head p{margin:0;color:var(--muted);font-size:1.12rem;max-width:34rem}
+
+/* lot / inventory types */
+.lot-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.lot-card{position:relative;background:#fff;border-radius:var(--radius);padding:2rem 1.8rem 1.9rem;border:1px solid var(--sand-2);overflow:hidden;transition:transform .3s ease,box-shadow .3s ease}
+.lot-card:hover{transform:translateY(-6px);box-shadow:0 24px 50px -24px rgba(20,22,25,.35)}
+.lot-card .num{position:absolute;top:1rem;right:1.3rem;font-family:var(--display);font-weight:900;font-size:4.5rem;line-height:1;color:var(--sand-2)}
+.lot-card .ico{width:74px;height:74px;border-radius:16px;background:var(--asphalt);display:grid;place-items:center;margin-bottom:1.4rem;position:relative}
+.lot-card .ico svg{width:46px;height:46px}
+.lot-card h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.85rem;line-height:1;margin:0 0 .7rem}
+.lot-card p{margin:0;color:var(--muted)}
+.lot-card::after{content:"";position:absolute;left:0;bottom:0;height:5px;width:100%;background:linear-gradient(90deg,var(--orange),var(--yellow));transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
+.lot-card:hover::after{transform:scaleX(1)}
+.lot-cta{margin-top:1.25rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem 2rem;background:var(--asphalt);color:#fff;border-radius:var(--radius);padding:1.6rem 1.8rem}
+.lot-cta p{margin:0;font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(1.4rem,2.6vw,1.9rem);line-height:1.05}
+.lot-cta p span{color:var(--yellow)}
+
+/* why */
+.why{background:var(--asphalt);color:#fff;overflow:hidden}
+.why .kicker{color:var(--yellow)}
+.why .kicker b{background:var(--yellow);color:var(--ink)}
+.why .sec-head p{color:#aeb2b8}
+.why-layout{display:grid;grid-template-columns:1fr 1.1fr;gap:3rem;align-items:stretch}
+.photo{position:relative;border-radius:var(--radius);overflow:hidden;background:var(--steel);min-height:420px}
+.photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;filter:grayscale(.35) contrast(1.05)}
+.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(20,22,25,.85))}
+.photo figcaption{position:absolute;left:1.3rem;right:1.3rem;bottom:1.2rem;z-index:2;color:#fff;font-family:var(--display);text-transform:uppercase;font-weight:800;font-size:1.6rem;line-height:1.05}
+.photo figcaption small{display:block;font-family:var(--body);text-transform:none;font-weight:500;font-size:.75rem;color:#b9bdc3;margin-top:.45rem;letter-spacing:.02em}
+.photo .tag{position:absolute;top:1.1rem;left:1.1rem;z-index:2;background:var(--orange);color:#fff;font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;padding:.35rem .7rem;border-radius:6px}
+.why-list{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.why-item{background:var(--asphalt-2);padding:1.7rem 1.7rem;display:grid;grid-template-columns:auto 1fr;gap:1.2rem;align-items:start;transition:background .25s}
+.why-item:hover{background:#23272c}
+.why-item .badge{width:52px;height:52px;border-radius:12px;background:rgba(239,106,31,.14);border:1px solid rgba(239,106,31,.4);display:grid;place-items:center;color:var(--orange)}
+.why-item .badge svg{width:26px;height:26px}
+.why-item h3{margin:0 0 .3rem;font-family:var(--display);text-transform:uppercase;font-weight:800;font-size:1.5rem;line-height:1.05}
+.why-item p{margin:0;color:#aeb2b8;font-size:1rem}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;position:relative;list-style:none;padding:0;margin:0}
+.steps::before{content:"";position:absolute;top:34px;left:6%;right:6%;border-top:3px dashed #c9bda8;z-index:0}
+.step{position:relative;z-index:1}
+.step .dot{width:68px;height:68px;border-radius:50%;background:var(--orange);color:#fff;display:grid;place-items:center;font-family:var(--display);font-weight:900;font-size:1.9rem;border:5px solid var(--sand);box-shadow:0 0 0 2px var(--orange);margin-bottom:1.3rem}
+.step:nth-child(even) .dot{background:var(--ink);box-shadow:0 0 0 2px var(--ink)}
+.step h3{font-family:var(--display);text-transform:uppercase;font-weight:800;font-size:1.65rem;line-height:1;margin:0 0 .5rem}
+.step p{margin:0;color:var(--muted)}
+
+/* band */
+.band{position:relative;color:#fff;background:var(--asphalt);overflow:hidden;isolation:isolate}
+.band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:grayscale(.6) contrast(1.1)}
+.band::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(20,22,25,.96) 30%,rgba(20,22,25,.7) 65%,rgba(239,106,31,.55));z-index:-1}
+.band .wrap{padding:clamp(4rem,8vw,6.5rem) 0;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:2rem}
+.band h2{max-width:44rem}
+.band h2 span{color:var(--yellow)}
+.band .stock{position:absolute;right:1rem;bottom:.6rem;font-size:.72rem;color:rgba(255,255,255,.65)}
+
+/* visit */
+.visit-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:1.5rem}
+.info-card{background:#fff;border:1px solid var(--sand-2);border-radius:var(--radius);padding:2.2rem}
+.info-row{display:grid;grid-template-columns:auto 1fr;gap:1rem;padding:1.15rem 0;border-bottom:1px solid var(--sand-2)}
+.info-row:first-of-type{padding-top:0}
+.info-row:last-of-type{border-bottom:0}
+.info-row .ic{width:44px;height:44px;border-radius:10px;background:var(--sand);display:grid;place-items:center;color:var(--orange-d)}
+.info-row .ic svg{width:22px;height:22px}
+.info-row h3{margin:0;font-family:var(--cond);text-transform:uppercase;letter-spacing:.14em;font-size:.85rem;color:var(--muted);font-weight:700}
+.info-row p{margin:.15rem 0 0;font-size:1.15rem;font-weight:600;word-break:break-word}
+.info-row a{text-decoration-color:var(--orange);text-underline-offset:3px}
+.info-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.6rem}
+.map-card{position:relative;border-radius:var(--radius);overflow:hidden;background:#24282d;min-height:420px;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;text-decoration:none;isolation:isolate}
+.map-card svg.map{position:absolute;inset:0;width:100%;height:100%;z-index:-1}
+.map-card .pin{position:absolute;left:52%;top:42%;transform:translate(-50%,-100%);width:64px;filter:drop-shadow(0 10px 14px rgba(0,0,0,.5))}
+.map-card .pin-pulse{position:absolute;left:52%;top:42%;width:22px;height:22px;margin:-11px 0 0 -11px;border-radius:50%;background:rgba(239,106,31,.5);animation:pulse 2.2s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.6);opacity:1}100%{transform:scale(4);opacity:0}}
+.map-label{margin:1.2rem;background:rgba(20,22,25,.92);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:1.1rem 1.3rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.map-label strong{display:block;font-family:var(--display);text-transform:uppercase;font-size:1.4rem;line-height:1.05}
+.map-label span{color:#aeb2b8;font-size:.95rem}
+.map-label .go{flex:none;width:48px;height:48px;border-radius:50%;background:var(--orange);display:grid;place-items:center;transition:transform .25s}
+.map-card:hover .go{transform:translateX(4px)}
+.map-label .go svg{width:22px;height:22px}
+
+/* footer */
+footer{background:#0b0c0e;color:#9ea3aa;font-size:.92rem}
+footer .wrap{padding:3rem 0 6rem}
+.foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1.5rem;padding-bottom:2rem;border-bottom:1px solid #24272c;margin-bottom:1.6rem;color:#fff}
+.foot-top a.phone{font-family:var(--display);font-weight:800;font-size:1.8rem;text-decoration:none;color:var(--yellow)}
+.foot-note{max-width:52rem;margin:.4rem 0 0;line-height:1.55}
+footer a{color:#e0e2e5}
+.by{color:#fff;font-weight:600}
+
+/* mobile floating call */
+.float-call{position:fixed;left:1rem;right:1rem;bottom:1rem;z-index:60;display:none;padding:1.05rem;font-size:1.2rem;border-radius:14px}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* truck idle animation */
+.truck-body{animation:idle 1.6s ease-in-out infinite}
+@keyframes idle{50%{transform:translateY(1.5px)}}
+
+/* ---------- responsive ---------- */
+@media (max-width:1000px){
+  .hero .wrap{grid-template-columns:1fr;padding-top:3.5rem;gap:1rem}
+  .hero-meta{padding-bottom:1rem}
+  .hero-art{max-width:640px;width:100%;margin-inline:auto}
+  .sec-head{grid-template-columns:1fr}
+  .lot-grid{grid-template-columns:1fr 1fr}
+  .why-layout{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr;gap:2.2rem 1.25rem}
+  .steps::before{display:none}
+  .visit-grid{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .nav{display:none}
+  .site-header .wrap{height:64px}
+  .logo-text{font-size:1.35rem}
+  .logo-mark{width:36px;height:36px}
+  .header-call{padding:.7rem .9rem;font-size:.95rem}
+  .header-call .num{display:none}
+  .float-call{display:flex}
+  .lot-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .step{display:grid;grid-template-columns:auto 1fr;gap:0 1.1rem}
+  .step .dot{margin:0;grid-row:span 2}
+  .hero h1{font-size:clamp(2.9rem,15vw,4.2rem)}
+  .hero-lede{font-size:1.08rem}
+  .btn-xl{width:100%;font-size:1.2rem}
+  .btn-md{flex:1 1 auto}
+  .info-card{padding:1.5rem}
+  .map-card{min-height:340px}
+  .ticker li{font-size:1.2rem}
+  .photo{min-height:340px}
+}
+@media (min-width:761px){.header-call .short{display:none}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="preview-bar" role="note" aria-label="Preview disclosure">
+  <div class="wrap">
+    <span><strong>Free preview concept by Built By Cray.</strong> Not the official website of Boyzo Trucks. <span class="deal">$650 Black Friday price through Nov 30.</span></span>
+    <a class="claim" href="https://calendar.app.google/K7QqcbLckjKjjZs19" target="_blank" rel="noopener">Claim this website</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Boyzo Trucks home">
+      <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <rect width="48" height="48" rx="10" fill="#ef6a1f"/>
+        <path d="M8 30V20h17v-5h7l6 7v8z" fill="#141619"/>
+        <circle cx="15" cy="32" r="4.5" fill="#141619" stroke="#ef6a1f" stroke-width="2"/>
+        <circle cx="33" cy="32" r="4.5" fill="#141619" stroke="#ef6a1f" stroke-width="2"/>
+        <path d="M27 17h4l3.5 4.5H27z" fill="#f5b52e"/>
+      </svg>
+      <span class="logo-text">Boyzo<span>Trucks</span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#lot">On the lot</a>
+      <a href="#why">Why Boyzo</a>
+      <a href="#how">How it works</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn btn-orange header-call" href="tel:+16786222759" aria-label="Call Boyzo Trucks at (678) 622-2759">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+      <span class="num">(678) 622-2759</span><span class="short">Call</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow">Used trucks · Buckeye Rd · Atlanta</span>
+      <h1>Find your <span class="o">next truck</span> <span class="outline">without</span> the runaround.</h1>
+      <p class="hero-lede">Boyzo Trucks is a neighborhood used truck and vehicle lot in the Chamblee / Embry Hills area. Give us a call, tell us what you need it to haul, and come see it in person.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-orange btn-xl" href="tel:+16786222759">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+          Call (678) 622-2759
+        </a>
+        <a class="btn btn-ghost btn-md" href="https://www.google.com/maps/search/?api=1&amp;query=Boyzo%20Trucks%2C%203300%20Buckeye%20Road%2C%20Atlanta%2C%20GA%2C%2030341" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <div class="hero-meta">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>3300 Buckeye Road, Atlanta, GA 30341</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Call for current hours</span>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <div class="plate" aria-hidden="true"><small>GEORGIA</small>BOYZO</div>
+      <svg viewBox="0 0 640 380" role="img" aria-label="Illustration of a pickup truck">
+        <defs>
+          <linearGradient id="bodyG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2793a"/><stop offset="1" stop-color="#c9520f"/></linearGradient>
+          <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9fb4c4"/><stop offset="1" stop-color="#3b4a57"/></linearGradient>
+        </defs>
+        <ellipse cx="320" cy="352" rx="290" ry="16" fill="#000" opacity=".45"/>
+        <g class="truck-body">
+          <!-- bed -->
+          <path d="M40 210 H300 V290 H40 Q30 290 30 280 V220 Q30 210 40 210Z" fill="url(#bodyG)"/>
+          <rect x="40" y="200" width="262" height="14" rx="4" fill="#a84309"/>
+          <!-- cab -->
+          <path d="M296 290 V170 Q296 140 326 136 L420 128 Q446 126 462 146 L512 206 L590 216 Q614 220 616 244 V280 Q616 290 606 290Z" fill="url(#bodyG)"/>
+          <path d="M318 206 V162 Q318 152 330 151 L414 145 Q430 144 440 156 L478 206Z" fill="url(#glass)"/>
+          <path d="M388 148 V206" stroke="#c9520f" stroke-width="8"/>
+          <path d="M340 160 L360 158 L336 200 L326 200Z" fill="#fff" opacity=".25"/>
+          <!-- details -->
+          <rect x="398" y="218" width="26" height="6" rx="3" fill="#141619" opacity=".6"/>
+          <rect x="318" y="218" width="26" height="6" rx="3" fill="#141619" opacity=".6"/>
+          <path d="M296 290 V214" stroke="#a84309" stroke-width="3"/>
+          <path d="M384 214 V288" stroke="#a84309" stroke-width="3"/>
+          <rect x="596" y="228" width="22" height="16" rx="4" fill="#f5b52e"/>
+          <rect x="26" y="226" width="12" height="22" rx="3" fill="#d1271b"/>
+          <!-- bumper -->
+          <rect x="560" y="276" width="66" height="18" rx="5" fill="#2b3036"/>
+          <rect x="18" y="276" width="60" height="18" rx="5" fill="#2b3036"/>
+          <path d="M40 254 H612" stroke="#141619" stroke-width="2" opacity=".25"/>
+        </g>
+        <!-- wheels -->
+        <g>
+          <circle cx="140" cy="300" r="54" fill="#141619"/>
+          <circle cx="140" cy="300" r="54" fill="none" stroke="#2b3036" stroke-width="10"/>
+          <circle cx="140" cy="300" r="24" fill="#b9bdc3"/>
+          <circle cx="140" cy="300" r="8" fill="#2b3036"/>
+          <circle cx="500" cy="300" r="54" fill="#141619"/>
+          <circle cx="500" cy="300" r="54" fill="none" stroke="#2b3036" stroke-width="10"/>
+          <circle cx="500" cy="300" r="24" fill="#b9bdc3"/>
+          <circle cx="500" cy="300" r="8" fill="#2b3036"/>
+        </g>
+        <!-- speed lines -->
+        <g stroke="#f5b52e" stroke-width="4" stroke-linecap="round" opacity=".7">
+          <path d="M-10 150 H40"/><path d="M-30 180 H20"/><path d="M0 120 H60" opacity=".5"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <div class="road" aria-hidden="true"></div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <ul><li>Pickups</li><li>Work trucks</li><li>Everyday vehicles</li><li>Buckeye Road</li><li>Metro Atlanta</li><li>Come see it in person</li></ul>
+    <ul><li>Pickups</li><li>Work trucks</li><li>Everyday vehicles</li><li>Buckeye Road</li><li>Metro Atlanta</li><li>Come see it in person</li></ul>
+  </div>
+</div>
+
+<!-- LOT -->
+<section class="sec" id="lot">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="kicker"><b>01</b>On the lot</p>
+        <h2>Trucks built to work. Vehicles built for real life.</h2>
+      </div>
+      <p>Inventory moves, so the best way to know what's here today is to call. Here's the kind of thing you'll typically find on a used truck lot like ours.</p>
+    </div>
+    <div class="lot-grid">
+      <article class="lot-card reveal">
+        <span class="num" aria-hidden="true">01</span>
+        <div class="ico" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M4 32V24h18v-6h9l7 7h4v7z" fill="#ef6a1f"/><circle cx="13" cy="33" r="5" fill="#141619" stroke="#f2ece2" stroke-width="2.5"/><circle cx="35" cy="33" r="5" fill="#141619" stroke="#f2ece2" stroke-width="2.5"/><path d="M25 21h5l4 4h-9z" fill="#f5b52e"/></svg>
+        </div>
+        <h3>Pickup trucks</h3>
+        <p>Half-tons for the daily drive, heavier-duty trucks for towing and hauling. Tell us what you pull and we'll point you to what fits.</p>
+      </article>
+      <article class="lot-card reveal">
+        <span class="num" aria-hidden="true">02</span>
+        <div class="ico" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><rect x="3" y="12" width="26" height="20" rx="2" fill="#ef6a1f"/><path d="M29 18h8l7 7v7H29z" fill="#ef6a1f"/><path d="M32 21h4l4 4h-8z" fill="#f5b52e"/><circle cx="12" cy="34" r="5" fill="#141619" stroke="#f2ece2" stroke-width="2.5"/><circle cx="36" cy="34" r="5" fill="#141619" stroke="#f2ece2" stroke-width="2.5"/></svg>
+        </div>
+        <h3>Work trucks</h3>
+        <p>For contractors, landscapers and small crews who need something dependable to get the job done and keep the business rolling.</p>
+      </article>
+      <article class="lot-card reveal">
+        <span class="num" aria-hidden="true">03</span>
+        <div class="ico" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M4 32v-7l5-8h22l8 8h5v7z" fill="#ef6a1f"/><path d="M12 19h8v6h-12zM23 19h7l6 6H23z" fill="#f5b52e"/><circle cx="13" cy="33" r="5" fill="#141619" stroke="#f2ece2" stroke-width="2.5"/><circle cx="35" cy="33" r="5" fill="#141619" stroke="#f2ece2" stroke-width="2.5"/></svg>
+        </div>
+        <h3>Everyday vehicles</h3>
+        <p>Not every driver needs a truck. We're a used vehicle dealership too, so ask about cars and SUVs for commuting and family life.</p>
+      </article>
+    </div>
+    <div class="lot-cta reveal">
+      <p>Looking for something specific? <span>Just ask.</span></p>
+      <a class="btn btn-orange btn-md" href="tel:+16786222759">Call (678) 622-2759</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="sec why" id="why">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="kicker"><b>02</b>Why Boyzo</p>
+        <h2>A local lot. A real conversation.</h2>
+      </div>
+      <p>Buying a used truck shouldn't feel like a chore. We keep it simple: honest talk, a truck you can see and touch, and people who pick up the phone.</p>
+    </div>
+    <div class="why-layout">
+      <figure class="photo reveal">
+        <span class="tag">Stock photo</span>
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1100&q=70" alt="Stock photo of a small group of people talking around a table" loading="lazy">
+        <figcaption>Talk it through before you drive it home.<small>Stock photo for preview</small></figcaption>
+      </figure>
+      <div class="why-list">
+        <div class="why-item reveal">
+          <div class="badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div>
+          <div><h3>Right in your backyard</h3><p>On Buckeye Road in the Chamblee / Embry Hills area, easy to reach from across metro Atlanta.</p></div>
+        </div>
+        <div class="why-item reveal">
+          <div class="badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <div><h3>Straight answers</h3><p>Ask about any truck on the lot and get a clear answer. No scripts and no pressure.</p></div>
+        </div>
+        <div class="why-item reveal">
+          <div class="badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <div><h3>See it before you buy</h3><p>Come walk around it, look under the hood and get a feel for it in person.</p></div>
+        </div>
+        <div class="why-item reveal">
+          <div class="badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 7l5 5-5 5M19 12H5"/></svg></div>
+          <div><h3>Trucks that fit the job</h3><p>Work, weekends or the daily commute. We'll help you match the truck to the way you actually use it.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="sec" id="how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="kicker"><b>03</b>How it works</p>
+        <h2>From phone call to driver's seat.</h2>
+      </div>
+      <p>Four easy steps. Start with a quick call so we can tell you what's on the lot before you make the trip.</p>
+    </div>
+    <ol class="steps">
+      <li class="step reveal"><div class="dot">1</div><h3>Call us</h3><p>Tell us what you're looking for and what you need it to do.</p></li>
+      <li class="step reveal"><div class="dot">2</div><h3>Stop by</h3><p>Come to 3300 Buckeye Road and see the trucks in person.</p></li>
+      <li class="step reveal"><div class="dot">3</div><h3>Look it over</h3><p>Take your time, ask questions and ask about a test drive.</p></li>
+      <li class="step reveal"><div class="dot">4</div><h3>Roll out</h3><p>Found the one? We'll walk you through next steps and get you on the road.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- BAND -->
+<section class="band" aria-label="Call to action">
+  <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=70" alt="" loading="lazy">
+  <div class="wrap">
+    <h2>Got a job to do? <span>Let's find the truck for it.</span></h2>
+    <a class="btn btn-orange btn-xl" href="tel:+16786222759">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+      Call (678) 622-2759
+    </a>
+  </div>
+  <span class="stock">Stock photo for preview</span>
+</section>
+
+<!-- VISIT -->
+<section class="sec" id="visit">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="kicker"><b>04</b>Visit the lot</p>
+        <h2>Come kick the tires.</h2>
+      </div>
+      <p>Hours can change, so give us a quick call before you head over and we'll make sure someone's ready for you.</p>
+    </div>
+    <div class="visit-grid">
+      <div class="info-card reveal">
+        <div class="info-row">
+          <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div>
+          <div><h3>Address</h3><p>3300 Buckeye Road<br>Atlanta, GA 30341</p></div>
+        </div>
+        <div class="info-row">
+          <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg></div>
+          <div><h3>Phone</h3><p><a href="tel:+16786222759">(678) 622-2759</a></p></div>
+        </div>
+        <div class="info-row">
+          <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+          <div><h3>Email</h3><p><a href="mailto:boyzotrucks@gmail.com">boyzotrucks@gmail.com</a></p></div>
+        </div>
+        <div class="info-row">
+          <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <div><h3>Hours</h3><p>Call for current hours.</p></div>
+        </div>
+        <div class="info-actions">
+          <a class="btn btn-orange btn-md" href="tel:+16786222759">Call now</a>
+          <a class="btn btn-dark btn-md" href="https://www.google.com/maps/search/?api=1&amp;query=Boyzo%20Trucks%2C%203300%20Buckeye%20Road%2C%20Atlanta%2C%20GA%2C%2030341" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+
+      <a class="map-card reveal" href="https://www.google.com/maps/search/?api=1&amp;query=Boyzo%20Trucks%2C%203300%20Buckeye%20Road%2C%20Atlanta%2C%20GA%2C%2030341" target="_blank" rel="noopener" aria-label="Open Boyzo Trucks at 3300 Buckeye Road in Google Maps">
+        <svg class="map" viewBox="0 0 600 440" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="600" height="440" fill="#23272c"/>
+          <g fill="#2b3036">
+            <rect x="20" y="20" width="150" height="110" rx="6"/><rect x="200" y="20" width="90" height="70" rx="6"/><rect x="420" y="30" width="160" height="90" rx="6"/>
+            <rect x="30" y="250" width="120" height="160" rx="6"/><rect x="380" y="270" width="200" height="140" rx="6"/><rect x="190" y="300" width="150" height="110" rx="6"/>
+          </g>
+          <rect x="190" y="110" width="110" height="80" rx="6" fill="#2f4a39" opacity=".8"/>
+          <g fill="none" stroke-linecap="round">
+            <path d="M-20 200 C 150 190 260 210 360 180 S 560 150 640 170" stroke="#3a4048" stroke-width="30"/>
+            <path d="M-20 200 C 150 190 260 210 360 180 S 560 150 640 170" stroke="#f5b52e" stroke-width="2" stroke-dasharray="14 12" opacity=".7"/>
+            <path d="M330 -20 C 320 120 300 220 320 460" stroke="#3a4048" stroke-width="20"/>
+            <path d="M170 -20 L 180 460" stroke="#30353b" stroke-width="12"/>
+            <path d="M-20 340 L 640 360" stroke="#30353b" stroke-width="12"/>
+          </g>
+          <text x="40" y="186" fill="#7d838b" font-family="Barlow Condensed, sans-serif" font-size="14" letter-spacing="3">BUCKEYE RD</text>
+        </svg>
+        <span class="pin-pulse" aria-hidden="true"></span>
+        <svg class="pin" viewBox="0 0 64 84" aria-hidden="true"><path d="M32 2C16 2 4 14 4 30c0 22 28 52 28 52s28-30 28-52C60 14 48 2 32 2z" fill="#ef6a1f" stroke="#141619" stroke-width="3"/><circle cx="32" cy="30" r="11" fill="#141619"/></svg>
+        <div class="map-label">
+          <div><strong>Boyzo Trucks</strong><span>3300 Buckeye Rd · Chamblee / Embry Hills</span></div>
+          <span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <a href="#top" class="logo" aria-label="Back to top">
+        <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
+          <rect width="48" height="48" rx="10" fill="#ef6a1f"/>
+          <path d="M8 30V20h17v-5h7l6 7v8z" fill="#141619"/>
+          <circle cx="15" cy="32" r="4.5" fill="#141619" stroke="#ef6a1f" stroke-width="2"/>
+          <circle cx="33" cy="32" r="4.5" fill="#141619" stroke="#ef6a1f" stroke-width="2"/>
+          <path d="M27 17h4l3.5 4.5H27z" fill="#f5b52e"/>
+        </svg>
+        <span class="logo-text">Boyzo<span>Trucks</span></span>
+      </a>
+      <a class="phone" href="tel:+16786222759">(678) 622-2759</a>
+    </div>
+    <p>3300 Buckeye Road, Atlanta, GA 30341 · Call for current hours · <a href="mailto:boyzotrucks@gmail.com">boyzotrucks@gmail.com</a></p>
+    <p class="foot-note"><a class="by" href="https://builtbycray.com" target="_blank" rel="noopener">Preview by Built By Cray</a>. This is a free preview concept and is not the official website of Boyzo Trucks. Name, phone and address come from public listings. Stock photos from Unsplash.</p>
+  </div>
+</footer>
+
+<a class="btn btn-orange float-call" href="tel:+16786222759">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+  Call (678) 622-2759
+</a>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(e){e.classList.add('in')});return;
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
